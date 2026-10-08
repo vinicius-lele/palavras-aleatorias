@@ -315,26 +315,74 @@
   }
 
   /* ---------- Tela cheia ---------- */
+  // iPhone/iOS não implementa Fullscreen API para elementos comuns (só <video>).
+  // Nesse caso caímos num modo simulado via CSS, com o mesmo botão de saída.
 
   function fsElement() {
     return document.fullscreenElement || document.webkitFullscreenElement || null;
   }
 
+  function inFallback() {
+    return document.documentElement.classList.contains("fs-fallback");
+  }
+
+  function fsActive() {
+    return !!fsElement() || inFallback();
+  }
+
+  function syncFsUI() {
+    var on = fsActive();
+    setHidden(el.iconMax, on);
+    setHidden(el.iconMin, !on);
+    el.fs.setAttribute("aria-label", on ? "Sair da tela cheia" : "Tela cheia");
+  }
+
+  function enterFallback() {
+    if (inFallback()) return;
+    document.documentElement.classList.add("fs-fallback");
+    syncFsUI();
+    setTimeout(fit, 60);
+  }
+
+  function exitFallback() {
+    if (!inFallback()) return;
+    document.documentElement.classList.remove("fs-fallback");
+    syncFsUI();
+    setTimeout(fit, 60);
+  }
+
+  function nativeExit() {
+    var exit = document.exitFullscreen || document.webkitExitFullscreen;
+    if (!exit) { exitFallback(); return; }
+    try {
+      var p = exit.call(document);
+      if (p && p.catch) p.catch(exitFallback);
+    } catch (e) {
+      exitFallback();
+    }
+  }
+
   function toggleFs() {
-    if (!fsElement()) {
-      var req = el.area.requestFullscreen || el.area.webkitRequestFullscreen;
-      if (req) req.call(el.area);
-    } else {
-      var exit = document.exitFullscreen || document.webkitExitFullscreen;
-      if (exit) exit.call(document);
+    if (fsActive()) {
+      if (fsElement()) nativeExit();
+      else exitFallback();
+      return;
+    }
+
+    var req = el.area.requestFullscreen || el.area.webkitRequestFullscreen;
+    if (!req) { enterFallback(); return; }
+
+    try {
+      var r = req.call(el.area);
+      if (r && r.then) r.then(function () { setTimeout(fit, 60); }, enterFallback);
+      else setTimeout(fit, 60);
+    } catch (e) {
+      enterFallback();
     }
   }
 
   function onFsChange() {
-    var on = !!fsElement();
-    setHidden(el.iconMax, on);
-    setHidden(el.iconMin, !on);
-    el.fs.setAttribute("aria-label", on ? "Sair da tela cheia" : "Tela cheia");
+    syncFsUI();
     setTimeout(fit, 60);
   }
 
@@ -363,6 +411,10 @@
   el.dark.addEventListener("change", applyTheme);
 
   document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && inFallback()) {
+      exitFallback();
+      return;
+    }
     if (e.code !== "Space" && e.key !== " ") return;
     var t = e.target;
     if (t && (t.tagName === "SELECT" || t.tagName === "BUTTON" ||

@@ -244,6 +244,28 @@ select:disabled {
   height: 100%;
 }
 
+/* Tela cheia simulada: usada quando o navegador não tem Fullscreen API
+   (iPhone/iOS só permite tela cheia em <video>). Esconde o menu e cobre
+   a viewport inteira com o campo das palavras. */
+
+html.fs-fallback body {
+  height: 100vh;
+  height: 100dvh;
+}
+
+html.fs-fallback .menu {
+  display: none;
+}
+
+html.fs-fallback .palavra-area {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 50;
+}
+
 .hint {
   position: absolute;
   display: flex;
@@ -320,6 +342,13 @@ select:disabled {
 
   .btn-play {
     margin-left: 0;
+  }
+
+  .btn-fs {
+    top: 8px;
+    right: 8px;
+    width: 44px;
+    height: 44px;
   }
 
   .hint {
