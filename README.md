@@ -16,7 +16,7 @@ dependências, sem build.
 ## Como usar
 
 1. Escolha **Nível** e **Segundos** no menu superior.
-2. Use o switch **Texto** para alternar entre `minúsculo` e `MAIÚSCULO`.
+2. Use o switch para alternar entre `minúsculo` e `maiúsculo`.
 3. Clique no **Play** (ou aperte **Espaço**). Durante a execução os selects e o
    switch ficam bloqueados; só o botão e a tela cheia continuam ativos.
 4. Clique no ícone de tela cheia (canto superior direito do campo das palavras)

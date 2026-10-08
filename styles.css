@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 html,
 body {
   height: 100%;
@@ -148,10 +152,10 @@ select:disabled {
   transform: translateX(20px);
 }
 
-.case-state {
+.switch-label {
   font-size: 14px;
   color: var(--muted);
-  min-width: 92px;
+  user-select: none;
 }
 
 /* Botão play / stop */
@@ -277,10 +281,6 @@ select:disabled {
 
   .btn-play {
     margin-left: 0;
-  }
-
-  .case-state {
-    min-width: 0;
   }
 
   .hint {

@@ -9,7 +9,6 @@
     nivel: document.getElementById("selNivel"),
     seg: document.getElementById("selSegundos"),
     cs: document.getElementById("caseToggle"),
-    csState: document.getElementById("caseState"),
     btn: document.getElementById("btnToggle"),
     iconPlay: document.getElementById("iconPlay"),
     iconStop: document.getElementById("iconStop"),
@@ -58,9 +57,9 @@
   }
 
   function loadPrefs() {
-    var nivel = localStorage.getItem(LS.nivel);
-    var seg = localStorage.getItem(LS.seg);
-    var cs = localStorage.getItem(LS.cs);
+    var nivel = readPref(LS.nivel);
+    var seg = readPref(LS.seg);
+    var cs = readPref(LS.cs);
 
     if (nivel && WORDS[nivel]) el.nivel.value = nivel;
     else el.nivel.value = levelKeys()[0];
@@ -71,27 +70,35 @@
     el.cs.checked = cs === "1";
   }
 
+  function readPref(key) {
+    try { return localStorage.getItem(key); } catch (e) { return null; }
+  }
+
   function savePref(key, value) {
     try { localStorage.setItem(key, value); } catch (e) { /* modo privado */ }
   }
 
   /* ---------- Estado da UI ---------- */
 
+  function setHidden(node, hidden) {
+    if (hidden) node.setAttribute("hidden", "");
+    else node.removeAttribute("hidden");
+  }
+
   function syncUI() {
     var r = state.running;
     el.nivel.disabled = r;
     el.seg.disabled = r;
     el.cs.disabled = r;
-    el.iconPlay.hidden = r;
-    el.iconStop.hidden = !r;
+    setHidden(el.iconPlay, r);
+    setHidden(el.iconStop, !r);
     el.btn.setAttribute("aria-label", r ? "Parar" : "Iniciar");
-    el.hint.hidden = r;
+    setHidden(el.hint, r);
   }
 
   function applyCase() {
     var up = el.cs.checked;
     el.word.style.textTransform = up ? "uppercase" : "lowercase";
-    el.csState.textContent = up ? "MAIÚSCULO" : "minúsculo";
     savePref(LS.cs, up ? "1" : "0");
     fit();
   }
@@ -224,8 +231,8 @@
 
   function onFsChange() {
     var on = !!fsElement();
-    el.iconMax.hidden = on;
-    el.iconMin.hidden = !on;
+    setHidden(el.iconMax, on);
+    setHidden(el.iconMin, !on);
     el.fs.setAttribute("aria-label", on ? "Sair da tela cheia" : "Tela cheia");
     setTimeout(fit, 60);
   }
