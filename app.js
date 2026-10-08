@@ -93,7 +93,7 @@
     setHidden(el.iconPlay, r);
     setHidden(el.iconStop, !r);
     el.btn.setAttribute("aria-label", r ? "Parar" : "Iniciar");
-    setHidden(el.hint, r);
+    setHidden(el.hint, r || el.word.textContent !== "");
   }
 
   function applyCase() {
@@ -187,8 +187,18 @@
   }
 
   function start() {
+    if (state.running) return;
+
+    // Retomada: ciclo pausado com palavra congelada na tela
+    if (state.order.length && el.word.textContent) {
+      state.running = true;
+      syncUI();
+      arm();
+      return;
+    }
+
     var list = currentList();
-    if (!list.length || state.running) return;
+    if (!list.length) return;
     state.running = true;
     state.order = shuffled(list);
     state.idx = 0;
@@ -201,10 +211,6 @@
     if (!state.running) return;
     state.running = false;
     clearTimeout(timerWord);
-    clearTimeout(timerFade);
-    el.word.textContent = "";
-    el.word.style.opacity = "1";
-    el.counter.textContent = "";
     syncUI();
   }
 
@@ -243,6 +249,7 @@
   el.fs.addEventListener("click", toggleFs);
 
   el.nivel.addEventListener("change", function () {
+    state.order = []; // próximo Play inicia ciclo novo no nível escolhido
     savePref(LS.nivel, el.nivel.value);
   });
 

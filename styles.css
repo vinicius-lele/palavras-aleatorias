@@ -154,6 +154,7 @@ select:disabled {
 
 .switch-label {
   font-size: 14px;
+  font-weight: bold;
   color: var(--muted);
   user-select: none;
 }

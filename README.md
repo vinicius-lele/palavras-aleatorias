@@ -21,7 +21,8 @@ dependências, sem build.
    switch ficam bloqueados; só o botão e a tela cheia continuam ativos.
 4. Clique no ícone de tela cheia (canto superior direito do campo das palavras)
    para esconder o menu e mostrar só a palavra.
-5. **Stop** (ou Espaço) limpa o campo e volta ao estado inicial.
+5. **Stop** (ou Espaço) congela a palavra atual na tela; **Play** retoma de onde
+   parou (a palavra pausada fica mais N segundos e o ciclo continua).
 
 As preferências (nível, segundos, caixa) ficam salvas no navegador.
 
