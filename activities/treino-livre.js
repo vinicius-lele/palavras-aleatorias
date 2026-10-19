@@ -1,62 +1,112 @@
-(function () {
-  "use strict";
+// Treino Livre — a tela original do projeto, agora como atividade.
+// Palavras do nível/tema escolhidos passam na tela uma por vez, a cada N
+// segundos, em ordem aleatória, com tela cheia e retomada da pausa.
 
-  var LS = { nivel: "pa.nivel", tema: "pa.tema", seg: "pa.seg", cs: "pa.cs", theme: "pa.theme" };
-  var ALL = "*";
-  var FADE_MS = 160;
-  var MAX_PX = 180;
-  var HINT_DEFAULT = "PRESSIONE PLAY PARA COMEÇAR";
-  var HINT_EMPTY = "Nenhuma palavra neste filtro";
+import { LS, readPref, savePref, applyTheme } from "../prefs.js";
+import { navigate } from "../router.js";
+import { getWords, levelKeys, levelLabel } from "../words-data.js";
 
-  var el = {
-    nivel: document.getElementById("selNivel"),
-    tema: document.getElementById("selTema"),
-    seg: document.getElementById("selSegundos"),
-    cs: document.getElementById("caseToggle"),
-    dark: document.getElementById("darkToggle"),
-    btn: document.getElementById("btnToggle"),
-    iconPlay: document.getElementById("iconPlay"),
-    iconStop: document.getElementById("iconStop"),
-    area: document.getElementById("palavraArea"),
-    hint: document.getElementById("hint"),
-    hintText: document.getElementById("hintText"),
-    wrap: document.getElementById("wordWrap"),
-    word: document.getElementById("word"),
-    counter: document.getElementById("counter"),
-    fs: document.getElementById("btnFs"),
-    iconMax: document.getElementById("iconMax"),
-    iconMin: document.getElementById("iconMin")
-  };
+var ALL = "*";
+var FADE_MS = 160;
+var MAX_PX = 180;
+var HINT_DEFAULT = "PRESSIONE PLAY PARA COMEÇAR";
+var HINT_EMPTY = "Nenhuma palavra neste filtro";
+
+var ICONS = {
+  back: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>',
+  play: '<polygon points="6 3 20 12 6 21 6 3"/>',
+  stop: '<rect x="4" y="4" width="16" height="16" rx="2"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  moon: '<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+  fsMax: '<path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/><path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>',
+  fsMin: '<path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/><path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/>'
+};
+// fsMin corrigido abaixo no HTML (path idêntico ao original)
+
+var HTML =
+  '<header class="menu">' +
+    '<button class="btn-back" id="tlBack" type="button" aria-label="Voltar para a tela inicial">' + ICONS.back + '</button>' +
+
+    '<div class="ctrl">' +
+      '<label class="ctrl-label" for="tlNivel">NÍVEL</label>' +
+      '<select id="tlNivel"></select>' +
+    '</div>' +
+
+    '<div class="ctrl">' +
+      '<label class="ctrl-label" for="tlTema">TEMA</label>' +
+      '<select id="tlTema"></select>' +
+    '</div>' +
+
+    '<div class="ctrl">' +
+      '<label class="ctrl-label" for="tlSegundos">SEGUNDOS</label>' +
+      '<select id="tlSegundos"></select>' +
+    '</div>' +
+
+    '<div class="ctrl ctrl-switch">' +
+      '<span class="switch-label">MINÚSCULO</span>' +
+      '<label class="switch">' +
+        '<input type="checkbox" id="tlCase">' +
+        '<span class="switch-track"><span class="switch-thumb"></span></span>' +
+      '</label>' +
+      '<span class="switch-label">MAIÚSCULO</span>' +
+    '</div>' +
+
+    '<div class="ctrl ctrl-switch">' +
+      '<svg class="switch-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS.sun + '</svg>' +
+      '<label class="switch">' +
+        '<input type="checkbox" id="tlDark" aria-label="Modo escuro">' +
+        '<span class="switch-track"><span class="switch-thumb"></span></span>' +
+      '</label>' +
+      '<svg class="switch-glyph" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS.moon + '</svg>' +
+    '</div>' +
+
+    '<button class="btn-play" id="tlToggle" type="button" aria-label="Iniciar">' +
+      '<svg id="tlIconPlay" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' + ICONS.play + '</svg>' +
+      '<svg id="tlIconStop" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" hidden>' + ICONS.stop + '</svg>' +
+    '</button>' +
+  '</header>' +
+
+  '<main class="palavra-area">' +
+    '<div class="hint" id="tlHint">' +
+      '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">' + ICONS.play + '</svg>' +
+      '<span id="tlHintText">' + HINT_DEFAULT + '</span>' +
+    '</div>' +
+
+    '<div class="word-wrap" id="tlWordWrap">' +
+      '<span class="word" id="tlWord"></span>' +
+    '</div>' +
+
+    '<div class="counter" id="tlCounter" aria-hidden="true"></div>' +
+
+    '<button class="btn-fs" id="tlFs" type="button" aria-label="Tela cheia">' +
+      '<svg id="tlIconMax" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + ICONS.fsMax + '</svg>' +
+      '<svg id="tlIconMin" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" hidden>' + ICONS.fsMin + '</svg>' +
+    '</button>' +
+  '</main>';
+
+export function createTreinoLivre() {
+  // `el` é preenchido na seção "Montagem" abaixo, quando o container já existe.
+  var el;
 
   var state = { running: false, order: [], idx: 0, last: null };
   var timerWord = null;
   var timerFade = null;
+  var destroyed = false;
   var mctx = document.createElement("canvas").getContext("2d");
 
   /* ---------- Setup ---------- */
-
-  function levelKeys() {
-    return Object.keys(WORDS).sort(function (a, b) {
-      return a.localeCompare(b, undefined, { numeric: true });
-    });
-  }
-
-  function levelLabel(key) {
-    var m = key.match(/(\d+)\s*$/);
-    return m ? "Nível " + m[1] : key;
-  }
 
   function themeKeys() {
     if (el.nivel.value === ALL) {
       var union = [];
       levelKeys().forEach(function (k) {
-        Object.keys(WORDS[k] || {}).forEach(function (t) {
+        Object.keys(getWords()[k] || {}).forEach(function (t) {
           if (union.indexOf(t) === -1) union.push(t);
         });
       });
       return union;
     }
-    return Object.keys(WORDS[el.nivel.value] || {});
+    return Object.keys(getWords()[el.nivel.value] || {});
   }
 
   function themeLabel(key) {
@@ -110,9 +160,8 @@
     var tema = readPref(LS.tema);
     var seg = readPref(LS.seg);
     var cs = readPref(LS.cs);
-    var theme = readPref(LS.theme);
 
-    if (nivel === ALL || WORDS[nivel]) el.nivel.value = nivel;
+    if (nivel === ALL || getWords()[nivel]) el.nivel.value = nivel;
     else el.nivel.value = levelKeys()[0];
 
     populateTemas(tema);
@@ -121,15 +170,7 @@
     el.seg.value = (segNum >= 1 && segNum <= 120) ? String(segNum) : "3";
 
     el.cs.checked = cs === "1";
-    el.dark.checked = theme === "1";
-  }
-
-  function readPref(key) {
-    try { return localStorage.getItem(key); } catch (e) { return null; }
-  }
-
-  function savePref(key, value) {
-    try { localStorage.setItem(key, value); } catch (e) { /* modo privado */ }
+    el.dark.checked = readPref(LS.theme) === "1";
   }
 
   /* ---------- Estado da UI ---------- */
@@ -146,7 +187,7 @@
     var levels = (nv === ALL) ? levelKeys() : [nv];
 
     levels.forEach(function (k) {
-      var lvl = WORDS[k];
+      var lvl = getWords()[k];
       if (!lvl) return;
       if (t === ALL) {
         Object.keys(lvl).forEach(function (tk) { out = out.concat(lvl[tk]); });
@@ -184,9 +225,8 @@
     fit();
   }
 
-  function applyTheme() {
-    document.documentElement.setAttribute("data-theme", el.dark.checked ? "dark" : "light");
-    savePref(LS.theme, el.dark.checked ? "1" : "0");
+  function onDarkChange() {
+    applyTheme(el.dark.checked);
   }
 
   /* ---------- Ajuste de tamanho da palavra ---------- */
@@ -258,7 +298,7 @@
   }
 
   function tick() {
-    if (!state.running) return;
+    if (!state.running || destroyed) return;
     state.idx++;
     if (state.idx >= state.order.length) {
       state.order = shuffled(currentList());
@@ -388,29 +428,7 @@
 
   /* ---------- Eventos ---------- */
 
-  el.btn.addEventListener("click", toggle);
-  el.fs.addEventListener("click", toggleFs);
-
-  el.nivel.addEventListener("change", function () {
-    populateTemas(ALL); // tema pode não existir no nível novo
-    savePref(LS.nivel, el.nivel.value);
-    savePref(LS.tema, ALL);
-    onFilterChange();
-  });
-
-  el.tema.addEventListener("change", function () {
-    savePref(LS.tema, el.tema.value);
-    onFilterChange();
-  });
-
-  el.seg.addEventListener("change", function () {
-    savePref(LS.seg, el.seg.value);
-  });
-
-  el.cs.addEventListener("change", applyCase);
-  el.dark.addEventListener("change", applyTheme);
-
-  document.addEventListener("keydown", function (e) {
+  function onKeydown(e) {
     if (e.key === "Escape" && inFallback()) {
       exitFallback();
       return;
@@ -423,21 +441,96 @@
     }
     e.preventDefault();
     toggle();
-  });
+  }
 
-  document.addEventListener("fullscreenchange", onFsChange);
-  document.addEventListener("webkitfullscreenchange", onFsChange);
-  window.addEventListener("resize", fit);
+  function bind() {
+    el.btn.addEventListener("click", toggle);
+    el.fs.addEventListener("click", toggleFs);
+    el.back.addEventListener("click", goHome);
 
-  /* ---------- Início ---------- */
+    el.nivel.addEventListener("change", function () {
+      populateTemas(ALL); // tema pode não existir no nível novo
+      savePref(LS.nivel, el.nivel.value);
+      savePref(LS.tema, ALL);
+      onFilterChange();
+    });
+
+    el.tema.addEventListener("change", function () {
+      savePref(LS.tema, el.tema.value);
+      onFilterChange();
+    });
+
+    el.seg.addEventListener("change", function () {
+      savePref(LS.seg, el.seg.value);
+    });
+
+    el.cs.addEventListener("change", applyCase);
+    el.dark.addEventListener("change", onDarkChange);
+
+    document.addEventListener("keydown", onKeydown);
+    document.addEventListener("fullscreenchange", onFsChange);
+    document.addEventListener("webkitfullscreenchange", onFsChange);
+    window.addEventListener("resize", fit);
+  }
+
+  function goHome() {
+    navigate("/");
+  }
+
+  /* ---------- Montagem ---------- */
+
+  var container = document.createElement("div");
+  container.className = "screen";
+  container.innerHTML = HTML;
+
+  // Substitui as referências pelos elementos recém-criados (ids tl*)
+  el = {
+    back: container.querySelector("#tlBack"),
+    nivel: container.querySelector("#tlNivel"),
+    tema: container.querySelector("#tlTema"),
+    seg: container.querySelector("#tlSegundos"),
+    cs: container.querySelector("#tlCase"),
+    dark: container.querySelector("#tlDark"),
+    btn: container.querySelector("#tlToggle"),
+    iconPlay: container.querySelector("#tlIconPlay"),
+    iconStop: container.querySelector("#tlIconStop"),
+    area: container.querySelector(".palavra-area"),
+    hint: container.querySelector("#tlHint"),
+    hintText: container.querySelector("#tlHintText"),
+    wrap: container.querySelector("#tlWordWrap"),
+    word: container.querySelector("#tlWord"),
+    counter: container.querySelector("#tlCounter"),
+    fs: container.querySelector("#tlFs"),
+    iconMax: container.querySelector("#tlIconMax"),
+    iconMin: container.querySelector("#tlIconMin")
+  };
 
   populate();
   loadPrefs();
   applyCase();
-  applyTheme();
+  applyTheme(el.dark.checked);
   syncUI();
+  bind();
 
   if (document.fonts && document.fonts.ready) {
-    document.fonts.ready.then(fit);
+    document.fonts.ready.then(function () { if (!destroyed) fit(); });
   }
-})();
+
+  return {
+    el: container,
+    destroy: function () {
+      destroyed = true;
+      clearTimeout(timerWord);
+      clearTimeout(timerFade);
+      document.removeEventListener("keydown", onKeydown);
+      document.removeEventListener("fullscreenchange", onFsChange);
+      document.removeEventListener("webkitfullscreenchange", onFsChange);
+      window.removeEventListener("resize", fit);
+      if (inFallback()) document.documentElement.classList.remove("fs-fallback");
+      if (fsElement() && el.area.contains(document.activeElement)) {
+        // área com foco em tela cheia nativa: tenta sair
+        try { nativeExit(); } catch (e) { /* noop */ }
+      }
+    }
+  };
+}
