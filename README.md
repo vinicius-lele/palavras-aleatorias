@@ -133,6 +133,13 @@ nivel6: {
   site; o progresso fica em cache e o script retoma de onde parou).
   Para exportar as listas já silabificadas como material de apoio:
   `node scripts/gerar-separadas.js` (gera `words-separadas.js` sob demanda).
+- **Rimas**: a Caça-Rimas compara `rhymeKey()` (`syllables.js`) — rima
+  VERDADEIRA: igualdade a partir da vogal TÔNICA ("panela"/"canela" = "ela";
+  "esmola"/"janela" não rimam; assonância como "casa"/"mesa" não conta).
+  A tônica sai da ortografia: acento escrito > terminação da palavra.
+  Palavras que fogem à regra entram em `STRESS_EXCEPTIONS` (topo de
+  `syllables.js`): `"palavra": índice da sílaba tônica`. O relatório de
+  duplas para conferência sai do teste em `Temp/opencode/teste-rimas.mjs`.
 - **Emojis**: `images.js` mapeia palavra → emoji para a Palavra e Imagem e
   para os alvos da Caça-Rimas. Para usar uma palavra nova, adicione uma
   linha `"palavra": "emoji",`. Níveis com menos de 4 palavras mapeadas

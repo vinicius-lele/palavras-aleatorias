@@ -1,8 +1,11 @@
 // Caça-Rimas — a palavra-alvo aparece com emoji e a criança escolhe, entre
-// 4 palavras, a que rima com ela (Q17). Distratores: palavras reais do mesmo
-// nível que NÃO rimam com o alvo (filtradas pela chave de rima), priorizando
-// o mesmo tema (Q19a). Se o nível não tiver nenhuma rima para o alvo, a
-// busca cai para todos os níveis antes de desistir do alvo.
+// 4 palavras, a que rima com ela (Q17). Rima VERDADEIRA: as duas chaves
+// (rhymeKey) são iguais a partir da vogal tônica — "panela"/"canela" rimam,
+// "esmola"/"janela" não; assonância não vale (ver syllables.js). Distratores:
+// palavras reais do mesmo nível que NÃO rimam com o alvo (filtradas pela
+// chave de rima), priorizando o mesmo tema (Q19a). Se o nível não tiver
+// nenhuma rima para o alvo, a busca cai para todos os níveis antes de
+// desistir do alvo.
 
 import { createQuiz } from "../quiz.js";
 import { IMAGES } from "../images.js";
@@ -49,9 +52,11 @@ export function createRimas() {
         round.poolNivelRimas = nivel;
       }
 
-      // Tenta até 5 alvos: some não têm nenhuma rima nas listas.
-      for (var attempt = 0; attempt < 5; attempt++) {
-        if (round.poolRimas.length === 0) round.poolRimas = withImg.slice();
+      // Varre o pool todo até achar um alvo com rima: com a chave de rima
+      // verdadeira (vogal tônica), alguns alvos não têm dupla em lugar
+      // nenhum — aceitar só os 5 primeiros sorteados acabaria a rodada cedo.
+      if (round.poolRimas.length === 0) round.poolRimas = withImg.slice();
+      while (round.poolRimas.length > 0) {
         var target = round.poolRimas.splice(
           Math.floor(Math.random() * round.poolRimas.length), 1)[0];
         var key = rhymeKey(target.word);

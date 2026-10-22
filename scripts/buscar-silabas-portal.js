@@ -12,8 +12,9 @@
 // Conforme o robots.txt (Crawl-delay: 3), há 3,5 s entre requisições.
 // O progresso fica em cache (os.tmpdir()) e o script retoma de onde parou.
 //
-// Palavras compostas com hífen ("joão-de-barro") que o dicionário não
-// registra são resolvidas pela soma das partes.
+// Palavras compostas com hífen ("joão-de-barro") são resolvidas pela soma
+// das partes, nunca pela célula do Portal: alguns compostos vêm com células
+// quebradas ("bem-te-vi" sem divisão, "guarda-chuva" como "guar·da-chu·va").
 
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { tmpdir } from "node:os";
@@ -146,25 +147,27 @@ async function consultar(palavra) {
   return null;
 }
 
-// Resolve uma palavra: tenta o lema completo; se composto com hífen não
-// existir, soma as partes.
+// Resolve uma palavra. Compostos com hífen são SEMPRE resolvidos pela soma
+// das partes: o Portal registra alguns compostos com células quebradas
+// ("bem-te-vi" sem divisão, "guarda-chuva" como "guar·da-chu·va") — a soma
+// das partes, cada uma consultada normalmente, é confiável.
 async function resolver(palavra) {
-  var r = await consultar(palavra);
-  if (r) return r;
-  if (palavra.indexOf("-") === -1) return null;
-  var partes = palavra.split("-");
-  var syls = [];
-  for (var i = 0; i < partes.length; i++) {
-    var p = partes[i];
-    if (!(p in cache)) {
-      cache[p] = await consultar(p);
-      salvarCache();
-      await sleep(DELAY_MS);
+  if (palavra.indexOf("-") !== -1) {
+    var partes = palavra.split("-");
+    var syls = [];
+    for (var i = 0; i < partes.length; i++) {
+      var p = partes[i];
+      if (!(p in cache)) {
+        cache[p] = await consultar(p);
+        salvarCache();
+        await sleep(DELAY_MS);
+      }
+      if (!cache[p]) return null;
+      syls = syls.concat(cache[p]);
     }
-    if (!cache[p]) return null;
-    syls = syls.concat(cache[p]);
+    return syls;
   }
-  return syls;
+  return consultar(palavra);
 }
 
 async function main() {
@@ -185,9 +188,28 @@ async function main() {
 
   if (LIMITE > 0) { console.log("Lote de teste concluído."); return; }
 
-  // Gera silabas-portal.js apenas com as palavras encontradas.
-  var encontradas = alvo.filter(function (w) { return cache[w]; });
-  var ausentes = alvo.filter(function (w) { return !cache[w]; });
+  // Compostos com hífen: re-resolve SEMPRE pela soma das partes (versões
+  // antigas do script guardaram células quebradas do Portal no cache).
+  var compostos = alvo.filter(function (w) { return w.indexOf("-") !== -1; });
+  for (var j = 0; j < compostos.length; j++) {
+    cache[compostos[j]] = await resolver(compostos[j]);
+    salvarCache();
+    await sleep(DELAY_MS);
+  }
+
+  // Gera silabas-portal.js apenas com as palavras encontradas. Qualquer
+  // divisão que ainda trenche hífen dentro de uma sílaba é defeito de
+  // célula do Portal — fica de fora e o syllables.js resolve pelo algoritmo.
+  var comHifen = alvo.filter(function (w) {
+    return cache[w] && cache[w].some(function (s) { return s.indexOf("-") !== -1; });
+  });
+  if (comHifen.length) {
+    console.log("AVISO: divisoes com hifen (ignoradas): " + comHifen.join(", "));
+  }
+  var encontradas = alvo.filter(function (w) {
+    return cache[w] && !cache[w].some(function (s) { return s.indexOf("-") !== -1; });
+  });
+  var ausentes = alvo.filter(function (w) { return encontradas.indexOf(w) === -1; });
   var linhas = encontradas.sort().map(function (w) {
     return "  " + JSON.stringify(w) + ": " + JSON.stringify(cache[w]) + ",";
   });

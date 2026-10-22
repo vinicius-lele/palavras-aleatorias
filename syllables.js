@@ -49,9 +49,11 @@ function hasVowel(s) {
 }
 
 // Divide o word em tokens {t:"C"|"V", s:letra}. Dígrafos ch/lh/nh contam
-// como UMA consoante. O "u" de "qu"/"gu" antes de vogal forte é semivogal
-// (glide) e também conta como consoante: "qua-ti", "gua-rá", "san-gue",
-// "fo-guei-ra". Acentos são preservados (marcam tônica/ditongo nasal).
+// como UMA consoante. O "u" de "qu" nunca tem som ("qui-lo", "quen-to",
+// "pe-ri-qui-to" com í) e conta como consoante; o "u" de "gu" só é vogal
+// fora do dígrafo forte ("guer-ra", "gua-rá" têm /w/ no onset; "gui-a" e
+// "lin-guí-ça" têm no núcleo). Acentos são preservados (marcam tônica/
+// ditongo nasal).
 function tokenize(word) {
   var w = word.toLowerCase().normalize("NFC");
   var toks = [];
@@ -66,7 +68,14 @@ function tokenize(word) {
     }
     var prev = i > 0 ? w[i - 1] : "";
     var next = i + 1 < w.length ? w[i + 1] : "";
-    if (ch === "u" && (prev === "q" || prev === "g") && STRONG.indexOf(next) !== -1) {
+    // "qu": o u é mudo sempre ("qui-lo", "pe-ri-qui-to") — glide fixo.
+    if (ch === "u" && prev === "q") {
+      toks.push({ t: "C", s: "u" });
+      continue;
+    }
+    // "gu": u é glide só diante de vogal forte ("guer-ra", "gua-rá");
+    // diante de i/e/í ele é vogal mesmo ("gui-a", "lin-guí-ça").
+    if (ch === "u" && prev === "g" && STRONG.indexOf(next) !== -1) {
       toks.push({ t: "C", s: "u" }); // glide: entra no onset, nunca vira núcleo
       continue;
     }
@@ -196,33 +205,91 @@ export function countSyllables(word) {
   return syllables(word).length;
 }
 
-var RHYME_VOWELS = "aeiouáéíóúâêôàãõü";
+// ---------- Rima ----------
+//
+// Rima VERDADEIRA: duas palavras rimam quando são iguais a partir da
+// vogal TÔNICA (inclusive) até o fim:
+//   panela / canela -> "ela" / "ela"   (rimam)
+//   esmola / escola -> "ola" / "ola"   (rimam)
+//   esmola / janela -> "ola" / "ela"   (NÃO rimam: vogais tônicas diferentes)
+// Assonância parcial NÃO conta como rima: "casa"/"mesa" e "pai"/"lei"
+// terminam parecido, mas as vogais tônicas diferem.
+//
+// A vogal tônica sai da ORTOGRAFIA (sem dicionário):
+//   1. vogal acentuada escrita (á é í ó ú â ê ô) => a tônica é a sílaba
+//      acentuada ("sábado", "história", "saúde", "avó");
+//   2. sem acento, a TERMINAÇÃO decide: paróxina (tônica na penúltima
+//      sílaba) se terminar em vogal a/e/o simples, -m ou -s/-ns após
+//      vogal átona ("janela", "jardim", "flores", "casas"); oxítona
+//      (tônica na última) se terminar em i/u, r/z/x/l ou ditongo
+//      ("menu", "amor", "papel", "mãe", "pão", "dois").
+// O que a regra não alcança (curadoria) entra em STRESS_EXCEPTIONS.
+// A chave também serve de cache — a Caça-Rimas compara muitas palavras.
 
-// Chave de rima: o trecho sonoro a partir da vogal tônica. Heurística
-// prática do português (sem dicionário):
-//   - termina em CONSOANTE (oxítona: "amor", "farol", "sal"): inclui a
-//     vogal tônica -> "or", "ol", "al" (sal NÃO rima com sol);
-//   - termina em VOGAL (paroxítona: "casa", "coração", "pai"): compara a
-//     partir de DEPOIS da vogal tônica -> "sa", "o", "i". Assim "casa" rima
-//     com "mesa" e "pai" com "lei" (assonância, como na BNCC EF12LP07),
-//     mas "cabo" não rima com "copo".
-// Duas palavras rimam quando as chaves são iguais.
-export function rhymeKey(word) {
-  var w = word.toLowerCase().normalize("NFC");
-  if (w.indexOf("-") !== -1) w = w.split("-").pop(); // "bem-te-vi" -> "vi"
+var STRESS_EXCEPTIONS = {}; // "palavra": índice da sílaba tônica
+var RHYME_CACHE = {};       // palavra em minúsculas -> chave de rima
 
-  var idx = [];
-  for (var i = 0; i < w.length; i++) {
-    if (RHYME_VOWELS.indexOf(w[i]) !== -1) idx.push(i);
+// true => paróxina (tônica na penúltima sílaba); false => oxítona.
+function isParoxytone(w) {
+  var end = w.charAt(w.length - 1);
+  var vb = w.length >= 2 ? w.charAt(w.length - 2) : "";
+  var vb2 = w.length >= 3 ? w.charAt(w.length - 3) : "";
+
+  if (end === "m") return true;                        // jardim, fazem
+  if (end === "s") {
+    if (vb === "n") return true;                       // jardins (termin. -ns)
+    if ("iuíúãõ".indexOf(vb) !== -1) return false;     // dois, iris, irmãs
+    if ((vb2 === "ã" || vb2 === "õ") && "aeo".indexOf(vb) !== -1) return false; // mães, pões,ões
+    return "aeo".indexOf(vb) !== -1;                   // casas, flores, rapazes
   }
-  if (idx.length === 0) return w;
+  if ("aeo".indexOf(end) !== -1) {
+    if (end === "o" && vb === "ã") return false;       // mão, pão, verão
+    if (end === "e" && (vb === "ã" || vb === "õ")) return false; // mãe
+    return true;                                       // casa, janela, poema
+  }
+  return false;                                        // i/u, r/z/x/l, ã/õ, outros
+}
 
-  var endsWithVowel = RHYME_VOWELS.indexOf(w[w.length - 1]) !== -1;
-  var tonic;
-  if (endsWithVowel) tonic = idx.length >= 2 ? idx[idx.length - 2] : idx[0];
-  else tonic = idx[idx.length - 1];
+// Índice da sílaba tônica: curadoria > acento escrito > terminação.
+function tonicIndex(word, syls) {
+  if (syls.length === 1) return 0;
+  var w = word.toLowerCase().normalize("NFC").replace(/-/g, "");
+  if (Object.prototype.hasOwnProperty.call(STRESS_EXCEPTIONS, w)) {
+    return STRESS_EXCEPTIONS[w];
+  }
+  for (var i = 0; i < syls.length; i++) {
+    if (/[áéíóúâêô]/.test(syls[i])) return i;
+  }
+  return isParoxytone(w) ? syls.length - 2 : syls.length - 1;
+}
 
-  return w.slice(endsWithVowel ? tonic + 1 : tonic);
+// Chave de rima: da vogal tônica (inclusive) até o fim da palavra. O
+// onset da sílaba tônica sai ("pla" -> "a"): rima é vogal em diante.
+export function rhymeKey(word) {
+  var cacheKey = word.toLowerCase();
+  if (RHYME_CACHE[cacheKey]) return RHYME_CACHE[cacheKey];
+
+  var syls = syllables(word);
+  var si = tonicIndex(word, syls);
+
+  // Dígrafos (ch/lh/nh) e glides (qu/gu) já contam como consoante no
+  // tokenize, então somem junto com o onset ("cha" -> "a").
+  var toks = tokenize(syls[si]);
+  var j = 0;
+  while (j < toks.length && toks[j].t === "C") j++;
+  var key = "";
+  for (; j < toks.length; j++) key += toks[j].s;
+  key += syls.slice(si + 1).join("");
+
+  // Acento marca tônica, não som: agudo/circunflexo/grave saem para a
+  // mesma vogal sonora casar igual ("saúde" ~ "virtude" -> "ude"). O til
+  // fica: ã/õ são som diferente de a/o ("pão" NÃO rima com "pau").
+  key = key.normalize("NFD")
+            .replace(/[\u0300\u0301\u0302\u0308]/g, "")
+            .normalize("NFC");
+
+  RHYME_CACHE[cacheKey] = key;
+  return key;
 }
 
 export function rhyme(a, b) {
