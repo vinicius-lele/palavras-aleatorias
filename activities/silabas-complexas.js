@@ -4,7 +4,7 @@
 
 import { createQuiz } from "../quiz.js";
 import { syllables, wrongDivisions } from "../syllables.js";
-import { wordsForLevel } from "../words-data.js";
+import { wordsForLevel, isProperNoun, initialUpper } from "../words-data.js";
 
 function pickUnused(pool, round) {
   if (round.pool.length === 0) round.pool = pool.slice();
@@ -30,23 +30,31 @@ export function createSilabasComplexas() {
       var syls = syllables(word);
       var correct = syls.join("-");
 
+      // Regra de exibição de nomes próprios (words-data.js): a inicial
+      // maiúscula vale para TODAS as opções — certa e distratoras — para
+      // a caixa não denunciar a resposta. Aplica antes do dedupe também,
+      // senão "João" (palavra inteira) e "joão" virariam opções iguais.
+      var show = isProperNoun(word) ? initialUpper : function (s) { return s; };
+      var correctShown = show(correct);
+
       // Distratores: divisões plausíveis erradas; se faltarem, a palavra
       // inteira sem dividir é um erro infantil comum e plausível.
       var cands = wrongDivisions(syls).filter(function (c) { return c !== correct; });
       if (cands.length < 2) cands.push(word);
-      cands = cands.filter(function (c, i, arr) { return arr.indexOf(c) === i; });
+      cands = cands.map(show).filter(function (c, i, arr) { return arr.indexOf(c) === i; });
+      cands = cands.filter(function (c) { return c !== correctShown; });
 
       var dists = [];
       while (dists.length < 2 && cands.length > 0) {
         var d = cands.splice(Math.floor(Math.random() * cands.length), 1)[0];
-        if (d !== correct) dists.push(d);
+        if (d !== correctShown) dists.push(d);
       }
 
       return {
         prompt: '<span class="enunciado-palavra">' + word + "</span>" +
                 '<span class="enunciado-dica">Onde a palavra se divide?</span>',
         options: [
-          { html: correct, correct: true }
+          { html: correctShown, correct: true }
         ].concat(dists.map(function (d) {
           return { html: d, correct: false };
         }))

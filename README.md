@@ -100,8 +100,13 @@ Regras das listas:
 - Cada palavra aparece **uma única vez**: sem repetição dentro do nível nem
   entre níveis.
 - Cada palavra fica em **um só tema** (casos ambíguos vão no tema mais óbvio).
-- Nomes próprios e cidades ficam com maiúscula inicial; o switch de caixa
-  controla como aparecem na tela.
+- Nomes próprios e cidades ficam com maiúscula inicial; **essa inicial é
+  obrigatória em toda a plataforma**. A regra de exibição (em `words-data.js`)
+  usa a caixa do `words.js` como fonte da verdade: nome próprio aparece com
+  a primeira letra maiúscula em qualquer circunstância — inclusive no modo
+  MINÚSCULO do Treino Livre e nas strings derivadas de sílabas (blocos de
+  "Contar Sílabas" e divisões "Jo-ão" de "Sílabas em Blocos"). Basta gravar
+  o nome com maiúscula; nunca é preciso ajustar a tela.
 
 Para criar um nível novo, adicione uma chave — ele aparece sozinho no select:
 

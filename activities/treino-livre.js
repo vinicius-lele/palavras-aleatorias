@@ -4,7 +4,7 @@
 
 import { LS, readPref, savePref, applyTheme } from "../prefs.js";
 import { navigate } from "../router.js";
-import { getWords, levelKeys, levelLabel } from "../words-data.js";
+import { getWords, levelKeys, levelLabel, displayWord } from "../words-data.js";
 
 var ALL = "*";
 var FADE_MS = 160;
@@ -219,9 +219,10 @@ export function createTreinoLivre() {
   }
 
   function applyCase() {
-    var up = el.cs.checked;
-    el.word.style.textTransform = up ? "uppercase" : "lowercase";
-    savePref(LS.cs, up ? "1" : "0");
+    savePref(LS.cs, el.cs.checked ? "1" : "0");
+    // A caixa é aplicada na exibição (displayWord em words-data.js):
+    // no modo MINÚSCULO, nomes próprios mantêm a inicial maiúscula.
+    if (state.last !== null) el.word.textContent = displayWord(state.last, el.cs.checked);
     fit();
   }
 
@@ -237,10 +238,11 @@ export function createTreinoLivre() {
 
     var avail = el.wrap.clientWidth - 4;
     var maxPx = Math.min(MAX_PX, Math.floor(el.area.clientHeight * 0.6) || 120);
-    var mtext = el.cs.checked ? text.toUpperCase() : text.toLowerCase();
 
+    // O textContent já é o texto com a caixa final (displayWord), então
+    // mede diretamente — sem rebaixar/altear de novo.
     mctx.font = '700 ' + maxPx + 'px "Atkinson Hyperlegible", sans-serif';
-    var w = mctx.measureText(mtext).width;
+    var w = mctx.measureText(text).width;
 
     var size = maxPx;
     if (w > 0 && w > avail) {
@@ -276,9 +278,9 @@ export function createTreinoLivre() {
     clearTimeout(timerFade);
 
     var apply = function () {
-      el.word.textContent = text;
+      el.word.textContent = displayWord(text, el.cs.checked);
       el.counter.textContent = n + "/" + state.order.length;
-      state.last = text;
+      state.last = text; // guarda o texto PURO; a caixa é aplicada na exibição
       fit();
       el.word.style.opacity = "1";
     };

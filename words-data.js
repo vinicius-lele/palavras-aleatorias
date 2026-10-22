@@ -48,3 +48,31 @@ export function entriesForLevel(level) {
   });
   return out;
 }
+
+// ---------- Nomes próprios e caixa de exibição ----------
+//
+// Convenção dos dados: nomes próprios (pessoas) e cidades são gravados no
+// words.js com a inicial MAIÚSCULA ("Maria", "João", "Maringá"); palavras
+// comuns, em minúsculas. Essa inicial é a fonte da verdade da regra de
+// exibição: nome próprio aparece com a primeira letra maiúscula em
+// QUALQUER circunstância — inclusive no modo MINÚSCULO do Treino Livre e
+// em strings derivadas de sílabas (blocos coloridos, divisões "Jo-ão").
+// Para adicionar um nome novo: basta gravá-lo com maiúscula no words.js.
+
+export function isProperNoun(word) {
+  var f = word.charAt(0);
+  return f !== f.toLowerCase() && f === f.toUpperCase();
+}
+
+// Inicial maiúscula numa string derivada da palavra ("jo" -> "Jo").
+export function initialUpper(s) {
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+// Regra completa de caixa de uma palavra na tela: com `upper`, tudo em
+// caixa alta (toggle MAIÚSCULO); sem `upper`, minúsculas — exceto nomes
+// próprios, que mantêm a inicial ("Maria", nunca "maria").
+export function displayWord(word, upper) {
+  if (upper) return word.toUpperCase();
+  return isProperNoun(word) ? initialUpper(word.toLowerCase()) : word.toLowerCase();
+}

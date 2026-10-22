@@ -4,7 +4,7 @@
 
 import { createQuiz } from "../quiz.js";
 import { syllables } from "../syllables.js";
-import { wordsForLevel } from "../words-data.js";
+import { wordsForLevel, isProperNoun, initialUpper } from "../words-data.js";
 
 function pickUnused(pool, round) {
   if (round.pool.length === 0) round.pool = pool.slice();
@@ -33,9 +33,14 @@ function numberOptions(correct) {
 }
 
 // Blocos coloridos por sílaba: <span class="bloco">bor</span>...
-function blocksHTML(syls) {
+// Em nomes próprios, o primeiro bloco mantém a inicial maiúscula
+// (syllables() normaliza para minúsculas — a caixa é só de exibição).
+function blocksHTML(syls, word) {
+  var shown = syls.map(function (s, i) {
+    return (i === 0 && isProperNoun(word)) ? initialUpper(s) : s;
+  });
   return '<div class="blocos" aria-hidden="true">' +
-    syls.map(function (s) {
+    shown.map(function (s) {
       return '<span class="bloco">' + s + "</span>";
     }).join("") +
     "</div>";
@@ -63,7 +68,7 @@ export function createContarSilabas() {
         prompt: '<span class="enunciado-palavra">' + word + "</span>" +
                 '<span class="enunciado-dica">Quantas sílabas tem?</span>',
         // Blocos só depois do clique (Q21a); tempo maior para absorver.
-        feedbackHTML: blocksHTML(syls),
+        feedbackHTML: blocksHTML(syls, word),
         feedbackMs: 1400,
         options: [{ html: String(correct), correct: true }].concat(
           dists.map(function (d) { return { html: String(d), correct: false }; })
