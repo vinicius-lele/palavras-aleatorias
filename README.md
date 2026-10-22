@@ -17,6 +17,9 @@ A tela inicial mostra os cards das atividades; cada atividade abre por rota
 | `home.js`              | Tela inicial com os cards                                      |
 | `prefs.js`             | Preferências (localStorage)                                    |
 | `words-data.js`        | Acesso central às listas (`WORDS`)                             |
+| `silabas-portal.js`    | ⚠️ Gerado: divisões silábicas oficiais (Portal da Língua)      |
+| `scripts/buscar-silabas-portal.js` | Consulta o Portal e gera `silabas-portal.js`        |
+| `scripts/gerar-separadas.js` | Exporta listas já silabificadas (material de apoio)   |
 | `levels.js`            | Descritores dos níveis de leitura                              |
 | `syllables.js`         | Silabificador + gerador de divisões erradas + rima             |
 | `quiz.js`              | Fluxo comum das atividades de questão (10 questões/rodada)     |
@@ -111,10 +114,20 @@ nivel6: {
 
 ## Manutenção das atividades
 
-- **Silabificação**: o algoritmo em `syllables.js` cobre as regras práticas
-  (ditongos, encontros com l/r, dígrafos, hífens). Se uma palavra aparecer
-  dividida errada nas atividades de sílabas, adicione-a ao mapa `EXCEPTIONS`
-  no topo do arquivo: `"saída": ["sa", "í", "da"]`.
+- **Silabificação**: `syllables()` resolve em três camadas — mapa
+  `EXCEPTIONS` (decisões pedagógicas pontuais), depois `SILABAS_PORTAL`
+  (divisões oficiais do Portal da Língua Portuguesa, gerado por
+  `scripts/buscar-silabas-portal.js`) e por fim o algoritmo com as regras
+  práticas (ditongos, encontros com l/r, dígrafos, hífens). Se uma palavra
+  nova aparecer dividida errada, primeiro rode o buscador do Portal; se ela
+  não estiver no dicionário (nomes próprios, neologismos), adicione-a ao
+  mapa `EXCEPTIONS` no topo de `syllables.js`: `"saída": ["sa", "í", "da"]`.
+- **`silabas-portal.js`** é um arquivo **gerado** (não edite à mão). Depois
+  de adicionar ou mudar palavras no `words.js`, regenere com:
+  `node scripts/buscar-silabas-portal.js` (respeita o crawl-delay de 3 s do
+  site; o progresso fica em cache e o script retoma de onde parou).
+  Para exportar as listas já silabificadas como material de apoio:
+  `node scripts/gerar-separadas.js` (gera `words-separadas.js` sob demanda).
 - **Emojis**: `images.js` mapeia palavra → emoji para a Palavra e Imagem e
   para os alvos da Caça-Rimas. Para usar uma palavra nova, adicione uma
   linha `"palavra": "emoji",`. Níveis com menos de 4 palavras mapeadas

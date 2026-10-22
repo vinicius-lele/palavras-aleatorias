@@ -1,0 +1,6 @@
+{
+  "name": "palavras-aleatorias",
+  "private": true,
+  "type": "module",
+  "description": "Jogo de palavras por nível/tema. O type:module só é usado pelo Node (scripts/); o navegador ignora este arquivo."
+}

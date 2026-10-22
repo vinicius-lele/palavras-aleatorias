@@ -27,6 +27,10 @@
   <!-- words.js declara o binding global WORDS (script clássico, editável à mão).
        Precisa vir antes do main.js: módulos ES são defer e rodam depois. -->
   <script src="words.js"></script>
+  <!-- silabas-portal.js é GERADO (scripts/buscar-silabas-portal.js) e declara
+       SILABAS_PORTAL: divisões silábicas oficiais do Portal da Língua Portuguesa,
+       usadas pelo syllables.js antes do algoritmo. -->
+  <script src="silabas-portal.js"></script>
   <script type="module" src="main.js"></script>
 </body>
 </html>
