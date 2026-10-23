@@ -3,20 +3,20 @@
 // ano escolar (a criança progride por nível de leitura, não por idade).
 //
 // Baseado na distribuição real das listas em words.js (validator imprime a
-// atualização — 5.295 palavras, médias 2.4 / 3.0 / 3.5 / 3.8 / 4.7 sílabas):
-//   nível 1: 46 mono, 410 di, 260 tri, 56 de 4
-//   nível 2: 314 di, 511 tri, 205 de 4, 49 de 5
-//   nível 3: 485 tri, 357 de 4, 83 de 5, 30 de 6
-//   nível 4: 336 tri, 396 de 4, 218 de 5, 57 de 6, 14 de 7
-//   nível 5: 371 de 4, 235 de 5, 160 de 6, 115 de 7, 43 de 8, 25 de 9+
+// atualização — 45.002 palavras, médias 2.0 / 3.0 / 3.9 / 4.9 / 5.9 sílabas):
+//   nível 1: 559 mono, 7839 di, 260 tri, 56 de 4
+//   nível 2: 8453 tri, 205 de 4, 49 de 5
+//   nível 3: 8298 de 4, 83 de 5, 30 de 6
+//   nível 4: 8160 de 5, 57 de 6, 14 de 7
+//   nível 5: 7598 de 6, 613 de 7, 49 de 8, 16 de 9, 4+ de 10
 // Se as listas mudarem muito, revise estes textos.
 
 export var LEVEL_NOTES = {
-  nivel1: "Palavras curtas, do dia a dia: 1 a 3 sílabas (gato, mesa, banana).",
-  nivel2: "Frases curtas: 2 a 4 sílabas com sílabas simples (cobrinha, cadeira).",
-  nivel3: "Palavras maiores: 3 a 4 sílabas com sílabas complexas (trabalho, bicicleta).",
-  nivel4: "Vocabulário amplo: 3 a 6 sílabas, ditongos e encontros consonantais (universidade, verdade).",
-  nivel5: "Palavras longas e desafiantes: 4 a 8+ sílabas, acentuação e prefixos (otorrinolaringologista, interdisciplinaridade)."
+  nivel1: "Palavras curtas, do dia a dia: 1 a 2 sílabas (gato, mesa, bola).",
+  nivel2: "Frases curtas: sílabas simples e sílabas com l/r (cobrinha, cadeira).",
+  nivel3: "Palavras maiores: 4 sílabas, encontros consonantais (trabalho, bicicleta).",
+  nivel4: "Vocabulário amplo: 5 sílabas, ditongos e acentuação (universidade, verdade).",
+  nivel5: "Palavras longas e desafiantes: 6+ sílabas, prefixos e acentuação (otorrinolaringologista, interdisciplinaridade)."
 };
 
 export function noteFor(levelKey) {

@@ -5,8 +5,10 @@ com atividades alinhadas à BNCC: sem banco de dados, sem dependências, sem bui
 A tela inicial mostra os cards das atividades; cada atividade abre por rota
 (`#/atividade/<id>`).
 
-O corpus tem **5.295 palavras** (12 temas × 5 níveis, 1 a 19 sílabas) com divisões
+O corpus tem **45.002 palavras** (níveis 1–5, 1 a 19 sílabas) com divisões
 silábicas oficiais do Portal da Língua Portuguesa (base local de 149.342 lemas).
+Os 11 temas curados (animais, cores, verbos...) vêm de seleção manual; o tema
+"outros" guarda o vocabulário geral ampliado, filtrado para conteúdo infantil.
 
 ## Arquivos
 
