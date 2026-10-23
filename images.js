@@ -137,5 +137,130 @@ export var IMAGES = {
   "rinoceronte": "🦏",
 
   // ---------- nivel5 ----------
-  "pterodátilo": "🦕"
+  "pterodátilo": "🦕",
+
+  // ---------- expansão (níveis 1 a 5, 5.295 palavras) ----------
+  // ---------- nivel1 ----------
+  // animais
+  "vaca": "🐮", "raposa": "🦊", "veado": "🦌", "zebra": "🦓", "lhama": "🦙",
+  "foca": "🦭", "tubarão": "🦈", "golfinho": "🐬", "caranguejo": "🦀", "lagosta": "🦞",
+  "camarão": "🦐", "barata": "🪳", "mosquito": "🦟", "minhoca": "🪱", "caracol": "🐌",
+  "javali": "🐗", "gorila": "🦍", "búfalo": "🐃", "escorpião": "🦂", "gafanhoto": "🦗",
+  "panda": "🐼",
+  // alimentos
+  "frango": "🍗", "salsicha": "🌭", "abóbora": "🎃", "brócolis": "🥦", "pimentão": "🫑",
+  "pimenta": "🌶️", "tomate": "🍅", "pepino": "🥒", "bala": "🍬", "rosquinha": "🍩",
+  "mingau": "🥣", "trigo": "🌾", "omelete": "🍳",
+  // cidades
+  "bonde": "🚊", "porto": "⚓", "correio": "✉️", "oficina": "🛠️",
+  // natureza
+  "noite": "🌃", "tronco": "🪵", "broto": "🌱", "planta": "🪴", "ninho": "🪺",
+  "cometa": "☄️", "neblina": "🌫️", "margarida": "🌼", "girassol": "🌻", "cacto": "🌵",
+  "outono": "🍁", "calor": "🥵", "frio": "🥶", "bambu": "🎋", "concha": "🐚",
+  "pena": "🪶", "teia": "🕸️", "cogumelo": "🍄",
+  // corpo
+  "rosto": "🙂", "braço": "💪", "polegar": "👍", "suor": "💦",
+  // objetos
+  "lenço": "🧣", "jogo": "🎲", "balde": "🪣", "torneira": "🚰", "vela": "🕯️",
+  "agulha": "🪡", "chinelo": "🩴", "boné": "🧢", "jaqueta": "🧥", "pijama": "🛌",
+  "luva": "🧤", "bolsa": "👜", "mala": "🧳", "moeda": "🪙", "cartão": "💳",
+  "balão": "🎈", "caminhão": "🚚", "trator": "🚜", "canoa": "🛶", "sabonete": "🧼",
+  "fita": "🎗️", "vassoura": "🧹", "esponja": "🧽", "lixo": "🗑️", "jornal": "📰",
+  "óculos": "👓", "sino": "🔔", "violão": "🎸",
+  // outros
+  "avô": "👴", "professor": "🧑‍🏫", "médico": "🩺", "bombeiro": "🚒", "policial": "🚔",
+  "piloto": "🧑‍✈️", "circo": "🎪", "lanche": "🍔", "banho": "🚿", "segredo": "🤫",
+  "herói": "🦸", "monstro": "👹", "fantasma": "👻", "bruxa": "🧙‍♀️", "dragão": "🐉",
+  "princesa": "👸", "tesouro": "💰", "mapa": "🗺️", "bússola": "🧭", "letra": "🔤",
+  "número": "🔢",
+
+  // ---------- nivel2 ----------
+  // animais
+  "jacaré": "🐊", "castor": "🦫", "ouriço": "🦡", "ostra": "🦪", "peru": "🦃",
+  "papagaio": "🦜", "flamingo": "🦩", "koala": "🐨", "dinossauro": "🦖", "mamute": "🦣",
+  // alimentos
+  "azeitona": "🫒",
+  // cidades
+  "barbearia": "💈", "academia": "🏋️", "banco": "🏦", "semáforo": "🚦", "mesquita": "🕌",
+  "sinagoga": "🕍", "cemitério": "⚰️", "pizzaria": "🍕", "hotel": "🏨", "fliperama": "🕹️",
+  "banheiro": "🚽", "faculdade": "🎓",
+  // natureza
+  "anoitecer": "🌇", "faísca": "✨", "tulipa": "🌷", "hibisco": "🌺", "diamante": "💎",
+  // corpo
+  "ferida": "🩹", "febre": "🤒", "espirro": "🤧", "bocejo": "🥱", "enjoo": "🤢",
+  "tontura": "🥴", "vômito": "🤮", "massagem": "💆",
+  // objetos
+  "tijolo": "🧱", "panela": "🍲", "piscina": "🏊", "cesto": "🧺", "tomada": "🔌",
+  "bateria": "🔋", "termômetro": "🌡️", "serrote": "🪚", "moto": "🏍️", "ambulância": "🚑",
+  "terno": "🤵", "cofre": "🔐", "alfinete": "📌", "clipe": "📎", "pacote": "📦",
+  "robô": "🤖", "violino": "🎻", "novelo": "🧶", "pipa": "🪁", "baralho": "🃏",
+  "raquete": "🏸",
+  // outros
+  "aluno": "🧑‍🎓", "motorista": "🧑‍🚗", "pescador": "🎣", "escritor": "✍️", "duende": "🧝",
+  "fada": "🧚", "vilão": "🦹", "tenda": "⛺", "trilha": "🥾", "oração": "🙏",
+  "casal": "💑", "ingresso": "🎟️", "concerto": "🎶", "diploma": "📜", "perigo": "⚠️",
+  "socorro": "🆘", "remédio": "💊", "vacina": "💉", "perfume": "🧴", "batom": "💄",
+  "ruído": "🔊", "silêncio": "🔇",
+
+  // ---------- nivel3 ----------
+  // animais
+  "passarinho": "🐤", "cacatua": "🦜", "rena": "🦌", "caramujo": "🐌", "bicho-preguiça": "🦥",
+  "pernilongo": "🦟", "guaxinim": "🦝", "víbora": "🐍", "mico": "🐒", "marreco": "🦆",
+  "tanajura": "🐜", "cachalote": "🐳",
+  // alimentos
+  "toucinho": "🥓", "cevada": "🌾",
+  // cores
+  "safira": "💎",
+  // cidades
+  "universidade": "🎓", "boteco": "🍺",
+  // natureza
+  "fogueira": "🔥", "cerejeira": "🌸", "nevoeiro": "🌫️", "poente": "🌅", "vegetal": "🌱",
+  "malmequer": "🌼", "arco-íris": "🌈",
+  // corpo
+  "músculo": "💪",
+  // objetos
+  "luminária": "🪔", "monitor": "🖥️", "envelope": "✉️", "saboneteira": "🧼", "maquiagem": "💄",
+  "navalha": "🪒", "alto-falante": "🔊", "campainha": "🔔", "projetor": "📽️", "prancheta": "📋",
+  "teleférico": "🚡", "caçarola": "🍲", "cesta": "🧺", "incenso": "🕯️", "mamadeira": "🍼",
+  "máscara": "😷", "megafone": "📣", "monóculo": "🧐",
+  // outros
+  "brincadeira": "🎲", "estátua": "🗿", "desenho": "🖍️", "cerâmica": "🏺", "conserto": "🧰",
+  "imprensa": "📰", "mergulho": "🤿", "palhaço": "🤡", "pescaria": "🎣", "supermercado": "🛒",
+  "certificado": "📜", "aldeia": "🛖", "ângulo": "📐", "astronauta": "🧑‍🚀", "aviso": "⚠️",
+  "bênção": "🙏", "bilheteria": "🎫", "charada": "🧩",
+
+  // ---------- nivel4 ----------
+  // animais
+  "orangotango": "🦧", "mocho": "🦉", "boto": "🐬",
+  // alimentos
+  "feijoada": "🍲", "churrasco": "🍖", "culinária": "🍳", "margarina": "🧈", "sobremesa": "🍰",
+  "legume": "🥦", "cereal": "🥣",
+  // cidades
+  "estacionamento": "🅿️", "shopping": "🏬", "arranha-céu": "🏙️",
+  // natureza
+  "cachoeira": "💦", "tornado": "🌪️", "eclipse": "🌑", "meteoro": "☄️", "satélite": "🛰️",
+  "nebulosa": "🌌", "fauna": "🐾", "poluição": "🏭", "desmatamento": "🪓", "temperatura": "🌡️",
+  // objetos
+  "ferramenta": "🛠️", "taça": "🍷", "passaporte": "🛂", "pilha": "🔋", "fone": "🎧",
+  "partitura": "🎼", "ampulheta": "⏳", "globo": "🌐", "lente": "🔍", "trompete": "🎺",
+  "tambor": "🥁", "planilha": "📊",
+  // outros
+  "experimento": "🧪", "gráfico": "📈", "conto": "📕", "reciclagem": "♻️", "matemática": "🧮",
+  "emergência": "🚑",
+
+  // ---------- nivel5 ----------
+  // animais
+  "esqualo": "🦈",
+  // alimentos
+  "confeitaria": "🍬",
+  // cidades
+  "monotrilho": "🚝", "ferroviária": "🚉", "ancoradouro": "⚓",
+  // natureza
+  "supernova": "🌠", "geiser": "♨️", "succulenta": "🪴",
+  // corpo
+  "miopia": "👓",
+  // objetos
+  "estetoscópio": "🩺", "engrenagem": "⚙️", "tecido": "🧵", "atadura": "🩹", "cronômetro": "⏱️",
+  "parabólica": "📡", "guindaste": "🏗️", "adobe": "🧱",
+
 };

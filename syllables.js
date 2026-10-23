@@ -9,7 +9,7 @@
 // Ordem de resolução de syllables():
 //   1. EXCEPTIONS      — decisões pedagógicas pontuais (tem prioridade);
 //   2. SILABAS_PORTAL  — divisões oficiais do Portal da Língua Portuguesa
-//                        (arquivo gerado; ver scripts/buscar-silabas-portal.js);
+//                        (arquivo gerado; ver scripts/baixar-dicionario-portal.js);
 //   3. algoritmo       — regras práticas deste arquivo (fallback).
 //
 // Como usar:
@@ -37,7 +37,8 @@ var EXCEPTIONS = {
   "saudade": ["sau", "da", "de"],         // Dicio: sau-da-de (BR) × Portal: sa-u-da-de
   "raiz": ["ra", "iz"],                   // Dicio/Portal: ra-iz
   "amendoim": ["a", "men", "do", "im"],   // Dicio/Portal: a-men-do-im
-  "jonathan": ["jo", "na", "tan"]         // nome próprio: "th" faria o algoritmo errar
+  "jonathan": ["jo", "na", "than"],      // nome próprio: "th" faria o algoritmo errar
+  "sydney": ["syd", "ney"]               // nome próprio: consoante+consoante final ignora o algoritmo
 };
 
 function isVowel(ch) {

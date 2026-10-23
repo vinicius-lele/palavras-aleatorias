@@ -5,6 +5,9 @@ com atividades alinhadas à BNCC: sem banco de dados, sem dependências, sem bui
 A tela inicial mostra os cards das atividades; cada atividade abre por rota
 (`#/atividade/<id>`).
 
+O corpus tem **5.295 palavras** (12 temas × 5 níveis, 1 a 19 sílabas) com divisões
+silábicas oficiais do Portal da Língua Portuguesa (base local de 149.342 lemas).
+
 ## Arquivos
 
 | Arquivo                | O que é                                                        |
@@ -18,7 +21,9 @@ A tela inicial mostra os cards das atividades; cada atividade abre por rota
 | `prefs.js`             | Preferências (localStorage)                                    |
 | `words-data.js`        | Acesso central às listas (`WORDS`)                             |
 | `silabas-portal.js`    | ⚠️ Gerado: divisões silábicas oficiais (Portal da Língua)      |
-| `scripts/buscar-silabas-portal.js` | Consulta o Portal e gera `silabas-portal.js`        |
+| `scripts/baixar-dicionario-portal.js` | Baixa o dicionário do Portal e gera `silabas-portal.js` |
+| `scripts/dicionario-portal.json` | Dicionário do Portal completo (fonte offline das divisões) |
+| `scripts/validar-palavras.mjs` | Valida a base e os arquivos derivados            |
 | `scripts/gerar-separadas.js` | Exporta listas já silabificadas (material de apoio)   |
 | `levels.js`            | Descritores dos níveis de leitura                              |
 | `syllables.js`         | Silabificador + gerador de divisões erradas + rima             |
@@ -121,16 +126,24 @@ nivel6: {
 
 - **Silabificação**: `syllables()` resolve em três camadas — mapa
   `EXCEPTIONS` (decisões pedagógicas pontuais), depois `SILABAS_PORTAL`
-  (divisões oficiais do Portal da Língua Portuguesa, gerado por
-  `scripts/buscar-silabas-portal.js`) e por fim o algoritmo com as regras
-  práticas (ditongos, encontros com l/r, dígrafos, hífens). Se uma palavra
-  nova aparecer dividida errada, primeiro rode o buscador do Portal; se ela
-  não estiver no dicionário (nomes próprios, neologismos), adicione-a ao
-  mapa `EXCEPTIONS` no topo de `syllables.js`: `"saída": ["sa", "í", "da"]`.
+  (divisões oficiais do Portal da Língua Portuguesa, gerado a partir do
+  dicionário completo `scripts/dicionario-portal.json`) e por fim o
+  algoritmo com as regras práticas (ditongos, encontros com l/r, dígrafos,
+  hífens). Se uma palavra nova aparecer dividida errada, primeiro regenere
+  o mapa (abaixo); se ela não estiver no dicionário (nomes próprios,
+  neologismos), adicione-a ao mapa `EXCEPTIONS` no topo de `syllables.js`:
+  `"saída": ["sa", "í", "da"]`.
 - **`silabas-portal.js`** é um arquivo **gerado** (não edite à mão). Depois
-  de adicionar ou mudar palavras no `words.js`, regenere com:
-  `node scripts/buscar-silabas-portal.js` (respeita o crawl-delay de 3 s do
-  site; o progresso fica em cache e o script retoma de onde parou).
+  de adicionar ou mudar palavras no `words.js`, regenere (offline, a partir
+  do dicionário já commitado):
+  `node scripts/baixar-dicionario-portal.js --gerar`.
+  O dicionário completo do Portal fica em `scripts/dicionario-portal.json`;
+  para baixá-lo/atualizá-lo (uma vez, ~2 h, respeitando o Crawl-delay: 3 s
+  do robots.txt — o progresso fica em cache e o script retoma de onde
+  parou): `node scripts/baixar-dicionario-portal.js`.
+  Para conferir a base inteira após qualquer edição:
+  `node scripts/validar-palavras.mjs` (duplicatas, cobertura do dicionário,
+  silabificação, emojis, cobertura de rima por nível).
   Para exportar as listas já silabificadas como material de apoio:
   `node scripts/gerar-separadas.js` (gera `words-separadas.js` sob demanda).
 - **Rimas**: a Caça-Rimas compara `rhymeKey()` (`syllables.js`) — rima
