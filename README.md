@@ -31,6 +31,7 @@ Os 11 temas curados (animais, cores, verbos...) vêm de seleção manual; o tema
 | `syllables.js`         | Silabificador + gerador de divisões erradas + rima             |
 | `quiz.js`              | Fluxo comum das atividades de questão (10 questões/rodada)     |
 | `images.js`            | Mapa palavra → emoji (Palavra e Imagem; edite para crescer)    |
+| `emoji.js`             | Helper `emojiHTML()`: renderiza o emoji como SVG com fallback    |
 | `activities/registry.js` | Registro das atividades (cards + selos BNCC)                 |
 | `activities/treino-livre.js` | Atividade Treino Livre (a tela original)                |
 | `activities/silabas-complexas.js` | Sílabas em Blocos (divisão silábica)               |
@@ -157,8 +158,18 @@ nivel6: {
   duplas para conferência sai do teste em `Temp/opencode/teste-rimas.mjs`.
 - **Emojis**: `images.js` mapeia palavra → emoji para a Palavra e Imagem e
   para os alvos da Caça-Rimas. Para usar uma palavra nova, adicione uma
-  linha `"palavra": "emoji",`. Níveis com menos de 4 palavras mapeadas
-  mostram o aviso "escolha outro nível".
+  linha `"palavra": "emoji",` **e** o SVG em `img/emoji/` (o validador
+  avisa se faltar — sem arquivo, o `emoji.js` cai no emoji do sistema).
+  Níveis com menos de 4 palavras mapeadas mostram o aviso "escolha outro
+  nível". A renderização é feita por `emojiHTML()` (`emoji.js`): `<img>`
+  apontando para `img/emoji/<codepoints>.svg` com `onerror` que devolve o
+  emoji em texto — o app nunca fica sem imagem, mesmo offline.
+- **Imagens (SVG)**: os arquivos em `img/emoji/` são do **Twemoji**
+  (github.com/jdecked/twemoji), licença **CC BY 4.0** — crédito em
+  `img/emoji/CREDITS.md`. São ~783 SVGs, 1,3 MB, baixados uma vez e
+  versionados; não há nenhuma chamada de rede em runtime. Para adicionar:
+  baixe o SVG do repositório Twemoji com o nome `codepoints-hex.svg`
+  (sem U+FE0F), ex. `1f436.svg` para 🐶.
 
 ## Publicar no GitHub Pages
 

@@ -9,6 +9,7 @@
 
 import { createQuiz } from "../quiz.js";
 import { IMAGES } from "../images.js";
+import { emojiHTML } from "../emoji.js";
 import { rhymeKey } from "../syllables.js";
 import { entriesForLevel } from "../words-data.js";
 
@@ -97,7 +98,7 @@ export function createRimas() {
         return {
           prompt: '<span class="rimas-alvo">' +
                     '<span class="enunciado-emoji rimas-emoji" aria-hidden="true">' +
-                      IMAGES[target.word] +
+                      emojiHTML(IMAGES[target.word]) +
                     "</span>" +
                     '<span class="enunciado-palavra">' + target.word + "</span>" +
                   "</span>" +

@@ -642,6 +642,14 @@ html.fs-fallback .palavra-area {
   line-height: 1.2;
 }
 
+/* SVG do Twemoji (emoji.js): herda o tamanho do font-size do container.
+   Se o arquivo faltar, o onerror troca a <img> pelo emoji do sistema. */
+.emoji-svg {
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+}
+
 /* Caça-Rimas: alvo = emoji menor + palavra */
 
 .rimas-alvo {

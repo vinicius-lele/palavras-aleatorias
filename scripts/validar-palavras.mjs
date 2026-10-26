@@ -10,7 +10,9 @@
 //     nomes próprios — o algoritmo do syllables.js assume);
 //   - silabificação em runtime: as sílabas recompõem a palavra;
 //   - silabas-portal.js: cada entrada confere com o dicionário;
-//   - images.js: chaves existem no words.js e os emojis são não vazios;
+//   - images.js: chaves existem no words.js, os emojis são não vazios e
+//     têm SVG Twemoji em img/emoji/ (faltando, vira aviso — o onerror
+//     do emoji.js cai para o emoji do sistema);
 //   - cobertura de rima por nível (Caça-Rimas) e distribuição silábica
 //     (útil para revisar os textos de levels.js).
 //
@@ -154,12 +156,23 @@ alvos.forEach(function (par) {
 /* ---------- images.js ---------- */
 
 var { IMAGES } = await import(new URL("../images.js", import.meta.url).href);
+var { emojiFilename } = await import(new URL("../emoji.js", import.meta.url).href);
+var semSvg = [];
 Object.keys(IMAGES).forEach(function (w) {
   if (!visto[norm(w)]) avisos.push("images.js: " + w + " fora do words.js");
   if (!IMAGES[w] || !String(IMAGES[w]).trim()) {
     erros.push("images.js: emoji vazio para " + w);
+    return;
   }
+  // SVG Twemoji empacotado (emoji.js cai para o emoji do sistema se faltar,
+  // mas o ideal é todo emoji mapeado ter arquivo).
+  var svg = join(root, "img", "emoji", emojiFilename(IMAGES[w]) + ".svg");
+  if (!existsSync(svg)) semSvg.push(w + " (" + IMAGES[w] + ")");
 });
+if (semSvg.length) {
+  avisos.push(semSvg.length + " emoji(s) sem SVG em img/emoji/ " +
+    "(fallback do sistema assume): " + semSvg.join(", "));
+}
 
 /* ---------- relatórios ---------- */
 

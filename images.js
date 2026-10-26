@@ -263,4 +263,196 @@ export var IMAGES = {
   "estetoscópio": "🩺", "engrenagem": "⚙️", "tecido": "🧵", "atadura": "🩹", "cronômetro": "⏱️",
   "parabólica": "📡", "guindaste": "🏗️", "adobe": "🧱",
 
+  // ---------- expansão CLDR pt (Unicode License, curadoria manual) ----------
+  // ---------- nivel1 ----------
+    // animais
+    "alce": "🫎", "bode": "🐐", "carpa": "🎏", "corvo": "🐦‍⬛", "ganso": "🪿",
+    "lagarto": "🦎", "mula": "🫏", "onça": "🐆",
+    // alimentos
+    "berinjela": "🍆", "couve": "🥬", "ervilha": "🫛", "espaguete": "🍝",
+    "manteiga": "🧈", "pudim": "🍮", "repolho": "🥬", "vagem": "🫛",
+    // cores
+    "bronze": "🥉", "ruivo": "🦰", "vinho": "🍷",
+    // numerais
+    "cem": "💯", "dezoito": "🔞", "doze": "🕛", "onze": "🕚",
+    // cidades
+    "chafariz": "⛲", "estrada": "🛣", "parque": "🏞", "posto": "⛽",
+    // verbos
+    "beijar": "💏", "cheirar": "👃", "escutar": "👂", "pescar": "🐟", "pintar": "🖌",
+    "sentar": "🪑", "soltar": "🫳",
+    // natureza
+    "aurora": "🌅", "bruma": "🌁", "céu": "🌌", "coqueiro": "🌴", "jardim": "🏡",
+    "pinheiro": "🌲", "represa": "🦫", "trovão": "⛈",
+    // corpo
+    "bigode": "🥸", "calcanhar": "🦶", "ombro": "🤷",
+    // objetos
+    "barbante": "🧵", "camisa": "👕", "carrinho": "🛒", "flauta": "🪈", "muro": "🧱",
+    "pincel": "🖌", "poltrona": "💺", "tigela": "🍜",
+    // emoções
+    "conforto": "🫂", "preguiça": "🦥",
+    // outros
+    "abc": "🔤", "alvo": "🎯", "amo": "🥰", "aqui": "🈁", "aro": "⭕", "asno": "🫏",
+    "babar": "🤤", "bacon": "🥓", "baga": "🫐", "ballet": "🧑‍🩰", "banjo": "🪕",
+    "bemol": "♭", "bento": "🍱", "berro": "🗣", "bilhar": "🎱", "blasé": "😒",
+    "boia": "🛟", "bote": "🚣", "boxe": "🥊", "brinde": "🥂", "brotar": "🌱",
+    "buquê": "💐", "calar": "🔇", "cavar": "🪏", "cena": "🎬", "cera": "🖍",
+    "certo": "👌", "cheiro": "👃", "conga": "🪘", "cookie": "🍪", "cool": "🆒",
+    "cordel": "🪢", "corte": "💇‍♂", "cowboy": "🤠", "crepe": "🥞", "crespo": "🪮",
+    "crochê": "🧶", "culto": "🛐", "curtir": "🩷", "dado": "🎲", "dardo": "🎯",
+    "degrau": "🪜", "dengue": "🦟", "dental": "🪥", "dica": "🧩", "dodó": "🦤",
+    "doida": "🤪", "donut": "🍩", "drama": "🎭", "ducha": "🚿", "elfa": "🧝‍♀",
+    "fax": "📠", "fedor": "🦨", "fênix": "🐦‍🔥", "ferry": "⛴", "flash": "📸",
+    "floco": "❄", "fondue": "🫕", "fonte": "⛲", "forte": "💪", "fraca": "🪫",
+    "frasco": "🧴", "free": "🆓", "frita": "🍟", "fugir": "💨", "gata": "🐈‍⬛",
+    "gene": "🧬", "ioiô": "🪀", "jarro": "🫙", "jazz": "🪊", "jegue": "🫏",
+    "jockey": "🏇", "joker": "🃏", "jóquei": "🏇", "judo": "🥋", "kiwi": "🥝",
+    "lenha": "🪵", "lila": "🪻", "limpo": "🫧", "link": "🔗", "listra": "🦓",
+    "loção": "🧴", "loura": "👱‍♀", "malhar": "🏋", "mamar": "🍼", "mancha": "🫟",
+    "maple": "🍁", "miau": "🐈‍⬛", "mira": "🎯", "motor": "🛥", "mundo": "🗺",
+    "nado": "🏊‍♀", "negar": "🙂‍↔", "negro": "🖤", "neta": "👧", "ninja": "🥷",
+    "nobre": "🫅", "nome": "📛", "novo": "🆕", "odor": "👃", "pager": "📟",
+    "pasmo": "😮", "passo": "🚶", "pata": "🐾", "pingo": "🫟", "pita": "🫓",
+    "pizza": "🍕", "pneu": "🛞", "porca": "🔩", "pouco": "🤏", "pula": "🦘",
+    "pulo": "🦘", "punk": "🧷", "ratel": "🦡", "rezar": "🙏", "rico": "🪙",
+    "rugby": "🏉", "ruim": "👎", "sari": "🥻", "sax": "🎷", "senha": "🔑",
+    "short": "🩳", "sikh": "🪯", "skate": "🛹", "stop": "⏹", "surf": "🏄",
+    "sushi": "🍣", "tango": "💃", "tao": "☯", "tchau": "👋", "terço": "📿",
+    "timer": "⏲", "tiro": "🎯", "tonta": "🥴", "tora": "🪵", "treno": "🛷",
+    "tricô": "🧶", "troféu": "🏆", "tropa": "🫡", "trufa": "🍄‍🟫", "ufa": "😥",
+    "vagão": "🚃", "valeu": "👍", "van": "🚐", "vara": "🎣", "verme": "🪱",
+    "vina": "🌭", "você": "🫵", "vólei": "🏐", "votar": "🗳", "voto": "🗳",
+    "voz": "🗣", "xampu": "🧴", "yang": "☯", "yeti": "🫈", "yin": "☯", "zumbi": "🧟",
+  // ---------- nivel2 ----------
+    // animais
+    "alpaca": "🦙", "bisonte": "🦬", "burro": "🫏", "dromedário": "🐪", "grilo": "🦗",
+    "leopardo": "🐆", "texugo": "🦡",
+    // alimentos
+    "beterraba": "🫜", "castanha": "🌰", "gengibre": "🫚", "mate": "🧉", "nabo": "🫜",
+    "refrigerante": "🥤", "rosca": "🥯", "torrada": "🍞",
+    // cores
+    "violeta": "🪻",
+    // cidades
+    "aeroporto": "🛄", "boate": "🪩", "edifício": "🏢", "portaria": "🛎",
+    "torre": "🗼",
+    // verbos
+    "brincar": "🛝", "chutar": "🦶", "derramar": "🫗", "escorregar": "🛝",
+    "estacionar": "🅿", "girar": "🛞", "pentear": "🪮", "pisar": "🦶", "plantar": "🪴",
+    "soprar": "🌬", "varrer": "🧹",
+    // natureza
+    "amanhecer": "🌅", "argila": "🧱", "entardecer": "🌇", "estação": "🚉",
+    "lava": "🌋", "luar": "🌕", "muda": "🌱", "névoa": "🌁", "serra": "🪚",
+    "temporal": "⛈",
+    // corpo
+    "audição": "🧏", "coxa": "🍗", "náusea": "🤢",
+    // objetos
+    "agenda": "📔", "balsa": "⛴", "bule": "🫖", "cachecol": "🧣", "casaco": "🧥",
+    "chaleira": "🫖", "chuveiro": "🚿", "cueca": "🩲", "escova": "🪥",
+    "frigideira": "🍳", "gaveta": "🗄", "leque": "🪭", "muleta": "🩼", "parede": "🧱",
+    "pente": "🪮", "peteca": "🏸", "plugue": "🔌", "prancha": "🏄", "prato": "🍽",
+    "rolo": "🧻", "sabão": "🫧", "xícara": "🍵", "zíper": "🤐",
+    // emoções
+    "confusão": "🫤", "desconfiança": "🤨", "frustração": "🫤", "malícia": "😈",
+    "mimo": "🎁", "temor": "🫢",
+    // outros
+    "ábaco": "🧮", "abanar": "🪭", "abrigo": "🛖", "aceno": "👋", "acesso": "♿",
+    "acima": "🔼", "áfrica": "🌍", "alarme": "⏰", "alegre": "😊", "aluna": "👩‍🎓",
+    "arejar": "🪭", "arepa": "🫓", "ártico": "🐻‍❄", "assada": "🍠", "astuto": "🦝",
+    "azedo": "🍋", "baiacu": "🐡", "bailarino": "🧑‍🩰", "balada": "🪩",
+    "bêbada": "🥴", "bêbado": "🥴", "buzina": "📢", "cabana": "🛖", "câmbio": "💱",
+    "caminho": "🛣", "campeã": "🏆", "campeão": "🏆", "canudo": "🥤", "capelo": "🎓",
+    "cética": "🤨", "coala": "🐨", "débito": "💳", "díese": "♯", "doído": "🤪",
+    "enfermeiro": "👨‍⚕", "enviar": "📮", "equino": "🐴", "escudo": "🛡",
+    "escuro": "🌑", "espetáculo": "🎭", "espia": "🕵", "fatura": "🧾",
+    "futuro": "🔮", "gélido": "🥶", "gênio": "🧞", "gilete": "🪒", "goleiro": "🥅",
+    "higiene": "🪥", "iate": "⛵", "idosa": "👵", "jaleco": "🥼", "judia": "🕍",
+    "juíza": "👩‍⚖", "karatê": "🥋", "maraca": "🪇", "marido": "👨", "mestre": "👨‍🏫",
+    "miado": "🐈‍⬛", "missa": "⛪", "moda": "👠", "neto": "🧒", "oculto": "🥷",
+    "ótimo": "👌", "paella": "🥘", "pavoa": "🦚", "peludo": "🫈", "piada": "🤡",
+    "piano": "🎹", "pífano": "🪈", "pílula": "💊", "poroso": "🧽", "pureza": "🪷",
+    "recibo": "🧾", "reparo": "🔨", "ritmo": "🪘", "roseta": "🏵", "rótulo": "🏷",
+    "sábio": "🧓", "sacola": "🛍", "saída": "📤", "seguro": "🔐", "sineta": "🛎",
+    "trabalho": "💻", "uniforme": "🥋",
+  // ---------- nivel3 ----------
+    // animais
+    "bisão": "🦬", "gambá": "🦨", "lagartixa": "🦎",
+    // alimentos
+    "almôndega": "🧆", "bolacha": "🍪", "empanada": "🥟", "limonada": "🍋‍🟩",
+    "marmita": "🥡", "pamonha": "🫔",
+    // cores
+    "coral": "🪸", "púrpura": "🟪",
+    // numerais
+    "segundo": "🥈", "terceiro": "🥉",
+    // cidades
+    "arena": "🏟", "estúdio": "🎙", "lavanderia": "🧺",
+    // verbos
+    "acalmar": "💆‍♂", "celebrar": "🎉", "elevar": "🛗", "espiar": "🫣",
+    "exalar": "😮‍💨", "filmar": "🎥", "imprimir": "🖨", "investigar": "🕵",
+    "meditar": "🙇‍♀",
+    // natureza
+    "ciclone": "🌀", "conífera": "🌲", "cristal": "🔮", "seixo": "🪨",
+    // objetos
+    "bermuda": "🩳", "corneta": "📯", "fechadura": "🗝", "jarra": "🫙",
+    "locomotiva": "🚂", "moldura": "🖼", "pelúcia": "🧸", "saleiro": "🧂",
+    // emoções
+    "admiração": "🥹", "arrependimento": "🙇", "desilusão": "💔", "devoção": "🤲",
+    "espanto": "🫢", "sofrimento": "💔",
+    // outros
+    "abatido": "😔", "acabado": "😵", "acordeão": "🪗", "aduana": "🛃",
+    "agasalho": "🧥", "ajoelhar": "🧎", "alfabeto": "🔤", "atabaque": "🪘",
+    "atrasada": "⏰", "atrasado": "⏰", "auréola": "😇", "avarenta": "🤑",
+    "bióloga": "👩‍🔬", "cacheado": "🦱", "cafeína": "☕", "carpinteiro": "🪚",
+    "cartaz": "🪧", "cartola": "🎩", "colorido": "🦚", "curiosa": "🤔",
+    "demónio": "👿", "dentista": "🦷", "enjoado": "🤢", "enviada": "📤",
+    "fazendeiro": "👨‍🌾", "furiosa": "😤", "irônico": "😼", "jardineira": "👩‍🌾",
+    "karaoke": "🎤", "lentidão": "🦥", "magoado": "🙍‍♂", "malária": "🦟",
+    "menininha": "👧", "radiola": "📻", "recreação": "🎣", "rosário": "📿",
+    "vaqueiro": "🤠",
+  // ---------- nivel4 ----------
+    // animais
+    "ameba": "🦠", "marsupial": "🦘", "medusa": "🪼", "molusco": "🦑", "primata": "🦧",
+    // alimentos
+    "ensopado": "🍲", "especiaria": "🫚", "tubérculo": "🫜",
+    // cores
+    "corado": "☺", "reluzente": "🌟",
+    // cidades
+    "túnel": "🚇",
+    // verbos
+    "descartar": "🫳", "identificar": "🏷", "prever": "🔮", "retroceder": "⏪",
+    "reviver": "🐦‍🔥",
+    // natureza
+    "átomo": "⚛", "oliveira": "🫒", "pedregulho": "🪨", "tsunami": "🌊",
+    // objetos
+    "carimbo": "💮", "gabinete": "🗄", "harpa": "🪉", "parafuso": "🔩",
+    "roteador": "🛜", "saxofone": "🎷", "torno": "🗜",
+    // emoções
+    "solidariedade": "✊",
+    // outros
+    "aborígene": "🪃", "aborrecido": "😩", "acidentado": "🤕", "aliviado": "😥",
+    "apaixonada": "🥰", "apetitoso": "😋", "apimentado": "🌶", "aplicativo": "🈸",
+    "arquitetura": "🏛", "astronomia": "⭐", "biologia": "🧫", "comunicado": "📢",
+    "confirmação": "🙂‍↕", "conveniência": "🏪", "delicioso": "😋", "demoníaco": "👹",
+    "domicílio": "🏠", "emocionante": "💖", "empresário": "👨‍💼", "enevoado": "🌁",
+    "entediado": "🥱", "escalada": "🧗", "esculápio": "⚕", "estudioso": "🤓",
+    "estudo": "📘", "evolução": "🧬", "ferroviário": "🚃", "física": "👩‍🔬",
+    "genética": "🧬", "geografia": "🗺", "geometria": "📐", "higiénico": "🧻",
+    "ilimitado": "♾", "industrial": "🧑‍🏭", "iniciante": "🔰", "meridiano": "🌐",
+    "radiação": "☢", "radiativo": "☢", "sabedoria": "🦉", "unicórnio": "🦄",
+  // ---------- nivel5 ----------
+    // animais
+    "crustáceo": "🦐", "invertebrado": "🪼",
+    // alimentos
+    "infusão": "🫖", "laticínio": "🧈", "leguminosa": "🫛",
+    // cores
+    "cintilante": "🌟", "xadrez": "♟",
+    // verbos
+    "florescer": "🌼",
+    // corpo
+    "esmalte": "💅", "respiração": "🫁",
+    // objetos
+    "curativo": "🩹", "maleta": "💼",
+    // outros
+    "alcoolizado": "🥴", "alfaiataria": "🪡", "cardiologia": "🫀",
+    "codificadora": "👩‍💻", "deficiência": "🩼", "emocionado": "🥲",
+    "encaracolado": "🦱", "eternidade": "♾", "funcionária": "👩‍💼", "radioativo": "☢",
+    "radiografia": "🩻", "renascimento": "🐦‍🔥", "videocassete": "📼",
 };

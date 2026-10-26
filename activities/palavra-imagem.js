@@ -5,6 +5,7 @@
 
 import { createQuiz } from "../quiz.js";
 import { IMAGES } from "../images.js";
+import { emojiHTML } from "../emoji.js";
 import { entriesForLevel } from "../words-data.js";
 
 function pickRandom(list, n) {
@@ -82,7 +83,7 @@ export function createPalavraImagem() {
 
       if (img2pal) {
         return {
-          prompt: '<span class="enunciado-emoji">' + correctEmoji + '</span>' +
+          prompt: '<span class="enunciado-emoji">' + emojiHTML(correctEmoji) + '</span>' +
                   '<span class="enunciado-dica">Qual palavra é esta?</span>',
           options: dists.map(function (d) {
             return { html: d.word, correct: false };
@@ -94,9 +95,9 @@ export function createPalavraImagem() {
         prompt: '<span class="enunciado-palavra">' + correctEntry.word + '</span>' +
                 '<span class="enunciado-dica">Qual é a imagem certa?</span>',
         options: dists.map(function (d) {
-          return { html: '<span class="opcao-emoji">' + IMAGES[d.word] + '</span>', correct: false };
+          return { html: '<span class="opcao-emoji">' + emojiHTML(IMAGES[d.word]) + '</span>', correct: false };
         }).concat([{
-          html: '<span class="opcao-emoji">' + correctEmoji + '</span>',
+          html: '<span class="opcao-emoji">' + emojiHTML(correctEmoji) + '</span>',
           correct: true
         }])
       };
