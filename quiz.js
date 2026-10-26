@@ -16,6 +16,12 @@
 //
 // createQuestion pode retornar null quando o filtro não tem material — o
 // quiz mostra o estado vazio com dica.
+//
+// Questão interativa (arrastar-e-soltar etc.): em vez de `options`, a
+// questão pode trazer `custom(el, report)`. O quiz chama `custom` passando
+// o container de opções; a atividade monta a própria UI ali e chama
+// `report(true|false)` quando a resposta estiver decidida. `custom` pode
+// devolver uma função de limpeza (chamada ao trocar de questão/sair).
 
 import { navigate } from "./router.js";
 import { levelKeys, levelLabel } from "./words-data.js";
@@ -132,7 +138,11 @@ export function createQuiz(config) {
   // Questão atual: o feedback pós-resposta (blocos etc.) consulta estes dados.
   var currentQ = null;
 
+  // Limpeza da UI interativa da questão atual (se houver).
+  var teardownCustom = null;
+
   function renderQuestion(q) {
+    if (teardownCustom) { teardownCustom(); teardownCustom = null; }
     currentQ = q;
     el.progresso.textContent = "Questão " + (state.idx + 1) + " de " + TOTAL;
     el.enunciado.innerHTML = q ? q.prompt : "";
@@ -143,6 +153,12 @@ export function createQuiz(config) {
     if (!q) {
       el.vazio.hidden = false;
       el.progresso.textContent = "";
+      return;
+    }
+
+    // UI interativa: a atividade cuida dos próprios controles.
+    if (q.custom) {
+      teardownCustom = q.custom(el.opcoes, answerCustom) || null;
       return;
     }
 
@@ -178,6 +194,23 @@ export function createQuiz(config) {
     }
 
     // Feedback visual da questão (ex.: blocos silábicos) — Q21a.
+    if (currentQ && currentQ.feedbackHTML) {
+      el.feedback.innerHTML = currentQ.feedbackHTML;
+      el.feedback.hidden = false;
+    }
+
+    var wait = (currentQ && currentQ.feedbackMs) || FEEDBACK_MS;
+    timerAdvance = setTimeout(next, wait);
+  }
+
+  // Resposta vinda de uma UI interativa (q.custom): o placar e o feedback
+  // seguem as mesmas regras dos botões de opção.
+  function answerCustom(correct) {
+    if (state.locked || destroyed) return;
+    state.locked = true;
+    state.answered++;
+    if (correct) state.acertos++;
+
     if (currentQ && currentQ.feedbackHTML) {
       el.feedback.innerHTML = currentQ.feedbackHTML;
       el.feedback.hidden = false;
@@ -259,6 +292,7 @@ export function createQuiz(config) {
     destroy: function () {
       destroyed = true;
       clearTimeout(timerAdvance);
+      if (teardownCustom) { teardownCustom(); teardownCustom = null; }
     }
   };
 }

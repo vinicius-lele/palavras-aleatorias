@@ -862,6 +862,101 @@ html.fs-fallback .palavra-area {
   color: var(--muted);
 }
 
+/* ---------- Arrastar e soltar (arrastar-silabas.js) ---------- */
+
+.arrastar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 560px;
+}
+
+.arrastar-zona {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 86px;
+  padding: 14px;
+  border: 2px dashed var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.arrastar-zona-sobre {
+  border-color: var(--accent);
+  background: var(--hover);
+}
+
+.arrastar-ok {
+  border-style: solid;
+  border-color: var(--accent);
+}
+
+.arrastar-erro {
+  border-style: solid;
+  border-color: #C0392B;
+}
+
+.arrastar-zona-vazia {
+  color: var(--faint);
+  font-size: 15px;
+}
+
+.arrastar-bandeja {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+}
+
+.syl-chip {
+  position: relative;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font: inherit;
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 700;
+  cursor: grab;
+  touch-action: none; /* o toque vira arrasto, não rolagem */
+  user-select: none;
+  -webkit-user-select: none;
+  transition: box-shadow 0.15s ease;
+}
+
+.syl-chip:active {
+  cursor: grabbing;
+}
+
+.syl-chip:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.syl-arrastando {
+  position: fixed;
+  z-index: 10;
+  margin: 0;
+  pointer-events: none; /* o que está sob o bloco recebe o encontro */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  cursor: grabbing;
+}
+
+.arrastar-conferir[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
 /* ---------- Responsivo (prioridade desktop) ---------- */
 
 @media (max-width: 640px) {
@@ -909,6 +1004,15 @@ html.fs-fallback .palavra-area {
     min-width: 110px;
     padding: 14px 16px;
   }
+
+  .arrastar-zona {
+    min-height: 72px;
+    padding: 10px;
+  }
+
+  .syl-chip {
+    padding: 10px 14px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -923,6 +1027,8 @@ html.fs-fallback .palavra-area {
   .home-header,
   .card,
   .quiz-opcao,
+  .arrastar-zona,
+  .syl-chip,
   .bloco {
     transition: none;
     animation: none;

@@ -9,6 +9,7 @@ import { createSilabasComplexas } from "./silabas-complexas.js";
 import { createPalavraImagem } from "./palavra-imagem.js";
 import { createContarSilabas } from "./contar-silabas.js";
 import { createRimas } from "./rimas.js";
+import { createArrastarSilabas } from "./arrastar-silabas.js";
 
 export var ACTIVITIES = [
   {
@@ -46,6 +47,15 @@ export var ACTIVITIES = [
     bncc: ["EF03LP05"],
     pronto: true,
     create: createContarSilabas
+  },
+  {
+    id: "arrastar-silabas",
+    nome: "Montar com Sílabas",
+    icone: "🧩",
+    descricao: "Arraste as sílabas embaralhadas para montar a palavra.",
+    bncc: ["EF01LP06", "EF02LP02"],
+    pronto: true,
+    create: createArrastarSilabas
   },
   {
     id: "rimas",

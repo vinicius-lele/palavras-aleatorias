@@ -37,6 +37,7 @@ Os 11 temas curados (animais, cores, verbos...) vêm de seleção manual; o tema
 | `activities/silabas-complexas.js` | Sílabas em Blocos (divisão silábica)               |
 | `activities/palavra-imagem.js` | Palavra e Imagem (associação com emojis)             |
 | `activities/contar-silabas.js` | Contar Sílabas (contagem + blocos de feedback)      |
+| `activities/arrastar-silabas.js` | Montar com Sílabas (arrastar e soltar sílabas)  |
 | `activities/rimas.js`  | Caça-Rimas (encontrar a palavra que rima)                     |
 
 Novas atividades entram como um arquivo em `activities/` + uma entrada no
@@ -50,6 +51,7 @@ Novas atividades entram como um arquivo em `activities/` + uma entrada no
 | 🧱 Sílabas em Blocos | Escolher onde a palavra se divide (divisões erradas geradas pelo algoritmo) | EF01LP06, EF02LP02 |
 | 🖼️ Palavra e Imagem | Palavra → imagem e imagem → palavra, com emojis (direção alterna) | EF15LP18, EF12LP08 |
 | 🔢 Contar Sílabas | Contar as sílabas; os blocos coloridos aparecem como correção | EF03LP05 |
+| 🧩 Montar com Sílabas | Arrastar as sílabas embaralhadas para montar a palavra (ordem exata vale) | EF01LP06, EF02LP02 |
 | 🎵 Caça-Rimas | Escolher, entre 4 palavras, a que rima com o alvo | EF12LP07, EF01LP09 |
 
 Níveis de leitura (1 a 5) descritos pelo tamanho e complexidade das palavras,
