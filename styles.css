@@ -1,35 +1,57 @@
+/* =============================================================
+   Visual "papel e tinta" — editorial, quente e sóbrio.
+   - fundo de papel, tinta escura, azul-caneta como destaque;
+   - serif (Newsreader) só no cromo/títulos; Atkinson segue nas
+     palavras e nas opções (legibilidade é decisão pedagógica);
+   - sem CAIXA ALTA nos rótulos, sem card que "flutua" no hover;
+   - cores das sílabas ficam em --syl-1..4 (um lugar só: blocos
+     da correção via CSS e chips do Montar via JS).
+   ============================================================= */
+
 :root {
   color-scheme: light;
-  --bg: #F7F7F5;
-  --surface: #FFFFFF;
-  --text: #1F2933;
-  --muted: #6B7280;
-  --faint: #9AA5B1;
-  --border: #E5E5E1;
-  --accent: #2E7D6F;
-  --accent-strong: #256659;
-  --track-off: #D8D8D4;
-  --select-bg: #FFFFFF;
-  --counter: rgba(31, 41, 51, 0.35);
-  --icon: rgba(31, 41, 51, 0.4);
-  --hover: rgba(31, 41, 51, 0.06);
+  --bg: #F4F0E6; /* papel */
+  --surface: #FDFBF5; /* papel claro: cabeçalhos, cards, opções */
+  --text: #26221B; /* tinta */
+  --muted: #6E6659;
+  --faint: #9A9284;
+  --border: #E2DACA; /* fio quente */
+  --border-strong: #CFC5B1;
+  --accent: #2B4C8C; /* azul-caneta */
+  --accent-strong: #213D73;
+  --on-accent: #FFFFFF;
+  --danger: #A63A2A; /* vermelho de correção */
+  --track-off: #DCD4C4;
+  --select-bg: #FDFBF5;
+  --counter: rgba(38, 34, 27, 0.35);
+  --icon: rgba(38, 34, 27, 0.45);
+  --hover: rgba(38, 34, 27, 0.06);
+  --syl-1: #2E7D6F;
+  --syl-2: #3B7DD8;
+  --syl-3: #D9822B;
+  --syl-4: #8E44AD;
+  --font-sans: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-serif: "Newsreader", Georgia, "Times New Roman", serif;
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --bg: #1A1D21;
-  --surface: #23272B;
-  --text: #E7EAED;
-  --muted: #9BA6B2;
-  --faint: #6E7A86;
-  --border: #343A40;
-  --accent: #4FA391;
-  --accent-strong: #3E8A7A;
-  --track-off: #3A4148;
-  --select-bg: #1A1D21;
-  --counter: rgba(231, 234, 237, 0.35);
-  --icon: rgba(231, 234, 237, 0.4);
-  --hover: rgba(231, 234, 237, 0.08);
+  --bg: #17150F;
+  --surface: #211E18;
+  --text: #ECE5D7;
+  --muted: #A79E8D;
+  --faint: #7C7466;
+  --border: #3B3730;
+  --border-strong: #4E4941;
+  --accent: #7E9ED4;
+  --accent-strong: #96B2E0;
+  --on-accent: #1A2436;
+  --danger: #D97A66;
+  --track-off: #454036;
+  --select-bg: #17150F;
+  --counter: rgba(236, 229, 215, 0.35);
+  --icon: rgba(236, 229, 215, 0.45);
+  --hover: rgba(236, 229, 215, 0.08);
 }
 
 * {
@@ -48,7 +70,7 @@ body {
 }
 
 body {
-  font-family: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
   background: var(--bg);
   color: var(--text);
   display: flex;
@@ -80,8 +102,6 @@ body {
 .ctrl-label {
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--muted);
 }
 
@@ -90,8 +110,8 @@ select {
   font-size: 15px;
   color: var(--text);
   background-color: var(--select-bg);
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
   padding: 9px 12px;
   min-width: 110px;
   cursor: pointer;
@@ -114,7 +134,7 @@ select:disabled {
   flex-direction: row;
   align-items: center;
   gap: 10px;
-  padding-bottom: 6px;
+  padding-bottom: 8px; /* centraliza a alavanca na altura do select */
 }
 
 .switch {
@@ -172,8 +192,8 @@ select:disabled {
 }
 
 .switch-label {
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 13px;
+  font-weight: 700;
   color: var(--muted);
   user-select: none;
 }
@@ -192,7 +212,7 @@ select:disabled {
   border: none;
   border-radius: 50%;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -266,13 +286,18 @@ select:disabled {
 }
 
 .home-logo {
+  display: flex;
+  color: var(--accent);
   font-size: 30px;
   line-height: 1;
 }
 
 .home-titulo {
-  font-size: 20px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 22px;
   line-height: 1.2;
+  letter-spacing: -0.01em;
 }
 
 .home-sub {
@@ -284,16 +309,15 @@ select:disabled {
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
-  padding: 26px 24px 48px;
+  padding: 32px 24px 56px;
 }
 
 .home-sec {
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 16px;
+  font-family: var(--font-serif);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 20px;
 }
 
 .cards {
@@ -306,22 +330,19 @@ select:disabled {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
-  padding: 20px;
+  gap: 10px;
+  padding: 22px 20px;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 8px;
   text-decoration: none;
   color: var(--text);
   cursor: pointer;
-  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease,
-              background-color 0.2s ease;
+  transition: border-color 0.15s ease, background-color 0.2s ease;
 }
 
 .card:hover {
   border-color: var(--accent);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
 }
 
 .card:focus-visible {
@@ -330,18 +351,22 @@ select:disabled {
 }
 
 .card-icon {
-  font-size: 32px;
+  display: flex;
+  color: var(--accent);
+  font-size: 30px;
   line-height: 1;
 }
 
 .card-nome {
-  font-size: 17px;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 .card-desc {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--muted);
 }
 
@@ -349,7 +374,6 @@ select:disabled {
   margin-top: auto;
   padding-top: 6px;
   font-size: 11px;
-  letter-spacing: 0.03em;
   color: var(--faint);
 }
 
@@ -360,8 +384,6 @@ select:disabled {
 
 .card-bloqueado:hover {
   border-color: var(--border);
-  transform: none;
-  box-shadow: none;
 }
 
 .card-em-breve {
@@ -369,8 +391,6 @@ select:disabled {
   padding-top: 6px;
   font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
   color: var(--accent);
 }
 
@@ -390,8 +410,8 @@ select:disabled {
   top: 16px;
   left: 16px;
   padding: 8px 14px;
-  border: 1px solid var(--border);
-  border-radius: 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 6px;
   background: var(--surface);
   color: var(--text);
   text-decoration: none;
@@ -408,7 +428,9 @@ select:disabled {
 }
 
 .em-breve-titulo {
-  font-size: 22px;
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 24px;
 }
 
 .em-breve-texto {
@@ -423,7 +445,7 @@ select:disabled {
   width: 38px;
   height: 38px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background: transparent;
   color: var(--icon);
   display: grid;
@@ -525,7 +547,7 @@ html.fs-fallback .palavra-area {
   width: 38px;
   height: 38px;
   border: none;
-  border-radius: 8px;
+  border-radius: 6px;
   background: transparent;
   color: var(--icon);
   display: grid;
@@ -564,18 +586,20 @@ html.fs-fallback .palavra-area {
 }
 
 .quiz-icone {
+  display: flex;
+  color: var(--accent);
   font-size: 22px;
   line-height: 1;
 }
 
 .quiz-nome {
-  font-size: 17px;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .quiz-bncc {
   font-size: 11px;
-  letter-spacing: 0.03em;
   color: var(--faint);
 }
 
@@ -586,8 +610,9 @@ html.fs-fallback .palavra-area {
 
 .quiz-nota {
   min-height: 18px;
-  padding: 8px 20px 0;
-  font-size: 13px;
+  padding: 10px 20px 0;
+  font-family: var(--font-serif);
+  font-size: 14px;
   color: var(--muted);
   text-align: center;
 }
@@ -599,16 +624,25 @@ html.fs-fallback .palavra-area {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 22px;
+  gap: 24px;
   padding: 20px;
   overflow-y: auto;
 }
 
+/* Ritmo vertical DENTRO da questão: progresso, enunciado, feedback e
+   opções são irmãos aqui — sem isto, eles encostam uns nos outros
+   (o gap do .quiz-main só separa stage/fim/vazio). */
+.quiz-stage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
 .quiz-progresso {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
   color: var(--muted);
   text-align: center;
 }
@@ -617,7 +651,7 @@ html.fs-fallback .palavra-area {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-align: center;
 }
 
@@ -668,9 +702,10 @@ html.fs-fallback .palavra-area {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+  width: 100%;
 }
 
-/* Feedback com blocos silábicos (Contar Sílabas) */
+/* Feedback com blocos silábicos (Contar Sílabas, Sílabas em Blocos) */
 
 .quiz-feedback {
   display: flex;
@@ -681,22 +716,22 @@ html.fs-fallback .palavra-area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 10px; /* mesmo respiro dos chips do Montar com Sílabas */
 }
 
 .bloco {
   padding: 10px 16px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-size: clamp(18px, 3.5vw, 26px);
   font-weight: 700;
   color: #fff;
   animation: bloco-in 0.25s ease both;
 }
 
-.bloco:nth-child(4n + 1) { background: #2E7D6F; }
-.bloco:nth-child(4n + 2) { background: #3B7DD8; }
-.bloco:nth-child(4n + 3) { background: #D9822B; }
-.bloco:nth-child(4n)     { background: #8E44AD; }
+.bloco:nth-child(4n + 1) { background: var(--syl-1); }
+.bloco:nth-child(4n + 2) { background: var(--syl-2); }
+.bloco:nth-child(4n + 3) { background: var(--syl-3); }
+.bloco:nth-child(4n)     { background: var(--syl-4); }
 
 @keyframes bloco-in {
   from { opacity: 0; transform: translateY(6px); }
@@ -707,20 +742,19 @@ html.fs-fallback .palavra-area {
   position: relative;
   min-width: 140px;
   padding: 16px 22px;
-  border: 2px solid var(--border);
-  border-radius: 12px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 8px;
   background: var(--surface);
   color: var(--text);
   font: inherit;
   font-size: clamp(20px, 4vw, 30px);
   font-weight: 700;
   cursor: pointer;
-  transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+  transition: border-color 0.15s ease, background 0.15s ease;
 }
 
 .quiz-opcao:hover:not(:disabled) {
   border-color: var(--accent);
-  transform: translateY(-1px);
 }
 
 .quiz-opcao:focus-visible {
@@ -735,12 +769,12 @@ html.fs-fallback .palavra-area {
 .opcao-certa {
   border-color: var(--accent) !important;
   background: var(--accent) !important;
-  color: #fff !important;
+  color: var(--on-accent) !important;
 }
 
 .opcao-errada {
-  border-color: #C0392B !important;
-  color: #C0392B !important;
+  border-color: var(--danger) !important;
+  color: var(--danger) !important;
   opacity: 0.9;
 }
 
@@ -770,7 +804,7 @@ html.fs-fallback .palavra-area {
 }
 
 .opcao-errada .opcao-marca {
-  color: #C0392B;
+  color: var(--danger);
 }
 
 /* Tela final */
@@ -789,6 +823,8 @@ html.fs-fallback .palavra-area {
 }
 
 .quiz-fim-titulo {
+  font-family: var(--font-serif);
+  font-weight: 600;
   font-size: clamp(24px, 5vw, 36px);
 }
 
@@ -808,18 +844,18 @@ html.fs-fallback .palavra-area {
 .btn-primario,
 .btn-secundario {
   padding: 12px 22px;
-  border-radius: 10px;
+  border-radius: 6px;
   font: inherit;
   font-size: 15px;
   font-weight: 700;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  transition: background 0.15s ease, border-color 0.15s ease;
 }
 
 .btn-primario {
   border: none;
   background: var(--accent);
-  color: #fff;
+  color: var(--on-accent);
 }
 
 .btn-primario:hover {
@@ -827,7 +863,7 @@ html.fs-fallback .palavra-area {
 }
 
 .btn-secundario {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-strong);
   background: var(--surface);
   color: var(--text);
 }
@@ -853,8 +889,9 @@ html.fs-fallback .palavra-area {
 }
 
 .quiz-vazio-texto {
-  font-size: 18px;
-  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 600;
 }
 
 .quiz-vazio-dica {
@@ -882,8 +919,8 @@ html.fs-fallback .palavra-area {
   width: 100%;
   min-height: 86px;
   padding: 14px;
-  border: 2px dashed var(--border);
-  border-radius: 14px;
+  border: 2px dashed var(--border-strong);
+  border-radius: 8px;
   background: var(--surface);
   transition: border-color 0.15s ease, background 0.15s ease;
 }
@@ -900,7 +937,7 @@ html.fs-fallback .palavra-area {
 
 .arrastar-erro {
   border-style: solid;
-  border-color: #C0392B;
+  border-color: var(--danger);
 }
 
 .arrastar-zona-vazia {
@@ -922,7 +959,7 @@ html.fs-fallback .palavra-area {
   position: relative;
   padding: 12px 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #fff;
   font: inherit;
   font-size: clamp(20px, 4vw, 30px);
@@ -995,8 +1032,29 @@ html.fs-fallback .palavra-area {
     display: none; /* espaço no celular; o selo continua no card da home */
   }
 
+  /* rótulo do select só visualmente: continua rotulando o campo */
+  .quiz-nivel .ctrl-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .quiz-nome {
+    font-size: 16px;
+  }
+
   .quiz-main {
     padding: 14px;
+    gap: 16px;
+  }
+
+  .quiz-stage {
     gap: 16px;
   }
 

@@ -4,7 +4,7 @@
 //   createQuiz({
 //     id: "silabas-complexas",       // usado na preferência do nível
 //     nome: "Sílabas Complexas",     // cabeçalho
-//     icone: "🧱",
+//     icone: "<svg …/>",          // ícone em traço (ver activities/icones.js)
 //     bncc: ["EF01LP06", "EF02LP02"],
 //     createQuestion(nivel) {        // nivel: "nivel1".."nivel5" ou "*"
 //       return {
@@ -66,7 +66,7 @@ export function createQuiz(config) {
       '</div>' +
       '<span class="quiz-bncc">BNCC: ' + config.bncc.join(" · ") + '</span>' +
       '<div class="ctrl quiz-nivel">' +
-        '<label class="ctrl-label" for="qzNivel">NÍVEL DE LEITURA</label>' +
+        '<label class="ctrl-label" for="qzNivel">Nível de leitura</label>' +
         '<select id="qzNivel"></select>' +
       '</div>' +
     '</header>' +
@@ -74,7 +74,7 @@ export function createQuiz(config) {
     '<p class="quiz-nota" data-el="nota"></p>' +
 
     '<main class="quiz-main">' +
-      '<div data-el="stage">' +
+      '<div class="quiz-stage" data-el="stage">' +
         '<div class="quiz-progresso" data-el="progresso"></div>' +
         '<div class="quiz-enunciado" data-el="enunciado"></div>' +
         '<div class="quiz-feedback" data-el="feedback" hidden></div>' +

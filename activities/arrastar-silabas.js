@@ -13,6 +13,7 @@ import { syllables } from "../syllables.js";
 import { wordsForLevel, isProperNoun, initialUpper } from "../words-data.js";
 import { IMAGES } from "../images.js";
 import { emojiHTML } from "../emoji.js";
+import { ICONE_ARRASTAR } from "./icones.js";
 
 function pickUnused(pool, round) {
   if (round.pool.length === 0) round.pool = pool.slice();
@@ -39,16 +40,49 @@ function ordemEmbaralhada(n) {
   return r;
 }
 
+// Paleta das sílabas (CSS vars --syl-1..4, um só lugar para as duas usadas:
+// estes chips e os .blocos da correção dos outros jogos).
+function paletaSilabas() {
+  var fallback = ["#2E7D6F", "#3B7DD8", "#D9822B", "#8E44AD"];
+  var estilos = getComputedStyle(document.documentElement);
+  return fallback.map(function (fb, i) {
+    return estilos.getPropertyValue("--syl-" + (i + 1)).trim() || fb;
+  });
+}
+
+function embaralha(arr) {
+  var a = arr.slice();
+  for (var i = a.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+
+// Cor de cada sílaba, ESTÁVEL durante a questão: bandeja, zona e correção
+// mostram a mesma cor para a mesma sílaba (uma troca de cor entre o que se
+// montou e o que se corrige confunde quem está aprendendo). O mapa
+// sílaba->cor é sorteado a cada questão para que a paleta não denuncie a
+// ordem certa (quem ordena por cor não ganha a resposta).
+function coresPorSyllaba(n) {
+  var cores = paletaSilabas();
+  var ordem = embaralha(cores.map(function (_, i) { return i; }));
+  var mapa = [];
+  for (var i = 0; i < n; i++) mapa.push(cores[ordem[i % ordem.length]]);
+  return mapa;
+}
+
 // Blocos coloridos por sílaba: a correção oficial (Q21a). Em nomes próprios,
 // o primeiro bloco mantém a inicial maiúscula (syllables() normaliza para
 // minúsculas — a caixa é só de exibição, e nunca aparece antes da resposta).
-function blocksHTML(syls, word) {
+function blocksHTML(syls, word, cores) {
   var shown = syls.map(function (s, i) {
     return (i === 0 && isProperNoun(word)) ? initialUpper(s) : s;
   });
   return '<div class="blocos" aria-hidden="true">' +
-    shown.map(function (s) {
-      return '<span class="bloco">' + s + "</span>";
+    shown.map(function (s, i) {
+      var cor = cores ? ' style="background:' + cores[i] + '"' : "";
+      return '<span class="bloco"' + cor + ">" + s + "</span>";
     }).join("") +
     "</div>";
 }
@@ -57,7 +91,7 @@ export function createArrastarSilabas() {
   return createQuiz({
     id: "arrastar-silabas",
     nome: "Montar com Sílabas",
-    icone: "🧩",
+    icone: ICONE_ARRASTAR,
     bncc: ["EF01LP06", "EF02LP02"],
 
     createQuestion: function (nivel, round) {
@@ -73,17 +107,18 @@ export function createArrastarSilabas() {
       var syls = syllables(word);
       var ordem = ordemEmbaralhada(syls.length);
       var emoji = IMAGES[word];
+      var cores = coresPorSyllaba(syls.length);
 
       return {
         // Sem a palavra: só o significado (emoji, se houver) e a instrução.
         prompt: (emoji ? '<span class="enunciado-emoji">' + emojiHTML(emoji) + "</span>" : "") +
                 '<span class="enunciado-dica">Arraste as sílabas para a área tracejada e monte a palavra.</span>',
         // Blocos corrigidos entram após a resposta (Q21a), tempo maior.
-        feedbackHTML: blocksHTML(syls, word),
+        // Mesmas cores dos chips: a correção não troca a cor da sílaba.
+        feedbackHTML: blocksHTML(syls, word, cores),
         feedbackMs: 1600,
 
         custom: function (host, report) {
-          var CORES = ["#2E7D6F", "#3B7DD8", "#D9822B", "#8E44AD"];
           var total = syls.length;
           var locked = false;
           var arrastou = false;
@@ -110,9 +145,11 @@ export function createArrastarSilabas() {
             // Posição inicial na bandeja: devolver um bloco o reinsere aqui,
             // então a ordem embaralhada nunca vira a resposta por acaso.
             chip.dataset.pos = String(pos);
-            // Cor pela posição embaralhada, nunca pela palavra: a paleta
-            // não pode denunciar onde o bloco entra.
-            chip.style.background = CORES[pos % CORES.length];
+            // Cor pela SÍLABA (cores[origIdx]), estável em toda a questão:
+            // o mesmo bloco tem a mesma cor na bandeja, na zona e na
+            // correção. Qual sílaba herda qual cor é sorteado por questão
+            // (ver coresPorSyllaba), então a paleta não entrega a ordem.
+            chip.style.background = cores[origIdx];
             chip.textContent = syls[origIdx];
             bandeja.appendChild(chip);
             ligaChip(chip);

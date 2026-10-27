@@ -10,12 +10,16 @@ import { createPalavraImagem } from "./palavra-imagem.js";
 import { createContarSilabas } from "./contar-silabas.js";
 import { createRimas } from "./rimas.js";
 import { createArrastarSilabas } from "./arrastar-silabas.js";
+import {
+  ICONE_TREINO, ICONE_BLOCOS, ICONE_IMAGEM,
+  ICONE_CONTAR, ICONE_ARRASTAR, ICONE_RIMAS
+} from "./icones.js";
 
 export var ACTIVITIES = [
   {
     id: "treino-livre",
     nome: "Treino Livre",
-    icone: "🎬",
+    icone: ICONE_TREINO,
     descricao: "Palavras passam na tela, uma por vez, no ritmo que você escolher.",
     bncc: ["EF12LP01"],
     pronto: true,
@@ -24,7 +28,7 @@ export var ACTIVITIES = [
   {
     id: "silabas-complexas",
     nome: "Sílabas em Blocos",
-    icone: "🧱",
+    icone: ICONE_BLOCOS,
     descricao: "Descubra onde a palavra se divide em sílabas.",
     bncc: ["EF01LP06", "EF02LP02"],
     pronto: true,
@@ -33,7 +37,7 @@ export var ACTIVITIES = [
   {
     id: "palavra-imagem",
     nome: "Palavra e Imagem",
-    icone: "🖼️",
+    icone: ICONE_IMAGEM,
     descricao: "Leia a palavra e escolha a imagem certa — ou o contrário.",
     bncc: ["EF15LP18", "EF12LP08"],
     pronto: true,
@@ -42,7 +46,7 @@ export var ACTIVITIES = [
   {
     id: "contar-silabas",
     nome: "Contar Sílabas",
-    icone: "🔢",
+    icone: ICONE_CONTAR,
     descricao: "Quantas sílabas tem a palavra? Conte e confira nos blocos.",
     bncc: ["EF03LP05"],
     pronto: true,
@@ -51,7 +55,7 @@ export var ACTIVITIES = [
   {
     id: "arrastar-silabas",
     nome: "Montar com Sílabas",
-    icone: "🧩",
+    icone: ICONE_ARRASTAR,
     descricao: "Arraste as sílabas embaralhadas para montar a palavra.",
     bncc: ["EF01LP06", "EF02LP02"],
     pronto: true,
@@ -60,7 +64,7 @@ export var ACTIVITIES = [
   {
     id: "rimas",
     nome: "Caça-Rimas",
-    icone: "🎵",
+    icone: ICONE_RIMAS,
     descricao: "Encontre a palavra que rima com a palavra-alvo.",
     bncc: ["EF12LP07", "EF01LP09"],
     pronto: true,

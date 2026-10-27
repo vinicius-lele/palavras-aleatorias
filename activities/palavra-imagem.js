@@ -7,6 +7,7 @@ import { createQuiz } from "../quiz.js";
 import { IMAGES } from "../images.js";
 import { emojiHTML } from "../emoji.js";
 import { entriesForLevel } from "../words-data.js";
+import { ICONE_IMAGEM } from "./icones.js";
 
 function pickRandom(list, n) {
   var a = list.slice();
@@ -21,7 +22,7 @@ export function createPalavraImagem() {
   return createQuiz({
     id: "palavra-imagem",
     nome: "Palavra e Imagem",
-    icone: "🖼️",
+    icone: ICONE_IMAGEM,
     bncc: ["EF15LP18", "EF12LP08"],
 
     createQuestion: function (nivel, round) {

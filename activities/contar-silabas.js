@@ -5,6 +5,7 @@
 import { createQuiz } from "../quiz.js";
 import { syllables } from "../syllables.js";
 import { wordsForLevel, isProperNoun, initialUpper } from "../words-data.js";
+import { ICONE_CONTAR } from "./icones.js";
 
 function pickUnused(pool, round) {
   if (round.pool.length === 0) round.pool = pool.slice();
@@ -50,7 +51,7 @@ export function createContarSilabas() {
   return createQuiz({
     id: "contar-silabas",
     nome: "Contar Sílabas",
-    icone: "🔢",
+    icone: ICONE_CONTAR,
     bncc: ["EF03LP05"],
 
     createQuestion: function (nivel, round) {

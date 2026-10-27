@@ -5,6 +5,7 @@
 import { createQuiz } from "../quiz.js";
 import { syllables, wrongDivisions } from "../syllables.js";
 import { wordsForLevel, isProperNoun, initialUpper } from "../words-data.js";
+import { ICONE_BLOCOS } from "./icones.js";
 
 function pickUnused(pool, round) {
   if (round.pool.length === 0) round.pool = pool.slice();
@@ -16,7 +17,7 @@ export function createSilabasComplexas() {
   return createQuiz({
     id: "silabas-complexas",
     nome: "Sílabas em Blocos",
-    icone: "🧱",
+    icone: ICONE_BLOCOS,
     bncc: ["EF01LP06", "EF02LP02"],
 
     createQuestion: function (nivel, round) {

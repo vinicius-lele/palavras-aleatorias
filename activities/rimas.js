@@ -12,6 +12,7 @@ import { IMAGES } from "../images.js";
 import { emojiHTML } from "../emoji.js";
 import { rhymeKey } from "../syllables.js";
 import { entriesForLevel } from "../words-data.js";
+import { ICONE_RIMAS } from "./icones.js";
 
 function pickRandom(list, n) {
   var a = list.slice();
@@ -38,7 +39,7 @@ export function createRimas() {
   return createQuiz({
     id: "rimas",
     nome: "Caça-Rimas",
-    icone: "🎵",
+    icone: ICONE_RIMAS,
     bncc: ["EF12LP07", "EF01LP09"],
 
     createQuestion: function (nivel, round) {

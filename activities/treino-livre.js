@@ -28,27 +28,27 @@ var HTML =
     '<button class="btn-back" id="tlBack" type="button" aria-label="Voltar para a tela inicial">' + ICONS.back + '</button>' +
 
     '<div class="ctrl">' +
-      '<label class="ctrl-label" for="tlNivel">NÍVEL</label>' +
+      '<label class="ctrl-label" for="tlNivel">Nível</label>' +
       '<select id="tlNivel"></select>' +
     '</div>' +
 
     '<div class="ctrl">' +
-      '<label class="ctrl-label" for="tlTema">TEMA</label>' +
+      '<label class="ctrl-label" for="tlTema">Tema</label>' +
       '<select id="tlTema"></select>' +
     '</div>' +
 
     '<div class="ctrl">' +
-      '<label class="ctrl-label" for="tlSegundos">SEGUNDOS</label>' +
+      '<label class="ctrl-label" for="tlSegundos">Segundos</label>' +
       '<select id="tlSegundos"></select>' +
     '</div>' +
 
     '<div class="ctrl ctrl-switch">' +
-      '<span class="switch-label">MINÚSCULO</span>' +
+      '<span class="switch-label">Minúsculo</span>' +
       '<label class="switch">' +
         '<input type="checkbox" id="tlCase">' +
         '<span class="switch-track"><span class="switch-thumb"></span></span>' +
       '</label>' +
-      '<span class="switch-label">MAIÚSCULO</span>' +
+      '<span class="switch-label">Maiúsculo</span>' +
     '</div>' +
 
     '<div class="ctrl ctrl-switch">' +
