@@ -878,6 +878,14 @@ html.fs-fallback .palavra-area {
   outline-offset: 2px;
 }
 
+/* Avanço manual da questão (quiz.js): aparece só depois da resposta,
+   alvo de toque generoso para quem está aprendendo a operar a tela. */
+.btn-continuar {
+  min-height: 48px;
+  padding: 12px 26px;
+  font-size: 16px;
+}
+
 /* Estado vazio */
 
 .quiz-vazio {

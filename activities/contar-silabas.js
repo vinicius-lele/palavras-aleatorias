@@ -68,9 +68,9 @@ export function createContarSilabas() {
       return {
         prompt: '<span class="enunciado-palavra">' + word + "</span>" +
                 '<span class="enunciado-dica">Quantas sílabas tem?</span>',
-        // Blocos só depois do clique (Q21a); tempo maior para absorver.
+        // Blocos só depois do clique (Q21a); a criança vê o tempo que
+        // precisar — o avanço é pelo "Continuar".
         feedbackHTML: blocksHTML(syls, word),
-        feedbackMs: 2400,
         options: [{ html: String(correct), correct: true }].concat(
           dists.map(function (d) { return { html: String(d), correct: false }; })
         )

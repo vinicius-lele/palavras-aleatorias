@@ -1,5 +1,7 @@
 // Fluxo comum das atividades de quiz — 10 questões por rodada, feedback
-// imediato, placar no final. Cada atividade só precisa fornecer as questões:
+// imediato e AVANÇO MANUAL: a resposta fica na tela até apertar
+// "Continuar" (o público é leitor iniciante — sem timer tirando a leitura),
+// placar no final. Cada atividade só precisa fornecer as questões:
 //
 //   createQuiz({
 //     id: "silabas-complexas",       // usado na preferência do nível
@@ -30,12 +32,12 @@ import { readPref, savePref } from "./prefs.js";
 
 var ALL = "*";
 var TOTAL = 10;
-// Tempo que a resposta fica na tela antes da próxima questão. 900ms era
-// rápido demais para quem está começando a leitura: o aluno precisa de um
-// segundo extra para ver o acerto, ler a palavra destacada e comparar com a
-// resposta dele. Questões com feedbackVisual (blocos) usam o próprio
-// feedbackMs, um pouco maior, porque o que mostrar é mais coisa para ler.
-var FEEDBACK_MS = 2000;
+
+// Avanço é MANUAL: depois de responder, a resposta fica na tela até a
+// criança (ou o professor) apertar "Continuar". Relógio aqui tirava o tempo
+// de ler a resposta certa de quem está começando — e deixava a tela mudar
+// sozinha no meio da leitura.
+var ARROW = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>';
 
 var BACK = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>';
 var CHECK = '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg>';
@@ -56,7 +58,6 @@ export function createQuiz(config) {
   if (nivel !== ALL && levelKeys().indexOf(nivel) === -1) nivel = ALL;
 
   var state = { idx: 0, acertos: 0, locked: false, answered: 0 };
-  var timerAdvance = null;
   var destroyed = false;
 
   var container = document.createElement("div");
@@ -84,6 +85,9 @@ export function createQuiz(config) {
         '<div class="quiz-enunciado" data-el="enunciado"></div>' +
         '<div class="quiz-feedback" data-el="feedback" hidden></div>' +
         '<div class="quiz-opcoes" data-el="opcoes"></div>' +
+        '<button class="btn-primario btn-continuar" data-el="continuar" type="button" hidden>' +
+          'Continuar ' + ARROW +
+        '</button>' +
       '</div>' +
 
       '<div class="quiz-fim" data-el="fim" hidden>' +
@@ -153,6 +157,7 @@ export function createQuiz(config) {
     el.enunciado.innerHTML = q ? q.prompt : "";
     el.feedback.hidden = true;
     el.feedback.textContent = "";
+    el.continuar.hidden = true;
 
     el.opcoes.textContent = "";
     if (!q) {
@@ -204,8 +209,16 @@ export function createQuiz(config) {
       el.feedback.hidden = false;
     }
 
-    var wait = (currentQ && currentQ.feedbackMs) || FEEDBACK_MS;
-    timerAdvance = setTimeout(next, wait);
+    mostrarContinuar();
+  }
+
+  // A resposta fica na tela até o "Continuar" (avanço manual, sem timer).
+  // O foco vai para o botão: quem navega por teclado/leitor de tela segue
+  // direto, e repetir Enter na opção já respondida não reage mais (ela
+  // está disabled).
+  function mostrarContinuar() {
+    el.continuar.hidden = false;
+    el.continuar.focus();
   }
 
   // Resposta vinda de uma UI interativa (q.custom): o placar e o feedback
@@ -221,8 +234,7 @@ export function createQuiz(config) {
       el.feedback.hidden = false;
     }
 
-    var wait = (currentQ && currentQ.feedbackMs) || FEEDBACK_MS;
-    timerAdvance = setTimeout(next, wait);
+    mostrarContinuar();
   }
 
   // Sorteia a próxima questão. Usa um "pool" criado por rodada para não
@@ -241,7 +253,6 @@ export function createQuiz(config) {
   }
 
   function startRound() {
-    clearTimeout(timerAdvance);
     state.idx = 0;
     state.acertos = 0;
     state.answered = 0;
@@ -284,6 +295,10 @@ export function createQuiz(config) {
   el.back.addEventListener("click", function () { navigate("/"); });
   el.deNovo.addEventListener("click", startRound);
   el.home.addEventListener("click", function () { navigate("/"); });
+  el.continuar.addEventListener("click", function () {
+    el.continuar.hidden = true;
+    next();
+  });
   selNivel.addEventListener("change", onNivelChange);
 
   /* ---------- Montagem ---------- */
@@ -296,7 +311,6 @@ export function createQuiz(config) {
     el: container,
     destroy: function () {
       destroyed = true;
-      clearTimeout(timerAdvance);
       if (teardownCustom) { teardownCustom(); teardownCustom = null; }
     }
   };

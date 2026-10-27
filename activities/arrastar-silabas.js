@@ -113,10 +113,10 @@ export function createArrastarSilabas() {
         // Sem a palavra: só o significado (emoji, se houver) e a instrução.
         prompt: (emoji ? '<span class="enunciado-emoji">' + emojiHTML(emoji) + "</span>" : "") +
                 '<span class="enunciado-dica">Arraste as sílabas para a área tracejada e monte a palavra.</span>',
-        // Blocos corrigidos entram após a resposta (Q21a), tempo maior.
-        // Mesmas cores dos chips: a correção não troca a cor da sílaba.
+        // Blocos corrigidos entram após a resposta (Q21a) e ficam até o
+        // "Continuar". Mesmas cores dos chips: a correção não troca a cor
+        // da sílaba.
         feedbackHTML: blocksHTML(syls, word, cores),
-        feedbackMs: 2600,
 
         custom: function (host, report) {
           var total = syls.length;
