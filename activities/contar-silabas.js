@@ -70,7 +70,7 @@ export function createContarSilabas() {
                 '<span class="enunciado-dica">Quantas sílabas tem?</span>',
         // Blocos só depois do clique (Q21a); tempo maior para absorver.
         feedbackHTML: blocksHTML(syls, word),
-        feedbackMs: 1400,
+        feedbackMs: 2400,
         options: [{ html: String(correct), correct: true }].concat(
           dists.map(function (d) { return { html: String(d), correct: false }; })
         )

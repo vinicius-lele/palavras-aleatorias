@@ -116,7 +116,7 @@ export function createArrastarSilabas() {
         // Blocos corrigidos entram após a resposta (Q21a), tempo maior.
         // Mesmas cores dos chips: a correção não troca a cor da sílaba.
         feedbackHTML: blocksHTML(syls, word, cores),
-        feedbackMs: 1600,
+        feedbackMs: 2600,
 
         custom: function (host, report) {
           var total = syls.length;
