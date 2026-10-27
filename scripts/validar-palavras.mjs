@@ -13,6 +13,8 @@
 //   - images.js: chaves existem no words.js, os emojis são não vazios e
 //     têm SVG Twemoji em img/emoji/ (faltando, vira aviso — o onerror
 //     do emoji.js cai para o emoji do sistema);
+//   - vocabulario.js: estrutura das entradas (palavra em minúsculas e sem
+//     repetição, significado presente, só os campos esperados);
 //   - cobertura de rima por nível (Caça-Rimas) e distribuição silábica
 //     (útil para revisar os textos de levels.js).
 //
@@ -174,10 +176,67 @@ if (semSvg.length) {
     "(fallback do sistema assume): " + semSvg.join(", "));
 }
 
+/* ---------- vocabulario.js (Palavras Desconhecidas) ---------- */
+
+var { VOCABULARIO } = await import(new URL("../vocabulario.js", import.meta.url).href);
+if (!Array.isArray(VOCABULARIO)) {
+  erros.push("vocabulario.js: VOCABULARIO não é uma lista");
+} else {
+  if (VOCABULARIO.length < 20) {
+    avisos.push("vocabulario.js: só " + VOCABULARIO.length +
+      " entradas (pool pequeno: a rodada fica repetindo logo)");
+  }
+  var vistoVoc = {};
+  VOCABULARIO.forEach(function (e, i) {
+    var onde = "vocabulario.js[" + i + "]";
+    if (!e || typeof e.palavra !== "string" || !e.palavra.trim()) {
+      erros.push(onde + ": palavra vazia/inválida");
+      return;
+    }
+    if (e.palavra !== e.palavra.trim()) {
+      erros.push(onde + ": sobra espaço em " + JSON.stringify(e.palavra));
+    }
+    if (e.palavra !== e.palavra.toLowerCase()) {
+      erros.push(onde + ": gravar em minúsculas " + JSON.stringify(e.palavra) +
+        " (a caixa é aplicada na exibição)");
+    }
+    if (/\s/.test(e.palavra.trim())) {
+      // a habilidade cobre "palavras OU expressões": entrada com espaço é
+      // expressão — aceita, mas vale conferir a intenção.
+      avisos.push(onde + ": entrada com espaço (expressão, não palavra): " +
+        JSON.stringify(e.palavra));
+    }
+    var k = norm(e.palavra);
+    if (vistoVoc[k]) {
+      erros.push("vocabulario.js: palavra repetida " + JSON.stringify(e.palavra));
+    }
+    vistoVoc[k] = true;
+    if (e.significado === undefined || e.significado === null ||
+        !String(e.significado).trim()) {
+      erros.push(onde + ": significado vazio para " + JSON.stringify(e.palavra));
+    } else if (String(e.significado).length > 90) {
+      avisos.push(onde + ": significado longo (" +
+        String(e.significado).length + " caracteres) para " + JSON.stringify(e.palavra));
+    }
+    ["palavra", "significado"].forEach(function (campo) {
+      if (e[campo] !== undefined && typeof e[campo] !== "string") {
+        erros.push(onde + ": campo " + campo + " não é string");
+      }
+    });
+    Object.keys(e).forEach(function (campo) {
+      if (campo !== "palavra" && campo !== "significado") {
+        erros.push(onde + ": campo desconhecido " + JSON.stringify(campo));
+      }
+    });
+  });
+}
+
 /* ---------- relatórios ---------- */
 
 console.log("Total: " + total + " palavras em " + niveis.length + " níveis; " +
-  Object.keys(IMAGES).length + " emojis mapeados");
+  Object.keys(IMAGES).length + " emojis mapeados; " +
+  (Array.isArray(VOCABULARIO) ? VOCABULARIO.length : 0) +
+  " entradas de vocabulário (Palavras Desconhecidas)");
 
 console.log("\nNível  palavras  sílabas(média)  comEmoji  comRima");
 niveis.forEach(function (nivel) {

@@ -43,3 +43,10 @@ export var ICONE_RIMAS = icone(
   '<ellipse cx="7" cy="17.7" rx="2.5" ry="2.2"/>' +
   '<ellipse cx="16" cy="15.9" rx="2.5" ry="2.2"/>'
 );
+
+// Palavras Desconhecidas: linhas de texto + lupa (procurar o sentido)
+export var ICONE_DESCONHECIDAS = icone(
+  '<path d="M3.5 6.5h9"/><path d="M3.5 11h6.5"/><path d="M3.5 15.5h5.5"/>' +
+  '<circle cx="16.5" cy="14.5" r="4.2"/>' +
+  '<path d="M19.7 17.7L22 20"/>'
+);

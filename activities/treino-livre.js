@@ -5,6 +5,7 @@
 import { LS, readPref, savePref, applyTheme } from "../prefs.js";
 import { navigate } from "../router.js";
 import { getWords, levelKeys, levelLabel, displayWord } from "../words-data.js";
+import { criarTelaCheia } from "./tela-cheia.js";
 
 var ALL = "*";
 var FADE_MS = 160;
@@ -357,82 +358,22 @@ export function createTreinoLivre() {
   }
 
   /* ---------- Tela cheia ---------- */
-  // iPhone/iOS não implementa Fullscreen API para elementos comuns (só <video>).
-  // Nesse caso caímos num modo simulado via CSS, com o mesmo botão de saída.
+  // O controle (nativa + fallback do iOS, simulado por CSS) mora em
+  // activities/tela-cheia.js e é compartilhado com Palavras Desconhecidas.
 
-  function fsElement() {
-    return document.fullscreenElement || document.webkitFullscreenElement || null;
-  }
+  var telaCheia = null;
 
-  function inFallback() {
-    return document.documentElement.classList.contains("fs-fallback");
-  }
-
-  function fsActive() {
-    return !!fsElement() || inFallback();
-  }
-
-  function syncFsUI() {
-    var on = fsActive();
+  function syncFsUI(on) {
     setHidden(el.iconMax, on);
     setHidden(el.iconMin, !on);
     el.fs.setAttribute("aria-label", on ? "Sair da tela cheia" : "Tela cheia");
   }
 
-  function enterFallback() {
-    if (inFallback()) return;
-    document.documentElement.classList.add("fs-fallback");
-    syncFsUI();
-    setTimeout(fit, 60);
-  }
-
-  function exitFallback() {
-    if (!inFallback()) return;
-    document.documentElement.classList.remove("fs-fallback");
-    syncFsUI();
-    setTimeout(fit, 60);
-  }
-
-  function nativeExit() {
-    var exit = document.exitFullscreen || document.webkitExitFullscreen;
-    if (!exit) { exitFallback(); return; }
-    try {
-      var p = exit.call(document);
-      if (p && p.catch) p.catch(exitFallback);
-    } catch (e) {
-      exitFallback();
-    }
-  }
-
-  function toggleFs() {
-    if (fsActive()) {
-      if (fsElement()) nativeExit();
-      else exitFallback();
-      return;
-    }
-
-    var req = el.area.requestFullscreen || el.area.webkitRequestFullscreen;
-    if (!req) { enterFallback(); return; }
-
-    try {
-      var r = req.call(el.area);
-      if (r && r.then) r.then(function () { setTimeout(fit, 60); }, enterFallback);
-      else setTimeout(fit, 60);
-    } catch (e) {
-      enterFallback();
-    }
-  }
-
-  function onFsChange() {
-    syncFsUI();
-    setTimeout(fit, 60);
-  }
-
   /* ---------- Eventos ---------- */
 
   function onKeydown(e) {
-    if (e.key === "Escape" && inFallback()) {
-      exitFallback();
+    if (e.key === "Escape" && telaCheia && telaCheia.emFallback()) {
+      telaCheia.alternar(); // sai do modo simulado
       return;
     }
     if (e.code !== "Space" && e.key !== " ") return;
@@ -447,7 +388,7 @@ export function createTreinoLivre() {
 
   function bind() {
     el.btn.addEventListener("click", toggle);
-    el.fs.addEventListener("click", toggleFs);
+    el.fs.addEventListener("click", telaCheia.alternar);
     el.back.addEventListener("click", goHome);
 
     el.nivel.addEventListener("change", function () {
@@ -470,8 +411,7 @@ export function createTreinoLivre() {
     el.dark.addEventListener("change", onDarkChange);
 
     document.addEventListener("keydown", onKeydown);
-    document.addEventListener("fullscreenchange", onFsChange);
-    document.addEventListener("webkitfullscreenchange", onFsChange);
+    telaCheia.ativar(); // fullscreenchange + webkitfullscreenchange
     window.addEventListener("resize", fit);
   }
 
@@ -512,6 +452,13 @@ export function createTreinoLivre() {
   applyCase();
   applyTheme(el.dark.checked);
   syncUI();
+
+  // precisa de el.area (o elemento que cresce em tela cheia)
+  telaCheia = criarTelaCheia({
+    area: el.area,
+    aoAlternar: function (on) { syncFsUI(on); setTimeout(fit, 60); }
+  });
+
   bind();
 
   if (document.fonts && document.fonts.ready) {
@@ -525,14 +472,8 @@ export function createTreinoLivre() {
       clearTimeout(timerWord);
       clearTimeout(timerFade);
       document.removeEventListener("keydown", onKeydown);
-      document.removeEventListener("fullscreenchange", onFsChange);
-      document.removeEventListener("webkitfullscreenchange", onFsChange);
       window.removeEventListener("resize", fit);
-      if (inFallback()) document.documentElement.classList.remove("fs-fallback");
-      if (fsElement() && el.area.contains(document.activeElement)) {
-        // área com foco em tela cheia nativa: tenta sair
-        try { nativeExit(); } catch (e) { /* noop */ }
-      }
+      telaCheia.destruir(); // listeners, fallback e tela cheia nativa
     }
   };
 }

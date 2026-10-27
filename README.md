@@ -20,6 +20,7 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | Arquivo                | O que é                                                        |
 |------------------------|----------------------------------------------------------------|
 | `words.js`             | **Listas de palavras por nível e tema** (edite só isto)        |
+| `vocabulario.js`       | **Palavras + significados** do módulo Palavras Desconhecidas  |
 | `index.html`           | Casca mínima; o resto é montado pelo roteador                  |
 | `styles.css`           | Visual (tema claro e escuro)                                   |
 | `main.js`              | Entrypoint: registra rotas e liga o roteador                   |
@@ -50,6 +51,8 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `activities/contar-silabas.js` | Contar Sílabas (contagem + blocos de feedback)      |
 | `activities/arrastar-silabas.js` | Montar com Sílabas (arrastar e soltar sílabas)  |
 | `activities/rimas.js`  | Caça-Rimas (encontrar a palavra que rima)                     |
+| `activities/palavras-desconhecidas.js` | Palavras Desconhecidas (vocabulário em passo)    |
+| `activities/tela-cheia.js` | Controle de tela cheia compartilhado (Treino Livre e Palavras Desconhecidas) |
 
 Novas atividades entram como um arquivo em `activities/` + uma entrada no
 `registry.js`.
@@ -64,9 +67,12 @@ Novas atividades entram como um arquivo em `activities/` + uma entrada no
 | 🔢 Contar Sílabas | Contar as sílabas; os blocos coloridos aparecem como correção | EF03LP05 |
 | 🧩 Montar com Sílabas | Arrastar as sílabas embaralhadas para montar a palavra (ordem exata vale) | EF01LP06, EF02LP02 |
 | 🎵 Caça-Rimas | Escolher, entre 4 palavras, a que rima com o alvo | EF12LP07, EF01LP09 |
+| 🔍 Palavras Desconhecidas | Palavras incomuns passam na tela com o significado (sem acerto/erro) | EF35LP05 |
 
 Níveis de leitura (1 a 5) descritos pelo tamanho e complexidade das palavras,
-não por ano escolar — o descritor aparece dentro de cada atividade.
+não por ano escolar — o descritor aparece dentro de cada atividade. A
+**Palavras Desconhecidas** é a exceção: é vocabulário de ampliação, então não
+tem seletor de nível nem questão — a lista é uma só (`vocabulario.js`).
 
 ## Como usar
 
@@ -162,6 +168,13 @@ edite à mão).
 
 ## Manutenção das atividades
 
+- **Palavras Desconhecidas (EF35LP05)**: a base mora em `vocabulario.js`,
+  com entradas `{ palavra, significado }` — palavra em minúsculas, uma por
+  linha, sem repetição, e significado de uma linha só em português simples.
+  Para acrescentar vocabulário, edite o arquivo e rode
+  `node scripts/validar-palavras.mjs` (checa duplicatas, caixa e campos
+  vazios). Não há frase de contexto por decisão de projeto: o módulo expõe a
+  palavra nova e o sentido; inferir pelo contexto é o trabalho da aula.
 - **Silabificação**: `syllables()` resolve em três camadas — mapa
   `EXCEPTIONS` (decisões pedagógicas pontuais), depois `SILABAS_PORTAL`
   (divisões oficiais do Portal da Língua Portuguesa, gerado a partir do

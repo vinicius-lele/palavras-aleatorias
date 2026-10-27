@@ -531,6 +531,21 @@ html.fs-fallback .palavra-area {
   user-select: none;
 }
 
+/* Palavras Desconhecidas: significado curto embaixo da palavra.
+   Mesmo fade da palavra (o ciclo apaga e acende os dois juntos). */
+.significado {
+  display: block;
+  width: 100%;
+  max-width: 44rem;
+  margin: 14px auto 0;
+  font-size: clamp(17px, 2.4vw, 24px);
+  line-height: 1.4;
+  color: var(--muted);
+  text-wrap: balance;
+  opacity: 1;
+  transition: opacity 0.16s ease;
+}
+
 .counter {
   position: absolute;
   right: 16px;
@@ -1095,6 +1110,7 @@ html.fs-fallback .palavra-area {
   .quiz-opcao,
   .arrastar-zona,
   .syl-chip,
+  .significado,
   .bloco {
     transition: none;
     animation: none;
