@@ -5,10 +5,15 @@ com atividades alinhadas à BNCC: sem banco de dados, sem dependências, sem bui
 A tela inicial mostra os cards das atividades; cada atividade abre por rota
 (`#/atividade/<id>`).
 
-O corpus tem **45.002 palavras** (níveis 1–5, 1 a 19 sílabas) com divisões
+O corpus tem **9.879 palavras** (níveis 1–5, 1 a 19 sílabas) com divisões
 silábicas oficiais do Portal da Língua Portuguesa (base local de 149.342 lemas).
-Os 11 temas curados (animais, cores, verbos...) vêm de seleção manual; o tema
-"outros" guarda o vocabulário geral ampliado, filtrado para conteúdo infantil.
+As listas são **curadas para o ensino fundamental (1º ao 5º ano)**: cada palavra
+é do corpus manual original (11 temas + "outros", seleção manual) ou tem
+evidência de frequência em pelo menos uma fonte — E-LEITURA (banco de palavras
+do Ensino Fundamental I), Word_Freq_Children (percentil ≥ 70 em livros
+infantis) ou wordfreq pt (≥ 1 em 1 milhão de tokens). Os temas "nomes" e
+"cidades" mantêm os nomes próprios, e uma blocklist de conteúdo infantil é
+aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 
 ## Arquivos
 
@@ -26,6 +31,12 @@ Os 11 temas curados (animais, cores, verbos...) vêm de seleção manual; o tema
 | `scripts/baixar-dicionario-portal.js` | Baixa o dicionário do Portal e gera `silabas-portal.js` |
 | `scripts/dicionario-portal.json` | Dicionário do Portal completo (fonte offline das divisões) |
 | `scripts/validar-palavras.mjs` | Valida a base e os arquivos derivados            |
+| `scripts/curar-palavras.mjs` | Curadoria escolar: filtra `words.js` por evidência |
+| `scripts/podar-images.mjs`   | Remove do `images.js` chaves órfãs do corpus     |
+| `scripts/words-manual.js`    | ⚠️ Snapshot do corpus manual (fonte da herança)   |
+| `scripts/eleitura-banco.json` | E-LEITURA: banco de palavras do EF I (BR)        |
+| `scripts/word-freq-children.tsv` | Word_Freq_Children: frequência em livros infantis |
+| `scripts/wordfreq-pt.tsv`    | wordfreq: frequência geral do português (cB)     |
 | `scripts/gerar-separadas.js` | Exporta listas já silabificadas (material de apoio)   |
 | `levels.js`            | Descritores dos níveis de leitura                              |
 | `syllables.js`         | Silabificador + gerador de divisões erradas + rima             |
@@ -126,6 +137,28 @@ nivel6: {
   outros: ["palavra3"]
 }
 ```
+
+## Curadoria do corpus (1º ao 5º ano)
+
+`words.js` é filtrado por evidência de frequência — nada entra sem sinal
+escolar, e a ordem é: **herança** (corpus manual pré-expansão) **ou**
+**E-LEITURA** (qualquer banda) **ou** **ISPA** (percentil ≥ 70 em livros
+infantis) **ou** **wordfreq** (≥ −600 cB, 1 em 1 milhão de tokens), com
+blocklist de conteúdo infantil aplicada sempre e nomes próprios dos temas
+`nomes`/`cidades` mantidos.
+
+```bash
+node scripts/curar-palavras.mjs --dry   # simula sem gravar
+node scripts/curar-palavras.mjs         # filtra words.js (in-place)
+node scripts/podar-images.mjs           # remove emojis órfãos do images.js
+node scripts/validar-palavras.mjs       # gate final (rode sempre depois)
+```
+
+As fontes de evidência são regeneráveis (estão em `scripts/`):
+`parsear-eleitura.js` (do texto do PDF), `baixar-word-freq-children.js` e
+`baixar-wordfreq.js`. A lista de herança é o snapshot imutável
+`scripts/words-manual.js` (extraído de `git show cad22fa~1:words.js` — não
+edite à mão).
 
 ## Manutenção das atividades
 

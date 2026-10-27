@@ -1,0 +1,4 @@
+# Fontes baixadas que não são artefatos do site
+*.pdf
+# material de apoio gerado sob demanda (scripts/gerar-separadas.js)
+words-separadas.js
