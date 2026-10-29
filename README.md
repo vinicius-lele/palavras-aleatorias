@@ -34,6 +34,9 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `scripts/baixar-dicionario-portal.js` | Baixa o dicionário do Portal e gera `silabas-portal.js` |
 | `scripts/dicionario-portal.json` | Dicionário do Portal completo (fonte offline das divisões) |
 | `scripts/silabas-extras.json` | Complemento curado: divisões que o Portal não traz |
+| `scripts/gerar-imagens.mjs` | Gera `imagens.js` (palavra → ID ARASAAC), sem baixar imagens |
+| `scripts/imagens-fonte.json` | IDs escolhidos por palavra (fonte reproduzível) |
+| `imagens.js`            | ⚠️ Gerado: pictogramas ARASAAC por hotlink               |
 | `scripts/validar-palavras.mjs` | Valida a base e os arquivos derivados            |
 | `scripts/curar-palavras.mjs` | Curadoria escolar: filtra `words.js` por evidência |
 | `scripts/podar-images.mjs`   | Remove do `images.js` chaves órfãs do corpus     |
@@ -235,6 +238,17 @@ edite à mão).
   nível". A renderização é feita por `emojiHTML()` (`emoji.js`): `<img>`
   apontando para `img/emoji/<codepoints>.svg` com `onerror` que devolve o
   emoji em texto — o app nunca fica sem imagem, mesmo offline.
+- **Pictogramas ARASAAC**: `imagens.js` mapeia palavra → ID e a imagem é
+  carregada **direto** de `https://api.arasaac.org/api/pictograms/<id>` (o
+  repositório guarda só o mapa, não os arquivos). Para regerar:
+  `node scripts/gerar-imagens.mjs` (baixa o índice `all/br` uma vez para o
+  tmpdir). `scripts/imagens-manual.json` permite fixar `{ "palavra": 1234 }`
+  ou ignorar `{ "palavra": "skip" }`.
+  Licença: **CC BY-NC-SA 4.0**, autor Sergio Palao / ARASAAC. O projeto é
+  gratuito e **não pode exibir anúncios** enquanto usar esse acervo. A
+  atribuição fica em `CREDITS.md` e `creditos.html` (link "Créditos" no
+  rodapé). A camada `midia.js` escolhe imagem ARASAAC, senão emoji, e tem
+  fallback neutro se a imagem remota falhar.
 - **Imagens (SVG)**: os arquivos em `img/emoji/` são do **Twemoji**
   (github.com/jdecked/twemoji), licença **CC BY 4.0** — crédito em
   `img/emoji/CREDITS.md`. São ~783 SVGs, 1,3 MB, baixados uma vez e

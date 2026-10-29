@@ -8,8 +8,7 @@
 // desistir do alvo.
 
 import { createQuiz } from "../quiz.js";
-import { IMAGES } from "../images.js";
-import { emojiHTML } from "../emoji.js";
+import { temFigura, figuraHTML } from "../midia.js";
 import { rhymeKey } from "../syllables.js";
 import { entriesForLevel } from "../words-data.js";
 import { ICONE_RIMAS } from "./icones.js";
@@ -44,7 +43,7 @@ export function createRimas() {
 
     createQuestion: function (nivel, round) {
       var entries = dedupe(entriesForLevel(nivel));
-      var withImg = entries.filter(function (e) { return !!IMAGES[e.word]; });
+      var withImg = entries.filter(function (e) { return temFigura(e.word); });
       // Mínimo de 4 alvos para a rodada não ficar repetindo a mesma palavra.
       if (entries.length < 4 || withImg.length < 4) return null;
 
@@ -99,7 +98,7 @@ export function createRimas() {
         return {
           prompt: '<span class="rimas-alvo">' +
                     '<span class="enunciado-emoji rimas-emoji" aria-hidden="true">' +
-                      emojiHTML(IMAGES[target.word]) +
+                      figuraHTML(target.word) +
                     "</span>" +
                     '<span class="enunciado-palavra">' + target.word + "</span>" +
                   "</span>" +

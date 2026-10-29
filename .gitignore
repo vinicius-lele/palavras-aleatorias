@@ -2,3 +2,5 @@
 *.pdf
 # material de apoio gerado sob demanda (scripts/gerar-separadas.js)
 words-separadas.js
+# pagina local de revisao das imagens (gerar sob demanda)
+revisao-imagens.html

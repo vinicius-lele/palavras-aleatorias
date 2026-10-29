@@ -192,6 +192,42 @@ if (semSvg.length) {
     "(fallback do sistema assume): " + semSvg.join(", "));
 }
 
+/* ---------- imagens.js (pictogramas ARASAAC por hotlink) ---------- */
+
+var { IMAGENS } = await import(new URL("../imagens.js", import.meta.url).href);
+var totalImagens = 0;
+if (!IMAGENS || typeof IMAGENS !== "object") {
+  erros.push("imagens.js: IMAGENS não é um mapa");
+} else {
+  Object.keys(IMAGENS).forEach(function (w) {
+    var e = IMAGENS[w];
+    if (!visto[norm(w)]) {
+      avisos.push("imagens.js: " + w + " fora do words.js");
+    }
+    if (!e || typeof e !== "object") {
+      erros.push("imagens.js: entrada inválida para " + JSON.stringify(w));
+      return;
+    }
+    if (typeof e.id !== "number" || !Number.isInteger(e.id) || e.id <= 0) {
+      erros.push("imagens.js: id inválido em " + JSON.stringify(w));
+    }
+    if (e.url !== "https://arasaac.org/pictograms/" + e.id) {
+      erros.push("imagens.js: url divergente em " + JSON.stringify(w));
+    }
+    if (e.fonte !== "ARASAAC" || !e.autor || !e.licenca) {
+      erros.push("imagens.js: metadados de licença incompletos em " +
+        JSON.stringify(w));
+    }
+    totalImagens++;
+  });
+  if (totalImagens && !existsSync(join(root, "CREDITS.md"))) {
+    erros.push("CREDITS.md ausente (atribuição ARASAAC obrigatória)");
+  }
+  if (totalImagens && !existsSync(join(root, "creditos.html"))) {
+    erros.push("creditos.html ausente (atribuição ARASAAC obrigatória)");
+  }
+}
+
 /* ---------- vocabulario.js (Palavras Desconhecidas) ---------- */
 
 var { VOCABULARIO } = await import(new URL("../vocabulario.js", import.meta.url).href);
@@ -337,6 +373,8 @@ if (poolEncontros.nenhum < 30) {
 
 console.log("Total: " + total + " palavras em " + niveis.length + " níveis; " +
   Object.keys(IMAGES).length + " emojis mapeados; " +
+  (typeof totalImagens === "number" ? totalImagens : 0) +
+  " pictogramas ARASAAC; " +
   (Array.isArray(VOCABULARIO) ? VOCABULARIO.length : 0) +
   " entradas de vocabulário (Palavras Desconhecidas); " +
   "níveis 3–5 no pool de Encontros Vocálicos: " +
@@ -345,7 +383,7 @@ console.log("Total: " + total + " palavras em " + niveis.length + " níveis; " +
   " mistos ficam de fora) + " + (Array.isArray(TRITONGOS) ? TRITONGOS.length : 0) +
   " tritongos curados");
 
-console.log("\nNível  palavras  sílabas(média)  comEmoji  comRima");
+console.log("\nNível  palavras  sílabas(média)  comEmoji  comFigura  comRima");
 niveis.forEach(function (nivel) {
   var ws = [];
   Object.keys(WORDS[nivel]).forEach(function (tema) {
@@ -353,23 +391,25 @@ niveis.forEach(function (nivel) {
   });
   var sylTotal = ws.reduce(function (s, w) { return s + syllables(w).length; }, 0);
   var comEmoji = ws.filter(function (w) { return !!IMAGES[w]; });
+  var comFigura = ws.filter(function (w) { return !!IMAGES[w] || !!IMAGENS[w]; });
   var chaves = {};
   ws.forEach(function (w) {
     var k = rhymeKey(w);
     (chaves[k] = chaves[k] || []).push(w);
   });
   var comRima = ws.filter(function (w) { return chaves[rhymeKey(w)].length > 1; });
-  var alvosComEmojiComRima = comEmoji.filter(function (w) {
+  var alvosComFiguraComRima = comFigura.filter(function (w) {
     return chaves[rhymeKey(w)].length > 1;
   });
   console.log(nivel + "  " + String(ws.length).padStart(7) + "  " +
     (sylTotal / ws.length).toFixed(1).padStart(13) + "  " +
     String(comEmoji.length).padStart(8) + "  " +
-    String(comRima.length).padStart(7) + " (alvos de rima c/emoji: " +
-    alvosComEmojiComRima.length + ")");
-  if (comEmoji.length < 4) {
-    avisos.push(nivel + ": só " + comEmoji.length +
-      " palavras com emoji (Palavra e Imagem/Caça-Rimas precisam de >= 4)");
+    String(comFigura.length).padStart(9) + "  " +
+    String(comRima.length).padStart(7) + " (alvos de rima c/figura: " +
+    alvosComFiguraComRima.length + ")");
+  if (comFigura.length < 4) {
+    avisos.push(nivel + ": só " + comFigura.length +
+      " palavras com figura (Palavra e Imagem/Caça-Rimas precisam de >= 4)");
   }
 });
 

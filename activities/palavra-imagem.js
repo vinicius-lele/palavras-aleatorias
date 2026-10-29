@@ -4,8 +4,7 @@
 // mesmo tema (Q19a). Emojis repetidos entre alternativas são filtrados.
 
 import { createQuiz } from "../quiz.js";
-import { IMAGES } from "../images.js";
-import { emojiHTML } from "../emoji.js";
+import { temFigura, figuraHTML, figuraChave } from "../midia.js";
 import { entriesForLevel } from "../words-data.js";
 import { ICONE_IMAGEM } from "./icones.js";
 
@@ -26,9 +25,9 @@ export function createPalavraImagem() {
     bncc: ["EF15LP18", "EF12LP08"],
 
     createQuestion: function (nivel, round) {
-      // Pool: palavras do nível que têm emoji (dedupe por palavra).
+      // Pool: palavras do nível que têm figura (emoji ou pictograma), dedupe.
       var entries = entriesForLevel(nivel).filter(function (e) {
-        return !!IMAGES[e.word];
+        return temFigura(e.word);
       });
       var seen = {};
       entries = entries.filter(function (e) {
@@ -48,20 +47,20 @@ export function createPalavraImagem() {
       if (round.pool.length < 4) round.pool = entries.slice();
       var poolIdx = Math.floor(Math.random() * round.pool.length);
       var correctEntry = round.pool.splice(poolIdx, 1)[0];
-      var correctEmoji = IMAGES[correctEntry.word];
+      var correctKey = figuraChave(correctEntry.word);
 
       // Alterna a direção a cada questão (Q12c).
       round.palavraImagemDir = round.palavraImagemDir === "img2pal" ? "pal2img" : "img2pal";
       var img2pal = round.palavraImagemDir === "img2pal";
 
       // Distratores: mesmo tema primeiro; se não der, qualquer do nível.
-      // Nenhum pode repetir o emoji nem a palavra da resposta.
+      // Nenhum pode repetir a figura nem a palavra da resposta.
       var sameTheme = entries.filter(function (e) {
         return e.theme === correctEntry.theme && e.word !== correctEntry.word &&
-               IMAGES[e.word] !== correctEmoji;
+               figuraChave(e.word) !== correctKey;
       });
       var anyLevel = entries.filter(function (e) {
-        return e.word !== correctEntry.word && IMAGES[e.word] !== correctEmoji;
+        return e.word !== correctEntry.word && figuraChave(e.word) !== correctKey;
       });
 
       var dists = pickRandom(sameTheme, 3);
@@ -72,19 +71,20 @@ export function createPalavraImagem() {
         dists = dists.concat(pickRandom(rest, 3 - dists.length));
       }
 
-      // Última trava: emojis distintos entre si.
-      var usedEmoji = { [correctEmoji]: true };
+      // Última trava: figuras distintas entre si.
+      var usedFigura = {};
+      usedFigura[correctKey] = true;
       dists = dists.filter(function (d) {
-        var em = IMAGES[d.word];
-        if (usedEmoji[em]) return false;
-        usedEmoji[em] = true;
+        var fk = figuraChave(d.word);
+        if (usedFigura[fk]) return false;
+        usedFigura[fk] = true;
         return true;
       });
       if (dists.length < 3) return null; // pool muito pequeno após filtros
 
       if (img2pal) {
         return {
-          prompt: '<span class="enunciado-emoji">' + emojiHTML(correctEmoji) + '</span>' +
+          prompt: '<span class="enunciado-emoji">' + figuraHTML(correctEntry.word) + '</span>' +
                   '<span class="enunciado-dica">Qual palavra é esta?</span>',
           options: dists.map(function (d) {
             return { html: d.word, correct: false };
@@ -96,9 +96,9 @@ export function createPalavraImagem() {
         prompt: '<span class="enunciado-palavra">' + correctEntry.word + '</span>' +
                 '<span class="enunciado-dica">Qual é a imagem certa?</span>',
         options: dists.map(function (d) {
-          return { html: '<span class="opcao-emoji">' + emojiHTML(IMAGES[d.word]) + '</span>', correct: false };
+          return { html: '<span class="opcao-emoji">' + figuraHTML(d.word) + '</span>', correct: false };
         }).concat([{
-          html: '<span class="opcao-emoji">' + emojiHTML(correctEmoji) + '</span>',
+          html: '<span class="opcao-emoji">' + figuraHTML(correctEntry.word) + '</span>',
           correct: true
         }])
       };

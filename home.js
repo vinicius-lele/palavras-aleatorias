@@ -58,6 +58,7 @@ export function createHome() {
     '<main class="home-main">' +
       '<h2 class="home-sec">Escolha uma atividade</h2>' +
       '<div class="cards">' + ACTIVITIES.map(cardHTML).join("") + '</div>' +
+      '<footer class="home-footer"><a href="creditos.html">Créditos das imagens</a></footer>' +
     '</main>';
 
   var dark = container.querySelector("#homeDark");

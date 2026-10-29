@@ -11,8 +11,7 @@
 import { createQuiz } from "../quiz.js";
 import { syllables } from "../syllables.js";
 import { wordsForLevel, isProperNoun, initialUpper } from "../words-data.js";
-import { IMAGES } from "../images.js";
-import { emojiHTML } from "../emoji.js";
+import { temFigura, figuraHTML } from "../midia.js";
 import { ICONE_ARRASTAR } from "./icones.js";
 
 function pickUnused(pool, round) {
@@ -106,12 +105,12 @@ export function createArrastarSilabas() {
       var word = pickUnused(pool, round);
       var syls = syllables(word);
       var ordem = ordemEmbaralhada(syls.length);
-      var emoji = IMAGES[word];
+      var temImg = temFigura(word);
       var cores = coresPorSyllaba(syls.length);
 
       return {
-        // Sem a palavra: só o significado (emoji, se houver) e a instrução.
-        prompt: (emoji ? '<span class="enunciado-emoji">' + emojiHTML(emoji) + "</span>" : "") +
+        // Sem a palavra: só o significado (figura, se houver) e a instrução.
+        prompt: (temImg ? '<span class="enunciado-emoji">' + figuraHTML(word) + "</span>" : "") +
                 '<span class="enunciado-dica">Arraste as sílabas para a área tracejada e monte a palavra.</span>',
         // Blocos corrigidos entram após a resposta (Q21a) e ficam até o
         // "Continuar". Mesmas cores dos chips: a correção não troca a cor

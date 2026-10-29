@@ -1,0 +1,7982 @@
+{
+  "abaixar": {
+    "id": 24723,
+    "palavra": "abaixar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "abajur": {
+    "id": 4936,
+    "palavra": "abajur",
+    "tema": "objetos",
+    "score": 13
+  },
+  "abdômen": {
+    "id": 23703,
+    "palavra": "abdômen",
+    "tema": "corpo",
+    "score": 16
+  },
+  "abóbada": {
+    "id": 36891,
+    "palavra": "abóbada",
+    "tema": "cidades",
+    "score": 12
+  },
+  "abobrinha": {
+    "id": 2678,
+    "palavra": "abobrinha",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "aborrecimento": {
+    "id": 35553,
+    "palavra": "aborrecimento",
+    "tema": "emoções",
+    "score": 15
+  },
+  "abraçar": {
+    "id": 6023,
+    "palavra": "abraçar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "abril": {
+    "id": 6024,
+    "palavra": "abril",
+    "tema": "outros",
+    "score": 20
+  },
+  "abrir": {
+    "id": 2637,
+    "palavra": "abrir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "abutre": {
+    "id": 2998,
+    "palavra": "abutre",
+    "tema": "animais",
+    "score": 13
+  },
+  "açafrão": {
+    "id": 23781,
+    "palavra": "açafrão",
+    "tema": "cores",
+    "score": 10
+  },
+  "açaí": {
+    "id": 38494,
+    "palavra": "açaí",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "acampamento": {
+    "id": 5939,
+    "palavra": "acampamento",
+    "tema": "outros",
+    "score": 10
+  },
+  "acariciar": {
+    "id": 27407,
+    "palavra": "acariciar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "acender": {
+    "id": 4639,
+    "palavra": "acender",
+    "tema": "verbos",
+    "score": 13
+  },
+  "acolher": {
+    "id": 39677,
+    "palavra": "acolher",
+    "tema": "verbos",
+    "score": 12
+  },
+  "aconchegar": {
+    "id": 38621,
+    "palavra": "aconchegar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "aconselhar": {
+    "id": 29959,
+    "palavra": "aconselhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "acordar": {
+    "id": 8988,
+    "palavra": "acordar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "açougue": {
+    "id": 3007,
+    "palavra": "açougue",
+    "tema": "cidades",
+    "score": 16
+  },
+  "açougueiro": {
+    "id": 3008,
+    "palavra": "açougueiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "acrobata": {
+    "id": 4762,
+    "palavra": "acrobata",
+    "tema": "outros",
+    "score": 10
+  },
+  "açúcar": {
+    "id": 25560,
+    "palavra": "açúcar",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "adega": {
+    "id": 27608,
+    "palavra": "adega",
+    "tema": "cidades",
+    "score": 15
+  },
+  "administração": {
+    "id": 16174,
+    "palavra": "administração",
+    "tema": "outros",
+    "score": 10
+  },
+  "adolescência": {
+    "id": 20387,
+    "palavra": "adolescência",
+    "tema": "outros",
+    "score": 10
+  },
+  "adolescente": {
+    "id": 4673,
+    "palavra": "adolescente",
+    "tema": "outros",
+    "score": 10
+  },
+  "adubo": {
+    "id": 6872,
+    "palavra": "adubo",
+    "tema": "natureza",
+    "score": 10
+  },
+  "advogado": {
+    "id": 2636,
+    "palavra": "advogado",
+    "tema": "outros",
+    "score": 10
+  },
+  "afastar": {
+    "id": 6893,
+    "palavra": "afastar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "agarrar": {
+    "id": 6888,
+    "palavra": "agarrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "agosto": {
+    "id": 6034,
+    "palavra": "agosto",
+    "tema": "outros",
+    "score": 20
+  },
+  "agricultor": {
+    "id": 2982,
+    "palavra": "agricultor",
+    "tema": "outros",
+    "score": 10
+  },
+  "ajudar": {
+    "id": 9046,
+    "palavra": "ajudar",
+    "tema": "verbos",
+    "score": 16
+  },
+  "alavanca": {
+    "id": 24218,
+    "palavra": "alavanca",
+    "tema": "objetos",
+    "score": 13
+  },
+  "alecrim": {
+    "id": 14246,
+    "palavra": "alecrim",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "alfaiate": {
+    "id": 22100,
+    "palavra": "alfaiate",
+    "tema": "outros",
+    "score": 10
+  },
+  "alga": {
+    "id": 6040,
+    "palavra": "alga",
+    "tema": "natureza",
+    "score": 13
+  },
+  "algodão": {
+    "id": 2985,
+    "palavra": "algodão",
+    "tema": "objetos",
+    "score": 10
+  },
+  "aliança": {
+    "id": 6900,
+    "palavra": "aliança",
+    "tema": "objetos",
+    "score": 12
+  },
+  "alicate": {
+    "id": 2644,
+    "palavra": "alicate",
+    "tema": "objetos",
+    "score": 13
+  },
+  "aliviar": {
+    "id": 32220,
+    "palavra": "aliviar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "alívio": {
+    "id": 39856,
+    "palavra": "alívio",
+    "tema": "emoções",
+    "score": 9
+  },
+  "almoçar": {
+    "id": 4609,
+    "palavra": "almoçar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "almoço": {
+    "id": 4611,
+    "palavra": "almoço",
+    "tema": "outros",
+    "score": 10
+  },
+  "almofada": {
+    "id": 2250,
+    "palavra": "almofada",
+    "tema": "objetos",
+    "score": 16
+  },
+  "alpendre": {
+    "id": 37045,
+    "palavra": "alpendre",
+    "tema": "cidades",
+    "score": 12
+  },
+  "alvorada": {
+    "id": 11477,
+    "palavra": "alvorada",
+    "tema": "natureza",
+    "score": 10
+  },
+  "amaciante": {
+    "id": 7262,
+    "palavra": "amaciante",
+    "tema": "objetos",
+    "score": 13
+  },
+  "amanhã": {
+    "id": 7152,
+    "palavra": "amanhã",
+    "tema": "outros",
+    "score": 9
+  },
+  "amassar": {
+    "id": 3254,
+    "palavra": "amassar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "ambulatório": {
+    "id": 35121,
+    "palavra": "ambulatório",
+    "tema": "cidades",
+    "score": 15
+  },
+  "ameixa": {
+    "id": 8305,
+    "palavra": "ameixa",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "amêndoa": {
+    "id": 8292,
+    "palavra": "amêndoa",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "amora": {
+    "id": 8360,
+    "palavra": "amora",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "anca": {
+    "id": 3000,
+    "palavra": "anca",
+    "tema": "corpo",
+    "score": 16
+  },
+  "anchova": {
+    "id": 28930,
+    "palavra": "anchova",
+    "tema": "animais",
+    "score": 13
+  },
+  "andorinha": {
+    "id": 3336,
+    "palavra": "andorinha",
+    "tema": "animais",
+    "score": 13
+  },
+  "anemômetro": {
+    "id": 37479,
+    "palavra": "anemômetro",
+    "tema": "objetos",
+    "score": 13
+  },
+  "anêmona": {
+    "id": 38362,
+    "palavra": "anêmona",
+    "tema": "animais",
+    "score": 13
+  },
+  "anfiteatro": {
+    "id": 39854,
+    "palavra": "anfiteatro",
+    "tema": "cidades",
+    "score": 16
+  },
+  "angiologista": {
+    "id": 31168,
+    "palavra": "angiologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "aniversário": {
+    "id": 3087,
+    "palavra": "aniversário",
+    "tema": "outros",
+    "score": 10
+  },
+  "ano": {
+    "id": 6903,
+    "palavra": "ano",
+    "tema": "outros",
+    "score": 10
+  },
+  "anotar": {
+    "id": 8490,
+    "palavra": "anotar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "antebraço": {
+    "id": 39124,
+    "palavra": "antebraço",
+    "tema": "corpo",
+    "score": 16
+  },
+  "antena": {
+    "id": 2253,
+    "palavra": "antena",
+    "tema": "objetos",
+    "score": 13
+  },
+  "antepenúltimo": {
+    "id": 37746,
+    "palavra": "antepenúltimo",
+    "tema": "numerais",
+    "score": 9
+  },
+  "antílope": {
+    "id": 27570,
+    "palavra": "antílope",
+    "tema": "animais",
+    "score": 13
+  },
+  "anúncio": {
+    "id": 8065,
+    "palavra": "anúncio",
+    "tema": "outros",
+    "score": 10
+  },
+  "apagador": {
+    "id": 16341,
+    "palavra": "apagador",
+    "tema": "objetos",
+    "score": 10
+  },
+  "apagar": {
+    "id": 2286,
+    "palavra": "apagar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "apanhar": {
+    "id": 35019,
+    "palavra": "apanhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "aparelho": {
+    "id": 13030,
+    "palavra": "aparelho",
+    "tema": "objetos",
+    "score": 12
+  },
+  "apêndice": {
+    "id": 38430,
+    "palavra": "apêndice",
+    "tema": "outros",
+    "score": 10
+  },
+  "apertar": {
+    "id": 5552,
+    "palavra": "apertar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "apito": {
+    "id": 6182,
+    "palavra": "apito",
+    "tema": "objetos",
+    "score": 10
+  },
+  "apoiar": {
+    "id": 21377,
+    "palavra": "apoiar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "apontador": {
+    "id": 2553,
+    "palavra": "apontador",
+    "tema": "objetos",
+    "score": 10
+  },
+  "apontar": {
+    "id": 6612,
+    "palavra": "apontar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "aprender": {
+    "id": 8029,
+    "palavra": "aprender",
+    "tema": "verbos",
+    "score": 13
+  },
+  "apresentação": {
+    "id": 9870,
+    "palavra": "apresentação",
+    "tema": "outros",
+    "score": 10
+  },
+  "apresentar": {
+    "id": 9870,
+    "palavra": "apresentar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "aquarela": {
+    "id": 6881,
+    "palavra": "aquarela",
+    "tema": "objetos",
+    "score": 10
+  },
+  "aquário": {
+    "id": 26618,
+    "palavra": "aquário",
+    "tema": "cidades",
+    "score": 12
+  },
+  "aquecedor": {
+    "id": 3259,
+    "palavra": "aquecedor",
+    "tema": "objetos",
+    "score": 21
+  },
+  "aquecer": {
+    "id": 8520,
+    "palavra": "aquecer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "aqueduto": {
+    "id": 24826,
+    "palavra": "aqueduto",
+    "tema": "cidades",
+    "score": 12
+  },
+  "aquífero": {
+    "id": 23725,
+    "palavra": "aquífero",
+    "tema": "natureza",
+    "score": 10
+  },
+  "ar": {
+    "id": 23731,
+    "palavra": "ar",
+    "tema": "natureza",
+    "score": 10
+  },
+  "arara": {
+    "id": 2934,
+    "palavra": "arara",
+    "tema": "animais",
+    "score": 13
+  },
+  "árbitro": {
+    "id": 4564,
+    "palavra": "árbitro",
+    "tema": "outros",
+    "score": 10
+  },
+  "arbusto": {
+    "id": 30241,
+    "palavra": "arbusto",
+    "tema": "natureza",
+    "score": 13
+  },
+  "areia": {
+    "id": 4565,
+    "palavra": "areia",
+    "tema": "natureza",
+    "score": 10
+  },
+  "armário": {
+    "id": 2258,
+    "palavra": "armário",
+    "tema": "objetos",
+    "score": 16
+  },
+  "armazém": {
+    "id": 6896,
+    "palavra": "armazém",
+    "tema": "cidades",
+    "score": 15
+  },
+  "arqueologia": {
+    "id": 32380,
+    "palavra": "arqueologia",
+    "tema": "outros",
+    "score": 10
+  },
+  "arqueólogo": {
+    "id": 32384,
+    "palavra": "arqueólogo",
+    "tema": "outros",
+    "score": 10
+  },
+  "arquibancada": {
+    "id": 24787,
+    "palavra": "arquibancada",
+    "tema": "objetos",
+    "score": 9
+  },
+  "arquiteto": {
+    "id": 2649,
+    "palavra": "arquiteto",
+    "tema": "outros",
+    "score": 10
+  },
+  "arquivo": {
+    "id": 11182,
+    "palavra": "arquivo",
+    "tema": "objetos",
+    "score": 16
+  },
+  "arrumar": {
+    "id": 15327,
+    "palavra": "arrumar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "artéria": {
+    "id": 10269,
+    "palavra": "artéria",
+    "tema": "corpo",
+    "score": 16
+  },
+  "artesanato": {
+    "id": 22769,
+    "palavra": "artesanato",
+    "tema": "outros",
+    "score": 10
+  },
+  "articulação": {
+    "id": 31182,
+    "palavra": "articulação",
+    "tema": "outros",
+    "score": 10
+  },
+  "arvoredo": {
+    "id": 32462,
+    "palavra": "arvoredo",
+    "tema": "natureza",
+    "score": 15
+  },
+  "asilo": {
+    "id": 5910,
+    "palavra": "asilo",
+    "tema": "cidades",
+    "score": 16
+  },
+  "asma": {
+    "id": 23761,
+    "palavra": "asma",
+    "tema": "corpo",
+    "score": 13
+  },
+  "aspirador": {
+    "id": 3227,
+    "palavra": "aspirador",
+    "tema": "objetos",
+    "score": 13
+  },
+  "assar": {
+    "id": 5487,
+    "palavra": "assar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "assinalar": {
+    "id": 39555,
+    "palavra": "assinalar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "assobiar": {
+    "id": 7249,
+    "palavra": "assobiar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "associação": {
+    "id": 12333,
+    "palavra": "associação",
+    "tema": "outros",
+    "score": 10
+  },
+  "assustar": {
+    "id": 8979,
+    "palavra": "assustar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "astrônomo": {
+    "id": 15339,
+    "palavra": "astrônomo",
+    "tema": "outros",
+    "score": 10
+  },
+  "ateliê": {
+    "id": 24647,
+    "palavra": "ateliê",
+    "tema": "objetos",
+    "score": 9
+  },
+  "atenção": {
+    "id": 24863,
+    "palavra": "atenção",
+    "tema": "emoções",
+    "score": 10
+  },
+  "atleta": {
+    "id": 3179,
+    "palavra": "atleta",
+    "tema": "outros",
+    "score": 10
+  },
+  "atmosfera": {
+    "id": 10289,
+    "palavra": "atmosfera",
+    "tema": "natureza",
+    "score": 10
+  },
+  "ator": {
+    "id": 4554,
+    "palavra": "ator",
+    "tema": "outros",
+    "score": 10
+  },
+  "atriz": {
+    "id": 4555,
+    "palavra": "atriz",
+    "tema": "outros",
+    "score": 10
+  },
+  "atum": {
+    "id": 6918,
+    "palavra": "atum",
+    "tema": "animais",
+    "score": 13
+  },
+  "auditório": {
+    "id": 32934,
+    "palavra": "auditório",
+    "tema": "cidades",
+    "score": 16
+  },
+  "aula": {
+    "id": 8579,
+    "palavra": "aula",
+    "tema": "outros",
+    "score": 10
+  },
+  "autoestima": {
+    "id": 16095,
+    "palavra": "autoestima",
+    "tema": "emoções",
+    "score": 15
+  },
+  "avalanche": {
+    "id": 29686,
+    "palavra": "avalanche",
+    "tema": "natureza",
+    "score": 10
+  },
+  "aveia": {
+    "id": 6921,
+    "palavra": "aveia",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "avelã": {
+    "id": 2988,
+    "palavra": "avelã",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "avenida": {
+    "id": 2299,
+    "palavra": "avenida",
+    "tema": "cidades",
+    "score": 13
+  },
+  "avental": {
+    "id": 2366,
+    "palavra": "avental",
+    "tema": "objetos",
+    "score": 10
+  },
+  "avestruz": {
+    "id": 2650,
+    "palavra": "avestruz",
+    "tema": "animais",
+    "score": 13
+  },
+  "axila": {
+    "id": 2989,
+    "palavra": "axila",
+    "tema": "corpo",
+    "score": 16
+  },
+  "azeite": {
+    "id": 2246,
+    "palavra": "azeite",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "azulejo": {
+    "id": 6054,
+    "palavra": "azulejo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "bacia": {
+    "id": 10307,
+    "palavra": "bacia",
+    "tema": "objetos",
+    "score": 13
+  },
+  "bagre": {
+    "id": 38324,
+    "palavra": "bagre",
+    "tema": "animais",
+    "score": 13
+  },
+  "bairro": {
+    "id": 25849,
+    "palavra": "bairro",
+    "tema": "cidades",
+    "score": 13
+  },
+  "balconista": {
+    "id": 37808,
+    "palavra": "balconista",
+    "tema": "outros",
+    "score": 10
+  },
+  "balneário": {
+    "id": 28203,
+    "palavra": "balneário",
+    "tema": "cidades",
+    "score": 13
+  },
+  "bananeira": {
+    "id": 3144,
+    "palavra": "bananeira",
+    "tema": "natureza",
+    "score": 16
+  },
+  "bancada": {
+    "id": 24025,
+    "palavra": "bancada",
+    "tema": "objetos",
+    "score": 16
+  },
+  "banda": {
+    "id": 23811,
+    "palavra": "banda",
+    "tema": "outros",
+    "score": 10
+  },
+  "bandeira": {
+    "id": 5918,
+    "palavra": "bandeira",
+    "tema": "outros",
+    "score": 10
+  },
+  "bandeja": {
+    "id": 2656,
+    "palavra": "bandeja",
+    "tema": "objetos",
+    "score": 16
+  },
+  "bandido": {
+    "id": 4674,
+    "palavra": "bandido",
+    "tema": "outros",
+    "score": 10
+  },
+  "banqueta": {
+    "id": 3291,
+    "palavra": "banqueta",
+    "tema": "objetos",
+    "score": 16
+  },
+  "barômetro": {
+    "id": 37477,
+    "palavra": "barômetro",
+    "tema": "objetos",
+    "score": 13
+  },
+  "barraca": {
+    "id": 38400,
+    "palavra": "barraca",
+    "tema": "cidades",
+    "score": 12
+  },
+  "barriga": {
+    "id": 2786,
+    "palavra": "barriga",
+    "tema": "corpo",
+    "score": 16
+  },
+  "barro": {
+    "id": 5908,
+    "palavra": "barro",
+    "tema": "natureza",
+    "score": 10
+  },
+  "bastão": {
+    "id": 8501,
+    "palavra": "bastão",
+    "tema": "objetos",
+    "score": 10
+  },
+  "bater": {
+    "id": 4551,
+    "palavra": "bater",
+    "tema": "verbos",
+    "score": 13
+  },
+  "batizado": {
+    "id": 3064,
+    "palavra": "batizado",
+    "tema": "outros",
+    "score": 10
+  },
+  "baú": {
+    "id": 5966,
+    "palavra": "baú",
+    "tema": "objetos",
+    "score": 16
+  },
+  "baunilha": {
+    "id": 28679,
+    "palavra": "baunilha",
+    "tema": "cores",
+    "score": 10
+  },
+  "bebê": {
+    "id": 6060,
+    "palavra": "bebê",
+    "tema": "outros",
+    "score": 10
+  },
+  "bege": {
+    "id": 9093,
+    "palavra": "bege",
+    "tema": "cores",
+    "score": 13
+  },
+  "beliche": {
+    "id": 2939,
+    "palavra": "beliche",
+    "tema": "objetos",
+    "score": 16
+  },
+  "bem": {
+    "id": 5397,
+    "palavra": "bem",
+    "tema": "outros",
+    "score": 10
+  },
+  "bengala": {
+    "id": 5922,
+    "palavra": "bengala",
+    "tema": "objetos",
+    "score": 13
+  },
+  "berço": {
+    "id": 5980,
+    "palavra": "berço",
+    "tema": "objetos",
+    "score": 16
+  },
+  "bexiga": {
+    "id": 3407,
+    "palavra": "bexiga",
+    "tema": "corpo",
+    "score": 16
+  },
+  "biblioteca": {
+    "id": 3065,
+    "palavra": "biblioteca",
+    "tema": "cidades",
+    "score": 16
+  },
+  "bibliotecário": {
+    "id": 34529,
+    "palavra": "bibliotecário",
+    "tema": "outros",
+    "score": 10
+  },
+  "bíceps": {
+    "id": 23841,
+    "palavra": "bíceps",
+    "tema": "corpo",
+    "score": 24
+  },
+  "bicho": {
+    "id": 8025,
+    "palavra": "bicho",
+    "tema": "outros",
+    "score": 9
+  },
+  "bilhete": {
+    "id": 7187,
+    "palavra": "bilhete",
+    "tema": "outros",
+    "score": 10
+  },
+  "biografia": {
+    "id": 22749,
+    "palavra": "biografia",
+    "tema": "outros",
+    "score": 9
+  },
+  "biosfera": {
+    "id": 20389,
+    "palavra": "biosfera",
+    "tema": "natureza",
+    "score": 10
+  },
+  "bisturi": {
+    "id": 9168,
+    "palavra": "bisturi",
+    "tema": "objetos",
+    "score": 10
+  },
+  "bobina": {
+    "id": 2978,
+    "palavra": "bobina",
+    "tema": "objetos",
+    "score": 16
+  },
+  "bochecha": {
+    "id": 2919,
+    "palavra": "bochecha",
+    "tema": "corpo",
+    "score": 16
+  },
+  "bolha": {
+    "id": 8389,
+    "palavra": "bolha",
+    "tema": "corpo",
+    "score": 10
+  },
+  "bombom": {
+    "id": 8298,
+    "palavra": "bombom",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "bondade": {
+    "id": 37231,
+    "palavra": "bondade",
+    "tema": "emoções",
+    "score": 9
+  },
+  "boneca": {
+    "id": 3063,
+    "palavra": "boneca",
+    "tema": "outros",
+    "score": 10
+  },
+  "boneco": {
+    "id": 3130,
+    "palavra": "boneco",
+    "tema": "outros",
+    "score": 10
+  },
+  "borracha": {
+    "id": 2409,
+    "palavra": "borracha",
+    "tema": "objetos",
+    "score": 10
+  },
+  "bosque": {
+    "id": 2666,
+    "palavra": "bosque",
+    "tema": "natureza",
+    "score": 16
+  },
+  "botão": {
+    "id": 2668,
+    "palavra": "botão",
+    "tema": "objetos",
+    "score": 13
+  },
+  "brigar": {
+    "id": 4634,
+    "palavra": "brigar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "brilhar": {
+    "id": 6475,
+    "palavra": "brilhar",
+    "tema": "verbos",
+    "score": 10
+  },
+  "brinco": {
+    "id": 8363,
+    "palavra": "brinco",
+    "tema": "objetos",
+    "score": 13
+  },
+  "brindar": {
+    "id": 23414,
+    "palavra": "brindar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "broca": {
+    "id": 8037,
+    "palavra": "broca",
+    "tema": "objetos",
+    "score": 13
+  },
+  "broche": {
+    "id": 29788,
+    "palavra": "broche",
+    "tema": "objetos",
+    "score": 13
+  },
+  "bronquite": {
+    "id": 5403,
+    "palavra": "bronquite",
+    "tema": "corpo",
+    "score": 13
+  },
+  "busto": {
+    "id": 37618,
+    "palavra": "busto",
+    "tema": "objetos",
+    "score": 10
+  },
+  "buzinar": {
+    "id": 22139,
+    "palavra": "buzinar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cabeça": {
+    "id": 2673,
+    "palavra": "cabeça",
+    "tema": "corpo",
+    "score": 16
+  },
+  "cabeleireiro": {
+    "id": 2849,
+    "palavra": "cabeleireiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "cabide": {
+    "id": 2846,
+    "palavra": "cabide",
+    "tema": "objetos",
+    "score": 16
+  },
+  "cabo": {
+    "id": 6948,
+    "palavra": "cabo",
+    "tema": "objetos",
+    "score": 13
+  },
+  "cachimbo": {
+    "id": 4722,
+    "palavra": "cachimbo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "cadarço": {
+    "id": 15363,
+    "palavra": "cadarço",
+    "tema": "objetos",
+    "score": 13
+  },
+  "caderneta": {
+    "id": 4678,
+    "palavra": "caderneta",
+    "tema": "objetos",
+    "score": 10
+  },
+  "cafeteira": {
+    "id": 2297,
+    "palavra": "cafeteira",
+    "tema": "objetos",
+    "score": 16
+  },
+  "cafeteria": {
+    "id": 37337,
+    "palavra": "cafeteria",
+    "tema": "cidades",
+    "score": 15
+  },
+  "cair": {
+    "id": 2675,
+    "palavra": "cair",
+    "tema": "verbos",
+    "score": 13
+  },
+  "caixa": {
+    "id": 3001,
+    "palavra": "caixa",
+    "tema": "outros",
+    "score": 10
+  },
+  "calçada": {
+    "id": 2247,
+    "palavra": "calçada",
+    "tema": "cidades",
+    "score": 16
+  },
+  "calçadão": {
+    "id": 35111,
+    "palavra": "calçadão",
+    "tema": "cidades",
+    "score": 13
+  },
+  "calçar": {
+    "id": 14534,
+    "palavra": "calçar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cálcio": {
+    "id": 25898,
+    "palavra": "cálcio",
+    "tema": "corpo",
+    "score": 19
+  },
+  "calcular": {
+    "id": 8518,
+    "palavra": "calcular",
+    "tema": "verbos",
+    "score": 13
+  },
+  "caldo": {
+    "id": 28297,
+    "palavra": "caldo",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "cálice": {
+    "id": 23884,
+    "palavra": "cálice",
+    "tema": "objetos",
+    "score": 13
+  },
+  "camarim": {
+    "id": 23893,
+    "palavra": "camarim",
+    "tema": "objetos",
+    "score": 10
+  },
+  "caminhar": {
+    "id": 38426,
+    "palavra": "caminhar",
+    "tema": "verbos",
+    "score": 15
+  },
+  "caminhoneiro": {
+    "id": 39836,
+    "palavra": "caminhoneiro",
+    "tema": "outros",
+    "score": 9
+  },
+  "camiseta": {
+    "id": 2309,
+    "palavra": "camiseta",
+    "tema": "objetos",
+    "score": 13
+  },
+  "camomila": {
+    "id": 38795,
+    "palavra": "camomila",
+    "tema": "natureza",
+    "score": 13
+  },
+  "campo": {
+    "id": 2683,
+    "palavra": "campo",
+    "tema": "natureza",
+    "score": 10
+  },
+  "camundongo": {
+    "id": 2546,
+    "palavra": "camundongo",
+    "tema": "animais",
+    "score": 12
+  },
+  "canário": {
+    "id": 3004,
+    "palavra": "canário",
+    "tema": "animais",
+    "score": 13
+  },
+  "canção": {
+    "id": 24791,
+    "palavra": "canção",
+    "tema": "outros",
+    "score": 9
+  },
+  "caneca": {
+    "id": 2582,
+    "palavra": "caneca",
+    "tema": "objetos",
+    "score": 16
+  },
+  "cansaço": {
+    "id": 35573,
+    "palavra": "cansaço",
+    "tema": "emoções",
+    "score": 15
+  },
+  "canto": {
+    "id": 3382,
+    "palavra": "canto",
+    "tema": "outros",
+    "score": 10
+  },
+  "cantor": {
+    "id": 4585,
+    "palavra": "cantor",
+    "tema": "outros",
+    "score": 10
+  },
+  "capacete": {
+    "id": 2691,
+    "palavra": "capacete",
+    "tema": "objetos",
+    "score": 10
+  },
+  "capela": {
+    "id": 29963,
+    "palavra": "capela",
+    "tema": "cidades",
+    "score": 16
+  },
+  "capitão": {
+    "id": 24937,
+    "palavra": "capitão",
+    "tema": "outros",
+    "score": 10
+  },
+  "capivara": {
+    "id": 39781,
+    "palavra": "capivara",
+    "tema": "animais",
+    "score": 13
+  },
+  "caqui": {
+    "id": 13074,
+    "palavra": "caqui",
+    "tema": "cores",
+    "score": 10
+  },
+  "caramelo": {
+    "id": 15347,
+    "palavra": "caramelo",
+    "tema": "cores",
+    "score": 10
+  },
+  "cardápio": {
+    "id": 5513,
+    "palavra": "cardápio",
+    "tema": "alimentos",
+    "score": 9
+  },
+  "cardiologista": {
+    "id": 16319,
+    "palavra": "cardiologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "cariátide": {
+    "id": 38685,
+    "palavra": "cariátide",
+    "tema": "objetos",
+    "score": 10
+  },
+  "caridade": {
+    "id": 36508,
+    "palavra": "caridade",
+    "tema": "emoções",
+    "score": 9
+  },
+  "cárie": {
+    "id": 21494,
+    "palavra": "cárie",
+    "tema": "corpo",
+    "score": 13
+  },
+  "carinho": {
+    "id": 8020,
+    "palavra": "carinho",
+    "tema": "emoções",
+    "score": 15
+  },
+  "carnaval": {
+    "id": 3074,
+    "palavra": "carnaval",
+    "tema": "outros",
+    "score": 10
+  },
+  "carneiro": {
+    "id": 9061,
+    "palavra": "carneiro",
+    "tema": "animais",
+    "score": 13
+  },
+  "carnívoro": {
+    "id": 8062,
+    "palavra": "carnívoro",
+    "tema": "animais",
+    "score": 12
+  },
+  "carpete": {
+    "id": 2249,
+    "palavra": "carpete",
+    "tema": "objetos",
+    "score": 16
+  },
+  "carregador": {
+    "id": 27651,
+    "palavra": "carregador",
+    "tema": "objetos",
+    "score": 13
+  },
+  "carregar": {
+    "id": 8982,
+    "palavra": "carregar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "carretel": {
+    "id": 17200,
+    "palavra": "carretel",
+    "tema": "objetos",
+    "score": 16
+  },
+  "carroça": {
+    "id": 21488,
+    "palavra": "carroça",
+    "tema": "objetos",
+    "score": 10
+  },
+  "carta": {
+    "id": 2688,
+    "palavra": "carta",
+    "tema": "outros",
+    "score": 10
+  },
+  "carteira": {
+    "id": 2689,
+    "palavra": "carteira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "cartucho": {
+    "id": 29710,
+    "palavra": "cartucho",
+    "tema": "objetos",
+    "score": 10
+  },
+  "castanho": {
+    "id": 8066,
+    "palavra": "castanho",
+    "tema": "cores",
+    "score": 10
+  },
+  "casulo": {
+    "id": 26012,
+    "palavra": "casulo",
+    "tema": "natureza",
+    "score": 10
+  },
+  "catalogar": {
+    "id": 36896,
+    "palavra": "catalogar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "catedral": {
+    "id": 5423,
+    "palavra": "catedral",
+    "tema": "cidades",
+    "score": 16
+  },
+  "caule": {
+    "id": 3159,
+    "palavra": "caule",
+    "tema": "natureza",
+    "score": 13
+  },
+  "cavaleiro": {
+    "id": 3169,
+    "palavra": "cavaleiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "cavalete": {
+    "id": 8723,
+    "palavra": "cavalete",
+    "tema": "objetos",
+    "score": 10
+  },
+  "caverna": {
+    "id": 2729,
+    "palavra": "caverna",
+    "tema": "natureza",
+    "score": 10
+  },
+  "cebolinha": {
+    "id": 37600,
+    "palavra": "cebolinha",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "cegonha": {
+    "id": 3015,
+    "palavra": "cegonha",
+    "tema": "animais",
+    "score": 13
+  },
+  "celebração": {
+    "id": 6969,
+    "palavra": "celebração",
+    "tema": "outros",
+    "score": 10
+  },
+  "célula": {
+    "id": 36340,
+    "palavra": "célula",
+    "tema": "corpo",
+    "score": 16
+  },
+  "cenógrafo": {
+    "id": 39467,
+    "palavra": "cenógrafo",
+    "tema": "outros",
+    "score": 9
+  },
+  "censura": {
+    "id": 14668,
+    "palavra": "censura",
+    "tema": "outros",
+    "score": 10
+  },
+  "censurar": {
+    "id": 11688,
+    "palavra": "censurar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "centopeia": {
+    "id": 24986,
+    "palavra": "centopeia",
+    "tema": "animais",
+    "score": 13
+  },
+  "centro": {
+    "id": 15748,
+    "palavra": "centro",
+    "tema": "cidades",
+    "score": 12
+  },
+  "cerveja": {
+    "id": 2330,
+    "palavra": "cerveja",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "cervo": {
+    "id": 3263,
+    "palavra": "cervo",
+    "tema": "animais",
+    "score": 13
+  },
+  "chácara": {
+    "id": 24947,
+    "palavra": "chácara",
+    "tema": "cidades",
+    "score": 15
+  },
+  "chamar": {
+    "id": 4686,
+    "palavra": "chamar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "chaminé": {
+    "id": 2333,
+    "palavra": "chaminé",
+    "tema": "objetos",
+    "score": 10
+  },
+  "chão": {
+    "id": 2575,
+    "palavra": "chão",
+    "tema": "objetos",
+    "score": 10
+  },
+  "chaveiro": {
+    "id": 28537,
+    "palavra": "chaveiro",
+    "tema": "objetos",
+    "score": 10
+  },
+  "chegada": {
+    "id": 16817,
+    "palavra": "chegada",
+    "tema": "outros",
+    "score": 10
+  },
+  "chegar": {
+    "id": 11708,
+    "palavra": "chegar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "chiclete": {
+    "id": 8724,
+    "palavra": "chiclete",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "chicória": {
+    "id": 26067,
+    "palavra": "chicória",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "chimpanzé": {
+    "id": 8073,
+    "palavra": "chimpanzé",
+    "tema": "animais",
+    "score": 13
+  },
+  "chorar": {
+    "id": 3239,
+    "palavra": "chorar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "choro": {
+    "id": 35881,
+    "palavra": "choro",
+    "tema": "emoções",
+    "score": 9
+  },
+  "chuchu": {
+    "id": 39691,
+    "palavra": "chuchu",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "churrasqueira": {
+    "id": 36039,
+    "palavra": "churrasqueira",
+    "tema": "objetos",
+    "score": 16
+  },
+  "chuteira": {
+    "id": 36503,
+    "palavra": "chuteira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "cicatriz": {
+    "id": 5428,
+    "palavra": "cicatriz",
+    "tema": "corpo",
+    "score": 13
+  },
+  "ciclovia": {
+    "id": 7051,
+    "palavra": "ciclovia",
+    "tema": "cidades",
+    "score": 16
+  },
+  "cientista": {
+    "id": 8076,
+    "palavra": "cientista",
+    "tema": "outros",
+    "score": 10
+  },
+  "cigarra": {
+    "id": 16613,
+    "palavra": "cigarra",
+    "tema": "animais",
+    "score": 13
+  },
+  "cinquenta": {
+    "id": 29342,
+    "palavra": "cinquenta",
+    "tema": "numerais",
+    "score": 16
+  },
+  "cinto": {
+    "id": 2336,
+    "palavra": "cinto",
+    "tema": "objetos",
+    "score": 13
+  },
+  "cinza": {
+    "id": 3340,
+    "palavra": "cinza",
+    "tema": "cores",
+    "score": 13
+  },
+  "cipó": {
+    "id": 34179,
+    "palavra": "cipó",
+    "tema": "natureza",
+    "score": 10
+  },
+  "circuito": {
+    "id": 36001,
+    "palavra": "circuito",
+    "tema": "objetos",
+    "score": 13
+  },
+  "cirurgião": {
+    "id": 3187,
+    "palavra": "cirurgião",
+    "tema": "outros",
+    "score": 10
+  },
+  "cisterna": {
+    "id": 38654,
+    "palavra": "cisterna",
+    "tema": "objetos",
+    "score": 9
+  },
+  "clarinete": {
+    "id": 5964,
+    "palavra": "clarinete",
+    "tema": "objetos",
+    "score": 10
+  },
+  "classificar": {
+    "id": 8077,
+    "palavra": "classificar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "clavícula": {
+    "id": 37435,
+    "palavra": "clavícula",
+    "tema": "corpo",
+    "score": 16
+  },
+  "clínica": {
+    "id": 35121,
+    "palavra": "clínica",
+    "tema": "cidades",
+    "score": 15
+  },
+  "clorofila": {
+    "id": 32738,
+    "palavra": "clorofila",
+    "tema": "natureza",
+    "score": 12
+  },
+  "coalhada": {
+    "id": 15367,
+    "palavra": "coalhada",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "cobertor": {
+    "id": 2459,
+    "palavra": "cobertor",
+    "tema": "objetos",
+    "score": 16
+  },
+  "cobrança": {
+    "id": 15988,
+    "palavra": "cobrança",
+    "tema": "outros",
+    "score": 10
+  },
+  "cobrar": {
+    "id": 15986,
+    "palavra": "cobrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cobre": {
+    "id": 10287,
+    "palavra": "cobre",
+    "tema": "objetos",
+    "score": 13
+  },
+  "coçar": {
+    "id": 11356,
+    "palavra": "coçar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "codorna": {
+    "id": 25970,
+    "palavra": "codorna",
+    "tema": "animais",
+    "score": 13
+  },
+  "coentro": {
+    "id": 39291,
+    "palavra": "coentro",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "cola": {
+    "id": 37499,
+    "palavra": "cola",
+    "tema": "objetos",
+    "score": 13
+  },
+  "colaboração": {
+    "id": 12252,
+    "palavra": "colaboração",
+    "tema": "outros",
+    "score": 10
+  },
+  "colar": {
+    "id": 2511,
+    "palavra": "colar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "colchão": {
+    "id": 8078,
+    "palavra": "colchão",
+    "tema": "objetos",
+    "score": 16
+  },
+  "colega": {
+    "id": 39421,
+    "palavra": "colega",
+    "tema": "outros",
+    "score": 9
+  },
+  "colégio": {
+    "id": 3082,
+    "palavra": "colégio",
+    "tema": "cidades",
+    "score": 16
+  },
+  "colina": {
+    "id": 38728,
+    "palavra": "colina",
+    "tema": "natureza",
+    "score": 10
+  },
+  "colmeia": {
+    "id": 26761,
+    "palavra": "colmeia",
+    "tema": "natureza",
+    "score": 10
+  },
+  "colorir": {
+    "id": 2348,
+    "palavra": "colorir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "comentarista": {
+    "id": 28237,
+    "palavra": "comentarista",
+    "tema": "outros",
+    "score": 10
+  },
+  "comércio": {
+    "id": 6652,
+    "palavra": "comércio",
+    "tema": "outros",
+    "score": 10
+  },
+  "compartilhar": {
+    "id": 15361,
+    "palavra": "compartilhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "compasso": {
+    "id": 9146,
+    "palavra": "compasso",
+    "tema": "objetos",
+    "score": 10
+  },
+  "completar": {
+    "id": 13078,
+    "palavra": "completar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "composição": {
+    "id": 24791,
+    "palavra": "composição",
+    "tema": "outros",
+    "score": 9
+  },
+  "compreender": {
+    "id": 11697,
+    "palavra": "compreender",
+    "tema": "verbos",
+    "score": 13
+  },
+  "compreensão": {
+    "id": 15331,
+    "palavra": "compreensão",
+    "tema": "emoções",
+    "score": 10
+  },
+  "comunicação": {
+    "id": 9870,
+    "palavra": "comunicação",
+    "tema": "outros",
+    "score": 10
+  },
+  "comunicar": {
+    "id": 3345,
+    "palavra": "comunicar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "concessionária": {
+    "id": 4883,
+    "palavra": "concessionária",
+    "tema": "cidades",
+    "score": 19
+  },
+  "condensação": {
+    "id": 36059,
+    "palavra": "condensação",
+    "tema": "natureza",
+    "score": 9
+  },
+  "condensar": {
+    "id": 36027,
+    "palavra": "condensar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "condor": {
+    "id": 36986,
+    "palavra": "condor",
+    "tema": "animais",
+    "score": 13
+  },
+  "conduzir": {
+    "id": 2712,
+    "palavra": "conduzir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "confeiteiro": {
+    "id": 2857,
+    "palavra": "confeiteiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "conferência": {
+    "id": 27465,
+    "palavra": "conferência",
+    "tema": "outros",
+    "score": 10
+  },
+  "conferencista": {
+    "id": 9868,
+    "palavra": "conferencista",
+    "tema": "outros",
+    "score": 10
+  },
+  "confessar": {
+    "id": 30870,
+    "palavra": "confessar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "confiar": {
+    "id": 36694,
+    "palavra": "confiar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "congelamento": {
+    "id": 36053,
+    "palavra": "congelamento",
+    "tema": "alimentos",
+    "score": 9
+  },
+  "congelar": {
+    "id": 36023,
+    "palavra": "congelar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "congresso": {
+    "id": 21551,
+    "palavra": "congresso",
+    "tema": "outros",
+    "score": 10
+  },
+  "conjuntivite": {
+    "id": 25010,
+    "palavra": "conjuntivite",
+    "tema": "corpo",
+    "score": 13
+  },
+  "conquistar": {
+    "id": 33062,
+    "palavra": "conquistar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "consagrar": {
+    "id": 30868,
+    "palavra": "consagrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "consciência": {
+    "id": 12319,
+    "palavra": "consciência",
+    "tema": "outros",
+    "score": 10
+  },
+  "consertar": {
+    "id": 6910,
+    "palavra": "consertar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "considerar": {
+    "id": 12349,
+    "palavra": "considerar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "constelação": {
+    "id": 24994,
+    "palavra": "constelação",
+    "tema": "natureza",
+    "score": 10
+  },
+  "contaminar": {
+    "id": 7066,
+    "palavra": "contaminar",
+    "tema": "verbos",
+    "score": 10
+  },
+  "contornar": {
+    "id": 32520,
+    "palavra": "contornar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "contrabaixo": {
+    "id": 17214,
+    "palavra": "contrabaixo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "contribuição": {
+    "id": 16351,
+    "palavra": "contribuição",
+    "tema": "outros",
+    "score": 9
+  },
+  "controle": {
+    "id": 26182,
+    "palavra": "controle",
+    "tema": "objetos",
+    "score": 12
+  },
+  "convenção": {
+    "id": 11689,
+    "palavra": "convenção",
+    "tema": "outros",
+    "score": 10
+  },
+  "conversa": {
+    "id": 23402,
+    "palavra": "conversa",
+    "tema": "outros",
+    "score": 10
+  },
+  "conversar": {
+    "id": 3345,
+    "palavra": "conversar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "convidar": {
+    "id": 11287,
+    "palavra": "convidar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cooperação": {
+    "id": 12252,
+    "palavra": "cooperação",
+    "tema": "outros",
+    "score": 10
+  },
+  "cooperar": {
+    "id": 4570,
+    "palavra": "cooperar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cópia": {
+    "id": 9876,
+    "palavra": "cópia",
+    "tema": "outros",
+    "score": 10
+  },
+  "copiar": {
+    "id": 21559,
+    "palavra": "copiar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "copo": {
+    "id": 2610,
+    "palavra": "copo",
+    "tema": "objetos",
+    "score": 16
+  },
+  "corça": {
+    "id": 39681,
+    "palavra": "corça",
+    "tema": "animais",
+    "score": 13
+  },
+  "cordeiro": {
+    "id": 2489,
+    "palavra": "cordeiro",
+    "tema": "animais",
+    "score": 13
+  },
+  "cordilheira": {
+    "id": 23975,
+    "palavra": "cordilheira",
+    "tema": "natureza",
+    "score": 10
+  },
+  "coreto": {
+    "id": 36406,
+    "palavra": "coreto",
+    "tema": "cidades",
+    "score": 13
+  },
+  "córnea": {
+    "id": 9100,
+    "palavra": "córnea",
+    "tema": "corpo",
+    "score": 19
+  },
+  "coroa": {
+    "id": 2718,
+    "palavra": "coroa",
+    "tema": "outros",
+    "score": 10
+  },
+  "correspondência": {
+    "id": 2688,
+    "palavra": "correspondência",
+    "tema": "outros",
+    "score": 10
+  },
+  "corrigir": {
+    "id": 6998,
+    "palavra": "corrigir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "corrimão": {
+    "id": 37021,
+    "palavra": "corrimão",
+    "tema": "objetos",
+    "score": 9
+  },
+  "cortar": {
+    "id": 2547,
+    "palavra": "cortar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cortina": {
+    "id": 8344,
+    "palavra": "cortina",
+    "tema": "objetos",
+    "score": 16
+  },
+  "costa": {
+    "id": 8007,
+    "palavra": "costa",
+    "tema": "natureza",
+    "score": 10
+  },
+  "costela": {
+    "id": 7000,
+    "palavra": "costela",
+    "tema": "corpo",
+    "score": 10
+  },
+  "costurar": {
+    "id": 2722,
+    "palavra": "costurar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "costureira": {
+    "id": 21996,
+    "palavra": "costureira",
+    "tema": "outros",
+    "score": 10
+  },
+  "cotovelo": {
+    "id": 2707,
+    "palavra": "cotovelo",
+    "tema": "corpo",
+    "score": 16
+  },
+  "cozinha": {
+    "id": 10753,
+    "palavra": "cozinha",
+    "tema": "objetos",
+    "score": 10
+  },
+  "cozinhar": {
+    "id": 2342,
+    "palavra": "cozinhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cozinheiro": {
+    "id": 6985,
+    "palavra": "cozinheiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "crânio": {
+    "id": 5697,
+    "palavra": "crânio",
+    "tema": "corpo",
+    "score": 16
+  },
+  "credenciar": {
+    "id": 35097,
+    "palavra": "credenciar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "creme": {
+    "id": 3376,
+    "palavra": "creme",
+    "tema": "cores",
+    "score": 10
+  },
+  "crescer": {
+    "id": 7002,
+    "palavra": "crescer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "criatividade": {
+    "id": 11690,
+    "palavra": "criatividade",
+    "tema": "emoções",
+    "score": 10
+  },
+  "cripta": {
+    "id": 37579,
+    "palavra": "cripta",
+    "tema": "objetos",
+    "score": 10
+  },
+  "crivo": {
+    "id": 24955,
+    "palavra": "crivo",
+    "tema": "objetos",
+    "score": 13
+  },
+  "cruzamento": {
+    "id": 39244,
+    "palavra": "cruzamento",
+    "tema": "cidades",
+    "score": 13
+  },
+  "cruzar": {
+    "id": 5976,
+    "palavra": "cruzar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cuidar": {
+    "id": 11691,
+    "palavra": "cuidar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "cultivar": {
+    "id": 38080,
+    "palavra": "cultivar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "cultura": {
+    "id": 11693,
+    "palavra": "cultura",
+    "tema": "outros",
+    "score": 10
+  },
+  "cume": {
+    "id": 20391,
+    "palavra": "cume",
+    "tema": "natureza",
+    "score": 10
+  },
+  "currículo": {
+    "id": 39177,
+    "palavra": "currículo",
+    "tema": "objetos",
+    "score": 9
+  },
+  "curso": {
+    "id": 23404,
+    "palavra": "curso",
+    "tema": "outros",
+    "score": 10
+  },
+  "damasco": {
+    "id": 2983,
+    "palavra": "damasco",
+    "tema": "cores",
+    "score": 10
+  },
+  "dança": {
+    "id": 32562,
+    "palavra": "dança",
+    "tema": "outros",
+    "score": 10
+  },
+  "dar": {
+    "id": 17038,
+    "palavra": "dar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "decidir": {
+    "id": 11694,
+    "palavra": "decidir",
+    "tema": "verbos",
+    "score": 12
+  },
+  "decisão": {
+    "id": 14670,
+    "palavra": "decisão",
+    "tema": "outros",
+    "score": 9
+  },
+  "decorar": {
+    "id": 7008,
+    "palavra": "decorar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "dedal": {
+    "id": 3303,
+    "palavra": "dedal",
+    "tema": "objetos",
+    "score": 16
+  },
+  "defender": {
+    "id": 6192,
+    "palavra": "defender",
+    "tema": "verbos",
+    "score": 13
+  },
+  "deitar": {
+    "id": 13374,
+    "palavra": "deitar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "delegacia": {
+    "id": 32414,
+    "palavra": "delegacia",
+    "tema": "cidades",
+    "score": 15
+  },
+  "delta": {
+    "id": 36906,
+    "palavra": "delta",
+    "tema": "natureza",
+    "score": 10
+  },
+  "dentadura": {
+    "id": 37170,
+    "palavra": "dentadura",
+    "tema": "corpo",
+    "score": 13
+  },
+  "depósito": {
+    "id": 6896,
+    "palavra": "depósito",
+    "tema": "cidades",
+    "score": 15
+  },
+  "deputado": {
+    "id": 32646,
+    "palavra": "deputado",
+    "tema": "outros",
+    "score": 10
+  },
+  "dermatologista": {
+    "id": 34373,
+    "palavra": "dermatologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "derrubar": {
+    "id": 11230,
+    "palavra": "derrubar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "desatar": {
+    "id": 39213,
+    "palavra": "desatar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "descer": {
+    "id": 8035,
+    "palavra": "descer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "descobrir": {
+    "id": 6019,
+    "palavra": "descobrir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "descrição": {
+    "id": 11713,
+    "palavra": "descrição",
+    "tema": "outros",
+    "score": 9
+  },
+  "desejo": {
+    "id": 38001,
+    "palavra": "desejo",
+    "tema": "emoções",
+    "score": 9
+  },
+  "desenhar": {
+    "id": 8088,
+    "palavra": "desenhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "desenvolvimento": {
+    "id": 39286,
+    "palavra": "desenvolvimento",
+    "tema": "outros",
+    "score": 18
+  },
+  "desfibrilador": {
+    "id": 36519,
+    "palavra": "desfibrilador",
+    "tema": "objetos",
+    "score": 10
+  },
+  "desfile": {
+    "id": 26708,
+    "palavra": "desfile",
+    "tema": "outros",
+    "score": 10
+  },
+  "desinfetante": {
+    "id": 36761,
+    "palavra": "desinfetante",
+    "tema": "objetos",
+    "score": 13
+  },
+  "deslizar": {
+    "id": 37900,
+    "palavra": "deslizar",
+    "tema": "verbos",
+    "score": 16
+  },
+  "deslocar": {
+    "id": 7167,
+    "palavra": "deslocar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "despedir": {
+    "id": 21531,
+    "palavra": "despedir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "despertar": {
+    "id": 7255,
+    "palavra": "despertar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "destruir": {
+    "id": 25056,
+    "palavra": "destruir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "detergente": {
+    "id": 7021,
+    "palavra": "detergente",
+    "tema": "objetos",
+    "score": 13
+  },
+  "devolver": {
+    "id": 6474,
+    "palavra": "devolver",
+    "tema": "verbos",
+    "score": 13
+  },
+  "dezembro": {
+    "id": 6476,
+    "palavra": "dezembro",
+    "tema": "outros",
+    "score": 20
+  },
+  "dezenove": {
+    "id": 29276,
+    "palavra": "dezenove",
+    "tema": "numerais",
+    "score": 16
+  },
+  "dezesseis": {
+    "id": 29270,
+    "palavra": "dezesseis",
+    "tema": "numerais",
+    "score": 16
+  },
+  "dezessete": {
+    "id": 29272,
+    "palavra": "dezessete",
+    "tema": "numerais",
+    "score": 16
+  },
+  "dia": {
+    "id": 7022,
+    "palavra": "dia",
+    "tema": "outros",
+    "score": 9
+  },
+  "diabetes": {
+    "id": 28245,
+    "palavra": "diabetes",
+    "tema": "corpo",
+    "score": 21
+  },
+  "dialogar": {
+    "id": 3345,
+    "palavra": "dialogar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "diapasão": {
+    "id": 34181,
+    "palavra": "diapasão",
+    "tema": "objetos",
+    "score": 10
+  },
+  "dicionário": {
+    "id": 7024,
+    "palavra": "dicionário",
+    "tema": "objetos",
+    "score": 10
+  },
+  "dignidade": {
+    "id": 11695,
+    "palavra": "dignidade",
+    "tema": "emoções",
+    "score": 10
+  },
+  "direção": {
+    "id": 7078,
+    "palavra": "direção",
+    "tema": "outros",
+    "score": 9
+  },
+  "direcionar": {
+    "id": 8991,
+    "palavra": "direcionar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "diretor": {
+    "id": 22755,
+    "palavra": "diretor",
+    "tema": "outros",
+    "score": 10
+  },
+  "dirigir": {
+    "id": 2712,
+    "palavra": "dirigir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "disco": {
+    "id": 9187,
+    "palavra": "disco",
+    "tema": "objetos",
+    "score": 13
+  },
+  "discutir": {
+    "id": 4634,
+    "palavra": "discutir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "disposição": {
+    "id": 37784,
+    "palavra": "disposição",
+    "tema": "outros",
+    "score": 9
+  },
+  "distância": {
+    "id": 8154,
+    "palavra": "distância",
+    "tema": "outros",
+    "score": 9
+  },
+  "distanciar": {
+    "id": 6893,
+    "palavra": "distanciar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "distribuir": {
+    "id": 26377,
+    "palavra": "distribuir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "divertir": {
+    "id": 8992,
+    "palavra": "divertir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "dividir": {
+    "id": 15361,
+    "palavra": "dividir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "doce": {
+    "id": 2470,
+    "palavra": "doce",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "documento": {
+    "id": 5945,
+    "palavra": "documento",
+    "tema": "outros",
+    "score": 10
+  },
+  "doença": {
+    "id": 6637,
+    "palavra": "doença",
+    "tema": "outros",
+    "score": 9
+  },
+  "domador": {
+    "id": 4635,
+    "palavra": "domador",
+    "tema": "outros",
+    "score": 10
+  },
+  "domingo": {
+    "id": 6478,
+    "palavra": "domingo",
+    "tema": "outros",
+    "score": 20
+  },
+  "doninha": {
+    "id": 5969,
+    "palavra": "doninha",
+    "tema": "animais",
+    "score": 13
+  },
+  "dor": {
+    "id": 2367,
+    "palavra": "dor",
+    "tema": "emoções",
+    "score": 10
+  },
+  "dormitório": {
+    "id": 5988,
+    "palavra": "dormitório",
+    "tema": "objetos",
+    "score": 9
+  },
+  "dourado": {
+    "id": 2739,
+    "palavra": "dourado",
+    "tema": "cores",
+    "score": 13
+  },
+  "dourar": {
+    "id": 36908,
+    "palavra": "dourar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "drogaria": {
+    "id": 35999,
+    "palavra": "drogaria",
+    "tema": "cidades",
+    "score": 15
+  },
+  "duvidar": {
+    "id": 11696,
+    "palavra": "duvidar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "duzentos": {
+    "id": 29278,
+    "palavra": "duzentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "ecologia": {
+    "id": 39249,
+    "palavra": "ecologia",
+    "tema": "natureza",
+    "score": 9
+  },
+  "economia": {
+    "id": 11723,
+    "palavra": "economia",
+    "tema": "outros",
+    "score": 10
+  },
+  "edema": {
+    "id": 31678,
+    "palavra": "edema",
+    "tema": "corpo",
+    "score": 13
+  },
+  "edredom": {
+    "id": 16297,
+    "palavra": "edredom",
+    "tema": "objetos",
+    "score": 16
+  },
+  "educar": {
+    "id": 38021,
+    "palavra": "educar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "elaborar": {
+    "id": 11698,
+    "palavra": "elaborar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "elástico": {
+    "id": 24017,
+    "palavra": "elástico",
+    "tema": "objetos",
+    "score": 10
+  },
+  "eletricista": {
+    "id": 2740,
+    "palavra": "eletricista",
+    "tema": "outros",
+    "score": 10
+  },
+  "eletrocardiograma": {
+    "id": 8100,
+    "palavra": "eletrocardiograma",
+    "tema": "outros",
+    "score": 10
+  },
+  "eletroencefalograma": {
+    "id": 8101,
+    "palavra": "eletroencefalograma",
+    "tema": "outros",
+    "score": 10
+  },
+  "ema": {
+    "id": 29702,
+    "palavra": "ema",
+    "tema": "animais",
+    "score": 13
+  },
+  "embaixador": {
+    "id": 38343,
+    "palavra": "embaixador",
+    "tema": "outros",
+    "score": 10
+  },
+  "embalar": {
+    "id": 6883,
+    "palavra": "embalar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "emoção": {
+    "id": 12359,
+    "palavra": "emoção",
+    "tema": "emoções",
+    "score": 16
+  },
+  "empatia": {
+    "id": 37232,
+    "palavra": "empatia",
+    "tema": "emoções",
+    "score": 9
+  },
+  "empregado": {
+    "id": 20121,
+    "palavra": "empregado",
+    "tema": "outros",
+    "score": 9
+  },
+  "emprego": {
+    "id": 11457,
+    "palavra": "emprego",
+    "tema": "outros",
+    "score": 10
+  },
+  "empresa": {
+    "id": 24507,
+    "palavra": "empresa",
+    "tema": "outros",
+    "score": 9
+  },
+  "empurrar": {
+    "id": 4638,
+    "palavra": "empurrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "encaminhar": {
+    "id": 8994,
+    "palavra": "encaminhar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "encanador": {
+    "id": 3321,
+    "palavra": "encanador",
+    "tema": "outros",
+    "score": 10
+  },
+  "encantar": {
+    "id": 8132,
+    "palavra": "encantar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "encher": {
+    "id": 7146,
+    "palavra": "encher",
+    "tema": "verbos",
+    "score": 13
+  },
+  "encomendar": {
+    "id": 15377,
+    "palavra": "encomendar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "encontrar": {
+    "id": 24741,
+    "palavra": "encontrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "encorajar": {
+    "id": 5903,
+    "palavra": "encorajar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "encosta": {
+    "id": 38977,
+    "palavra": "encosta",
+    "tema": "natureza",
+    "score": 10
+  },
+  "encostar": {
+    "id": 3293,
+    "palavra": "encostar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "endocrinologista": {
+    "id": 38849,
+    "palavra": "endocrinologista",
+    "tema": "outros",
+    "score": 9
+  },
+  "energia": {
+    "id": 26059,
+    "palavra": "energia",
+    "tema": "outros",
+    "score": 9
+  },
+  "enganar": {
+    "id": 26704,
+    "palavra": "enganar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "engenheiro": {
+    "id": 2968,
+    "palavra": "engenheiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "engolir": {
+    "id": 27099,
+    "palavra": "engolir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "enguia": {
+    "id": 5378,
+    "palavra": "enguia",
+    "tema": "animais",
+    "score": 13
+  },
+  "enseada": {
+    "id": 23871,
+    "palavra": "enseada",
+    "tema": "natureza",
+    "score": 10
+  },
+  "ensinar": {
+    "id": 26809,
+    "palavra": "ensinar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "enterrar": {
+    "id": 38072,
+    "palavra": "enterrar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "entrar": {
+    "id": 2742,
+    "palavra": "entrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "entregador": {
+    "id": 9194,
+    "palavra": "entregador",
+    "tema": "outros",
+    "score": 10
+  },
+  "entregar": {
+    "id": 17038,
+    "palavra": "entregar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "entristecer": {
+    "id": 7286,
+    "palavra": "entristecer",
+    "tema": "verbos",
+    "score": 12
+  },
+  "enxada": {
+    "id": 2651,
+    "palavra": "enxada",
+    "tema": "objetos",
+    "score": 13
+  },
+  "enxame": {
+    "id": 10244,
+    "palavra": "enxame",
+    "tema": "natureza",
+    "score": 10
+  },
+  "época": {
+    "id": 39843,
+    "palavra": "época",
+    "tema": "outros",
+    "score": 10
+  },
+  "equilibrar": {
+    "id": 26825,
+    "palavra": "equilibrar",
+    "tema": "verbos",
+    "score": 9
+  },
+  "equilíbrio": {
+    "id": 11256,
+    "palavra": "equilíbrio",
+    "tema": "outros",
+    "score": 10
+  },
+  "equilibrista": {
+    "id": 4641,
+    "palavra": "equilibrista",
+    "tema": "outros",
+    "score": 10
+  },
+  "erosão": {
+    "id": 37717,
+    "palavra": "erosão",
+    "tema": "natureza",
+    "score": 10
+  },
+  "escalar": {
+    "id": 26814,
+    "palavra": "escalar",
+    "tema": "verbos",
+    "score": 15
+  },
+  "escápula": {
+    "id": 25278,
+    "palavra": "escápula",
+    "tema": "corpo",
+    "score": 16
+  },
+  "escarola": {
+    "id": 26067,
+    "palavra": "escarola",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "escolher": {
+    "id": 6483,
+    "palavra": "escolher",
+    "tema": "verbos",
+    "score": 13
+  },
+  "escovar": {
+    "id": 5425,
+    "palavra": "escovar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "escrever": {
+    "id": 2380,
+    "palavra": "escrever",
+    "tema": "verbos",
+    "score": 13
+  },
+  "escritório": {
+    "id": 36089,
+    "palavra": "escritório",
+    "tema": "objetos",
+    "score": 10
+  },
+  "escrivaninha": {
+    "id": 2916,
+    "palavra": "escrivaninha",
+    "tema": "objetos",
+    "score": 16
+  },
+  "esculpir": {
+    "id": 8566,
+    "palavra": "esculpir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "escultor": {
+    "id": 35078,
+    "palavra": "escultor",
+    "tema": "outros",
+    "score": 10
+  },
+  "escultura": {
+    "id": 8567,
+    "palavra": "escultura",
+    "tema": "outros",
+    "score": 10
+  },
+  "esfregar": {
+    "id": 3323,
+    "palavra": "esfregar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "esfriar": {
+    "id": 27735,
+    "palavra": "esfriar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "esgotar": {
+    "id": 32778,
+    "palavra": "esgotar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "esgoto": {
+    "id": 17161,
+    "palavra": "esgoto",
+    "tema": "cidades",
+    "score": 10
+  },
+  "espalhar": {
+    "id": 38678,
+    "palavra": "espalhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "esparadrapo": {
+    "id": 3306,
+    "palavra": "esparadrapo",
+    "tema": "corpo",
+    "score": 13
+  },
+  "esperar": {
+    "id": 39049,
+    "palavra": "esperar",
+    "tema": "verbos",
+    "score": 15
+  },
+  "espeto": {
+    "id": 27260,
+    "palavra": "espeto",
+    "tema": "objetos",
+    "score": 16
+  },
+  "espiga": {
+    "id": 7150,
+    "palavra": "espiga",
+    "tema": "natureza",
+    "score": 13
+  },
+  "espingarda": {
+    "id": 7087,
+    "palavra": "espingarda",
+    "tema": "objetos",
+    "score": 13
+  },
+  "espirrar": {
+    "id": 36149,
+    "palavra": "espirrar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "esposa": {
+    "id": 8110,
+    "palavra": "esposa",
+    "tema": "outros",
+    "score": 10
+  },
+  "espuma": {
+    "id": 37901,
+    "palavra": "espuma",
+    "tema": "natureza",
+    "score": 10
+  },
+  "esquadro": {
+    "id": 7088,
+    "palavra": "esquadro",
+    "tema": "objetos",
+    "score": 10
+  },
+  "esquecer": {
+    "id": 26258,
+    "palavra": "esquecer",
+    "tema": "verbos",
+    "score": 12
+  },
+  "esqueleto": {
+    "id": 5727,
+    "palavra": "esqueleto",
+    "tema": "corpo",
+    "score": 16
+  },
+  "esquentar": {
+    "id": 8520,
+    "palavra": "esquentar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "esquivar": {
+    "id": 24031,
+    "palavra": "esquivar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "estabelecimento": {
+    "id": 9116,
+    "palavra": "estabelecimento",
+    "tema": "outros",
+    "score": 10
+  },
+  "estaleiro": {
+    "id": 37113,
+    "palavra": "estaleiro",
+    "tema": "cidades",
+    "score": 16
+  },
+  "estame": {
+    "id": 37147,
+    "palavra": "estame",
+    "tema": "natureza",
+    "score": 13
+  },
+  "estandarte": {
+    "id": 36067,
+    "palavra": "estandarte",
+    "tema": "objetos",
+    "score": 10
+  },
+  "estante": {
+    "id": 3279,
+    "palavra": "estante",
+    "tema": "objetos",
+    "score": 16
+  },
+  "esterno": {
+    "id": 22180,
+    "palavra": "esterno",
+    "tema": "corpo",
+    "score": 16
+  },
+  "estilete": {
+    "id": 13076,
+    "palavra": "estilete",
+    "tema": "objetos",
+    "score": 13
+  },
+  "estimular": {
+    "id": 38281,
+    "palavra": "estimular",
+    "tema": "verbos",
+    "score": 13
+  },
+  "estojo": {
+    "id": 8575,
+    "palavra": "estojo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "estômago": {
+    "id": 3309,
+    "palavra": "estômago",
+    "tema": "corpo",
+    "score": 16
+  },
+  "estrofe": {
+    "id": 28251,
+    "palavra": "estrofe",
+    "tema": "outros",
+    "score": 10
+  },
+  "estudar": {
+    "id": 2387,
+    "palavra": "estudar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "estufa": {
+    "id": 7135,
+    "palavra": "estufa",
+    "tema": "objetos",
+    "score": 10
+  },
+  "esturjão": {
+    "id": 38433,
+    "palavra": "esturjão",
+    "tema": "animais",
+    "score": 13
+  },
+  "evaporação": {
+    "id": 36157,
+    "palavra": "evaporação",
+    "tema": "natureza",
+    "score": 9
+  },
+  "evento": {
+    "id": 12325,
+    "palavra": "evento",
+    "tema": "outros",
+    "score": 10
+  },
+  "exame": {
+    "id": 38462,
+    "palavra": "exame",
+    "tema": "outros",
+    "score": 10
+  },
+  "examinar": {
+    "id": 27719,
+    "palavra": "examinar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "exaustor": {
+    "id": 26077,
+    "palavra": "exaustor",
+    "tema": "objetos",
+    "score": 13
+  },
+  "exclamar": {
+    "id": 32804,
+    "palavra": "exclamar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "excluir": {
+    "id": 12321,
+    "palavra": "excluir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "experiência": {
+    "id": 8119,
+    "palavra": "experiência",
+    "tema": "outros",
+    "score": 10
+  },
+  "explicar": {
+    "id": 8579,
+    "palavra": "explicar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "explorar": {
+    "id": 36922,
+    "palavra": "explorar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "extensão": {
+    "id": 11170,
+    "palavra": "extensão",
+    "tema": "objetos",
+    "score": 13
+  },
+  "fabricação": {
+    "id": 17032,
+    "palavra": "fabricação",
+    "tema": "outros",
+    "score": 9
+  },
+  "fabricar": {
+    "id": 11698,
+    "palavra": "fabricar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "face": {
+    "id": 2684,
+    "palavra": "face",
+    "tema": "corpo",
+    "score": 16
+  },
+  "fagote": {
+    "id": 33044,
+    "palavra": "fagote",
+    "tema": "objetos",
+    "score": 10
+  },
+  "falange": {
+    "id": 24041,
+    "palavra": "falange",
+    "tema": "corpo",
+    "score": 16
+  },
+  "falcão": {
+    "id": 38947,
+    "palavra": "falcão",
+    "tema": "animais",
+    "score": 13
+  },
+  "farinha": {
+    "id": 8600,
+    "palavra": "farinha",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "farmacêutico": {
+    "id": 11261,
+    "palavra": "farmacêutico",
+    "tema": "outros",
+    "score": 10
+  },
+  "farmácia": {
+    "id": 3313,
+    "palavra": "farmácia",
+    "tema": "cidades",
+    "score": 16
+  },
+  "farol": {
+    "id": 4646,
+    "palavra": "farol",
+    "tema": "cidades",
+    "score": 16
+  },
+  "fazenda": {
+    "id": 3337,
+    "palavra": "fazenda",
+    "tema": "outros",
+    "score": 10
+  },
+  "fechar": {
+    "id": 2697,
+    "palavra": "fechar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "feira": {
+    "id": 4649,
+    "palavra": "feira",
+    "tema": "cidades",
+    "score": 13
+  },
+  "felicidade": {
+    "id": 8582,
+    "palavra": "felicidade",
+    "tema": "emoções",
+    "score": 9
+  },
+  "feriado": {
+    "id": 39112,
+    "palavra": "feriado",
+    "tema": "outros",
+    "score": 10
+  },
+  "fermento": {
+    "id": 38709,
+    "palavra": "fermento",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "ferreiro": {
+    "id": 8603,
+    "palavra": "ferreiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "ferver": {
+    "id": 5485,
+    "palavra": "ferver",
+    "tema": "verbos",
+    "score": 13
+  },
+  "festejar": {
+    "id": 6969,
+    "palavra": "festejar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "fevereiro": {
+    "id": 6498,
+    "palavra": "fevereiro",
+    "tema": "outros",
+    "score": 20
+  },
+  "fíbula": {
+    "id": 24268,
+    "palavra": "fíbula",
+    "tema": "corpo",
+    "score": 16
+  },
+  "fichário": {
+    "id": 10255,
+    "palavra": "fichário",
+    "tema": "objetos",
+    "score": 10
+  },
+  "fígado": {
+    "id": 2980,
+    "palavra": "fígado",
+    "tema": "corpo",
+    "score": 16
+  },
+  "figo": {
+    "id": 2979,
+    "palavra": "figo",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "figueira": {
+    "id": 3201,
+    "palavra": "figueira",
+    "tema": "natureza",
+    "score": 16
+  },
+  "filho": {
+    "id": 2423,
+    "palavra": "filho",
+    "tema": "outros",
+    "score": 10
+  },
+  "filosofia": {
+    "id": 36365,
+    "palavra": "filosofia",
+    "tema": "outros",
+    "score": 9
+  },
+  "fisioterapeuta": {
+    "id": 2395,
+    "palavra": "fisioterapeuta",
+    "tema": "outros",
+    "score": 10
+  },
+  "fluorescente": {
+    "id": 7106,
+    "palavra": "fluorescente",
+    "tema": "cores",
+    "score": 10
+  },
+  "flutuar": {
+    "id": 21874,
+    "palavra": "flutuar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "fogão": {
+    "id": 2341,
+    "palavra": "fogão",
+    "tema": "objetos",
+    "score": 13
+  },
+  "fome": {
+    "id": 35559,
+    "palavra": "fome",
+    "tema": "emoções",
+    "score": 9
+  },
+  "fonoaudiólogo": {
+    "id": 6141,
+    "palavra": "fonoaudiólogo",
+    "tema": "outros",
+    "score": 10
+  },
+  "forja": {
+    "id": 16731,
+    "palavra": "forja",
+    "tema": "objetos",
+    "score": 9
+  },
+  "formão": {
+    "id": 5472,
+    "palavra": "formão",
+    "tema": "objetos",
+    "score": 13
+  },
+  "formigamento": {
+    "id": 34276,
+    "palavra": "formigamento",
+    "tema": "corpo",
+    "score": 13
+  },
+  "formigueiro": {
+    "id": 36993,
+    "palavra": "formigueiro",
+    "tema": "natureza",
+    "score": 10
+  },
+  "formulário": {
+    "id": 9173,
+    "palavra": "formulário",
+    "tema": "outros",
+    "score": 10
+  },
+  "forno": {
+    "id": 2426,
+    "palavra": "forno",
+    "tema": "objetos",
+    "score": 13
+  },
+  "fósforo": {
+    "id": 8342,
+    "palavra": "fósforo",
+    "tema": "objetos",
+    "score": 16
+  },
+  "fotocopiadora": {
+    "id": 8586,
+    "palavra": "fotocopiadora",
+    "tema": "objetos",
+    "score": 13
+  },
+  "fotografar": {
+    "id": 7108,
+    "palavra": "fotografar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "fotógrafo": {
+    "id": 11267,
+    "palavra": "fotógrafo",
+    "tema": "outros",
+    "score": 10
+  },
+  "fotossíntese": {
+    "id": 32687,
+    "palavra": "fotossíntese",
+    "tema": "natureza",
+    "score": 13
+  },
+  "fração": {
+    "id": 5739,
+    "palavra": "fração",
+    "tema": "outros",
+    "score": 9
+  },
+  "fralda": {
+    "id": 2863,
+    "palavra": "fralda",
+    "tema": "objetos",
+    "score": 13
+  },
+  "framboesa": {
+    "id": 36540,
+    "palavra": "framboesa",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "frase": {
+    "id": 27768,
+    "palavra": "frase",
+    "tema": "outros",
+    "score": 10
+  },
+  "fratura": {
+    "id": 26849,
+    "palavra": "fratura",
+    "tema": "corpo",
+    "score": 13
+  },
+  "fritadeira": {
+    "id": 27772,
+    "palavra": "fritadeira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "fritar": {
+    "id": 3325,
+    "palavra": "fritar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "fumaça": {
+    "id": 6529,
+    "palavra": "fumaça",
+    "tema": "natureza",
+    "score": 10
+  },
+  "funicular": {
+    "id": 28909,
+    "palavra": "funicular",
+    "tema": "cidades",
+    "score": 13
+  },
+  "funilaria": {
+    "id": 35517,
+    "palavra": "funilaria",
+    "tema": "cidades",
+    "score": 18
+  },
+  "furadeira": {
+    "id": 3392,
+    "palavra": "furadeira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "furão": {
+    "id": 37251,
+    "palavra": "furão",
+    "tema": "animais",
+    "score": 13
+  },
+  "furar": {
+    "id": 3391,
+    "palavra": "furar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "gaiola": {
+    "id": 5494,
+    "palavra": "gaiola",
+    "tema": "objetos",
+    "score": 10
+  },
+  "gaivota": {
+    "id": 3334,
+    "palavra": "gaivota",
+    "tema": "animais",
+    "score": 13
+  },
+  "galho": {
+    "id": 7224,
+    "palavra": "galho",
+    "tema": "natureza",
+    "score": 13
+  },
+  "ganhar": {
+    "id": 10155,
+    "palavra": "ganhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "garagem": {
+    "id": 6003,
+    "palavra": "garagem",
+    "tema": "cidades",
+    "score": 15
+  },
+  "garçom": {
+    "id": 2681,
+    "palavra": "garçom",
+    "tema": "outros",
+    "score": 10
+  },
+  "garganta": {
+    "id": 3332,
+    "palavra": "garganta",
+    "tema": "corpo",
+    "score": 16
+  },
+  "garrafa": {
+    "id": 2288,
+    "palavra": "garrafa",
+    "tema": "objetos",
+    "score": 16
+  },
+  "gastrite": {
+    "id": 10264,
+    "palavra": "gastrite",
+    "tema": "corpo",
+    "score": 13
+  },
+  "geada": {
+    "id": 25153,
+    "palavra": "geada",
+    "tema": "natureza",
+    "score": 10
+  },
+  "geladeira": {
+    "id": 3272,
+    "palavra": "geladeira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "gelatina": {
+    "id": 21890,
+    "palavra": "gelatina",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "gema": {
+    "id": 7308,
+    "palavra": "gema",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "general": {
+    "id": 39107,
+    "palavra": "general",
+    "tema": "outros",
+    "score": 10
+  },
+  "gengiva": {
+    "id": 39875,
+    "palavra": "gengiva",
+    "tema": "corpo",
+    "score": 19
+  },
+  "gente": {
+    "id": 7116,
+    "palavra": "gente",
+    "tema": "outros",
+    "score": 10
+  },
+  "geologia": {
+    "id": 36369,
+    "palavra": "geologia",
+    "tema": "natureza",
+    "score": 9
+  },
+  "gerador": {
+    "id": 15916,
+    "palavra": "gerador",
+    "tema": "objetos",
+    "score": 10
+  },
+  "gerânio": {
+    "id": 11272,
+    "palavra": "gerânio",
+    "tema": "natureza",
+    "score": 16
+  },
+  "gerente": {
+    "id": 16039,
+    "palavra": "gerente",
+    "tema": "outros",
+    "score": 10
+  },
+  "gergelim": {
+    "id": 39192,
+    "palavra": "gergelim",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "geriatra": {
+    "id": 38835,
+    "palavra": "geriatra",
+    "tema": "outros",
+    "score": 9
+  },
+  "gigante": {
+    "id": 8375,
+    "palavra": "gigante",
+    "tema": "outros",
+    "score": 10
+  },
+  "ginásio": {
+    "id": 38476,
+    "palavra": "ginásio",
+    "tema": "cidades",
+    "score": 16
+  },
+  "ginecologista": {
+    "id": 35283,
+    "palavra": "ginecologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "giz": {
+    "id": 36602,
+    "palavra": "giz",
+    "tema": "objetos",
+    "score": 9
+  },
+  "glúten": {
+    "id": 34006,
+    "palavra": "glúten",
+    "tema": "alimentos",
+    "score": 15
+  },
+  "goiaba": {
+    "id": 39824,
+    "palavra": "goiaba",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "golpear": {
+    "id": 24083,
+    "palavra": "golpear",
+    "tema": "verbos",
+    "score": 13
+  },
+  "gongo": {
+    "id": 36639,
+    "palavra": "gongo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "gordura": {
+    "id": 26110,
+    "palavra": "gordura",
+    "tema": "alimentos",
+    "score": 10
+  },
+  "gorro": {
+    "id": 2412,
+    "palavra": "gorro",
+    "tema": "objetos",
+    "score": 13
+  },
+  "grade": {
+    "id": 39861,
+    "palavra": "grade",
+    "tema": "objetos",
+    "score": 10
+  },
+  "grafite": {
+    "id": 25143,
+    "palavra": "grafite",
+    "tema": "cores",
+    "score": 10
+  },
+  "grampeador": {
+    "id": 2413,
+    "palavra": "grampeador",
+    "tema": "objetos",
+    "score": 10
+  },
+  "grampo": {
+    "id": 32894,
+    "palavra": "grampo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "granizo": {
+    "id": 3110,
+    "palavra": "granizo",
+    "tema": "natureza",
+    "score": 10
+  },
+  "gratidão": {
+    "id": 37233,
+    "palavra": "gratidão",
+    "tema": "emoções",
+    "score": 9
+  },
+  "graviola": {
+    "id": 39630,
+    "palavra": "graviola",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "grelha": {
+    "id": 5811,
+    "palavra": "grelha",
+    "tema": "objetos",
+    "score": 16
+  },
+  "grená": {
+    "id": 9095,
+    "palavra": "grená",
+    "tema": "cores",
+    "score": 13
+  },
+  "grifo": {
+    "id": 38766,
+    "palavra": "grifo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "gripe": {
+    "id": 5479,
+    "palavra": "gripe",
+    "tema": "outros",
+    "score": 10
+  },
+  "gritar": {
+    "id": 4686,
+    "palavra": "gritar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "grupo": {
+    "id": 38444,
+    "palavra": "grupo",
+    "tema": "outros",
+    "score": 9
+  },
+  "gruta": {
+    "id": 2729,
+    "palavra": "gruta",
+    "tema": "natureza",
+    "score": 10
+  },
+  "guardanapo": {
+    "id": 2569,
+    "palavra": "guardanapo",
+    "tema": "objetos",
+    "score": 16
+  },
+  "guardar": {
+    "id": 5514,
+    "palavra": "guardar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "guepardo": {
+    "id": 39488,
+    "palavra": "guepardo",
+    "tema": "animais",
+    "score": 13
+  },
+  "heliporto": {
+    "id": 35377,
+    "palavra": "heliporto",
+    "tema": "cidades",
+    "score": 15
+  },
+  "hematologista": {
+    "id": 35313,
+    "palavra": "hematologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "hemorragia": {
+    "id": 39616,
+    "palavra": "hemorragia",
+    "tema": "corpo",
+    "score": 13
+  },
+  "hera": {
+    "id": 28725,
+    "palavra": "hera",
+    "tema": "natureza",
+    "score": 13
+  },
+  "herbívoro": {
+    "id": 8133,
+    "palavra": "herbívoro",
+    "tema": "animais",
+    "score": 12
+  },
+  "hidrosfera": {
+    "id": 24103,
+    "palavra": "hidrosfera",
+    "tema": "natureza",
+    "score": 10
+  },
+  "hiena": {
+    "id": 17253,
+    "palavra": "hiena",
+    "tema": "animais",
+    "score": 13
+  },
+  "hino": {
+    "id": 38000,
+    "palavra": "hino",
+    "tema": "outros",
+    "score": 9
+  },
+  "hipertensão": {
+    "id": 37738,
+    "palavra": "hipertensão",
+    "tema": "corpo",
+    "score": 13
+  },
+  "história": {
+    "id": 6469,
+    "palavra": "história",
+    "tema": "outros",
+    "score": 10
+  },
+  "hoje": {
+    "id": 7131,
+    "palavra": "hoje",
+    "tema": "outros",
+    "score": 9
+  },
+  "horizonte": {
+    "id": 20393,
+    "palavra": "horizonte",
+    "tema": "natureza",
+    "score": 10
+  },
+  "horror": {
+    "id": 39248,
+    "palavra": "horror",
+    "tema": "emoções",
+    "score": 15
+  },
+  "horta": {
+    "id": 2974,
+    "palavra": "horta",
+    "tema": "natureza",
+    "score": 10
+  },
+  "hortelã": {
+    "id": 21982,
+    "palavra": "hortelã",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "húmus": {
+    "id": 36015,
+    "palavra": "húmus",
+    "tema": "natureza",
+    "score": 10
+  },
+  "idoso": {
+    "id": 36217,
+    "palavra": "idoso",
+    "tema": "outros",
+    "score": 10
+  },
+  "iguana": {
+    "id": 26134,
+    "palavra": "iguana",
+    "tema": "animais",
+    "score": 13
+  },
+  "iluminar": {
+    "id": 6015,
+    "palavra": "iluminar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "ilusionista": {
+    "id": 10157,
+    "palavra": "ilusionista",
+    "tema": "outros",
+    "score": 10
+  },
+  "imaginação": {
+    "id": 38003,
+    "palavra": "imaginação",
+    "tema": "emoções",
+    "score": 10
+  },
+  "imaginar": {
+    "id": 37062,
+    "palavra": "imaginar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "imitar": {
+    "id": 36797,
+    "palavra": "imitar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "imobilizar": {
+    "id": 7086,
+    "palavra": "imobilizar",
+    "tema": "verbos",
+    "score": 10
+  },
+  "impermeável": {
+    "id": 8122,
+    "palavra": "impermeável",
+    "tema": "objetos",
+    "score": 13
+  },
+  "impulsionar": {
+    "id": 15467,
+    "palavra": "impulsionar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "inaugurar": {
+    "id": 6016,
+    "palavra": "inaugurar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "inchaço": {
+    "id": 31678,
+    "palavra": "inchaço",
+    "tema": "corpo",
+    "score": 13
+  },
+  "inclinar": {
+    "id": 9003,
+    "palavra": "inclinar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "incluir": {
+    "id": 11702,
+    "palavra": "incluir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "incompreensível": {
+    "id": 15329,
+    "palavra": "incompreensível",
+    "tema": "outros",
+    "score": 10
+  },
+  "independência": {
+    "id": 11484,
+    "palavra": "independência",
+    "tema": "outros",
+    "score": 10
+  },
+  "indicar": {
+    "id": 6612,
+    "palavra": "indicar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "índice": {
+    "id": 32767,
+    "palavra": "índice",
+    "tema": "outros",
+    "score": 9
+  },
+  "indiferença": {
+    "id": 30634,
+    "palavra": "indiferença",
+    "tema": "emoções",
+    "score": -11
+  },
+  "infância": {
+    "id": 20401,
+    "palavra": "infância",
+    "tema": "outros",
+    "score": 10
+  },
+  "inhame": {
+    "id": 39818,
+    "palavra": "inhame",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "injetar": {
+    "id": 5601,
+    "palavra": "injetar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "inscrever": {
+    "id": 9901,
+    "palavra": "inscrever",
+    "tema": "verbos",
+    "score": 13
+  },
+  "insônia": {
+    "id": 31276,
+    "palavra": "insônia",
+    "tema": "emoções",
+    "score": 9
+  },
+  "inspecionar": {
+    "id": 35473,
+    "palavra": "inspecionar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "inspiração": {
+    "id": 37999,
+    "palavra": "inspiração",
+    "tema": "emoções",
+    "score": 9
+  },
+  "inspirar": {
+    "id": 6602,
+    "palavra": "inspirar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "instruir": {
+    "id": 26809,
+    "palavra": "instruir",
+    "tema": "verbos",
+    "score": 12
+  },
+  "integrar": {
+    "id": 11702,
+    "palavra": "integrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "interfone": {
+    "id": 3431,
+    "palavra": "interfone",
+    "tema": "objetos",
+    "score": 13
+  },
+  "internato": {
+    "id": 25728,
+    "palavra": "internato",
+    "tema": "cidades",
+    "score": 16
+  },
+  "interpretar": {
+    "id": 35625,
+    "palavra": "interpretar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "interruptor": {
+    "id": 2431,
+    "palavra": "interruptor",
+    "tema": "objetos",
+    "score": 10
+  },
+  "intestino": {
+    "id": 2967,
+    "palavra": "intestino",
+    "tema": "corpo",
+    "score": 16
+  },
+  "inundação": {
+    "id": 4669,
+    "palavra": "inundação",
+    "tema": "natureza",
+    "score": 10
+  },
+  "invadir": {
+    "id": 37701,
+    "palavra": "invadir",
+    "tema": "verbos",
+    "score": 12
+  },
+  "inveja": {
+    "id": 36911,
+    "palavra": "inveja",
+    "tema": "emoções",
+    "score": 15
+  },
+  "inventar": {
+    "id": 6019,
+    "palavra": "inventar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "iogurte": {
+    "id": 2618,
+    "palavra": "iogurte",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "íris": {
+    "id": 9103,
+    "palavra": "íris",
+    "tema": "corpo",
+    "score": 27
+  },
+  "irmão": {
+    "id": 2423,
+    "palavra": "irmão",
+    "tema": "outros",
+    "score": 10
+  },
+  "irritação": {
+    "id": 35567,
+    "palavra": "irritação",
+    "tema": "emoções",
+    "score": 15
+  },
+  "irritar": {
+    "id": 37824,
+    "palavra": "irritar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "isqueiro": {
+    "id": 4692,
+    "palavra": "isqueiro",
+    "tema": "objetos",
+    "score": 16
+  },
+  "janeiro": {
+    "id": 6488,
+    "palavra": "janeiro",
+    "tema": "outros",
+    "score": 20
+  },
+  "jantar": {
+    "id": 4592,
+    "palavra": "jantar",
+    "tema": "outros",
+    "score": 10
+  },
+  "jaula": {
+    "id": 16097,
+    "palavra": "jaula",
+    "tema": "objetos",
+    "score": 9
+  },
+  "joelho": {
+    "id": 2810,
+    "palavra": "joelho",
+    "tema": "corpo",
+    "score": 16
+  },
+  "jogar": {
+    "id": 2439,
+    "palavra": "jogar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "jornalista": {
+    "id": 8664,
+    "palavra": "jornalista",
+    "tema": "outros",
+    "score": 10
+  },
+  "jovem": {
+    "id": 4673,
+    "palavra": "jovem",
+    "tema": "outros",
+    "score": 10
+  },
+  "julho": {
+    "id": 6538,
+    "palavra": "julho",
+    "tema": "outros",
+    "score": 20
+  },
+  "junho": {
+    "id": 6539,
+    "palavra": "junho",
+    "tema": "outros",
+    "score": 20
+  },
+  "juntar": {
+    "id": 26817,
+    "palavra": "juntar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "juventude": {
+    "id": 20387,
+    "palavra": "juventude",
+    "tema": "outros",
+    "score": 10
+  },
+  "lactose": {
+    "id": 32739,
+    "palavra": "lactose",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "ladrão": {
+    "id": 4674,
+    "palavra": "ladrão",
+    "tema": "outros",
+    "score": 10
+  },
+  "ladrilho": {
+    "id": 6054,
+    "palavra": "ladrilho",
+    "tema": "objetos",
+    "score": 10
+  },
+  "lago": {
+    "id": 6022,
+    "palavra": "lago",
+    "tema": "natureza",
+    "score": 10
+  },
+  "lágrima": {
+    "id": 14252,
+    "palavra": "lágrima",
+    "tema": "corpo",
+    "score": 16
+  },
+  "lama": {
+    "id": 34118,
+    "palavra": "lama",
+    "tema": "natureza",
+    "score": 10
+  },
+  "lamber": {
+    "id": 2702,
+    "palavra": "lamber",
+    "tema": "verbos",
+    "score": 13
+  },
+  "lampião": {
+    "id": 9178,
+    "palavra": "lampião",
+    "tema": "objetos",
+    "score": 13
+  },
+  "lancheira": {
+    "id": 32376,
+    "palavra": "lancheira",
+    "tema": "outros",
+    "score": 10
+  },
+  "lanchonete": {
+    "id": 11281,
+    "palavra": "lanchonete",
+    "tema": "cidades",
+    "score": 16
+  },
+  "laranjeira": {
+    "id": 3209,
+    "palavra": "laranjeira",
+    "tema": "natureza",
+    "score": 16
+  },
+  "lareira": {
+    "id": 8072,
+    "palavra": "lareira",
+    "tema": "objetos",
+    "score": 10
+  },
+  "largo": {
+    "id": 4559,
+    "palavra": "largo",
+    "tema": "cidades",
+    "score": 10
+  },
+  "lasanha": {
+    "id": 9051,
+    "palavra": "lasanha",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "latão": {
+    "id": 34385,
+    "palavra": "latão",
+    "tema": "cores",
+    "score": 10
+  },
+  "lavanda": {
+    "id": 14242,
+    "palavra": "lavanda",
+    "tema": "cores",
+    "score": 10
+  },
+  "lavar": {
+    "id": 8617,
+    "palavra": "lavar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "lebre": {
+    "id": 17265,
+    "palavra": "lebre",
+    "tema": "animais",
+    "score": 13
+  },
+  "lençol": {
+    "id": 8367,
+    "palavra": "lençol",
+    "tema": "objetos",
+    "score": 16
+  },
+  "lenhador": {
+    "id": 2943,
+    "palavra": "lenhador",
+    "tema": "outros",
+    "score": 10
+  },
+  "lentilha": {
+    "id": 38071,
+    "palavra": "lentilha",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "lesma": {
+    "id": 25827,
+    "palavra": "lesma",
+    "tema": "animais",
+    "score": 12
+  },
+  "levantar": {
+    "id": 8151,
+    "palavra": "levantar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "levar": {
+    "id": 6139,
+    "palavra": "levar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "levedura": {
+    "id": 9052,
+    "palavra": "levedura",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "libélula": {
+    "id": 9066,
+    "palavra": "libélula",
+    "tema": "animais",
+    "score": 13
+  },
+  "liberdade": {
+    "id": 11488,
+    "palavra": "liberdade",
+    "tema": "outros",
+    "score": 10
+  },
+  "liderar": {
+    "id": 38642,
+    "palavra": "liderar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "ligamento": {
+    "id": 24149,
+    "palavra": "ligamento",
+    "tema": "corpo",
+    "score": 16
+  },
+  "lilás": {
+    "id": 2940,
+    "palavra": "lilás",
+    "tema": "cores",
+    "score": 13
+  },
+  "lima": {
+    "id": 5501,
+    "palavra": "lima",
+    "tema": "objetos",
+    "score": 13
+  },
+  "limpar": {
+    "id": 3323,
+    "palavra": "limpar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "lince": {
+    "id": 21964,
+    "palavra": "lince",
+    "tema": "animais",
+    "score": 13
+  },
+  "linguiça": {
+    "id": 3280,
+    "palavra": "linguiça",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "linha": {
+    "id": 4684,
+    "palavra": "linha",
+    "tema": "objetos",
+    "score": 9
+  },
+  "liquidificador": {
+    "id": 17175,
+    "palavra": "liquidificador",
+    "tema": "objetos",
+    "score": 13
+  },
+  "listrado": {
+    "id": 7225,
+    "palavra": "listrado",
+    "tema": "cores",
+    "score": 10
+  },
+  "livraria": {
+    "id": 2941,
+    "palavra": "livraria",
+    "tema": "cidades",
+    "score": 16
+  },
+  "lixadeira": {
+    "id": 5499,
+    "palavra": "lixadeira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "lixeira": {
+    "id": 2724,
+    "palavra": "lixeira",
+    "tema": "objetos",
+    "score": 16
+  },
+  "loiro": {
+    "id": 8213,
+    "palavra": "loiro",
+    "tema": "cores",
+    "score": 10
+  },
+  "louro": {
+    "id": 8614,
+    "palavra": "louro",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "lousa": {
+    "id": 2526,
+    "palavra": "lousa",
+    "tema": "objetos",
+    "score": 10
+  },
+  "luneta": {
+    "id": 8531,
+    "palavra": "luneta",
+    "tema": "objetos",
+    "score": 13
+  },
+  "lustre": {
+    "id": 4938,
+    "palavra": "lustre",
+    "tema": "objetos",
+    "score": 13
+  },
+  "luto": {
+    "id": 26180,
+    "palavra": "luto",
+    "tema": "emoções",
+    "score": 10
+  },
+  "maçaneta": {
+    "id": 5060,
+    "palavra": "maçaneta",
+    "tema": "objetos",
+    "score": 10
+  },
+  "macaxeira": {
+    "id": 39819,
+    "palavra": "macaxeira",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "maestro": {
+    "id": 8990,
+    "palavra": "maestro",
+    "tema": "outros",
+    "score": 10
+  },
+  "maio": {
+    "id": 6559,
+    "palavra": "maio",
+    "tema": "outros",
+    "score": 20
+  },
+  "maionese": {
+    "id": 5509,
+    "palavra": "maionese",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "mal": {
+    "id": 5504,
+    "palavra": "mal",
+    "tema": "outros",
+    "score": 10
+  },
+  "mamão": {
+    "id": 16829,
+    "palavra": "mamão",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "manancial": {
+    "id": 24154,
+    "palavra": "manancial",
+    "tema": "natureza",
+    "score": 10
+  },
+  "manchar": {
+    "id": 37338,
+    "palavra": "manchar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "mandíbula": {
+    "id": 37473,
+    "palavra": "mandíbula",
+    "tema": "corpo",
+    "score": 16
+  },
+  "mandioca": {
+    "id": 39819,
+    "palavra": "mandioca",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "manivela": {
+    "id": 26188,
+    "palavra": "manivela",
+    "tema": "objetos",
+    "score": 12
+  },
+  "manjericão": {
+    "id": 37722,
+    "palavra": "manjericão",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "manômetro": {
+    "id": 31107,
+    "palavra": "manômetro",
+    "tema": "objetos",
+    "score": 10
+  },
+  "manta": {
+    "id": 2459,
+    "palavra": "manta",
+    "tema": "objetos",
+    "score": 16
+  },
+  "maquete": {
+    "id": 26881,
+    "palavra": "maquete",
+    "tema": "objetos",
+    "score": 10
+  },
+  "maquinista": {
+    "id": 36762,
+    "palavra": "maquinista",
+    "tema": "outros",
+    "score": 10
+  },
+  "maracujá": {
+    "id": 27776,
+    "palavra": "maracujá",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "marcapasso": {
+    "id": 27877,
+    "palavra": "marcapasso",
+    "tema": "objetos",
+    "score": 10
+  },
+  "marcar": {
+    "id": 6487,
+    "palavra": "marcar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "março": {
+    "id": 6558,
+    "palavra": "março",
+    "tema": "outros",
+    "score": 20
+  },
+  "maremoto": {
+    "id": 37633,
+    "palavra": "maremoto",
+    "tema": "natureza",
+    "score": 10
+  },
+  "marfim": {
+    "id": 39845,
+    "palavra": "marfim",
+    "tema": "cores",
+    "score": 10
+  },
+  "marina": {
+    "id": 35453,
+    "palavra": "marina",
+    "tema": "cidades",
+    "score": 13
+  },
+  "marmelada": {
+    "id": 2470,
+    "palavra": "marmelada",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "marmeleiro": {
+    "id": 39390,
+    "palavra": "marmeleiro",
+    "tema": "natureza",
+    "score": 16
+  },
+  "marmota": {
+    "id": 39794,
+    "palavra": "marmota",
+    "tema": "animais",
+    "score": 13
+  },
+  "marrom": {
+    "id": 2923,
+    "palavra": "marrom",
+    "tema": "cores",
+    "score": 13
+  },
+  "massa": {
+    "id": 2455,
+    "palavra": "massa",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "mastigar": {
+    "id": 32654,
+    "palavra": "mastigar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "mata": {
+    "id": 2666,
+    "palavra": "mata",
+    "tema": "natureza",
+    "score": 16
+  },
+  "mato": {
+    "id": 3113,
+    "palavra": "mato",
+    "tema": "natureza",
+    "score": 13
+  },
+  "maturidade": {
+    "id": 20397,
+    "palavra": "maturidade",
+    "tema": "emoções",
+    "score": 10
+  },
+  "mecânico": {
+    "id": 2921,
+    "palavra": "mecânico",
+    "tema": "outros",
+    "score": 10
+  },
+  "medir": {
+    "id": 5510,
+    "palavra": "medir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "meditação": {
+    "id": 32689,
+    "palavra": "meditação",
+    "tema": "outros",
+    "score": 10
+  },
+  "memória": {
+    "id": 39085,
+    "palavra": "memória",
+    "tema": "outros",
+    "score": 9
+  },
+  "mercado": {
+    "id": 3389,
+    "palavra": "mercado",
+    "tema": "cidades",
+    "score": 16
+  },
+  "mercearia": {
+    "id": 20126,
+    "palavra": "mercearia",
+    "tema": "cidades",
+    "score": 16
+  },
+  "mergulhar": {
+    "id": 22137,
+    "palavra": "mergulhar",
+    "tema": "verbos",
+    "score": 16
+  },
+  "mesa": {
+    "id": 3129,
+    "palavra": "mesa",
+    "tema": "objetos",
+    "score": 16
+  },
+  "metatarso": {
+    "id": 37474,
+    "palavra": "metatarso",
+    "tema": "corpo",
+    "score": 16
+  },
+  "meteorito": {
+    "id": 34241,
+    "palavra": "meteorito",
+    "tema": "natureza",
+    "score": 10
+  },
+  "meteorologia": {
+    "id": 7223,
+    "palavra": "meteorologia",
+    "tema": "natureza",
+    "score": 9
+  },
+  "método": {
+    "id": 27403,
+    "palavra": "método",
+    "tema": "outros",
+    "score": 9
+  },
+  "metodologia": {
+    "id": 31297,
+    "palavra": "metodologia",
+    "tema": "outros",
+    "score": 10
+  },
+  "metrônomo": {
+    "id": 28553,
+    "palavra": "metrônomo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "mexer": {
+    "id": 27371,
+    "palavra": "mexer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "mexilhão": {
+    "id": 2918,
+    "palavra": "mexilhão",
+    "tema": "animais",
+    "score": 13
+  },
+  "mil": {
+    "id": 29258,
+    "palavra": "mil",
+    "tema": "numerais",
+    "score": 16
+  },
+  "militar": {
+    "id": 2797,
+    "palavra": "militar",
+    "tema": "outros",
+    "score": 10
+  },
+  "mirante": {
+    "id": 27885,
+    "palavra": "mirante",
+    "tema": "cidades",
+    "score": 13
+  },
+  "mobilizar": {
+    "id": 34292,
+    "palavra": "mobilizar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "modernismo": {
+    "id": 38675,
+    "palavra": "modernismo",
+    "tema": "outros",
+    "score": 10
+  },
+  "molar": {
+    "id": 2905,
+    "palavra": "molar",
+    "tema": "corpo",
+    "score": 19
+  },
+  "molde": {
+    "id": 15457,
+    "palavra": "molde",
+    "tema": "objetos",
+    "score": 16
+  },
+  "molhar": {
+    "id": 6149,
+    "palavra": "molhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "molho": {
+    "id": 35735,
+    "palavra": "molho",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "momento": {
+    "id": 22633,
+    "palavra": "momento",
+    "tema": "outros",
+    "score": 10
+  },
+  "monarquia": {
+    "id": 36069,
+    "palavra": "monarquia",
+    "tema": "outros",
+    "score": 10
+  },
+  "monólito": {
+    "id": 37622,
+    "palavra": "monólito",
+    "tema": "objetos",
+    "score": 10
+  },
+  "montar": {
+    "id": 11698,
+    "palavra": "montar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "monte": {
+    "id": 2909,
+    "palavra": "monte",
+    "tema": "natureza",
+    "score": 10
+  },
+  "morder": {
+    "id": 4700,
+    "palavra": "morder",
+    "tema": "verbos",
+    "score": 13
+  },
+  "morsa": {
+    "id": 38147,
+    "palavra": "morsa",
+    "tema": "animais",
+    "score": 13
+  },
+  "mostarda": {
+    "id": 6565,
+    "palavra": "mostarda",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "mosteiro": {
+    "id": 32677,
+    "palavra": "mosteiro",
+    "tema": "cidades",
+    "score": 15
+  },
+  "mostrar": {
+    "id": 11308,
+    "palavra": "mostrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "muçarela": {
+    "id": 27136,
+    "palavra": "muçarela",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "muco": {
+    "id": 25249,
+    "palavra": "muco",
+    "tema": "corpo",
+    "score": 18
+  },
+  "mudar": {
+    "id": 38753,
+    "palavra": "mudar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "multiplicação": {
+    "id": 37318,
+    "palavra": "multiplicação",
+    "tema": "outros",
+    "score": 10
+  },
+  "musgo": {
+    "id": 28843,
+    "palavra": "musgo",
+    "tema": "natureza",
+    "score": 13
+  },
+  "músico": {
+    "id": 2890,
+    "palavra": "músico",
+    "tema": "outros",
+    "score": 10
+  },
+  "nadar": {
+    "id": 6568,
+    "palavra": "nadar",
+    "tema": "verbos",
+    "score": 15
+  },
+  "namorado": {
+    "id": 38939,
+    "palavra": "namorado",
+    "tema": "outros",
+    "score": 9
+  },
+  "narrar": {
+    "id": 5973,
+    "palavra": "narrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "nascente": {
+    "id": 24154,
+    "palavra": "nascente",
+    "tema": "natureza",
+    "score": 10
+  },
+  "nascer": {
+    "id": 8176,
+    "palavra": "nascer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "nascimento": {
+    "id": 26320,
+    "palavra": "nascimento",
+    "tema": "outros",
+    "score": 9
+  },
+  "nefrologista": {
+    "id": 35309,
+    "palavra": "nefrologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "neurônio": {
+    "id": 30533,
+    "palavra": "neurônio",
+    "tema": "corpo",
+    "score": 16
+  },
+  "nevado": {
+    "id": 2884,
+    "palavra": "nevado",
+    "tema": "cores",
+    "score": 10
+  },
+  "nhoque": {
+    "id": 39589,
+    "palavra": "nhoque",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "nogueira": {
+    "id": 28853,
+    "palavra": "nogueira",
+    "tema": "natureza",
+    "score": 16
+  },
+  "noivo": {
+    "id": 8111,
+    "palavra": "noivo",
+    "tema": "outros",
+    "score": 10
+  },
+  "nota": {
+    "id": 7187,
+    "palavra": "nota",
+    "tema": "outros",
+    "score": 10
+  },
+  "novecentos": {
+    "id": 29432,
+    "palavra": "novecentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "novembro": {
+    "id": 6570,
+    "palavra": "novembro",
+    "tema": "outros",
+    "score": 20
+  },
+  "noventa": {
+    "id": 29430,
+    "palavra": "noventa",
+    "tema": "numerais",
+    "score": 16
+  },
+  "noz": {
+    "id": 2880,
+    "palavra": "noz",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "nuca": {
+    "id": 2881,
+    "palavra": "nuca",
+    "tema": "corpo",
+    "score": 16
+  },
+  "nutricionista": {
+    "id": 35803,
+    "palavra": "nutricionista",
+    "tema": "outros",
+    "score": 10
+  },
+  "oásis": {
+    "id": 6159,
+    "palavra": "oásis",
+    "tema": "natureza",
+    "score": 18
+  },
+  "obelisco": {
+    "id": 37622,
+    "palavra": "obelisco",
+    "tema": "cidades",
+    "score": 13
+  },
+  "oboé": {
+    "id": 17223,
+    "palavra": "oboé",
+    "tema": "objetos",
+    "score": 10
+  },
+  "observação": {
+    "id": 36041,
+    "palavra": "observação",
+    "tema": "outros",
+    "score": 9
+  },
+  "observar": {
+    "id": 2474,
+    "palavra": "observar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "observatório": {
+    "id": 13088,
+    "palavra": "observatório",
+    "tema": "cidades",
+    "score": 13
+  },
+  "oceano": {
+    "id": 2925,
+    "palavra": "oceano",
+    "tema": "natureza",
+    "score": 10
+  },
+  "ocre": {
+    "id": 9097,
+    "palavra": "ocre",
+    "tema": "cores",
+    "score": 13
+  },
+  "oferecer": {
+    "id": 17038,
+    "palavra": "oferecer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "oftalmologista": {
+    "id": 2877,
+    "palavra": "oftalmologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "oitenta": {
+    "id": 29410,
+    "palavra": "oitenta",
+    "tema": "numerais",
+    "score": 16
+  },
+  "oitocentos": {
+    "id": 29408,
+    "palavra": "oitocentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "oleiro": {
+    "id": 11173,
+    "palavra": "oleiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "óleo": {
+    "id": 8481,
+    "palavra": "óleo",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "olhar": {
+    "id": 2474,
+    "palavra": "olhar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "omoplata": {
+    "id": 25278,
+    "palavra": "omoplata",
+    "tema": "corpo",
+    "score": 16
+  },
+  "onívoro": {
+    "id": 8180,
+    "palavra": "onívoro",
+    "tema": "animais",
+    "score": 12
+  },
+  "ontem": {
+    "id": 6926,
+    "palavra": "ontem",
+    "tema": "outros",
+    "score": 9
+  },
+  "orca": {
+    "id": 8642,
+    "palavra": "orca",
+    "tema": "animais",
+    "score": 13
+  },
+  "orégano": {
+    "id": 14244,
+    "palavra": "orégano",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "organizar": {
+    "id": 35653,
+    "palavra": "organizar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "orientação": {
+    "id": 29804,
+    "palavra": "orientação",
+    "tema": "outros",
+    "score": 10
+  },
+  "ornamento": {
+    "id": 36905,
+    "palavra": "ornamento",
+    "tema": "objetos",
+    "score": 13
+  },
+  "ornitorrinco": {
+    "id": 13090,
+    "palavra": "ornitorrinco",
+    "tema": "animais",
+    "score": 13
+  },
+  "orquestra": {
+    "id": 2870,
+    "palavra": "orquestra",
+    "tema": "outros",
+    "score": 10
+  },
+  "orquídea": {
+    "id": 11321,
+    "palavra": "orquídea",
+    "tema": "natureza",
+    "score": 16
+  },
+  "orvalho": {
+    "id": 39419,
+    "palavra": "orvalho",
+    "tema": "natureza",
+    "score": 10
+  },
+  "ótica": {
+    "id": 3357,
+    "palavra": "ótica",
+    "tema": "cidades",
+    "score": 16
+  },
+  "otimismo": {
+    "id": 8582,
+    "palavra": "otimismo",
+    "tema": "emoções",
+    "score": 9
+  },
+  "otite": {
+    "id": 10265,
+    "palavra": "otite",
+    "tema": "corpo",
+    "score": 13
+  },
+  "otorrinolaringologista": {
+    "id": 38847,
+    "palavra": "otorrinolaringologista",
+    "tema": "outros",
+    "score": 9
+  },
+  "ourives": {
+    "id": 6535,
+    "palavra": "ourives",
+    "tema": "outros",
+    "score": 17
+  },
+  "ouro": {
+    "id": 6161,
+    "palavra": "ouro",
+    "tema": "objetos",
+    "score": 13
+  },
+  "outubro": {
+    "id": 6571,
+    "palavra": "outubro",
+    "tema": "outros",
+    "score": 20
+  },
+  "ouvido": {
+    "id": 39498,
+    "palavra": "ouvido",
+    "tema": "corpo",
+    "score": 16
+  },
+  "paciência": {
+    "id": 27333,
+    "palavra": "paciência",
+    "tema": "emoções",
+    "score": 9
+  },
+  "padeiro": {
+    "id": 3358,
+    "palavra": "padeiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "país": {
+    "id": 35431,
+    "palavra": "país",
+    "tema": "outros",
+    "score": 9
+  },
+  "paisagem": {
+    "id": 10304,
+    "palavra": "paisagem",
+    "tema": "natureza",
+    "score": 10
+  },
+  "palácio": {
+    "id": 17279,
+    "palavra": "palácio",
+    "tema": "cidades",
+    "score": 16
+  },
+  "palato": {
+    "id": 25289,
+    "palavra": "palato",
+    "tema": "corpo",
+    "score": 16
+  },
+  "palavra": {
+    "id": 9837,
+    "palavra": "palavra",
+    "tema": "outros",
+    "score": 9
+  },
+  "palco": {
+    "id": 8106,
+    "palavra": "palco",
+    "tema": "outros",
+    "score": 10
+  },
+  "palestra": {
+    "id": 27465,
+    "palavra": "palestra",
+    "tema": "outros",
+    "score": 10
+  },
+  "palha": {
+    "id": 6163,
+    "palavra": "palha",
+    "tema": "cores",
+    "score": 10
+  },
+  "pálpebra": {
+    "id": 9104,
+    "palavra": "pálpebra",
+    "tema": "corpo",
+    "score": 19
+  },
+  "pâncreas": {
+    "id": 28407,
+    "palavra": "pâncreas",
+    "tema": "corpo",
+    "score": 16
+  },
+  "pandeiro": {
+    "id": 2495,
+    "palavra": "pandeiro",
+    "tema": "objetos",
+    "score": 10
+  },
+  "pano": {
+    "id": 15343,
+    "palavra": "pano",
+    "tema": "objetos",
+    "score": 16
+  },
+  "pântano": {
+    "id": 26290,
+    "palavra": "pântano",
+    "tema": "natureza",
+    "score": 10
+  },
+  "pantera": {
+    "id": 24226,
+    "palavra": "pantera",
+    "tema": "animais",
+    "score": 13
+  },
+  "panturrilha": {
+    "id": 24069,
+    "palavra": "panturrilha",
+    "tema": "corpo",
+    "score": 16
+  },
+  "papaia": {
+    "id": 16829,
+    "palavra": "papaia",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "papelaria": {
+    "id": 29897,
+    "palavra": "papelaria",
+    "tema": "cidades",
+    "score": 16
+  },
+  "papoula": {
+    "id": 6897,
+    "palavra": "papoula",
+    "tema": "natureza",
+    "score": 16
+  },
+  "parar": {
+    "id": 7195,
+    "palavra": "parar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "pardal": {
+    "id": 4657,
+    "palavra": "pardal",
+    "tema": "animais",
+    "score": 13
+  },
+  "participação": {
+    "id": 11486,
+    "palavra": "participação",
+    "tema": "outros",
+    "score": 9
+  },
+  "partida": {
+    "id": 6170,
+    "palavra": "partida",
+    "tema": "outros",
+    "score": 10
+  },
+  "passarela": {
+    "id": 37257,
+    "palavra": "passarela",
+    "tema": "cidades",
+    "score": 13
+  },
+  "passear": {
+    "id": 8651,
+    "palavra": "passear",
+    "tema": "verbos",
+    "score": 13
+  },
+  "pasta": {
+    "id": 7053,
+    "palavra": "pasta",
+    "tema": "objetos",
+    "score": 13
+  },
+  "pátio": {
+    "id": 33064,
+    "palavra": "pátio",
+    "tema": "cidades",
+    "score": 13
+  },
+  "pavor": {
+    "id": 10261,
+    "palavra": "pavor",
+    "tema": "emoções",
+    "score": 16
+  },
+  "paz": {
+    "id": 8182,
+    "palavra": "paz",
+    "tema": "emoções",
+    "score": 9
+  },
+  "pediatra": {
+    "id": 5536,
+    "palavra": "pediatra",
+    "tema": "outros",
+    "score": 10
+  },
+  "pedir": {
+    "id": 5441,
+    "palavra": "pedir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "pedreiro": {
+    "id": 2642,
+    "palavra": "pedreiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "pegar": {
+    "id": 4606,
+    "palavra": "pegar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "peito": {
+    "id": 2853,
+    "palavra": "peito",
+    "tema": "corpo",
+    "score": 16
+  },
+  "peixaria": {
+    "id": 3364,
+    "palavra": "peixaria",
+    "tema": "cidades",
+    "score": 16
+  },
+  "pele": {
+    "id": 2840,
+    "palavra": "pele",
+    "tema": "corpo",
+    "score": 16
+  },
+  "pelicano": {
+    "id": 6174,
+    "palavra": "pelicano",
+    "tema": "animais",
+    "score": 13
+  },
+  "pélvis": {
+    "id": 24260,
+    "palavra": "pélvis",
+    "tema": "corpo",
+    "score": 24
+  },
+  "pendurar": {
+    "id": 10133,
+    "palavra": "pendurar",
+    "tema": "verbos",
+    "score": 16
+  },
+  "peneira": {
+    "id": 2345,
+    "palavra": "peneira",
+    "tema": "objetos",
+    "score": 16
+  },
+  "penhasco": {
+    "id": 8007,
+    "palavra": "penhasco",
+    "tema": "natureza",
+    "score": 10
+  },
+  "península": {
+    "id": 21006,
+    "palavra": "península",
+    "tema": "natureza",
+    "score": 10
+  },
+  "penúltimo": {
+    "id": 37745,
+    "palavra": "penúltimo",
+    "tema": "numerais",
+    "score": 9
+  },
+  "perceber": {
+    "id": 30194,
+    "palavra": "perceber",
+    "tema": "verbos",
+    "score": 13
+  },
+  "perdoar": {
+    "id": 11625,
+    "palavra": "perdoar",
+    "tema": "verbos",
+    "score": 9
+  },
+  "pereira": {
+    "id": 3214,
+    "palavra": "pereira",
+    "tema": "natureza",
+    "score": 16
+  },
+  "perguntar": {
+    "id": 9843,
+    "palavra": "perguntar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "períneo": {
+    "id": 31783,
+    "palavra": "períneo",
+    "tema": "corpo",
+    "score": -24
+  },
+  "período": {
+    "id": 39843,
+    "palavra": "período",
+    "tema": "outros",
+    "score": 10
+  },
+  "periquito": {
+    "id": 2562,
+    "palavra": "periquito",
+    "tema": "animais",
+    "score": 13
+  },
+  "pérola": {
+    "id": 36947,
+    "palavra": "pérola",
+    "tema": "cores",
+    "score": 10
+  },
+  "persiana": {
+    "id": 2518,
+    "palavra": "persiana",
+    "tema": "objetos",
+    "score": 10
+  },
+  "peruca": {
+    "id": 14258,
+    "palavra": "peruca",
+    "tema": "objetos",
+    "score": 13
+  },
+  "pesar": {
+    "id": 4717,
+    "palavra": "pesar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "pesca": {
+    "id": 4718,
+    "palavra": "pesca",
+    "tema": "outros",
+    "score": 10
+  },
+  "pescoço": {
+    "id": 2727,
+    "palavra": "pescoço",
+    "tema": "corpo",
+    "score": 16
+  },
+  "pesquisador": {
+    "id": 8076,
+    "palavra": "pesquisador",
+    "tema": "outros",
+    "score": 10
+  },
+  "pessegueiro": {
+    "id": 3205,
+    "palavra": "pessegueiro",
+    "tema": "natureza",
+    "score": 16
+  },
+  "pétala": {
+    "id": 34063,
+    "palavra": "pétala",
+    "tema": "natureza",
+    "score": 13
+  },
+  "pia": {
+    "id": 2399,
+    "palavra": "pia",
+    "tema": "objetos",
+    "score": 10
+  },
+  "pico": {
+    "id": 20391,
+    "palavra": "pico",
+    "tema": "natureza",
+    "score": 10
+  },
+  "picolé": {
+    "id": 3348,
+    "palavra": "picolé",
+    "tema": "alimentos",
+    "score": 15
+  },
+  "pinça": {
+    "id": 9088,
+    "palavra": "pinça",
+    "tema": "objetos",
+    "score": 16
+  },
+  "pingente": {
+    "id": 28525,
+    "palavra": "pingente",
+    "tema": "objetos",
+    "score": 13
+  },
+  "pinha": {
+    "id": 8668,
+    "palavra": "pinha",
+    "tema": "alimentos",
+    "score": 10
+  },
+  "pinta": {
+    "id": 25303,
+    "palavra": "pinta",
+    "tema": "corpo",
+    "score": 16
+  },
+  "pintor": {
+    "id": 11341,
+    "palavra": "pintor",
+    "tema": "outros",
+    "score": 10
+  },
+  "piolho": {
+    "id": 4720,
+    "palavra": "piolho",
+    "tema": "animais",
+    "score": 13
+  },
+  "pirâmide": {
+    "id": 9110,
+    "palavra": "pirâmide",
+    "tema": "outros",
+    "score": 10
+  },
+  "piranha": {
+    "id": 29776,
+    "palavra": "piranha",
+    "tema": "animais",
+    "score": 13
+  },
+  "pirarucu": {
+    "id": 34601,
+    "palavra": "pirarucu",
+    "tema": "animais",
+    "score": 13
+  },
+  "pirilampo": {
+    "id": 25203,
+    "palavra": "pirilampo",
+    "tema": "animais",
+    "score": 13
+  },
+  "pista": {
+    "id": 39591,
+    "palavra": "pista",
+    "tema": "cidades",
+    "score": 16
+  },
+  "pistache": {
+    "id": 8322,
+    "palavra": "pistache",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "placar": {
+    "id": 6147,
+    "palavra": "placar",
+    "tema": "cidades",
+    "score": 10
+  },
+  "planalto": {
+    "id": 20399,
+    "palavra": "planalto",
+    "tema": "natureza",
+    "score": 10
+  },
+  "planejar": {
+    "id": 11706,
+    "palavra": "planejar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "planetário": {
+    "id": 29877,
+    "palavra": "planetário",
+    "tema": "cidades",
+    "score": 13
+  },
+  "planície": {
+    "id": 20395,
+    "palavra": "planície",
+    "tema": "natureza",
+    "score": 10
+  },
+  "plataforma": {
+    "id": 22200,
+    "palavra": "plataforma",
+    "tema": "objetos",
+    "score": 10
+  },
+  "pluviômetro": {
+    "id": 37480,
+    "palavra": "pluviômetro",
+    "tema": "objetos",
+    "score": 13
+  },
+  "poça": {
+    "id": 25936,
+    "palavra": "poça",
+    "tema": "natureza",
+    "score": 10
+  },
+  "poço": {
+    "id": 8197,
+    "palavra": "poço",
+    "tema": "natureza",
+    "score": 10
+  },
+  "podólogo": {
+    "id": 22767,
+    "palavra": "podólogo",
+    "tema": "outros",
+    "score": 10
+  },
+  "poeira": {
+    "id": 24312,
+    "palavra": "poeira",
+    "tema": "natureza",
+    "score": 10
+  },
+  "poesia": {
+    "id": 22763,
+    "palavra": "poesia",
+    "tema": "outros",
+    "score": 9
+  },
+  "pólen": {
+    "id": 37153,
+    "palavra": "pólen",
+    "tema": "natureza",
+    "score": 13
+  },
+  "polia": {
+    "id": 26334,
+    "palavra": "polia",
+    "tema": "objetos",
+    "score": 9
+  },
+  "polinização": {
+    "id": 37169,
+    "palavra": "polinização",
+    "tema": "natureza",
+    "score": 13
+  },
+  "política": {
+    "id": 11346,
+    "palavra": "política",
+    "tema": "outros",
+    "score": 10
+  },
+  "pônei": {
+    "id": 8324,
+    "palavra": "pônei",
+    "tema": "animais",
+    "score": 13
+  },
+  "porão": {
+    "id": 8223,
+    "palavra": "porão",
+    "tema": "objetos",
+    "score": 9
+  },
+  "porcentagem": {
+    "id": 5093,
+    "palavra": "porcentagem",
+    "tema": "outros",
+    "score": 9
+  },
+  "poupar": {
+    "id": 4556,
+    "palavra": "poupar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "pousar": {
+    "id": 25353,
+    "palavra": "pousar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "praga": {
+    "id": 26326,
+    "palavra": "praga",
+    "tema": "natureza",
+    "score": 10
+  },
+  "prata": {
+    "id": 6183,
+    "palavra": "prata",
+    "tema": "objetos",
+    "score": 13
+  },
+  "prateado": {
+    "id": 2827,
+    "palavra": "prateado",
+    "tema": "cores",
+    "score": 13
+  },
+  "preceder": {
+    "id": 27319,
+    "palavra": "preceder",
+    "tema": "verbos",
+    "score": 9
+  },
+  "preencher": {
+    "id": 13078,
+    "palavra": "preencher",
+    "tema": "verbos",
+    "score": 13
+  },
+  "prefeitura": {
+    "id": 3060,
+    "palavra": "prefeitura",
+    "tema": "cidades",
+    "score": 16
+  },
+  "preferência": {
+    "id": 14670,
+    "palavra": "preferência",
+    "tema": "outros",
+    "score": 17
+  },
+  "prego": {
+    "id": 8306,
+    "palavra": "prego",
+    "tema": "objetos",
+    "score": 16
+  },
+  "prêmio": {
+    "id": 26845,
+    "palavra": "prêmio",
+    "tema": "outros",
+    "score": 10
+  },
+  "prender": {
+    "id": 8087,
+    "palavra": "prender",
+    "tema": "verbos",
+    "score": 13
+  },
+  "preparar": {
+    "id": 6190,
+    "palavra": "preparar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "prescrever": {
+    "id": 26366,
+    "palavra": "prescrever",
+    "tema": "verbos",
+    "score": 10
+  },
+  "presépio": {
+    "id": 5089,
+    "palavra": "presépio",
+    "tema": "objetos",
+    "score": 10
+  },
+  "presunto": {
+    "id": 2433,
+    "palavra": "presunto",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "primavera": {
+    "id": 5553,
+    "palavra": "primavera",
+    "tema": "natureza",
+    "score": 10
+  },
+  "primeiro": {
+    "id": 32129,
+    "palavra": "primeiro",
+    "tema": "numerais",
+    "score": 12
+  },
+  "primo": {
+    "id": 30340,
+    "palavra": "primo",
+    "tema": "outros",
+    "score": 10
+  },
+  "príncipe": {
+    "id": 5555,
+    "palavra": "príncipe",
+    "tema": "outros",
+    "score": 10
+  },
+  "princípio": {
+    "id": 5431,
+    "palavra": "princípio",
+    "tema": "outros",
+    "score": 9
+  },
+  "procurar": {
+    "id": 6946,
+    "palavra": "procurar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "produtor": {
+    "id": 37876,
+    "palavra": "produtor",
+    "tema": "outros",
+    "score": 9
+  },
+  "programa": {
+    "id": 24320,
+    "palavra": "programa",
+    "tema": "outros",
+    "score": 10
+  },
+  "projeção": {
+    "id": 8201,
+    "palavra": "projeção",
+    "tema": "outros",
+    "score": 10
+  },
+  "promover": {
+    "id": 15467,
+    "palavra": "promover",
+    "tema": "verbos",
+    "score": 13
+  },
+  "propaganda": {
+    "id": 8275,
+    "palavra": "propaganda",
+    "tema": "outros",
+    "score": 10
+  },
+  "proteína": {
+    "id": 26346,
+    "palavra": "proteína",
+    "tema": "alimentos",
+    "score": 10
+  },
+  "prova": {
+    "id": 38462,
+    "palavra": "prova",
+    "tema": "objetos",
+    "score": 10
+  },
+  "psicologia": {
+    "id": 39880,
+    "palavra": "psicologia",
+    "tema": "outros",
+    "score": 9
+  },
+  "psicólogo": {
+    "id": 3377,
+    "palavra": "psicólogo",
+    "tema": "outros",
+    "score": 10
+  },
+  "psicopedagogo": {
+    "id": 33972,
+    "palavra": "psicopedagogo",
+    "tema": "outros",
+    "score": 9
+  },
+  "psiquiatra": {
+    "id": 37491,
+    "palavra": "psiquiatra",
+    "tema": "outros",
+    "score": 10
+  },
+  "pulga": {
+    "id": 4727,
+    "palavra": "pulga",
+    "tema": "animais",
+    "score": 13
+  },
+  "pulseira": {
+    "id": 2537,
+    "palavra": "pulseira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "pulso": {
+    "id": 2904,
+    "palavra": "pulso",
+    "tema": "corpo",
+    "score": 16
+  },
+  "puma": {
+    "id": 9068,
+    "palavra": "puma",
+    "tema": "animais",
+    "score": 13
+  },
+  "punho": {
+    "id": 2904,
+    "palavra": "punho",
+    "tema": "corpo",
+    "score": 16
+  },
+  "pupila": {
+    "id": 9105,
+    "palavra": "pupila",
+    "tema": "corpo",
+    "score": 19
+  },
+  "puxar": {
+    "id": 39450,
+    "palavra": "puxar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "quadra": {
+    "id": 33065,
+    "palavra": "quadra",
+    "tema": "objetos",
+    "score": 10
+  },
+  "quadril": {
+    "id": 3000,
+    "palavra": "quadril",
+    "tema": "corpo",
+    "score": 16
+  },
+  "qualidade": {
+    "id": 35993,
+    "palavra": "qualidade",
+    "tema": "outros",
+    "score": 9
+  },
+  "quantidade": {
+    "id": 7073,
+    "palavra": "quantidade",
+    "tema": "outros",
+    "score": 9
+  },
+  "quarenta": {
+    "id": 29320,
+    "palavra": "quarenta",
+    "tema": "numerais",
+    "score": 16
+  },
+  "quarentena": {
+    "id": 38391,
+    "palavra": "quarentena",
+    "tema": "numerais",
+    "score": 10
+  },
+  "quartel": {
+    "id": 35419,
+    "palavra": "quartel",
+    "tema": "cidades",
+    "score": 13
+  },
+  "quarto": {
+    "id": 15549,
+    "palavra": "quarto",
+    "tema": "numerais",
+    "score": 10
+  },
+  "quatorze": {
+    "id": 29266,
+    "palavra": "quatorze",
+    "tema": "numerais",
+    "score": 16
+  },
+  "quatrocentos": {
+    "id": 29322,
+    "palavra": "quatrocentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "queimada": {
+    "id": 24137,
+    "palavra": "queimada",
+    "tema": "natureza",
+    "score": 10
+  },
+  "queixo": {
+    "id": 2991,
+    "palavra": "queixo",
+    "tema": "corpo",
+    "score": 16
+  },
+  "questionário": {
+    "id": 6998,
+    "palavra": "questionário",
+    "tema": "outros",
+    "score": 10
+  },
+  "quiabo": {
+    "id": 39817,
+    "palavra": "quiabo",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "química": {
+    "id": 36374,
+    "palavra": "química",
+    "tema": "outros",
+    "score": 9
+  },
+  "quinhentos": {
+    "id": 29344,
+    "palavra": "quinhentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "quinto": {
+    "id": 37751,
+    "palavra": "quinto",
+    "tema": "numerais",
+    "score": 12
+  },
+  "quinze": {
+    "id": 29268,
+    "palavra": "quinze",
+    "tema": "numerais",
+    "score": 16
+  },
+  "rã": {
+    "id": 2543,
+    "palavra": "rã",
+    "tema": "animais",
+    "score": 13
+  },
+  "rabanada": {
+    "id": 39540,
+    "palavra": "rabanada",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "rabanete": {
+    "id": 8678,
+    "palavra": "rabanete",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "rainha": {
+    "id": 5559,
+    "palavra": "rainha",
+    "tema": "outros",
+    "score": 10
+  },
+  "ralador": {
+    "id": 9089,
+    "palavra": "ralador",
+    "tema": "objetos",
+    "score": 16
+  },
+  "ralar": {
+    "id": 9023,
+    "palavra": "ralar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "ramo": {
+    "id": 7224,
+    "palavra": "ramo",
+    "tema": "natureza",
+    "score": 13
+  },
+  "rampa": {
+    "id": 2542,
+    "palavra": "rampa",
+    "tema": "cidades",
+    "score": 16
+  },
+  "rasgar": {
+    "id": 2545,
+    "palavra": "rasgar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "receber": {
+    "id": 17042,
+    "palavra": "receber",
+    "tema": "verbos",
+    "score": 13
+  },
+  "receita": {
+    "id": 7805,
+    "palavra": "receita",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "recepcionista": {
+    "id": 22072,
+    "palavra": "recepcionista",
+    "tema": "outros",
+    "score": 10
+  },
+  "recolher": {
+    "id": 32663,
+    "palavra": "recolher",
+    "tema": "verbos",
+    "score": 12
+  },
+  "recortar": {
+    "id": 2547,
+    "palavra": "recortar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "recreio": {
+    "id": 8681,
+    "palavra": "recreio",
+    "tema": "outros",
+    "score": 10
+  },
+  "recuperar": {
+    "id": 9026,
+    "palavra": "recuperar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "rede": {
+    "id": 6205,
+    "palavra": "rede",
+    "tema": "objetos",
+    "score": 13
+  },
+  "reencontrar": {
+    "id": 39520,
+    "palavra": "reencontrar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "refeição": {
+    "id": 4611,
+    "palavra": "refeição",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "refletir": {
+    "id": 8682,
+    "palavra": "refletir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "refletor": {
+    "id": 10321,
+    "palavra": "refletor",
+    "tema": "objetos",
+    "score": 13
+  },
+  "regador": {
+    "id": 2817,
+    "palavra": "regador",
+    "tema": "objetos",
+    "score": 13
+  },
+  "regar": {
+    "id": 2816,
+    "palavra": "regar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "regata": {
+    "id": 2310,
+    "palavra": "regata",
+    "tema": "objetos",
+    "score": 13
+  },
+  "regra": {
+    "id": 34779,
+    "palavra": "regra",
+    "tema": "outros",
+    "score": 9
+  },
+  "rejeitar": {
+    "id": 21587,
+    "palavra": "rejeitar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "relâmpago": {
+    "id": 2819,
+    "palavra": "relâmpago",
+    "tema": "natureza",
+    "score": 10
+  },
+  "relatório": {
+    "id": 39172,
+    "palavra": "relatório",
+    "tema": "outros",
+    "score": 10
+  },
+  "religião": {
+    "id": 39178,
+    "palavra": "religião",
+    "tema": "outros",
+    "score": 10
+  },
+  "remendar": {
+    "id": 15473,
+    "palavra": "remendar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "remo": {
+    "id": 6206,
+    "palavra": "remo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "reparar": {
+    "id": 6910,
+    "palavra": "reparar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "repetir": {
+    "id": 11752,
+    "palavra": "repetir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "reproduzir": {
+    "id": 26381,
+    "palavra": "reproduzir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "reservatório": {
+    "id": 38654,
+    "palavra": "reservatório",
+    "tema": "cidades",
+    "score": 15
+  },
+  "resfriado": {
+    "id": 26384,
+    "palavra": "resfriado",
+    "tema": "outros",
+    "score": 10
+  },
+  "resgatar": {
+    "id": 9046,
+    "palavra": "resgatar",
+    "tema": "verbos",
+    "score": 16
+  },
+  "resolver": {
+    "id": 37711,
+    "palavra": "resolver",
+    "tema": "verbos",
+    "score": 12
+  },
+  "respeitar": {
+    "id": 11621,
+    "palavra": "respeitar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "respeito": {
+    "id": 14660,
+    "palavra": "respeito",
+    "tema": "emoções",
+    "score": 9
+  },
+  "respirar": {
+    "id": 6602,
+    "palavra": "respirar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "responder": {
+    "id": 9030,
+    "palavra": "responder",
+    "tema": "verbos",
+    "score": 13
+  },
+  "responsabilidade": {
+    "id": 37234,
+    "palavra": "responsabilidade",
+    "tema": "outros",
+    "score": 9
+  },
+  "retina": {
+    "id": 9106,
+    "palavra": "retina",
+    "tema": "corpo",
+    "score": 19
+  },
+  "reunião": {
+    "id": 8207,
+    "palavra": "reunião",
+    "tema": "outros",
+    "score": 10
+  },
+  "reutilizar": {
+    "id": 36441,
+    "palavra": "reutilizar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "reverência": {
+    "id": 39136,
+    "palavra": "reverência",
+    "tema": "emoções",
+    "score": 9
+  },
+  "revisão": {
+    "id": 19553,
+    "palavra": "revisão",
+    "tema": "outros",
+    "score": 10
+  },
+  "revisar": {
+    "id": 6998,
+    "palavra": "revisar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "revista": {
+    "id": 2813,
+    "palavra": "revista",
+    "tema": "objetos",
+    "score": 13
+  },
+  "riacho": {
+    "id": 23757,
+    "palavra": "riacho",
+    "tema": "natureza",
+    "score": 10
+  },
+  "rim": {
+    "id": 8325,
+    "palavra": "rim",
+    "tema": "corpo",
+    "score": 16
+  },
+  "robalo": {
+    "id": 21969,
+    "palavra": "robalo",
+    "tema": "animais",
+    "score": 13
+  },
+  "rocha": {
+    "id": 6594,
+    "palavra": "rocha",
+    "tema": "natureza",
+    "score": 10
+  },
+  "rodoviária": {
+    "id": 36291,
+    "palavra": "rodoviária",
+    "tema": "cidades",
+    "score": 16
+  },
+  "roer": {
+    "id": 25393,
+    "palavra": "roer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "rolar": {
+    "id": 6603,
+    "palavra": "rolar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "roldana": {
+    "id": 26334,
+    "palavra": "roldana",
+    "tema": "objetos",
+    "score": 9
+  },
+  "rolha": {
+    "id": 7267,
+    "palavra": "rolha",
+    "tema": "objetos",
+    "score": 16
+  },
+  "romã": {
+    "id": 8594,
+    "palavra": "romã",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "roncar": {
+    "id": 22094,
+    "palavra": "roncar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "rosa": {
+    "id": 2807,
+    "palavra": "rosa",
+    "tema": "cores",
+    "score": 13
+  },
+  "rosácea": {
+    "id": 36957,
+    "palavra": "rosácea",
+    "tema": "objetos",
+    "score": 10
+  },
+  "rotatória": {
+    "id": 7234,
+    "palavra": "rotatória",
+    "tema": "cidades",
+    "score": 10
+  },
+  "rótula": {
+    "id": 37482,
+    "palavra": "rótula",
+    "tema": "corpo",
+    "score": 16
+  },
+  "roubar": {
+    "id": 8209,
+    "palavra": "roubar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "roupão": {
+    "id": 36499,
+    "palavra": "roupão",
+    "tema": "objetos",
+    "score": 13
+  },
+  "rua": {
+    "id": 2299,
+    "palavra": "rua",
+    "tema": "cidades",
+    "score": 13
+  },
+  "rubi": {
+    "id": 25397,
+    "palavra": "rubi",
+    "tema": "cores",
+    "score": 10
+  },
+  "rúcula": {
+    "id": 35755,
+    "palavra": "rúcula",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "sábado": {
+    "id": 6605,
+    "palavra": "sábado",
+    "tema": "outros",
+    "score": 20
+  },
+  "saco": {
+    "id": 6210,
+    "palavra": "saco",
+    "tema": "objetos",
+    "score": 10
+  },
+  "sacudir": {
+    "id": 5365,
+    "palavra": "sacudir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "saguão": {
+    "id": 38427,
+    "palavra": "saguão",
+    "tema": "cidades",
+    "score": 16
+  },
+  "saia": {
+    "id": 2391,
+    "palavra": "saia",
+    "tema": "objetos",
+    "score": 13
+  },
+  "sair": {
+    "id": 2806,
+    "palavra": "sair",
+    "tema": "verbos",
+    "score": 13
+  },
+  "salamandra": {
+    "id": 7236,
+    "palavra": "salamandra",
+    "tema": "animais",
+    "score": 13
+  },
+  "salário": {
+    "id": 33996,
+    "palavra": "salário",
+    "tema": "outros",
+    "score": 9
+  },
+  "salgueiro": {
+    "id": 3219,
+    "palavra": "salgueiro",
+    "tema": "natureza",
+    "score": 16
+  },
+  "saliva": {
+    "id": 14254,
+    "palavra": "saliva",
+    "tema": "corpo",
+    "score": 16
+  },
+  "salmão": {
+    "id": 7808,
+    "palavra": "salmão",
+    "tema": "cores",
+    "score": 10
+  },
+  "salsinha": {
+    "id": 11334,
+    "palavra": "salsinha",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "saltar": {
+    "id": 2804,
+    "palavra": "saltar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "samambaia": {
+    "id": 8601,
+    "palavra": "samambaia",
+    "tema": "natureza",
+    "score": 13
+  },
+  "sandália": {
+    "id": 8368,
+    "palavra": "sandália",
+    "tema": "objetos",
+    "score": 13
+  },
+  "sanduicheira": {
+    "id": 13364,
+    "palavra": "sanduicheira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "sapataria": {
+    "id": 6633,
+    "palavra": "sapataria",
+    "tema": "cidades",
+    "score": 15
+  },
+  "sapateiro": {
+    "id": 38579,
+    "palavra": "sapateiro",
+    "tema": "outros",
+    "score": 10
+  },
+  "sarcófago": {
+    "id": 8220,
+    "palavra": "sarcófago",
+    "tema": "objetos",
+    "score": 10
+  },
+  "sarda": {
+    "id": 25303,
+    "palavra": "sarda",
+    "tema": "corpo",
+    "score": 16
+  },
+  "sardinha": {
+    "id": 7809,
+    "palavra": "sardinha",
+    "tema": "animais",
+    "score": 13
+  },
+  "sargento": {
+    "id": 39107,
+    "palavra": "sargento",
+    "tema": "outros",
+    "score": 10
+  },
+  "saudade": {
+    "id": 32360,
+    "palavra": "saudade",
+    "tema": "emoções",
+    "score": 15
+  },
+  "saúde": {
+    "id": 14664,
+    "palavra": "saúde",
+    "tema": "outros",
+    "score": 10
+  },
+  "savana": {
+    "id": 5567,
+    "palavra": "savana",
+    "tema": "natureza",
+    "score": 10
+  },
+  "seca": {
+    "id": 5580,
+    "palavra": "seca",
+    "tema": "natureza",
+    "score": 10
+  },
+  "secador": {
+    "id": 2560,
+    "palavra": "secador",
+    "tema": "objetos",
+    "score": 16
+  },
+  "secadora": {
+    "id": 26431,
+    "palavra": "secadora",
+    "tema": "objetos",
+    "score": 13
+  },
+  "secar": {
+    "id": 2566,
+    "palavra": "secar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "secretário": {
+    "id": 4743,
+    "palavra": "secretário",
+    "tema": "outros",
+    "score": 10
+  },
+  "sede": {
+    "id": 7273,
+    "palavra": "sede",
+    "tema": "emoções",
+    "score": 9
+  },
+  "segurança": {
+    "id": 11278,
+    "palavra": "segurança",
+    "tema": "emoções",
+    "score": 10
+  },
+  "segurar": {
+    "id": 4606,
+    "palavra": "segurar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "seiscentos": {
+    "id": 29384,
+    "palavra": "seiscentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "seiva": {
+    "id": 37171,
+    "palavra": "seiva",
+    "tema": "natureza",
+    "score": 13
+  },
+  "selva": {
+    "id": 2666,
+    "palavra": "selva",
+    "tema": "natureza",
+    "score": 16
+  },
+  "semana": {
+    "id": 7244,
+    "palavra": "semana",
+    "tema": "outros",
+    "score": 10
+  },
+  "semente": {
+    "id": 8689,
+    "palavra": "semente",
+    "tema": "natureza",
+    "score": 13
+  },
+  "sentimento": {
+    "id": 12359,
+    "palavra": "sentimento",
+    "tema": "emoções",
+    "score": 16
+  },
+  "sépala": {
+    "id": 37152,
+    "palavra": "sépala",
+    "tema": "natureza",
+    "score": 13
+  },
+  "separação": {
+    "id": 15012,
+    "palavra": "separação",
+    "tema": "outros",
+    "score": 10
+  },
+  "serpente": {
+    "id": 2568,
+    "palavra": "serpente",
+    "tema": "animais",
+    "score": 13
+  },
+  "serralheria": {
+    "id": 7100,
+    "palavra": "serralheria",
+    "tema": "cidades",
+    "score": 16
+  },
+  "servir": {
+    "id": 7247,
+    "palavra": "servir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "sessenta": {
+    "id": 29364,
+    "palavra": "sessenta",
+    "tema": "numerais",
+    "score": 16
+  },
+  "setecentos": {
+    "id": 29386,
+    "palavra": "setecentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "setembro": {
+    "id": 6613,
+    "palavra": "setembro",
+    "tema": "outros",
+    "score": 20
+  },
+  "setenta": {
+    "id": 29388,
+    "palavra": "setenta",
+    "tema": "numerais",
+    "score": 16
+  },
+  "sexto": {
+    "id": 39659,
+    "palavra": "sexto",
+    "tema": "numerais",
+    "score": 9
+  },
+  "sílaba": {
+    "id": 32722,
+    "palavra": "sílaba",
+    "tema": "outros",
+    "score": 9
+  },
+  "silvicultura": {
+    "id": 38093,
+    "palavra": "silvicultura",
+    "tema": "natureza",
+    "score": 10
+  },
+  "sindicato": {
+    "id": 39087,
+    "palavra": "sindicato",
+    "tema": "outros",
+    "score": 10
+  },
+  "sobrancelha": {
+    "id": 3011,
+    "palavra": "sobrancelha",
+    "tema": "corpo",
+    "score": 16
+  },
+  "sobrepor": {
+    "id": 34866,
+    "palavra": "sobrepor",
+    "tema": "verbos",
+    "score": 12
+  },
+  "sobrinho": {
+    "id": 30286,
+    "palavra": "sobrinho",
+    "tema": "outros",
+    "score": 10
+  },
+  "socializar": {
+    "id": 37217,
+    "palavra": "socializar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "soja": {
+    "id": 26447,
+    "palavra": "soja",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "sola": {
+    "id": 8702,
+    "palavra": "sola",
+    "tema": "corpo",
+    "score": 10
+  },
+  "soldado": {
+    "id": 2797,
+    "palavra": "soldado",
+    "tema": "outros",
+    "score": 10
+  },
+  "solidão": {
+    "id": 39247,
+    "palavra": "solidão",
+    "tema": "emoções",
+    "score": 9
+  },
+  "solução": {
+    "id": 37711,
+    "palavra": "solução",
+    "tema": "outros",
+    "score": 9
+  },
+  "soluço": {
+    "id": 22127,
+    "palavra": "soluço",
+    "tema": "corpo",
+    "score": 19
+  },
+  "sombra": {
+    "id": 6649,
+    "palavra": "sombra",
+    "tema": "natureza",
+    "score": 10
+  },
+  "sonhar": {
+    "id": 7257,
+    "palavra": "sonhar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "sonho": {
+    "id": 5590,
+    "palavra": "sonho",
+    "tema": "emoções",
+    "score": 10
+  },
+  "soquete": {
+    "id": 27029,
+    "palavra": "soquete",
+    "tema": "objetos",
+    "score": 13
+  },
+  "sorrir": {
+    "id": 13354,
+    "palavra": "sorrir",
+    "tema": "verbos",
+    "score": 12
+  },
+  "sorriso": {
+    "id": 13354,
+    "palavra": "sorriso",
+    "tema": "emoções",
+    "score": 9
+  },
+  "sorveteria": {
+    "id": 3347,
+    "palavra": "sorveteria",
+    "tema": "cidades",
+    "score": 16
+  },
+  "subir": {
+    "id": 8226,
+    "palavra": "subir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "sucuri": {
+    "id": 38634,
+    "palavra": "sucuri",
+    "tema": "animais",
+    "score": 13
+  },
+  "suéter": {
+    "id": 2436,
+    "palavra": "suéter",
+    "tema": "objetos",
+    "score": 13
+  },
+  "surdez": {
+    "id": 36143,
+    "palavra": "surdez",
+    "tema": "emoções",
+    "score": 9
+  },
+  "surpresa": {
+    "id": 31099,
+    "palavra": "surpresa",
+    "tema": "emoções",
+    "score": 16
+  },
+  "sussurrar": {
+    "id": 9037,
+    "palavra": "sussurrar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "sutiã": {
+    "id": 2576,
+    "palavra": "sutiã",
+    "tema": "objetos",
+    "score": 13
+  },
+  "tabela": {
+    "id": 6222,
+    "palavra": "tabela",
+    "tema": "outros",
+    "score": 10
+  },
+  "tábua": {
+    "id": 9090,
+    "palavra": "tábua",
+    "tema": "objetos",
+    "score": 16
+  },
+  "talco": {
+    "id": 14256,
+    "palavra": "talco",
+    "tema": "natureza",
+    "score": 10
+  },
+  "talo": {
+    "id": 28992,
+    "palavra": "talo",
+    "tema": "natureza",
+    "score": 10
+  },
+  "tamanduá": {
+    "id": 39550,
+    "palavra": "tamanduá",
+    "tema": "animais",
+    "score": 13
+  },
+  "tâmara": {
+    "id": 36515,
+    "palavra": "tâmara",
+    "tema": "alimentos",
+    "score": 19
+  },
+  "tampa": {
+    "id": 37940,
+    "palavra": "tampa",
+    "tema": "objetos",
+    "score": 16
+  },
+  "tapete": {
+    "id": 2249,
+    "palavra": "tapete",
+    "tema": "objetos",
+    "score": 16
+  },
+  "tarde": {
+    "id": 7268,
+    "palavra": "tarde",
+    "tema": "natureza",
+    "score": 9
+  },
+  "tarso": {
+    "id": 37469,
+    "palavra": "tarso",
+    "tema": "corpo",
+    "score": 16
+  },
+  "tatu": {
+    "id": 8031,
+    "palavra": "tatu",
+    "tema": "animais",
+    "score": 13
+  },
+  "técnico": {
+    "id": 5991,
+    "palavra": "técnico",
+    "tema": "outros",
+    "score": 10
+  },
+  "tecnologia": {
+    "id": 36375,
+    "palavra": "tecnologia",
+    "tema": "outros",
+    "score": 9
+  },
+  "tela": {
+    "id": 2910,
+    "palavra": "tela",
+    "tema": "objetos",
+    "score": 13
+  },
+  "telefonar": {
+    "id": 4662,
+    "palavra": "telefonar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "telhado": {
+    "id": 2584,
+    "palavra": "telhado",
+    "tema": "objetos",
+    "score": 10
+  },
+  "tempestade": {
+    "id": 2814,
+    "palavra": "tempestade",
+    "tema": "natureza",
+    "score": 10
+  },
+  "templo": {
+    "id": 8231,
+    "palavra": "templo",
+    "tema": "cidades",
+    "score": 16
+  },
+  "tempo": {
+    "id": 22631,
+    "palavra": "tempo",
+    "tema": "outros",
+    "score": 10
+  },
+  "tendão": {
+    "id": 24432,
+    "palavra": "tendão",
+    "tema": "corpo",
+    "score": 16
+  },
+  "tênis": {
+    "id": 2621,
+    "palavra": "tênis",
+    "tema": "objetos",
+    "score": 16
+  },
+  "terminal": {
+    "id": 39592,
+    "palavra": "terminal",
+    "tema": "cidades",
+    "score": 19
+  },
+  "terraço": {
+    "id": 22129,
+    "palavra": "terraço",
+    "tema": "cidades",
+    "score": 16
+  },
+  "terremoto": {
+    "id": 4755,
+    "palavra": "terremoto",
+    "tema": "natureza",
+    "score": 10
+  },
+  "terreno": {
+    "id": 2683,
+    "palavra": "terreno",
+    "tema": "natureza",
+    "score": 10
+  },
+  "terror": {
+    "id": 39248,
+    "palavra": "terror",
+    "tema": "emoções",
+    "score": 15
+  },
+  "testa": {
+    "id": 3326,
+    "palavra": "testa",
+    "tema": "corpo",
+    "score": 16
+  },
+  "teto": {
+    "id": 2583,
+    "palavra": "teto",
+    "tema": "objetos",
+    "score": 10
+  },
+  "tia": {
+    "id": 30271,
+    "palavra": "tia",
+    "tema": "outros",
+    "score": 10
+  },
+  "tiara": {
+    "id": 15357,
+    "palavra": "tiara",
+    "tema": "objetos",
+    "score": 10
+  },
+  "tíbia": {
+    "id": 24436,
+    "palavra": "tíbia",
+    "tema": "corpo",
+    "score": 16
+  },
+  "tinta": {
+    "id": 4870,
+    "palavra": "tinta",
+    "tema": "objetos",
+    "score": 13
+  },
+  "tio": {
+    "id": 30255,
+    "palavra": "tio",
+    "tema": "outros",
+    "score": 10
+  },
+  "tirar": {
+    "id": 5568,
+    "palavra": "tirar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "toalha": {
+    "id": 2593,
+    "palavra": "toalha",
+    "tema": "objetos",
+    "score": 16
+  },
+  "toca": {
+    "id": 7149,
+    "palavra": "toca",
+    "tema": "natureza",
+    "score": 10
+  },
+  "tocar": {
+    "id": 3293,
+    "palavra": "tocar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "tolerância": {
+    "id": 33002,
+    "palavra": "tolerância",
+    "tema": "emoções",
+    "score": 9
+  },
+  "tomar": {
+    "id": 2276,
+    "palavra": "tomar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "tomilho": {
+    "id": 14248,
+    "palavra": "tomilho",
+    "tema": "natureza",
+    "score": 13
+  },
+  "tórax": {
+    "id": 2853,
+    "palavra": "tórax",
+    "tema": "corpo",
+    "score": 16
+  },
+  "torcer": {
+    "id": 17231,
+    "palavra": "torcer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "tornozelo": {
+    "id": 3405,
+    "palavra": "tornozelo",
+    "tema": "corpo",
+    "score": 16
+  },
+  "torradeira": {
+    "id": 2598,
+    "palavra": "torradeira",
+    "tema": "objetos",
+    "score": 13
+  },
+  "torrão": {
+    "id": 2784,
+    "palavra": "torrão",
+    "tema": "natureza",
+    "score": 10
+  },
+  "tosse": {
+    "id": 35585,
+    "palavra": "tosse",
+    "tema": "corpo",
+    "score": 12
+  },
+  "tossir": {
+    "id": 3406,
+    "palavra": "tossir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "toupeira": {
+    "id": 9070,
+    "palavra": "toupeira",
+    "tema": "animais",
+    "score": 13
+  },
+  "touro": {
+    "id": 2595,
+    "palavra": "touro",
+    "tema": "animais",
+    "score": 13
+  },
+  "trabalhador": {
+    "id": 20113,
+    "palavra": "trabalhador",
+    "tema": "outros",
+    "score": 9
+  },
+  "traça": {
+    "id": 27982,
+    "palavra": "traça",
+    "tema": "animais",
+    "score": 13
+  },
+  "trajeto": {
+    "id": 11393,
+    "palavra": "trajeto",
+    "tema": "outros",
+    "score": 9
+  },
+  "transportar": {
+    "id": 8982,
+    "palavra": "transportar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "traumatologista": {
+    "id": 34235,
+    "palavra": "traumatologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "travesseiro": {
+    "id": 2250,
+    "palavra": "travesseiro",
+    "tema": "objetos",
+    "score": 16
+  },
+  "travessura": {
+    "id": 38266,
+    "palavra": "travessura",
+    "tema": "outros",
+    "score": 10
+  },
+  "trazer": {
+    "id": 7279,
+    "palavra": "trazer",
+    "tema": "verbos",
+    "score": 13
+  },
+  "treinador": {
+    "id": 5991,
+    "palavra": "treinador",
+    "tema": "outros",
+    "score": 10
+  },
+  "treze": {
+    "id": 29264,
+    "palavra": "treze",
+    "tema": "numerais",
+    "score": 16
+  },
+  "trezentos": {
+    "id": 29300,
+    "palavra": "trezentos",
+    "tema": "numerais",
+    "score": 16
+  },
+  "triângulo": {
+    "id": 2604,
+    "palavra": "triângulo",
+    "tema": "objetos",
+    "score": 10
+  },
+  "tribunal": {
+    "id": 37671,
+    "palavra": "tribunal",
+    "tema": "cidades",
+    "score": 16
+  },
+  "tríceps": {
+    "id": 24450,
+    "palavra": "tríceps",
+    "tema": "corpo",
+    "score": 24
+  },
+  "trinta": {
+    "id": 29298,
+    "palavra": "trinta",
+    "tema": "numerais",
+    "score": 16
+  },
+  "trocar": {
+    "id": 8053,
+    "palavra": "trocar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "trombone": {
+    "id": 6233,
+    "palavra": "trombone",
+    "tema": "objetos",
+    "score": 10
+  },
+  "trono": {
+    "id": 26515,
+    "palavra": "trono",
+    "tema": "outros",
+    "score": 10
+  },
+  "tropeçar": {
+    "id": 8238,
+    "palavra": "tropeçar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "truta": {
+    "id": 7820,
+    "palavra": "truta",
+    "tema": "animais",
+    "score": 13
+  },
+  "tubulação": {
+    "id": 8240,
+    "palavra": "tubulação",
+    "tema": "objetos",
+    "score": 10
+  },
+  "tucano": {
+    "id": 8711,
+    "palavra": "tucano",
+    "tema": "animais",
+    "score": 13
+  },
+  "turista": {
+    "id": 6236,
+    "palavra": "turista",
+    "tema": "outros",
+    "score": 10
+  },
+  "turma": {
+    "id": 39686,
+    "palavra": "turma",
+    "tema": "outros",
+    "score": 9
+  },
+  "ulna": {
+    "id": 24001,
+    "palavra": "ulna",
+    "tema": "corpo",
+    "score": 16
+  },
+  "último": {
+    "id": 32069,
+    "palavra": "último",
+    "tema": "numerais",
+    "score": 12
+  },
+  "ultrapassar": {
+    "id": 8482,
+    "palavra": "ultrapassar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "ultrassonografia": {
+    "id": 38862,
+    "palavra": "ultrassonografia",
+    "tema": "outros",
+    "score": 9
+  },
+  "um": {
+    "id": 2627,
+    "palavra": "um",
+    "tema": "numerais",
+    "score": 16
+  },
+  "umbigo": {
+    "id": 2873,
+    "palavra": "umbigo",
+    "tema": "corpo",
+    "score": 16
+  },
+  "úmero": {
+    "id": 24109,
+    "palavra": "úmero",
+    "tema": "corpo",
+    "score": 16
+  },
+  "urologista": {
+    "id": 35273,
+    "palavra": "urologista",
+    "tema": "outros",
+    "score": 10
+  },
+  "úvula": {
+    "id": 39873,
+    "palavra": "úvula",
+    "tema": "corpo",
+    "score": 19
+  },
+  "vale": {
+    "id": 6238,
+    "palavra": "vale",
+    "tema": "natureza",
+    "score": 10
+  },
+  "vapor": {
+    "id": 31478,
+    "palavra": "vapor",
+    "tema": "natureza",
+    "score": 10
+  },
+  "varanda": {
+    "id": 8254,
+    "palavra": "varanda",
+    "tema": "objetos",
+    "score": 10
+  },
+  "vaso": {
+    "id": 3126,
+    "palavra": "vaso",
+    "tema": "objetos",
+    "score": 13
+  },
+  "veia": {
+    "id": 10270,
+    "palavra": "veia",
+    "tema": "corpo",
+    "score": 16
+  },
+  "velhice": {
+    "id": 21008,
+    "palavra": "velhice",
+    "tema": "outros",
+    "score": 10
+  },
+  "velódromo": {
+    "id": 36111,
+    "palavra": "velódromo",
+    "tema": "cidades",
+    "score": 13
+  },
+  "vendaval": {
+    "id": 34296,
+    "palavra": "vendaval",
+    "tema": "natureza",
+    "score": 10
+  },
+  "vendedor": {
+    "id": 37808,
+    "palavra": "vendedor",
+    "tema": "outros",
+    "score": 10
+  },
+  "vender": {
+    "id": 6652,
+    "palavra": "vender",
+    "tema": "verbos",
+    "score": 13
+  },
+  "ventania": {
+    "id": 2779,
+    "palavra": "ventania",
+    "tema": "natureza",
+    "score": 10
+  },
+  "ventilador": {
+    "id": 2612,
+    "palavra": "ventilador",
+    "tema": "objetos",
+    "score": 13
+  },
+  "ver": {
+    "id": 2474,
+    "palavra": "ver",
+    "tema": "verbos",
+    "score": 13
+  },
+  "verão": {
+    "id": 5604,
+    "palavra": "verão",
+    "tema": "natureza",
+    "score": 9
+  },
+  "verdade": {
+    "id": 8715,
+    "palavra": "verdade",
+    "tema": "outros",
+    "score": 10
+  },
+  "verniz": {
+    "id": 27592,
+    "palavra": "verniz",
+    "tema": "objetos",
+    "score": 13
+  },
+  "verso": {
+    "id": 39626,
+    "palavra": "verso",
+    "tema": "outros",
+    "score": 10
+  },
+  "vertebrado": {
+    "id": 8249,
+    "palavra": "vertebrado",
+    "tema": "animais",
+    "score": 23
+  },
+  "vespa": {
+    "id": 6925,
+    "palavra": "vespa",
+    "tema": "animais",
+    "score": 13
+  },
+  "vestiário": {
+    "id": 15533,
+    "palavra": "vestiário",
+    "tema": "cidades",
+    "score": 16
+  },
+  "vestido": {
+    "id": 2613,
+    "palavra": "vestido",
+    "tema": "objetos",
+    "score": 13
+  },
+  "vestir": {
+    "id": 2781,
+    "palavra": "vestir",
+    "tema": "verbos",
+    "score": 13
+  },
+  "veterinário": {
+    "id": 11392,
+    "palavra": "veterinário",
+    "tema": "outros",
+    "score": 10
+  },
+  "vez": {
+    "id": 27385,
+    "palavra": "vez",
+    "tema": "outros",
+    "score": 9
+  },
+  "viaduto": {
+    "id": 38727,
+    "palavra": "viaduto",
+    "tema": "objetos",
+    "score": 10
+  },
+  "viagem": {
+    "id": 11393,
+    "palavra": "viagem",
+    "tema": "outros",
+    "score": 9
+  },
+  "vida": {
+    "id": 8717,
+    "palavra": "vida",
+    "tema": "outros",
+    "score": 10
+  },
+  "vidraçaria": {
+    "id": 29973,
+    "palavra": "vidraçaria",
+    "tema": "cidades",
+    "score": 16
+  },
+  "vidro": {
+    "id": 9140,
+    "palavra": "vidro",
+    "tema": "objetos",
+    "score": 13
+  },
+  "vigiar": {
+    "id": 8718,
+    "palavra": "vigiar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "vinagre": {
+    "id": 5605,
+    "palavra": "vinagre",
+    "tema": "alimentos",
+    "score": 16
+  },
+  "vinte": {
+    "id": 29550,
+    "palavra": "vinte",
+    "tema": "numerais",
+    "score": 16
+  },
+  "visitar": {
+    "id": 4772,
+    "palavra": "visitar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "vitela": {
+    "id": 25630,
+    "palavra": "vitela",
+    "tema": "alimentos",
+    "score": 18
+  },
+  "vitral": {
+    "id": 36954,
+    "palavra": "vitral",
+    "tema": "objetos",
+    "score": 10
+  },
+  "vitrine": {
+    "id": 39844,
+    "palavra": "vitrine",
+    "tema": "cidades",
+    "score": 10
+  },
+  "vizinho": {
+    "id": 6241,
+    "palavra": "vizinho",
+    "tema": "outros",
+    "score": 10
+  },
+  "voar": {
+    "id": 6246,
+    "palavra": "voar",
+    "tema": "verbos",
+    "score": 12
+  },
+  "voltar": {
+    "id": 6248,
+    "palavra": "voltar",
+    "tema": "verbos",
+    "score": 13
+  },
+  "zoológico": {
+    "id": 4773,
+    "palavra": "zoológico",
+    "tema": "cidades",
+    "score": 13
+  },
+  "zumbido": {
+    "id": 39508,
+    "palavra": "zumbido",
+    "tema": "corpo",
+    "score": 19
+  }
+}
