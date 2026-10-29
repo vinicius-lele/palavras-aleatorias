@@ -50,3 +50,13 @@ export var ICONE_DESCONHECIDAS = icone(
   '<circle cx="16.5" cy="14.5" r="4.2"/>' +
   '<path d="M19.7 17.7L22 20"/>'
 );
+
+// Encontros Vocálicos: vogais juntas (ditongo), a fronteira de sílaba
+// (tracejada) e vogais separadas (hiato)
+export var ICONE_ENCONTROS = icone(
+  '<circle cx="4" cy="12" r="2"/>' +
+  '<circle cx="8" cy="12" r="2"/>' +
+  '<path d="M12.5 5.5v13" stroke-dasharray="2.5 3"/>' +
+  '<circle cx="16" cy="12" r="2"/>' +
+  '<circle cx="21.5" cy="12" r="2"/>'
+);

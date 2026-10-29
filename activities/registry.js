@@ -11,9 +11,11 @@ import { createContarSilabas } from "./contar-silabas.js";
 import { createRimas } from "./rimas.js";
 import { createArrastarSilabas } from "./arrastar-silabas.js";
 import { createPalavrasDesconhecidas } from "./palavras-desconhecidas.js";
+import { createEncontrosVocalicos } from "./encontros-vocalicos.js";
 import {
   ICONE_TREINO, ICONE_BLOCOS, ICONE_IMAGEM,
-  ICONE_CONTAR, ICONE_ARRASTAR, ICONE_RIMAS, ICONE_DESCONHECIDAS
+  ICONE_CONTAR, ICONE_ARRASTAR, ICONE_RIMAS,
+  ICONE_DESCONHECIDAS, ICONE_ENCONTROS
 } from "./icones.js";
 
 export var ACTIVITIES = [
@@ -79,6 +81,15 @@ export var ACTIVITIES = [
     bncc: ["EF35LP05"],
     pronto: true,
     create: createPalavrasDesconhecidas
+  },
+  {
+    id: "encontros-vocalicos",
+    nome: "Encontros Vocálicos",
+    icone: ICONE_ENCONTROS,
+    descricao: "Ditongo, tritongo ou hiato? Classifique as vogais das palavras.",
+    bncc: ["EF04LP02", "EF03LP02"],
+    pronto: true,
+    create: createEncontrosVocalicos
   }
 ];
 

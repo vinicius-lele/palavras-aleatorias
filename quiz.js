@@ -19,6 +19,16 @@
 // createQuestion pode retornar null quando o filtro não tem material — o
 // quiz mostra o estado vazio com dica.
 //
+// Opções de config (todas opcionais):
+//   niveis:       ["nivel3", ...] — só estes níveis aparecem no seletor
+//                 (default: todos);
+//   nivelPadrao:  valor inicial quando a preferência salva não serve;
+//   todosLabel:   texto do "Todos os níveis" quando o default é ALL;
+//   filtros:      [{ id, label, padrao, opcoes: [{valor, texto}] }] —
+//                 selects extra no cabeçalho, salvos por atividade; os
+//                 valores escolhidos chegam em createQuestion(nivel,
+//                 round, filtros) como { id: valor }.
+//
 // Questão interativa (arrastar-e-soltar etc.): em vez de `options`, a
 // questão pode trazer `custom(el, report)`. O quiz chama `custom` passando
 // o container de opções; a atividade monta a própria UI ali e chama
@@ -54,14 +64,39 @@ function shuffled(list) {
 
 export function createQuiz(config) {
   var prefKey = "pa.quiz.nivel." + config.id;
-  var nivel = readPref(prefKey) || ALL;
-  if (nivel !== ALL && levelKeys().indexOf(nivel) === -1) nivel = ALL;
+  var niveisOk = config.niveis || levelKeys();
+  var nivelPadrao = config.nivelPadrao || ALL;
+  var nivel = readPref(prefKey) || nivelPadrao;
+  if (niveisOk.indexOf(nivel) === -1) nivel = nivelPadrao;
 
   var state = { idx: 0, acertos: 0, locked: false, answered: 0 };
   var destroyed = false;
 
+  // Filtros extras do cabeçalho (ex.: "Conceito" em Encontros Vocálicos).
+  var listaFiltros = config.filtros || [];
+  var filtros = {};
+  listaFiltros.forEach(function (f) {
+    var pref = "pa.quiz.filtro." + config.id + "." + f.id;
+    var v = readPref(pref) || f.padrao;
+    if (!f.opcoes.some(function (o) { return o.valor === v; })) v = f.padrao;
+    filtros[f.id] = { pref: pref, valor: v };
+  });
+
+  function valoresFiltros() {
+    var v = {};
+    listaFiltros.forEach(function (f) { v[f.id] = filtros[f.id].valor; });
+    return v;
+  }
+
   var container = document.createElement("div");
   container.className = "screen quiz-screen";
+
+  var htmlFiltros = listaFiltros.map(function (f) {
+    return '<div class="ctrl quiz-filtro">' +
+      '<label class="ctrl-label" for="qzFiltro-' + f.id + '">' + f.label + '</label>' +
+      '<select id="qzFiltro-' + f.id + '"></select>' +
+    '</div>';
+  }).join("");
 
   container.innerHTML =
     '<header class="quiz-header">' +
@@ -71,6 +106,7 @@ export function createQuiz(config) {
         '<span class="quiz-nome">' + config.nome + '</span>' +
       '</div>' +
       '<span class="quiz-bncc">BNCC: ' + config.bncc.join(" · ") + '</span>' +
+      htmlFiltros +
       '<div class="ctrl quiz-nivel">' +
         '<label class="ctrl-label" for="qzNivel">Nível de leitura</label>' +
         '<select id="qzNivel"></select>' +
@@ -115,12 +151,14 @@ export function createQuiz(config) {
   /* ---------- Nível ---------- */
 
   function populateNiveis() {
-    var all = document.createElement("option");
-    all.value = ALL;
-    all.textContent = "Todos os níveis";
-    selNivel.appendChild(all);
+    if (nivelPadrao === ALL) {
+      var all = document.createElement("option");
+      all.value = ALL;
+      all.textContent = config.todosLabel || "Todos os níveis";
+      selNivel.appendChild(all);
+    }
 
-    levelKeys().forEach(function (key) {
+    niveisOk.forEach(function (key) {
       var o = document.createElement("option");
       o.value = key;
       o.textContent = levelLabel(key);
@@ -128,6 +166,24 @@ export function createQuiz(config) {
     });
 
     selNivel.value = nivel;
+  }
+
+  function populateFiltros() {
+    listaFiltros.forEach(function (f) {
+      var sel = container.querySelector("#qzFiltro-" + f.id);
+      f.opcoes.forEach(function (o) {
+        var op = document.createElement("option");
+        op.value = o.valor;
+        op.textContent = o.texto;
+        sel.appendChild(op);
+      });
+      sel.value = filtros[f.id].valor;
+      sel.addEventListener("change", function () {
+        filtros[f.id].valor = sel.value;
+        savePref(filtros[f.id].pref, sel.value);
+        startRound(); // material novo para o conceito escolhido
+      });
+    });
   }
 
   function updateNota() {
@@ -247,7 +303,7 @@ export function createQuiz(config) {
     state.idx++;
 
     if (state.idx >= TOTAL) { endRound(); return; }
-    var q = config.createQuestion(nivel, round);
+    var q = config.createQuestion(nivel, round, valoresFiltros());
     if (!q) { endRound(); return; }
     renderQuestion(q);
   }
@@ -260,7 +316,7 @@ export function createQuiz(config) {
     round.pool = [];
 
     showStage();
-    var q = config.createQuestion(nivel, round);
+    var q = config.createQuestion(nivel, round, valoresFiltros());
     if (!q) { el.enunciado.textContent = ""; el.progresso.textContent = ""; el.vazio.hidden = false; return; }
     renderQuestion(q);
   }
@@ -304,6 +360,7 @@ export function createQuiz(config) {
   /* ---------- Montagem ---------- */
 
   populateNiveis();
+  populateFiltros();
   updateNota();
   startRound();
 

@@ -15,6 +15,9 @@
 //     do emoji.js cai para o emoji do sistema);
 //   - vocabulario.js: estrutura das entradas (palavra em minúsculas e sem
 //     repetição, significado presente, só os campos esperados);
+//   - encontros.js: casos-teste do classificador (ditongo/tritongo/hiato/
+//     nenhum/misto), a lista curada de tritongos e o tamanho do pool dos
+//     níveis 3–5 que o quiz Encontros Vocálicos usa;
 //   - cobertura de rima por nível (Caça-Rimas) e distribuição silábica
 //     (útil para revisar os textos de levels.js).
 //
@@ -231,12 +234,103 @@ if (!Array.isArray(VOCABULARIO)) {
   });
 }
 
+/* ---------- encontros.js (Encontros Vocálicos) ---------- */
+
+var { classificar, TRITONGOS } = await import(new URL("../encontros.js", import.meta.url).href);
+
+// Casos-teste: congelam as decisões pedagógicas do módulo (glides de
+// qu/gu, hiato tônico, exceção do glide em "joão", mistos). Se o
+// syllables.js ou o Portal mudarem a divisão, o gate acende aqui.
+var CASOS_ENCONTROS = [
+  ["pai", "ditongo"], ["besouro", "ditongo"], ["pavão", "ditongo"],
+  ["biscoito", "ditongo"], ["cuidar", "ditongo"], ["museu", "ditongo"],
+  ["prefeitura", "ditongo"], ["restaurante", "ditongo"],
+  ["saúde", "hiato"], ["história", "hiato"], ["melancia", "hiato"],
+  ["tapioca", "hiato"], ["trio", "hiato"], ["amendoim", "hiato"],
+  ["jaú", "hiato"], ["tainha", "hiato"], ["preá", "hiato"],
+  ["casa", "nenhum"], ["borboleta", "nenhum"], ["periquito", "nenhum"],
+  ["guariba", "nenhum"], ["tambaqui", "nenhum"], ["anhuma", "nenhum"],
+  ["linguiça", "nenhum"], ["água", "nenhum"], ["jacutinga", "nenhum"],
+  ["joão", "nenhum"],                        // exceção: glide de paróxina
+  ["uruguai", "tritongo"], ["paraguai", "tritongo"], ["uau", "tritongo"],
+  ["capoeira", "misto"], ["criação", "misto"]    // ditongo E hiato juntos
+];
+CASOS_ENCONTROS.forEach(function (caso) {
+  var got = classificar(caso[0]);
+  if (got !== caso[1]) {
+    erros.push("encontros.js: " + JSON.stringify(caso[0]) + " classificou como " +
+      JSON.stringify(got) + " (esperado " + JSON.stringify(caso[1]) + ")");
+  }
+});
+
+// Lista curada de tritongos (material do modo "Tritongo": o corpus não
+// tem nenhum — o tritongo é raríssimo no português).
+if (!Array.isArray(TRITONGOS) || TRITONGOS.length < 3) {
+  erros.push("encontros.js: TRITONGOS precisa de pelo menos 3 entradas curadas");
+} else {
+  TRITONGOS.forEach(function (t, i) {
+    var onde = "encontros.js TRITONGOS[" + i + "]";
+    if (!t || typeof t.palavra !== "string" || !t.palavra.trim()) {
+      erros.push(onde + ": palavra vazia/inválida");
+      return;
+    }
+    if (t.palavra !== t.palavra.toLowerCase()) {
+      erros.push(onde + ": gravar em minúsculas " + JSON.stringify(t.palavra));
+    }
+    if (typeof t.proprio !== "boolean") {
+      erros.push(onde + ": campo proprio deve ser boolean (true = exibir com maiúscula)");
+    }
+    if (!Array.isArray(t.silabas) || t.silabas.join("") !== t.palavra) {
+      erros.push(onde + ": silabas não recompõem " + JSON.stringify(t.palavra));
+    } else {
+      if (typeof t.encontro !== "number" || t.encontro < 0 || t.encontro >= t.silabas.length) {
+        erros.push(onde + ": índice de encontro fora das sílabas");
+      }
+      if (classificar(t.palavra) !== "tritongo") {
+        erros.push(onde + ": " + t.palavra + " não classifica como tritongo");
+      }
+    }
+  });
+}
+
+// Pool utilizável do quiz (níveis 3–5, mesmos filtros da atividade:
+// sem nomes próprios, sem compostos, 2 a 5 sílabas).
+var poolEncontros = { ditongo: 0, hiato: 0, nenhum: 0, misto: 0 };
+["nivel3", "nivel4", "nivel5"].forEach(function (nivel) {
+  var lvl = WORDS[nivel] || {};
+  Object.keys(lvl).forEach(function (tema) {
+    (lvl[tema] || []).forEach(function (w) {
+      if (isProper(w) || w.indexOf("-") !== -1) return;
+      var n = syllables(w).length;
+      if (n < 2 || n > 5) return;
+      poolEncontros[classificar(w)]++;
+    });
+  });
+});
+if (poolEncontros.ditongo < 30) {
+  erros.push("encontros.js: só " + poolEncontros.ditongo +
+    " palavras com ditongo no pool (níveis 3–5)");
+}
+if (poolEncontros.hiato < 30) {
+  erros.push("encontros.js: só " + poolEncontros.hiato +
+    " palavras com hiato no pool (níveis 3–5)");
+}
+if (poolEncontros.nenhum < 30) {
+  erros.push("encontros.js: só " + poolEncontros.nenhum +
+    " palavras sem encontro no pool (níveis 3–5)");
+}
+
 /* ---------- relatórios ---------- */
 
 console.log("Total: " + total + " palavras em " + niveis.length + " níveis; " +
   Object.keys(IMAGES).length + " emojis mapeados; " +
   (Array.isArray(VOCABULARIO) ? VOCABULARIO.length : 0) +
-  " entradas de vocabulário (Palavras Desconhecidas)");
+  " entradas de vocabulário (Palavras Desconhecidas); " +
+  "níveis 3–5 no pool de Encontros Vocálicos: " +
+  poolEncontros.ditongo + " ditongo, " + poolEncontros.hiato + " hiato, " +
+  poolEncontros.nenhum + " sem encontro (" + poolEncontros.misto +
+  " mistos ficam de fora) + " + (Array.isArray(TRITONGOS) ? TRITONGOS.length : 0) +
+  " tritongos curados");
 
 console.log("\nNível  palavras  sílabas(média)  comEmoji  comRima");
 niveis.forEach(function (nivel) {

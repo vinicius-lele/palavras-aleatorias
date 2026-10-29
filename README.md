@@ -21,6 +21,7 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 |------------------------|----------------------------------------------------------------|
 | `words.js`             | **Listas de palavras por nível e tema** (edite só isto)        |
 | `vocabulario.js`       | **Palavras + significados** do módulo Palavras Desconhecidas  |
+| `encontros.js`         | **Classificador de ditongo/tritongo/hiato** + tritongos curados |
 | `index.html`           | Casca mínima; o resto é montado pelo roteador                  |
 | `styles.css`           | Visual (tema claro e escuro)                                   |
 | `main.js`              | Entrypoint: registra rotas e liga o roteador                   |
@@ -52,6 +53,7 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `activities/arrastar-silabas.js` | Montar com Sílabas (arrastar e soltar sílabas)  |
 | `activities/rimas.js`  | Caça-Rimas (encontrar a palavra que rima)                     |
 | `activities/palavras-desconhecidas.js` | Palavras Desconhecidas (vocabulário em passo)    |
+| `activities/encontros-vocalicos.js` | Encontros Vocálicos (classificar vogais)        |
 | `activities/tela-cheia.js` | Controle de tela cheia compartilhado (Treino Livre e Palavras Desconhecidas) |
 
 Novas atividades entram como um arquivo em `activities/` + uma entrada no
@@ -68,11 +70,15 @@ Novas atividades entram como um arquivo em `activities/` + uma entrada no
 | 🧩 Montar com Sílabas | Arrastar as sílabas embaralhadas para montar a palavra (ordem exata vale) | EF01LP06, EF02LP02 |
 | 🎵 Caça-Rimas | Escolher, entre 4 palavras, a que rima com o alvo | EF12LP07, EF01LP09 |
 | 🔍 Palavras Desconhecidas | Palavras incomuns passam na tela com o significado (sem acerto/erro) | EF35LP05 |
+| 🔤 Encontros Vocálicos | Classificar as vogais: ditongo, tritongo, hiato ou nenhum | EF04LP02, EF03LP02 |
 
 Níveis de leitura (1 a 5) descritos pelo tamanho e complexidade das palavras,
-não por ano escolar — o descritor aparece dentro de cada atividade. A
-**Palavras Desconhecidas** é a exceção: é vocabulário de ampliação, então não
-tem seletor de nível nem questão — a lista é uma só (`vocabulario.js`).
+não por ano escolar — o descritor aparece dentro de cada atividade. Duas
+exceções: a **Palavras Desconhecidas** é vocabulário de ampliação, então não
+tem seletor de nível nem questão (a lista é uma só, `vocabulario.js`); e o
+**Encontros Vocálicos** limita o seletor aos **níveis 3 a 5** (3º ao 5º ano,
+onde a BNCC pede o conceito) e traz um filtro extra **Conceito** (Mistura,
+Ditongo, Tritongo, Hiato) que muda o mix das questões.
 
 ## Como usar
 
@@ -175,6 +181,19 @@ edite à mão).
   `node scripts/validar-palavras.mjs` (checa duplicatas, caixa e campos
   vazios). Não há frase de contexto por decisão de projeto: o módulo expõe a
   palavra nova e o sentido; inferir pelo contexto é o trabalho da aula.
+- **Encontros Vocálicos (EF04LP02, EF03LP02)**: a classificação mora em
+  `encontros.js` e é derivada da divisão oficial do Portal — sílaba com 2
+  vogais = ditongo, com 3 = tritongo, fronteira entre sílabas caindo entre
+  duas vogais = hiato. As letras mudas são descontadas como a escola ensina
+  (o u de "qu" nunca conta; o u de "gu" só conta quando sustenta tritongo,
+  como em "u-ru-guai"). Duas curadorias pontuais, editáveis à mão: o mapa
+  `EXCECOES` (ex.: "joão", cujo o é glide) e a lista `TRITONGOS` — o corpus
+  dos níveis 3–5 não tem nenhum tritongo utilizável (é raríssimo no
+  português), então "uruguai", "paraguai" e "uau" vêm curados, com a
+  divisão e a sílaba do encontro à mão. Palavras "misto" (ditongo E hiato,
+  como "capoeira") ficam de fora do pool: teriam duas respostas certas.
+  Os casos-teste do validador congelam as decisões — rode
+  `node scripts/validar-palavras.mjs` depois de qualquer mexida.
 - **Silabificação**: `syllables()` resolve em três camadas — mapa
   `EXCEPTIONS` (decisões pedagógicas pontuais), depois `SILABAS_PORTAL`
   (divisões oficiais do Portal da Língua Portuguesa, gerado a partir do

@@ -797,6 +797,64 @@ html.fs-fallback .palavra-area {
   border-color: var(--accent) !important;
 }
 
+/* Encontros Vocálicos: opção com o nome do conceito + lembrete curto,
+   e feedback com a sílaba do encontro destacada. */
+
+.opcao-nome {
+  display: block;
+}
+
+.opcao-dica {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--muted);
+}
+
+.encontros-fb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.encontros-fb-titulo {
+  margin: 0;
+  font-weight: 700;
+  font-size: clamp(16px, 2.6vw, 20px);
+}
+
+.encontros-fb-silabas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.encontros-fb-silabas span {
+  padding: 8px 14px;
+  border: 1.5px solid var(--border-strong);
+  border-radius: 8px;
+  font-size: clamp(18px, 3.5vw, 26px);
+  font-weight: 700;
+}
+
+.encontros-fb-silabas .encontro-destaque {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--on-accent);
+}
+
+.encontros-fb-texto {
+  margin: 0;
+  max-width: 40rem;
+  font-size: 15px;
+  color: var(--muted);
+}
+
 .opcao-marca {
   position: absolute;
   top: -10px;
