@@ -12,10 +12,14 @@ import { createRimas } from "./rimas.js";
 import { createArrastarSilabas } from "./arrastar-silabas.js";
 import { createPalavrasDesconhecidas } from "./palavras-desconhecidas.js";
 import { createEncontrosVocalicos } from "./encontros-vocalicos.js";
+import { createOrdemAlfabetica } from "./ordem-alfabetica.js";
+import { createCompletePalavra } from "./complete-palavra.js";
+import { createEncontreIntruso } from "./encontre-intruso.js";
 import {
   ICONE_TREINO, ICONE_BLOCOS, ICONE_IMAGEM,
   ICONE_CONTAR, ICONE_ARRASTAR, ICONE_RIMAS,
-  ICONE_DESCONHECIDAS, ICONE_ENCONTROS
+  ICONE_DESCONHECIDAS, ICONE_ENCONTROS,
+  ICONE_ORDEM, ICONE_COMPLETE, ICONE_INTRUSO
 } from "./icones.js";
 
 export var ACTIVITIES = [
@@ -90,6 +94,33 @@ export var ACTIVITIES = [
     bncc: ["EF04LP02", "EF03LP02"],
     pronto: true,
     create: createEncontrosVocalicos
+  },
+  {
+    id: "ordem-alfabetica",
+    nome: "Ordem Alfabética",
+    icone: ICONE_ORDEM,
+    descricao: "Clique nas palavras na ordem do alfabeto.",
+    bncc: ["EF01LP10", "EF02LP05"],
+    pronto: true,
+    create: createOrdemAlfabetica
+  },
+  {
+    id: "complete-palavra",
+    nome: "Complete a Palavra",
+    icone: ICONE_COMPLETE,
+    descricao: "Descubra a sílaba que está faltando na palavra.",
+    bncc: ["EF01LP02", "EF01LP11"],
+    pronto: true,
+    create: createCompletePalavra
+  },
+  {
+    id: "encontre-intruso",
+    nome: "Encontre o Intruso",
+    icone: ICONE_INTRUSO,
+    descricao: "Descubra a palavra que não pertence ao tema.",
+    bncc: ["EF03LP05"],
+    pronto: true,
+    create: createEncontreIntruso
   }
 ];
 

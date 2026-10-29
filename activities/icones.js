@@ -60,3 +60,24 @@ export var ICONE_ENCONTROS = icone(
   '<circle cx="16" cy="12" r="2"/>' +
   '<circle cx="21.5" cy="12" r="2"/>'
 );
+
+// Ordem Alfabética: linhas de texto + seta para baixo (A → Z)
+export var ICONE_ORDEM = icone(
+  '<path d="M4 6h7"/><path d="M4 12h10"/><path d="M4 18h13"/>' +
+  '<path d="M18 5v14"/><path d="M15 16l3 3 3-3"/>'
+);
+
+// Complete a Palavra: palavra com uma célula tracejada no meio
+export var ICONE_COMPLETE = icone(
+  '<path d="M4 9h5"/><path d="M13 9h7"/>' +
+  '<rect x="9" y="6" width="4" height="6" rx="1" stroke-dasharray="2 2"/>' +
+  '<path d="M4 15h16"/>'
+);
+
+// Encontre o Intruso: lupa sobre um grupo com um elemento diferente
+export var ICONE_INTRUSO = icone(
+  '<circle cx="10" cy="10" r="5.5"/>' +
+  '<path d="M14.2 14.2L20 20"/>' +
+  '<circle cx="8" cy="9" r="1"/><circle cx="12" cy="9" r="1"/>' +
+  '<circle cx="8" cy="12" r="1"/><path d="M11.5 11.5l2.5 2.5"/>'
+);

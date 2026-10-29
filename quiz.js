@@ -210,15 +210,26 @@ export function createQuiz(config) {
     if (teardownCustom) { teardownCustom(); teardownCustom = null; }
     currentQ = q;
     el.progresso.textContent = "Questão " + (state.idx + 1) + " de " + TOTAL;
-    el.enunciado.innerHTML = q ? q.prompt : "";
+    el.enunciado.innerHTML = q && !q.erro ? q.prompt : "";
     el.feedback.hidden = true;
     el.feedback.textContent = "";
     el.continuar.hidden = true;
 
     el.opcoes.textContent = "";
-    if (!q) {
+    if (!q || q.erro) {
       el.vazio.hidden = false;
       el.progresso.textContent = "";
+
+      var texto = el.vazio.querySelector(".quiz-vazio-texto");
+      var dica = el.vazio.querySelector(".quiz-vazio-dica");
+
+      if (q && q.erro) {
+        texto.textContent = q.erro;
+        dica.textContent = "Escolha outro nível ou tema acima.";
+      } else {
+        texto.textContent = "Nenhuma questão neste filtro.";
+        dica.textContent = "Escolha outro nível de leitura acima.";
+      }
       return;
     }
 

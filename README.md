@@ -62,6 +62,9 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `activities/rimas.js`  | Caça-Rimas (encontrar a palavra que rima)                     |
 | `activities/palavras-desconhecidas.js` | Palavras Desconhecidas (vocabulário em passo)    |
 | `activities/encontros-vocalicos.js` | Encontros Vocálicos (classificar vogais)        |
+| `activities/ordem-alfabetica.js` | Ordem Alfabética (cliques sequenciais A→Z)              |
+| `activities/complete-palavra.js` | Complete a Palavra (sílaba lacunar + distratores)       |
+| `activities/encontre-intruso.js` | Encontre o Intruso (campo semântico + intruso)          |
 | `activities/tela-cheia.js` | Controle de tela cheia compartilhado (Treino Livre e Palavras Desconhecidas) |
 
 Novas atividades entram como um arquivo em `activities/` + uma entrada no
@@ -79,6 +82,9 @@ Novas atividades entram como um arquivo em `activities/` + uma entrada no
 | 🎵 Caça-Rimas | Escolher, entre 4 palavras, a que rima com o alvo | EF12LP07, EF01LP09 |
 | 🔍 Palavras Desconhecidas | Palavras incomuns passam na tela com o significado (sem acerto/erro) | EF35LP05 |
 | 🔤 Encontros Vocálicos | Classificar as vogais: ditongo, tritongo, hiato ou nenhum | EF04LP02, EF03LP02 |
+| 🔠 Ordem Alfabética | Clicar nas 4 palavras na ordem de A a Z | EF01LP10, EF02LP05 |
+| ✏️ Complete a Palavra | Escolher a sílaba que falta na palavra | EF01LP02, EF01LP11 |
+| 🕵️ Encontre o Intruso | Achar a palavra que não pertence ao tema | EF03LP05 |
 
 Níveis de leitura (1 a 5) descritos pelo tamanho e complexidade das palavras,
 não por ano escolar — o descritor aparece dentro de cada atividade. Duas

@@ -783,6 +783,28 @@ html.fs-fallback .palavra-area {
   width: 100%;
 }
 
+/* Ordem Alfabética: número da ordem no canto do botão */
+.ordem-item.ordem-escolhida {
+  border-color: var(--accent);
+}
+
+.ordem-item .ordem-numero {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.ordem-gabarito {
+  font-size: clamp(15px, 3vw, 21px);
+  text-align: center;
+}
+
+/* Complete a Palavra: lacuna em destaque */
+.complete-lacuna {
+  color: var(--accent);
+  letter-spacing: .08em;
+}
+
 /* Feedback com blocos silábicos (Contar Sílabas, Sílabas em Blocos) */
 
 .quiz-feedback {
