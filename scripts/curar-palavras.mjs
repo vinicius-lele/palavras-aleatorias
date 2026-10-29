@@ -119,7 +119,7 @@ const mantem = (w) => {
   return (
     heranca.has(k) ||
     cobreEleitura.has(k) ||
-    (ispa.get(k)?.percentil ?? -1) >= ISPA_MINIMO ||
+    (ispa.get(k)?.percentile ?? -1) >= ISPA_MINIMO ||
     (wordfreq.get(k) ?? -Infinity) >= CB_MINIMO
   );
 };

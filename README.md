@@ -5,8 +5,9 @@ com atividades alinhadas à BNCC: sem banco de dados, sem dependências, sem bui
 A tela inicial mostra os cards das atividades; cada atividade abre por rota
 (`#/atividade/<id>`).
 
-O corpus tem **9.879 palavras** (níveis 1–5, 1 a 19 sílabas) com divisões
-silábicas oficiais do Portal da Língua Portuguesa (base local de 149.342 lemas).
+O corpus tem **9.679 palavras** (níveis 1–5, 1 a 19 sílabas) com divisões
+silábicas oficiais do Portal da Língua Portuguesa (base local de 149.342 lemas)
+e um complemento curado para as palavras que o Portal não traz.
 As listas são **curadas para o ensino fundamental (1º ao 5º ano)**: cada palavra
 é do corpus manual original (11 temas + "outros", seleção manual) ou tem
 evidência de frequência em pelo menos uma fonte — E-LEITURA (banco de palavras
@@ -32,6 +33,7 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `silabas-portal.js`    | ⚠️ Gerado: divisões silábicas oficiais (Portal da Língua)      |
 | `scripts/baixar-dicionario-portal.js` | Baixa o dicionário do Portal e gera `silabas-portal.js` |
 | `scripts/dicionario-portal.json` | Dicionário do Portal completo (fonte offline das divisões) |
+| `scripts/silabas-extras.json` | Complemento curado: divisões que o Portal não traz |
 | `scripts/validar-palavras.mjs` | Valida a base e os arquivos derivados            |
 | `scripts/curar-palavras.mjs` | Curadoria escolar: filtra `words.js` por evidência |
 | `scripts/podar-images.mjs`   | Remove do `images.js` chaves órfãs do corpus     |
@@ -207,8 +209,10 @@ edite à mão).
   de adicionar ou mudar palavras no `words.js`, regenere (offline, a partir
   do dicionário já commitado):
   `node scripts/baixar-dicionario-portal.js --gerar`.
-  O dicionário completo do Portal fica em `scripts/dicionario-portal.json`;
-  para baixá-lo/atualizá-lo (uma vez, ~2 h, respeitando o Crawl-delay: 3 s
+  O dicionário completo do Portal fica em `scripts/dicionario-portal.json`
+  e o complemento curado (palavras que o Portal não traz) em
+  `scripts/silabas-extras.json`; os dois são mesclados na geração.
+  Para baixá-lo/atualizá-lo (uma vez, ~2 h, respeitando o Crawl-delay: 3 s
   do robots.txt — o progresso fica em cache e o script retoma de onde
   parou): `node scripts/baixar-dicionario-portal.js`.
   Para conferir a base inteira após qualquer edição:

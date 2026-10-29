@@ -45,6 +45,7 @@ var CACHE = join(tmpdir(), "portal-dicionario-cache.json");
 
 var root = join(dirname(fileURLToPath(import.meta.url)), "..");
 var ARQ_DICIONARIO = join(root, "scripts", "dicionario-portal.json");
+var ARQ_EXTRAS = join(root, "scripts", "silabas-extras.json");
 var ARQ_WORDS = join(root, "words.js");
 var ARQ_SAIDA = join(root, "silabas-portal.js");
 
@@ -240,8 +241,8 @@ function gerar(dicionario) {
     "//\n" +
     "// Divis\u00f5es sil\u00e1bicas oficiais das palavras do words.js, extra\u00eddas do\n" +
     "// Dicion\u00e1rio de Divis\u00e3o Sil\u00e1bica do Portal da L\u00edngua Portuguesa\n" +
-    "// (portaldalinguaportuguesa.org), em conformidade com a Base XX do\n" +
-    "// Acordo Ortogr\u00e1fico de 1990.\n" +
+    "// e do complemento local (scripts/silabas-extras.json), em conformidade\n" +
+    "// com a Base XX do Acordo Ortogr\u00e1fico de 1990.\n" +
     "//\n" +
     "// Gerado em " + data + " por scripts/baixar-dicionario-portal.js \u2014 regenere\n" +
     "// (offline, a partir de scripts/dicionario-portal.json) com:\n" +
@@ -269,6 +270,13 @@ async function main() {
     console.log("Dicionário local: " + Object.keys(dicionario).length + " lemas");
   } else {
     dicionario = await baixar();
+  }
+  // Complemento curado (offline) para palavras que o Portal não traz:
+  // divisões conferidas para o corpus atual (ver scripts/silabas-extras.json).
+  if (existsSync(ARQ_EXTRAS)) {
+    var extras = JSON.parse(readFileSync(ARQ_EXTRAS, "utf8"));
+    dicionario = Object.assign({}, dicionario, extras);
+    console.log("Complemento local: " + Object.keys(extras).length + " lemas");
   }
   gerar(dicionario);
 }

@@ -92,8 +92,12 @@ niveis.forEach(function (nivel) {
 /* ---------- dicionário do Portal + silabas-portal.js ---------- */
 
 var ARQ_DICT = join(root, "scripts", "dicionario-portal.json");
+var ARQ_EXTRAS = join(root, "scripts", "silabas-extras.json");
 var dict = existsSync(ARQ_DICT)
   ? JSON.parse(readFileSync(ARQ_DICT, "utf8")) : null;
+if (dict && existsSync(ARQ_EXTRAS)) {
+  dict = Object.assign({}, dict, JSON.parse(readFileSync(ARQ_EXTRAS, "utf8")));
+}
 if (!dict) {
   avisos.push("scripts/dicionario-portal.json ausente — checagem de " +
     "divisões oficiais pulada");
@@ -103,9 +107,11 @@ var srcPortal = readFileSync(join(root, "silabas-portal.js"), "utf8");
 globalThis.SILABAS_PORTAL = new Function(srcPortal + "\nreturn SILABAS_PORTAL;")();
 
 var alvos = [];
+var proprios = {};
 niveis.forEach(function (nivel) {
   Object.keys(WORDS[nivel]).forEach(function (tema) {
     WORDS[nivel][tema].forEach(function (w) {
+      if (isProper(w)) proprios[norm(w)] = true;
       alvos.push([w.toLowerCase().normalize("NFC"), nivel, tema]);
     });
   });
@@ -135,9 +141,16 @@ alvos.forEach(function (par) {
 });
 
 if (dict && semOficial.length) {
-  avisos.push(semOficial.length + " palavras sem divisão oficial (algoritmo " +
-    "assume — confira grafia; nomes próprios são esperados): " +
-    semOficial.join(", "));
+  // Nomes próprios (capitalizados) e compostos com hífen são esperados: o
+  // algoritmo do syllables.js resolve. O aviso fica só para palavras comuns
+  // sem entrada — que devem estar cobertas por scripts/silabas-extras.json.
+  var semOficialAviso = semOficial.filter(function (w) {
+    return !proprios[norm(w)] && w.indexOf("-") === -1;
+  });
+  if (semOficialAviso.length) {
+    avisos.push(semOficialAviso.length + " palavras sem divisão no dicionário " +
+      "(algoritmo assume — confira grafia): " + semOficialAviso.join(", "));
+  }
 }
 
 /* ---------- silabificação em runtime ---------- */

@@ -38,7 +38,13 @@ var EXCEPTIONS = {
   "raiz": ["ra", "iz"],                   // Dicio/Portal: ra-iz
   "amendoim": ["a", "men", "do", "im"],   // Dicio/Portal: a-men-do-im
   "jonathan": ["jo", "na", "than"],      // nome próprio: "th" faria o algoritmo errar
-  "sydney": ["syd", "ney"]               // nome próprio: consoante+consoante final ignora o algoritmo
+  "sydney": ["syd", "ney"],               // nome próprio: consoante+consoante final ignora o algoritmo
+  "arthur": ["ar", "thur"],               // nome próprio: "th" não é dígrafo português
+  "nathan": ["na", "than"],               // nome próprio: idem
+  "luiz": ["lu", "iz"],                   // nome próprio: "ui" aqui é hiato (Lu-iz)
+  "wesley": ["wes", "ley"],               // nome próprio: o "s" fecha a primeira sílaba
+  "paraty": ["pa", "ra", "ty"],           // topônimo: "ty" conta como sílaba (pa-ra-ty)
+  "ituiutaba": ["i", "tu", "iu", "ta", "ba"] // topônimo: i-tu-iu-ta-ba
 };
 
 function isVowel(ch) {
