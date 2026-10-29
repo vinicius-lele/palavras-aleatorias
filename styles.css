@@ -710,7 +710,8 @@ html.fs-fallback .palavra-area {
 }
 
 /* Pictograma remoto (midia.js): mesma caixa do emoji, sem deformar. */
-.figura-img {
+.figura-img,
+.figura-foto {
   height: 1em;
   width: 1em;
   max-width: 100%;
@@ -718,6 +719,11 @@ html.fs-fallback .palavra-area {
   vertical-align: -0.125em;
   background: #fff;
   border-radius: 0.12em;
+}
+
+/* Foto do Wikimedia Commons (fotos.js): mesma caixa, sem cortar o assunto. */
+.figura-foto {
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 /* Amostra de cor gerada localmente (figuras-geradas.js). */

@@ -7,6 +7,7 @@
 
 import { IMAGES } from "./images.js";
 import { IMAGENS } from "./imagens.js";
+import { FOTOS } from "./fotos.js";
 import { FIGURAS } from "./figuras-geradas.js";
 import { emojiHTML } from "./emoji.js";
 
@@ -33,13 +34,15 @@ function chavePalavra(word) {
   return String(word).toLowerCase();
 }
 
-// Devolve { tipo: "gerada"|"imagem"|"emoji", ... } ou null.
+// Devolve { tipo: "gerada"|"imagem"|"foto"|"emoji", ... } ou null.
 export function figuraDe(word) {
   var k = chavePalavra(word);
   var gerada = FIGURAS[k];
   if (gerada) return { tipo: "gerada", figura: gerada };
   var img = IMAGENS[k];
   if (img) return { tipo: "imagem", id: img.id, src: ARASAAC + img.id };
+  var foto = FOTOS[k];
+  if (foto) return { tipo: "foto", src: foto.arquivo };
   var em = IMAGES[word];
   if (em) return { tipo: "emoji", emoji: em };
   return null;
@@ -56,6 +59,7 @@ export function figuraChave(word) {
   if (f.tipo === "gerada") {
     return "gerada:" + f.figura.tipo + ":" + (f.figura.chave || f.figura.texto || f.figura.estilo);
   }
+  if (f.tipo === "foto") return "foto:" + f.src;
   return f.tipo === "imagem" ? "img:" + f.id : "emoji:" + f.emoji;
 }
 
@@ -71,7 +75,8 @@ export function figuraHTML(word) {
     return '<span class="figura-cor" style="' + g.estilo + '" aria-hidden="true"></span>';
   }
   if (f.tipo === "emoji") return emojiHTML(f.emoji);
-  return '<img class="figura-img" src="' + f.src + '" alt="" ' +
+  var classe = f.tipo === "foto" ? "figura-foto" : "figura-img";
+  return '<img class="' + classe + '" src="' + f.src + '" alt="" ' +
     'loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
     'onerror="window.__figuraErro&&window.__figuraErro(this)">';
 }

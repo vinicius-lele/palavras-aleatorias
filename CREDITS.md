@@ -1,8 +1,8 @@
 # Créditos das imagens
 
-Os pictogramas são do **ARASAAC** (https://arasaac.org), autor **Sergio Palao**, licenciados sob **CC BY-NC-SA 4.0** (https://creativecommons.org/licenses/by-nc-sa/4.0/), Governo de Aragão.
+## ARASAAC
 
-O projeto é gratuito e não exibe anúncios. As imagens são carregadas diretamente dos servidores do ARASAAC; este repositório guarda apenas os identificadores. A atribuição também aparece em `creditos.html`, link "Créditos" no rodapé da tela inicial.
+Pictogramas do **ARASAAC** (https://arasaac.org), autor **Sergio Palao**, licença **CC BY-NC-SA 4.0** (https://creativecommons.org/licenses/by-nc-sa/4.0/), Governo de Aragão.
 
 | Palavra | Pictograma |
 | --- | --- |
@@ -1336,3 +1336,388 @@ O projeto é gratuito e não exibe anúncios. As imagens são carregadas diretam
 | voltar | https://arasaac.org/pictograms/6248 |
 | zoológico | https://arasaac.org/pictograms/4773 |
 | zumbido | https://arasaac.org/pictograms/39508 |
+
+## Wikimedia Commons
+
+Fotos do **Wikimedia Commons**. Autor e licença por imagem; consulte o arquivo original para os termos completos.
+
+| Palavra | Autor | Licença | Arquivo |
+| --- | --- | --- | --- |
+| abacateiro | B.navez | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Persea_americana_fruit.JPG |
+| acerola | Wilfredor | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Malpighia_emarginata_(in_Venezuela).JPG |
+| actinopterígio | Stevenj NOAA Photo Library Pedro Lastra Gregory Moine Chmehl Jik jik Debra Becker WenOficial Springcold Hectonichus Amada44 Jrosindell Guillaume Baviere Vassil ZiskoW Brian.gratwicke Jackiemora01 Tylwyth Eldar | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Actinopterygii.jpg |
+| açude | International Hydropower Association (IHA) | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Itaipu_Aerea.jpg |
+| adianto | Walter Siegmund | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Adiantum_pedatum_09905.JPG |
+| afluente | Ingo2802 16:47, 18. Mär 2006 (CET) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Werre_in_Weser.jpg |
+| alagamento | Commander Mark Moran, of the NOAA Aviation Weather Center, and Lt. Phil Eastman and Lt. Dave Demers, of the NOAA Aircraft Operations Center, all commissioned officers of the NOAA Corps, flew more than 100 hours surveying Katrina’s devastation. Eastman piloted NOAA’s Bell 212 Twin Huey Helicopter from August 31 to September 19. All three men took dozens of aerial photos from an altitude of several feet to 500 feet. | Public domain | https://commons.wikimedia.org/wiki/File:Katrina-new-orleans-flooding3-2005.jpg |
+| albatroz | U.S. Fish and Wildlife Service | Public domain | https://commons.wikimedia.org/wiki/File:Short_tailed_albatross.jpg |
+| aluvião | Original uploader was AlaskaMining at en.wikipedia (Original text : Dennis Garrett ) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Alluvial_Gravels_at_the_Blue_Ribbon_Mine_Alaska.jpg |
+| amido | Picasa author kalaya | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Cornstarch_mixed_with_water.jpg |
+| anaconda | LA Dawson | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Eunectes_murinus2.jpg |
+| anfíbio | User:Froggydarb | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Litoria_phyllochroa.JPG |
+| anfípode | Michal Maňas | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Gammarus_roeselii.jpg |
+| angico | O Tupinólogo | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Angico-vermelho%2C_ou_guarucaia_(nome_do_tupi)%2C_Parapiptadenia_rigida%2C_em_Bag%C3%A9%2C_RS%2C_Brasil_-_55313130452.jpg |
+| angiosperma | Alvesgaspar | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Flower_poster_2.jpg |
+| angu | Zerenan | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Angu_Nordestino.jpg |
+| anhuma | Bill Bouton from San Luis Obispo, CA, USA | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Anhima_cornuta_-near_Manu_Wildlife_Center%2C_Manu_National_Park%2C_Peru_-three-8.jpg |
+| anta | Charles J. Sharp | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:South_American_tapir_(Tapirus_terrestris).JPG |
+| antepasto | https://www.flickr.com/people/globetrotter1937/ (Retouched by AM ) | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Antipasto_all'italiana.jpg |
+| anticiclone | António Miguel de Campos - en:User:Tó campos | Public domain | https://commons.wikimedia.org/wiki/File:Ciclone.jpg |
+| antozoário | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:PillarCoral.jpg |
+| araçari | John Gould / Henry Constantine Richter | Public domain | https://commons.wikimedia.org/wiki/File:Pteroglossus_beauharnaesii-Gould.jpg |
+| aracnídeo | Lucarelli Maximilian Paradiz Jorge Armín Escalante Pasos Marshal Hedin Bernard DUPONT Cavexplorer Chantelle Bosch Rosa Fernández, Gonzalo Giribet, P. Naskrecki, Jaroslav Smrž, Ľubomír Kováč, Charles J. Sharp Jaromír Mikeš, Alena Lukešová Kurt Kulac Kaldari | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Arachnida_collage.png |
+| araucária | Germano Roberto Schüür | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Itaimbezinho_-_Parque_Nacional_Aparados_da_Serra_32.JPG |
+| arborização | Trond Strandsberg | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Bj%C3%B8rvika_TRS_060605.jpg |
+| aroeira | B. NAVEZ | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Schinus_terebinthifolius_fruits.JPG |
+| arquipélago | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Galapagos_archipelago_250m.jpg |
+| arraia | john norton | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Spotted_Eagle_Ray_(Aetobatus_narinari)2.jpg |
+| arrecife | No machine-readable author provided. Jolle~commonswiki assumed (based on copyright claims). | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Maldives-reefs.jpg |
+| artiodátilo | LittleJerry | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_Cetartiodactyla.jpg |
+| artrópode | Kolihapeltis 01 Pengo.jpg : Peter Halasz Stylonurus BW.jpg : Nobu Tamura SCORPIO MAURUS PALMATUS.jpg : Guy Haimovitch Blue crab on market in Piraeus - Callinectes sapidus Rathbun 20020819-317.jpg : Wpopp Female centipede with eggs.jpg : Marshal Hedin John Kratz - Swallowtail (by-sa).jpg : John Kratz derivative work: Xvazquez , Amada44 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Arthropoda.jpg |
+| asteroide | NASA | Public domain | https://commons.wikimedia.org/wiki/File:(253)_mathilde.jpg |
+| astro | NASA/JPL | Public domain | https://commons.wikimedia.org/wiki/File:243_ida.jpg |
+| azálea | Leonardo Sakaki | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Azaleia00005.jpg |
+| babosa | Collage by en:User:MidgleyDJ , original images from Wikimedia commons ( Image:Aloe_vera_offsets.jpg and Image:Aloe_vera_C.jpg ) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Aloe_vera_flower_inset.png |
+| bacurau | Louis Agassiz Fuertes | Public domain | https://commons.wikimedia.org/wiki/File:Nightjar_in_flight_-_AAP065A.jpg |
+| baía | Sanderling6451 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Skrinkle_Haven_090725_057.jpg |
+| banha | No machine-readable author provided. Peter G Werner~commonswiki assumed (based on copyright claims). | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Homelard.jpg |
+| basalto | Unknown author Unknown author | Public domain | https://commons.wikimedia.org/wiki/File:BasaltUSGOV.jpg |
+| berilo | Reno Chris at English Wikipedia | Public domain | https://commons.wikimedia.org/wiki/File:Beryl09.jpg |
+| bezerro | Eduardo P | Public domain | https://commons.wikimedia.org/wiki/File:Bezerro_em_Andrel%C3%A2ndia.jpg |
+| biodiversidade | Tom Bayly from England | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Marine_fish_%26_coral_(5791779828).jpg |
+| bioma | Terpsichores | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Biomes_of_the_world.svg |
+| bugio | Kenny Ross | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Brown_Howler_Monkey.jpg |
+| caatinga | Paulo ferrari lucas alves | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Vale_do_Catimbau_-_forma%C3%A7%C3%A3o_rochosa.jpg |
+| cabreúva | Jorge Vallmitjana | Public domain | https://commons.wikimedia.org/wiki/File:Myrocarpus_frondosus.jpg |
+| cabrito | Kuebi = Armin Kübelbeck | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Hausziege_04.jpg |
+| cação | NOAA Photo Library | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Corl0207_(28225976491).jpg |
+| cacimba | Didiervberghe | Public domain | https://commons.wikimedia.org/wiki/File:Faryab-_village_dug_well.JPG |
+| caju | Franz Eugen Köhler, Köhler's Medizinal-Pflanzen | Public domain | https://commons.wikimedia.org/wiki/File:Anacardium_occidentale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-010.jpg |
+| cajueiro | Franz Eugen Köhler, Köhler's Medizinal-Pflanzen | Public domain | https://commons.wikimedia.org/wiki/File:Anacardium_occidentale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-010.jpg |
+| calcário | Fernando Domínguez Cerejido | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:ElTorcal0408.jpg |
+| calopsita | Photo by: Ganatron – paulweberphoto.com | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Cockatiel_3.jpg |
+| caloria | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Nutrition-label.jpg |
+| canídeo | Golden_jackal_small.jpg : The original uploader was Profberger at English Wikipedia . Cuon.alpinus-cut.jpg : en:User:Kalyanvarma (?) Lycaon_pictus_(Temminck,_1820).jpg : Michael Gäbler Crab-eating_Fox.JPG : http://www.birdphotos.com Mähnenwolf.JPG : Robin Müller Speothos_venaticus_Zoo_Praha_2011-5.jpg : Karelj Korsak.jpg : Maksim Енотовидная_собака_Гродно.jpg : Доктор рукиноги Bat_eared_fox_Kenya_crop.jpg : * Kenya_August_2010_485.jpg : Joanne Goldby derivative work: Samsara ( talk ) Urocyon_cinereoargenteus_grayFox_fullFace.jpg : Dcrjsr derivative work: Mariomassone | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Familia_Canidae.jpg |
+| cânion | Bert Kaufmann from Roermond, Netherlands | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Grand_Canyon_(8281401624).jpg |
+| carambola | http://www.ars.usda.gov/is/graphics/photos/k5735-7.htm | Public domain | https://commons.wikimedia.org/wiki/File:Averrhoa_carambola_ARS_k5735-7.jpg |
+| carnaúba | Tacarijus | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Carnauba.jpg |
+| carrapato | André Karwath aka Aka | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Tick_male_(aka).jpg |
+| carvão | http://resourcescommittee.house.gov/subcommittees/emr/usgsweb/photogallery/images/Coal_jpg.jpg | Public domain | https://commons.wikimedia.org/wiki/File:Coal.jpg |
+| cascalho | Stan Zurek | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Gravel_on_a_beach_in_Thirasia%2C_Santorini%2C_Greece.jpg |
+| casuar | PaleoNeolitic (montage creator) BS Thurner Hof Kora27 Martin Sordilla | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cassowary_Diversity.jpg |
+| cefalópode | these images belongs to his respective users. | Public domain | https://commons.wikimedia.org/wiki/File:Cephalopoda_diversity.jpg |
+| celenterado | Steve Jurvetson from Menlo Park, USA | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Comb_jellies-mba.jpg |
+| centeio | User:Rasbak (cropped to a 4:3 ratio by the uploader) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Rogge_aar_Secale_cereale_(4%C3%973).jpg |
+| cerrado | Teoneto | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:EO_1831-Editar.jpg |
+| cetáceo | Gabriel Barathieu | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Mother_and_baby_sperm_whale.jpg |
+| chacal | Davidvraju | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Jackal_(9).jpg |
+| chantili | Lotus Head from pixelpusher.co.za . Please credit http://www.pixelpusher.co.za when using this image. | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Cup_of_Coffee_with_Whipped_Cream.jpg |
+| chapada | roney | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Chapada_diamantina.jpg |
+| charque | Pedro Antunes from Araraquara, Brasil | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Charque.jpg |
+| chinchila | Thirteen squared | Public domain | https://commons.wikimedia.org/wiki/File:Standardchinchilla.jpg |
+| clarão | Leslie | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Sun_glare_St_Louis_downtown.JPG |
+| clima | NASA | Public domain | https://commons.wikimedia.org/wiki/File:ISS-48_Towering_cumulonimbus_and_other_clouds_over_the_Earth_(2).jpg |
+| climatologia | Olympus Sp590uz, Pixabay | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Clouds-1099739_1280.jpg |
+| cnidário | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Anemone.bristol.750pix.jpg |
+| cominho | Franz Eugen Köhler, Köhler's Medizinal-Pflanzen | Public domain | https://commons.wikimedia.org/wiki/File:Cuminum_cyminum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-198.jpg |
+| condimento | Paul Goyette | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Salt%2C_sugar_and_pepper_shakers.jpg |
+| conserva | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:PreservedFood1.jpg |
+| continente | Arthur Fuentes | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mapa_animado_e_codificado_por_cores_mostrando_os_v%C3%A1rios_continentes%2C_dependendo_da_conven%C3%A7%C3%A3o_e_modelo_aplicado..gif |
+| cordado | Richard Bartz, Munich Makro Freak | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Pristella_maxillaris.jpg |
+| corola | Jeantosti at French Wikipedia | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Rosa_canina_Vin%C3%A7a.jpg |
+| córrego | Peter Louiz | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:C%C3%B3rrego_Carandiru2.JPG |
+| correnteza | Nicholas | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Swift_Run_Riffles.jpg |
+| coxinha | Sintegrity | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Coxinha_-_iguaria_brasileira_01.jpg |
+| cratera | Federal Government of the United States | Public domain | https://commons.wikimedia.org/wiki/File:Sedan_Plowshare_Crater.jpg |
+| crepúsculo | Ricardo André Frantz ( User:Tetraktys ) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Crep%C3%BAsculo_%C3%A0_beira_do_Gua%C3%ADba.jpg |
+| crisântemo | Alvesgaspar | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Glebionis_February_2008-1.jpg |
+| crosta | IsadoraofIbiza | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Earth_Internal_Structure.svg |
+| crucífera | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Illustration_Cheiranthus_cheiri0.jpg |
+| ctenóforo | Orin Zebest | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Comb_jelly.jpg |
+| cupim | Photo by Scott Bauer. | Public domain | https://commons.wikimedia.org/wiki/File:Coptotermes_formosanus_shiraki_USGov_k8204-7.jpg |
+| cupuaçu | Upper left: The original uploader was Roy Bateman at English Wikipedia . (Transferred by IKAl ); upper right: BjoernS , bottom left: Dick Culbert from Gibsons, B.C., Canada; bottom right: M.-A. Wolf , montage by User:RoRo | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Theobroma_fruits_and_Theobroma_grandiflorum_-_Spanish_labels_(calabaza_-amphisarca).jpg |
+| curau | Giselli Carvalho | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Canjica1.jpg |
+| curicaca | Dario Sanches | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:CURICACA_(_Theristicus_caudatus_).jpg |
+| curió | Dario Sanches from São Paulo, Brasil | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Oryzoborus_angolensis.jpg |
+| cuscuz | Lmmima | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Moroccan_cuscus%2C_from_Casablanca%2C_September_2018.jpg |
+| cutia | Ministério da Ciência, Tecnologia e Inovação from Brasília - DF, Brasil | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:25_02_2023_-_Visita_ao_Museu_Paraense_Em%C3%ADlio_Goeldi_(52715145578).jpg |
+| degelo | Stefan-Xp | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Tauwetter.jpg |
+| desabamento | Galeria del Ministerio de Defensa del Perú | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Landslide_in_Cusco%2C_Peru_-_2018.jpg |
+| desertificação | USDA employee | Public domain | https://commons.wikimedia.org/wiki/File:Desertification_map.png |
+| deslizamento | Galeria del Ministerio de Defensa del Perú | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Landslide_in_Cusco%2C_Peru_-_2018.jpg |
+| desnaturação | David Benbennick | Public domain | https://commons.wikimedia.org/wiki/File:Fried_egg%2C_sunny_side_up.jpg |
+| diatomácea | Prof. Gordon T. Taylor, Stony Brook University | Public domain | https://commons.wikimedia.org/wiki/File:Diatoms_through_the_microscope.jpg |
+| dietética | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:MyPyramid1.png |
+| dilúvio | Léon Comerre | Public domain | https://commons.wikimedia.org/wiki/File:Le_d%C3%A9luge_-_mus%C3%A9e_de_beaux_arts_de_Nantes_20091017.jpg |
+| diplópode | Golovatch, S.; Mikhaljova, E.; Chang, H. Hedin, Marshal Ioannou, N. VandenSpiegel, D., Golovatch, S. Chen, C.; Golovatch, S.; Chang, H. Joydeep Stoev, P.; Akkari, N.; Enghoff, H. Akkari, N. USGS Native Bee Inventory and Monitoring Laboratory Collage created by Animalparty | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Millipede_collage.jpg |
+| dolomita | Didier Descouens | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Dolomite-Magn%C3%A9site-_Navarre.jpg |
+| duna | Rosino on Flickr | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Morocco_Africa_Flickr_Rosino_December_2005_84514010.jpg |
+| ebulição | user:Markus Schweiss | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Kochendes_wasser02.jpg |
+| ecossistema | Daniel G. Rego | CC0 | https://commons.wikimedia.org/wiki/File:Sequoia_Tree_Groove_at_Sequoia_National_Park.jpg |
+| elétron | Unknown author Unknown author | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:HAtomOrbitals.png |
+| enchente | Commander Mark Moran, of the NOAA Aviation Weather Center, and Lt. Phil Eastman and Lt. Dave Demers, of the NOAA Aircraft Operations Center, all commissioned officers of the NOAA Corps, flew more than 100 hours surveying Katrina’s devastation. Eastman piloted NOAA’s Bell 212 Twin Huey Helicopter from August 31 to September 19. All three men took dozens of aerial photos from an altitude of several feet to 500 feet. | Public domain | https://commons.wikimedia.org/wiki/File:Katrina-new-orleans-flooding3-2005.jpg |
+| enxofre | Ben Mills | Public domain | https://commons.wikimedia.org/wiki/File:Sulfur-sample.jpg |
+| equinócio | Lauro Chieza de Carvalho | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Insolacao_Terra_Solsticios_Equinocios_Primeiro-Semestre-2013.ogv |
+| equinodermo | Ernst Haeckel | Public domain | https://commons.wikimedia.org/wiki/File:Haeckel_Echinidea.jpg |
+| escarcha | Paulo Marcelo Adamek | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Folhas_com_geada.jpg |
+| esfirra | “E Sortica ( Sortica )” | Public domain | https://commons.wikimedia.org/wiki/File:Sfiha_aberta.jpg |
+| espongiário | Twilight Zone Expedition Team 2007, NOAA-OE. | Public domain | https://commons.wikimedia.org/wiki/File:Reef3859_-_Flickr_-_NOAA_Photo_Library.jpg |
+| esporozoário | Image by Ute Frevert; false color by Margaret Shear. | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Malaria.jpg |
+| estepe | Japanese Wikipedia user Yosemite | Public domain | https://commons.wikimedia.org/wiki/File:Mongolia_Ger.jpg |
+| estiagem | USDA photo by Bob Nichols | Public domain | https://commons.wikimedia.org/wiki/File:Corn_shows_the_effect_of_drought.jpg |
+| estratigrafia | travelwayoflife | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Quebrada_de_Cafayate%2C_Salta_(Argentina).jpg |
+| estuário | Guilherme Camargo Lessa | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Estuarios_Brasileiros.tif |
+| eucalipto | Gabriel Collares | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Eucalipto_(Eucalyptus_sp.)_na_zona_rural_de_Bag%C3%A9.jpg |
+| evapotranspiração | M. W. Toews | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Surface_water_cycle.svg |
+| fagulha | Rustedstrings | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Sparks_from_a_Grinder.jpg |
+| faisão | gary noon | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Pheasant.jpg |
+| falésia | George Vale from Mossoró, Brasil | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Canoa_Quebrada_3.jpg |
+| farelo | No machine-readable author provided. Alistair1978 assumed (based on copyright claims). | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:WheatBran.jpg |
+| farofa | User Carioca | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Farofa_brazil.jpg |
+| feldspato | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Feldspar(Microcline)USGOV.jpg |
+| fermentação | https://wellcomeimages.org/indexplus/obf_images/ce/73/d6b4fc4084e386822ebc10b3e8ac.jpg https://coimages.sciencemuseumgroup.org.uk/117/large_1963_0372.jpg Gallery: https://wellcomeimages.org/indexplus/image/L0059171.html https://collection.sciencemuseumgroup.org.uk/objects/co61228/penicillin-fermentation-vessel-england-1940-1945 Wellcome Collection gallery (2018-04-01): https://wellcomecollection.org/works/xtw94ww9 CC-BY-4.0 | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Penicillin_fermentation_vessel%2C_England_Wellcome_L0059171.jpg |
+| filodendro | Forest &amp; Kim Starr | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Starr_031108-0220_Philodendron_bipinnatifidum.jpg |
+| fitoplâncton | NASA | Public domain | https://commons.wikimedia.org/wiki/File:Phytoplankton_SoAtlantic_20060215.jpg |
+| flora | en:user:Jasu | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Flora.png |
+| folhagem | Vince | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Lupin_Leaf.jpg |
+| foraminífero | The original uploader was Safay at English Wikipedia . | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Live_Ammonia_tepida.jpg |
+| fototropismo | Original uploader was Brona at en.wikipedia . User:Roepers at nl.wikipedia | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Arabidopsis_thaliana.jpg |
+| foz | Anonymous Unknown author | Public domain | https://commons.wikimedia.org/wiki/File:Lange_diercke_sachsen_afrika_nildelta.jpg |
+| freixo | Gabriel Collares | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Fresno%2C_ou_freixo_(Fraxinus_sp.)_com_folhas_amareladas%2C_prestes_a_cair.jpg |
+| fumarola | Heiko Gorski ( Moonshadow ) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fumarole.jpg |
+| furna | Dave Bunnell / Under Earth Images | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Lechuguilla_Cave_Pearlsian_Gulf.jpg |
+| galáxia | The Hubble Heritage Team (AURA/STScI/NASA) NASA Headquarters - Greatest Images of NASA (NASA-HQ-GRIN) | Public domain | https://commons.wikimedia.org/wiki/File:NGC_4414_(NASA-med).jpg |
+| garça | Nunop | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Heron2.jpg |
+| gastrópode | See his respective owners. | Public domain | https://commons.wikimedia.org/wiki/File:Gastropod_collage.jpg |
+| gavião | Charles J. Sharp | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Roadside_hawk_(Rupornis_magnirostris)_immature_2.jpg |
+| geleia | Vanessa Druckman from Columbus, USA | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Gelee_de_pommes_(4540855503).jpg |
+| geleira | Luca Galuzzi ( Lucag ) | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG |
+| geofísica | Kelvinsong | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Earth_poster.svg |
+| geomorfologia | Ben Stubbs | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Cono_de_Arita%2C_Salar_de_Arizaro_(Argentina).jpg |
+| gimnosperma | Unknown Unknown , Leipzig ; Berlin ; Wien : F.A. Brockhaus | Public domain | https://commons.wikimedia.org/wiki/File:Gymnospermae.jpg |
+| gineta | Guérin Nicolas ( messages ) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Genetta_genetta_felina_(Wroclaw_zoo).JPG |
+| glaciar | Luca Galuzzi ( Lucag ) | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG |
+| glaciologia | Luca Galuzzi ( Lucag ) | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Perito_Moreno_Glacier_Patagonia_Argentina_Luca_Galuzzi_2005.JPG |
+| glicose | Qohelet12 | CC0 | https://commons.wikimedia.org/wiki/File:D-glucose_lineal.svg |
+| goiabada | Voton | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Goiabada_slice.jpg |
+| goiabeira | Gabriel Collares | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Folhas_de_goiabeira_(em_tupi_arasag%C3%BBasu%2C_'ara%C3%A7%C3%A1_grande)%2C_Psidium_guajava.jpg |
+| granito | Friman | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fj%C3%A6regranitt3.JPG |
+| grinalda | Richard Croft | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Christmas_Wreath_-_geograph.org.uk_-_639554.jpg |
+| grumixama | No machine-readable author provided. B.navez assumed (based on copyright claims). | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Eugenia_brasiliensis.JPG |
+| guará | Rafa Esteve | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Oceanografic_Scarlet_Ibis_02.jpg |
+| guaraná | Franz Eugen Köhler, Köhler's Medizinal-Pflanzen | Public domain | https://commons.wikimedia.org/wiki/File:Paullinia_cupana_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-234.jpg |
+| habitat | Dr. Randi Rotjan, New England Aquarium. www.neaq.org | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Rotjan_-_Enderbury_Day_1_-_2nd_half_(62).JPG |
+| harpia | John Vinycomb | Public domain | https://commons.wikimedia.org/wiki/File:Harpy.PNG |
+| hematófago | Jim Gathany | Public domain | https://commons.wikimedia.org/wiki/File:Anopheles_stephensi.jpeg |
+| hibernação | Magne Flåten | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eptesicus_nilssonii_hibernating.JPG |
+| hidrologia | John M. Evans/USGS-USA Gov | Public domain | https://commons.wikimedia.org/wiki/File:Ciclo_da_%C3%A1gua.jpg |
+| hidrotermal | Microbialmatt | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Hydrothermal_system.png |
+| hidrozoário | Ernst Haeckel | Public domain | https://commons.wikimedia.org/wiki/File:Haeckel_Siphonophorae_7.jpg |
+| himenóptero | These belongs to his respective owners. | Public domain | https://commons.wikimedia.org/wiki/File:Hymenoptera.jpg |
+| hortênsia | Hedestad | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mudas_de_Hydrangea_macrophylla_(hort%C3%AAnsia)_3.jpg |
+| iaque | 4028mdk09 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Schwarzer_Yakbulle.JPG |
+| igarapé | Fernando Cunha | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Igarape_2.jpg |
+| infiltração | Gabrieljordaobatistasouza | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Inflitracao.webp |
+| inflorescência | Harald Süpfle | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Aloe_hereroensis_Auob_C15.JPG |
+| ingá | O Tupinólogo | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Ing%C3%A1_(do_tupi_ing%C3%A1)%2C_fruto_do_ingazeiro%2C_Inga_sp.%2C_em_Bag%C3%A9%2C_RS%2C_Brasil._-_55381324276.jpg |
+| ingrediente | No machine-readable author provided. Ranveig assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:Mj%C3%B8l.jpg |
+| isópode | Hans Hillewaert | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Eurydice_pulchra.jpg |
+| jaburu | Joao Carlos Medau from Campinas, Brazil | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Tuiui%C3%BA_(8496798280).jpg |
+| jabuti | Ltshears (Trisha M Shears) | Public domain | https://commons.wikimedia.org/wiki/File:Red_Footed_Tortoise_2.jpg |
+| jabuticabeira | Bageense | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Jabuticaba_(do_tupi_%C3%AEabotikaba%2C_'gordura_de_jabuti')_07.jpg |
+| jaca | Photo taken by User:Ahoerstemeier on June 28, 2003 in Chaiya, Surat Thani Province, Thailand. | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Artocarpus_heterophyllus_fruits_at_tree.jpg |
+| jaçanã | Charles J. Sharp | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Wattled_jacana_(Jacana_jacana_intermedia)_Rio_Napo.jpg |
+| jacurutu | Davepape | Public domain | https://commons.wikimedia.org/wiki/File:Bubo_virginianus_nacurutu_-_Otter%2C_Owl%2C_and_Wildlife_Park.jpg |
+| jacutinga | Mvshreeram | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Black-fronted_Piping_Guan_-_Shreeram_M_V_-_Iguazu_Argentina.jpg |
+| jaguatirica | Giles Laurent | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg |
+| jambeiro | Rodrigo César | Public domain | https://commons.wikimedia.org/wiki/File:Jambeiro.jpg |
+| jambo | Mauroguanandi | Public domain | https://commons.wikimedia.org/wiki/File:Jambosmaduros2.jpg |
+| jararaca | RatioTile | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Martinique_lancehead.jpg |
+| jasmim | Original uploader was Monocromatico at pt.wikipedia | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Jasminum_nitidum-flores.jpg |
+| jatobá | mauroguanandi | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Hymenaea_courbaril_1.jpg |
+| jequitibá | Mauroguanandi | Public domain | https://commons.wikimedia.org/wiki/File:Jequitibabotanico.jpg |
+| jiboia | Cezar Paes | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Boaconstrictor.jpg |
+| jiló | Junius | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Fruta_Jil%C3%B3.JPG |
+| juazeiro | Own work | Public domain | https://commons.wikimedia.org/wiki/File:Zizyphus_joazeiro_juazeiro.JPG |
+| jumento | Tomás Del Coro from Las Vegas, Nevada, USA | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Burro_-_Red_Rock_Canyon_National_Conservation_Area_(18030880416).2.jpg |
+| juriti | No machine-readable author provided. Ltshears assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:VioletDove2.jpg |
+| labareda | Fir0002 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Large_bonfire.jpg |
+| lagoa | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Niagara_Falls_and_Garden_Pond.JPG |
+| lavoura | Painter of the burial chamber of Sennedjem | Public domain | https://commons.wikimedia.org/wiki/File:Maler_der_Grabkammer_des_Sennudem_001.jpg |
+| lêmure | Katta család.jpg : Veszprémi Állatkert Diademed ready to push off.jpg : C. Michael Hogan Aye-aye at night in the wild in Madagascar.jpg : Frank Vassen Juvenile Black-and-White Ruffed Lemur, Mantadia, Madagascar.jpg : Frank Vassen Microcebus murinus -Artis Zoo, Amsterdam, Netherlands-8a.jpg : flickruser:46956042@N00 Arjan Haverkamp Slow Loris.jpg : Jmiksanek Slender Loris.jpg : Kalyan Varma ( Kalyanvarma ) Garnett's Galago (Greater Bushbaby).jpg : Mark Dumont derivative work: Maky | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Extant_Strepsirrhini.jpg |
+| lepidóptero | Geoff Gallice | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Heraclides_thoas.jpg |
+| lichia | Barry Fitzgerald, USDA | Public domain | https://commons.wikimedia.org/wiki/File:Lychee.jpg |
+| lipídio | User:Innerstream | Public domain | https://commons.wikimedia.org/wiki/File:Common_lipid_types.svg |
+| líquen | MichaelMaggs | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Lichen-covered_tree%2C_Tresco.jpg |
+| litosfera | No machine-readable author provided. Benceno assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:Limiteconvergente-continenteycontinente.png |
+| magnetosfera | NASA/CILab/Josh Masters | Public domain | https://commons.wikimedia.org/wiki/File:Cusp-animation.gif |
+| magnólia | Kurt Stueber | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Magnolia_liliiflora3.jpg |
+| malacostráceo | Danesof | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Caranguejo%2C_Brachyura.jpg |
+| mamífero | ZKevinTheCat | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Mammal_collage.png |
+| manatim | File:Trichechus manatus, NOAA.jpg (NOAA) File:Amazonian manatee (Trichechus inunguis).jpg ( Dirk Meyer ) File:I432^cimgpsh orig.jpg ( Mehdi Sadak 2ème compte ) | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Trichechus_Diversity.jpg |
+| mandacaru | Hervé LEFEBVRE | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Cereus_jamacaru.JPG |
+| mandril | Katma0601 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Mandrill_Albert_September_2015_Zoo_Berlin_(2).jpg |
+| mangaba | Isabela Lustz Portela Lima | Public domain | https://commons.wikimedia.org/wiki/File:Picked_mangaba_fruit.png |
+| mangue | CEphoto, Uwe Aranas | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Semporna_Sabah_Mangroves-between-Kg-Bubul-and-Kg-Air-Sri-Jaya-01.jpg |
+| manguezal | CEphoto, Uwe Aranas | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Semporna_Sabah_Mangroves-between-Kg-Bubul-and-Kg-Air-Sri-Jaya-01.jpg |
+| maré | W. Bulach | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:00_3536_Auswirkung_der_Gezeiten_(Niedrigwasser).jpg |
+| marimbondo | Richard Bartz , Munich aka Makro Freak | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Vespula_germanica_Richard_Bartz.jpg |
+| mariposa | Alias 0591 from the Netherlands | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Attacus_atlas_(15050883139).jpg |
+| maritaca | moi-même | Public domain | https://commons.wikimedia.org/wiki/File:Pionus_maximiliani_-pet-4a.jpg |
+| mármore | USGS | Public domain | https://commons.wikimedia.org/wiki/File:MarbleUSGOV.jpg |
+| mesosfera | NASA/Crew of Expedition 22 | Public domain | https://commons.wikimedia.org/wiki/File:Endeavour_silhouette_STS-130.jpg |
+| metamorfismo | Beatrice Murch from Buenos Aires, Argentina | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Museo_de_La_Plata_-_Esquisto_con_haces_de_estaurolita.jpg |
+| mexerica | Joe Ravi | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mandarin_Oranges_(Citrus_Reticulata).jpg |
+| mimetismo | see Source | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Heliconius_mimicry.png |
+| mineralogia | Didier Descouens | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Quartz_oisan.jpg |
+| minério | Siim | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Banded_iron_formation.jpg |
+| molécula | Kota Iwata et al. | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:PTCDA_AFM.jpg |
+| monotremado | Ypna | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Monotreme_collage.jpg |
+| moqueca | Janaina Roberge | Public domain | https://commons.wikimedia.org/wiki/File:MOQUECAB.jpg |
+| narval | пресс-служба ПАО "Газпром нефть" | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg |
+| néctar | Daiju Azuma | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Nectar.jpg |
+| nematódeo | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Roundworm.jpg |
+| nespereira | Wouter Hagens | Public domain | https://commons.wikimedia.org/wiki/File:Eriobotrya_japonica_C.jpg |
+| neuróptero | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Chrysopa_oculata.jpg |
+| nêutron | No machine-readable author provided. E2m assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:Neutron.svg |
+| nutrição | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:MyPyramid1.png |
+| obsidiana | No machine-readable author provided. PAR~commonswiki assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:ObsidianOregon.jpg |
+| ocapi | Raul654 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Okapi2.jpg |
+| oceanografia | Brisbane | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Thermohaline_circulation.png |
+| ocelote | Giles Laurent | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg |
+| onicóforo | Thomas Stromberg | Public domain | https://commons.wikimedia.org/wiki/File:Velvet_worm_(2002).jpg |
+| opilião | Bruce Marlin | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Opiliones_harvestman.jpg |
+| órbita | NASA/SpaceX | Public domain | https://commons.wikimedia.org/wiki/File:SpaceX_Crew_Dragon_(More_cropped).jpg |
+| orografia | Daniel Candido at Portuguese Wikipedia | Public domain | https://commons.wikimedia.org/wiki/File:Orografia.jpg |
+| oxidação | Théo from England | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Rust-flake-macro.jpg |
+| ozônio | Д.Ильин : vectorization | CC0 | https://commons.wikimedia.org/wiki/File:Ozone-1%2C3-dipole.svg |
+| paca | Garst, Warren, 1922-2016, photographer | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Paca_walking_in_grass_close_up_-_DPLA_-_826590946052c7217e313ec0a53c7f17.jpg |
+| paçoca | PD-self | Public domain | https://commons.wikimedia.org/wiki/File:Pa%C3%A7oca_salgada.JPG |
+| pacu | User:Haplochromis | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Myleus.JPG |
+| paleontologia | Copyright © 2005 David Monniaux | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Palais_de_la_Decouverte_Tyrannosaurus_rex_p1050042.jpg |
+| palmito | Valter Campanato | CC BY 3.0 br | https://commons.wikimedia.org/wiki/File:Palmito_de_pupunha_-_ABr_-_Valter_Campanato.jpg |
+| pampa | FeBozza | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Esta%C3%A7%C3%A3o_Ecol%C3%B3gica_do_Taim.jpg |
+| pangolim | derivative work: user:The Explaner | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Manidae.jpg |
+| pantanal | Ale Bertassoni | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:As_montanhas_da_plan%C3%ADcie.jpg |
+| paquiderme | Paul Maritz | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Hippo_pod_edit.jpg |
+| paramécio | Barfooz at the English Wikipedia . | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Paramecium.jpg |
+| parmesão | Food museums of the province of Parma | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Insegna_per_caseificio_-_Musei_del_cibo_-_Parmigiano_-_069.tif |
+| pasto | Painter of the burial chamber of Sennedjem | Public domain | https://commons.wikimedia.org/wiki/File:Maler_der_Grabkammer_des_Sennudem_001.jpg |
+| patativa | Alastair Rae from London, United Kingdom | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Sporophila_plumbea_-Cerrado%2C_Brazil-8.jpg |
+| pavê | Shoichi Iwashita | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Pav%C3%AA_de_doce_de_leite.jpg |
+| pedologia | No machine-readable author provided. Eugen Lehle assumed (based on copyright claims). | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Bodenart.jpg |
+| penumbra | Qarnos | Public domain | https://commons.wikimedia.org/wiki/File:Diagram_of_umbra%2C_penumbra_%26_antumbra.png |
+| perdiz | david galavan | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Perdix_perdix_Turvey_1.jpg |
+| perigeu | DrJujubes | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:PERIASTRO.png |
+| perissodátilo | LittleJerry | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:The_Perissodactyl.jpg |
+| pinhão | 국립국어원 | CC BY-SA 2.0 kr | https://commons.wikimedia.org/wiki/File:Jat_(pine_nut)_(Pinus_koraiensis).jpg |
+| pinípede | Bobisbob ; JPG by uploader | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Pinniped_collage.jpg |
+| pirão | Monica Kaneko | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Pirao_com_banana.jpg |
+| pirita | Ivar Leidus | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Pyrite_-_Huanzala_mine%2C_Huallanca%2C_Bolognesi%2C_Ancash%2C_Peru.jpg |
+| pistilo | Denniss , Rainer Zenz , Petr Dlouhý | Public domain | https://commons.wikimedia.org/wiki/File:Bluete-Schema.svg |
+| pitanga | Bageense | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Pitanga_(do_tupi_'ybapytanga)_no_pampa_ga%C3%BAcho_01.jpg |
+| placodermo | User:Haplochromis | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Bothriolepis_panderi.jpg |
+| platelminto | Jan Derk | Public domain | https://commons.wikimedia.org/wiki/File:Bedford's_Flatworm.jpg |
+| pluviosidade | W.carter | CC0 | https://commons.wikimedia.org/wiki/File:Hard_rain_on_a_roof.jpg |
+| polenta | Alex Rio Brazil | CC0 | https://commons.wikimedia.org/wiki/File:Prato_de_Polenta_com_molho_de_tomate_foto_vertical.jpg |
+| polpa | Sarang | Public domain | https://commons.wikimedia.org/wiki/File:Drupe_fruit_diagram.svg |
+| polvilho | Luisovalles | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Casabe-3.jpg |
+| pomar | Painter of the burial chamber of Sennedjem | Public domain | https://commons.wikimedia.org/wiki/File:Maler_der_Grabkammer_des_Sennudem_001.jpg |
+| pororoca | Tess | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:River_surfing_-_Severn_bore.jpg |
+| potro | Nokota_Horses.jpg : François Marchal derivative work: Dana boomer ( talk ) | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Nokota_Horses_cropped.jpg |
+| preá | Petra Karstedt (= PetraK ; www.Tiermotive.de) | CC BY-SA 2.0 de | https://commons.wikimedia.org/wiki/File:Wildmeerschweinchen-06.jpg |
+| prebiótico | Chiswick Chap | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Origin_of_life_stages.svg |
+| próton | No machine-readable author provided. E2m assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:Proton.svg |
+| protozoário | Respectively: Frank Fox, Sergey Karpov, CDC/ Dr. Stan Erlandsen, Picturepest , Thierry Arnet, dr.Tsukii Yuuji | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Protozoa_collage_2.jpg |
+| pulsar | Michael Kramer | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Lightsmall-optimised.gif |
+| pupunha | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Pupunha_(Bactris_gasipaes)_11.jpg |
+| purê | Alpha | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Cauliflower_puree.jpg |
+| quadrúpede | André Karwath aka Aka | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Equus_grevyi_(aka).jpg |
+| quartzo | JJ Harrison ( https://www.jjharrison.com.au/ ) | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Quartz%2C_Tibet.jpg |
+| quasar | NASA | Public domain | https://commons.wikimedia.org/wiki/File:Black_hole_quasar_NASA.jpg |
+| quati | Liz Roy | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Coati.jpg |
+| quelicerado | Eurypterids Pentecopterus Vertical.jpg : Patrick Lynch Pycnogonid.jpg : Steve Childs Limulus polyphemus (aq.).jpg : Hans Hillewaert Gasteracantha cancriformis 2.jpg : Mike Kullen | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Chelicerata_Collage.png |
+| quilópode | No machine-readable author provided. RubensL assumed (based on copyright claims). | Public domain | https://commons.wikimedia.org/wiki/File:Centopeia1.jpeg |
+| quiróptero | Uwe Schmidt | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Desmo-Flug-03.jpg |
+| radiolário | Ernst Haeckel | Public domain | https://commons.wikimedia.org/wiki/File:Haeckel_Stephoidea.jpg |
+| rajada | http://www.photolib.noaa.gov/nssl/nssl0045.htm | Public domain | https://commons.wikimedia.org/wiki/File:Thunderstorm_with_lead_gust_front_-_NOAA.jpg |
+| rapadura | Moacir Ximenes | Public domain | https://commons.wikimedia.org/wiki/File:Rapadura_de_Boa_Hora-PI.JPG |
+| redemoinho | Jeff T. Alu | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Mojave_DustDevil.jpg |
+| reflorestamento | Alan Murray-Rust | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:New_afforestation_looking_into_Rand_Wood_-_geograph.org.uk_-_329908.jpg |
+| refogado | donandcarol | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Sofrito_for_paella.jpg |
+| refração | ajizai | Public domain | https://commons.wikimedia.org/wiki/File:Refraction_photo.png |
+| regato | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Mouths_of_amazon_geocover_1990.png |
+| réptil | see respective profiles of photos | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Extant_reptilia.jpg |
+| requeijão | Tom B | Public domain | https://commons.wikimedia.org/wiki/File:RequeijaoCremoso.jpg |
+| resina | André Karwath aka Aka | CC BY-SA 2.5 | https://commons.wikimedia.org/wiki/File:Resin_with_insect_(aka).jpg |
+| ressonância | HereToHelp | Public domain | https://commons.wikimedia.org/wiki/File:Orbital_motion.gif |
+| restinga | LucianoFaustino | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Praia_da_Jureia_bairro_Barra_do_Ribeira_municipio_Iguape_SP.jpg |
+| ribanceira | Bert Kaufmann from Roermond, Netherlands | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Grand_Canyon_(8281401624).jpg |
+| ricota | Micniosi | Public domain | https://commons.wikimedia.org/wiki/File:La_ricotta.JPG |
+| rincão | MARCO AURELIO ESPARZ… | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Rinc%C3%A3o_01.jpg |
+| rizoma | Kenraiz | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Phragmites_australis_rhizome_kz.jpg |
+| roedor | Bobisbob | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Rodent_collage.jpg |
+| rolinha | Thomas Junier | Public domain | https://commons.wikimedia.org/wiki/File:Columbina_talpacoti.jpeg |
+| rouxinol | Warrieboy | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal.jpg |
+| sabiá | Yathin S Krishnappa | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Psophocichla_litsitsirupa_(Etosha).jpg |
+| sagui | Leontopithecus_chrysomelas_(portrait).jpg : Hans Hillewaert Emperor_Tamarin_portrait_2_edit1.jpg : Brocken Inaglory Mico_argentatus_(portrait).jpg : Hans Hillewaert Weißbüschelaffe_(Callithrix_jacchus).jpg : Raimond Spekking Goeldi's marmoset, Smithsonian National Zoo.jpg : Jeff Kubina Dværgsilkeabe_Callithrix_pygmaea.jpg : Malene Thyssen (User Malene ) derivative work: Miguelrangeljr | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Callitrichinae_genus.jpg |
+| salame | Petar43 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Salame_di_Sauris.jpg |
+| sanguessuga | Chris Schuster | CC BY-SA 2.0 de | https://commons.wikimedia.org/wiki/File:Leech_in_water.jpg |
+| sanhaçu | The Lilac Breasted Roller from Sullivan's Island, United States | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Thraupis_episcopus_cropped.jpg |
+| saracura | Alejandro Bayer Tamayo from Armenia, Colombia | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Aramides_cajanea_(Chilacoa_colinegra)_(14452298309).jpg |
+| saraiva | ERZ | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Hagelkorn_mit_Anlagerungsschichten.jpg |
+| saúva | Sarefo | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Atta.cephalotes.gamut.jpg |
+| seriema | Otávio Nogueira | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Pedreira-19_(41407614112).jpg |
+| sifonóforo | Ernst Haeckel | Public domain | https://commons.wikimedia.org/wiki/File:Haeckel_Siphonophorae_59.jpg |
+| simbionte | Jan Derk | Public domain | https://commons.wikimedia.org/wiki/File:Common_clownfish_curves_dnsmpl.jpg |
+| símio | Cebus_capucinus_(Cahuita).jpg : Hans Hillewaert Ateles_paniscus_-Brazil-8.jpg : Ana_Cotta Eating_Male_Papio_hamadryas.JPG : LadyofHats Hylobates_lar_pair_of_white_and_black_01.jpg : User:MatthiasKabel Pan_troglodytes_(male).jpg : Hans Hillewaert Tamarin_lion_à_tête_dorée.jpg : Thomas Bresson Arranged by Boogie Boy from the file File:The Felidae.jpg by Miguelrangeljr . | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Simiiformes.png |
+| siri | wpopp | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Blue_crab_on_market_in_Piraeus_-_Callinectes_sapidus_Rathbun_20020819-317.jpg |
+| sismologia | Z22 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Seismogram_at_Weston_Observatory.JPG |
+| solo | HolgerK at English Wikipedia | Public domain | https://commons.wikimedia.org/wiki/File:Stagnogley.JPG |
+| solstício | Lauro Chieza de Carvalho | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Insolacao_Terra_Solsticios_Equinocios_Primeiro-Semestre-2013.ogv |
+| strogonoff | Sandip Bhattacharya from Toronto, Canada | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Chicken_stroganoff.jpg |
+| sublimação | MSchiffrer | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Nickelocen_an_einem_K%C3%BChlfinger.jpg |
+| sucupira | Fernando Tatagiba | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Sucupira-branca.jpg |
+| suricato | Charles J. Sharp | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg |
+| surucucu | Christopher Murray | Public domain | https://commons.wikimedia.org/wiki/File:Lachesis_muta_muta.jpg |
+| taboa | javier martin | Public domain | https://commons.wikimedia.org/wiki/File:Typha_domingensis_Habitus_CampodeCalatrava.jpg |
+| tacacá | MTur Destinos | Public domain | https://commons.wikimedia.org/wiki/File:MarciaDoCarmo_Gastronomia_Tacaca_Macapa_AP_(40929001712).jpg |
+| taiga | L.B. Brubaker | Public domain | https://commons.wikimedia.org/wiki/File:Picea_glauca_taiga.jpg |
+| tainha | Leonardo Merçon | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Peixes_na_Lagoa_de_Cara%C3%ADs.jpg |
+| tamareira | Wikimedia Commons | Public domain | https://commons.wikimedia.org/wiki/File:Dates_on_date_palm.jpg |
+| tamarindo | Ivar Leidus | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Tamarind_fruits_(Tamarindus_indica_'Si_Thong').jpg |
+| tambaqui | Rufus46 | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Schwarzer_Pacu_Piaractus_Tierpark_Hellabrunn-1.jpg |
+| tamboatá | AlexisKR | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Atipa_from_French_Guiana.jpg |
+| taquara | RubensL at Portuguese Wikipedia | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Taquara.JPG |
+| tectônica | Jpvandijk | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:JPVD-NGTM2023-Network.jpg |
+| tempero | Paul Goyette | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Salt%2C_sugar_and_pepper_shakers.jpg |
+| termosfera | National Aeronautics and Space Administration | Public domain | https://commons.wikimedia.org/wiki/File:ISS_March_2009.jpg |
+| tilápia | Vchoi | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Tilapia_buttikoferi1.jpg |
+| toninha | Erik Christensen | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Phocoena_phocoena.2.jpg |
+| traíra | Cláudio D. Timm | CC BY 2.0 | https://commons.wikimedia.org/wiki/File:Hoplias_malabaricus1.jpg |
+| transpiração | Salsero35 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Transpiration_stomatale_et_cuticulaire.svg |
+| trematódeo | en:User:Anilocra | Public domain | https://commons.wikimedia.org/wiki/File:Botulus_microporus.jpg |
+| trilobita | PaleoNeolitic (montage creator) | CC BY 4.0 | https://commons.wikimedia.org/wiki/File:Trilobita_Diversity.png |
+| tucunaré | Ianare | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Peacock_bass.jpg |
+| tucupi | Roberto de vasconcel… | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:TUCUPI_-_panoramio.jpg |
+| tufão | NASA image by Jeff Schmaltz, MODIS Rapid Response Team, Goddard Space Flight Center. | Public domain | https://commons.wikimedia.org/wiki/File:Maria%2C_Bopha_and_Saomai_2006-08-07_0435Z.jpg |
+| turfa | Christian Fischer | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Torfabbau-.jpg |
+| turmalina | Didier Descouens | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Verdeleite.jpg |
+| ungulado | KissGirl | Public domain | https://commons.wikimedia.org/wiki/File:Palomino_Horse.jpg |
+| urtiga | Albatu 02 | CC BY-SA 4.0 | https://commons.wikimedia.org/wiki/File:Is%C4%B1rgan_otu.jpg |
+| urubu | Tim McCormack known as Phyzome | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Turkey_vulture_profile.jpg |
+| urutu | Cláudio Timm | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Bothrops_alternatus_in_Brazil.jpg |
+| várzea | NASA | Public domain | https://commons.wikimedia.org/wiki/File:Amazon-river-NASA.jpg |
+| vegetação | Heuer, Ted | Public domain | https://commons.wikimedia.org/wiki/File:Fall_on_the_Yukon_Flats_NWR.jpg |
+| vinagrete | Tricia | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Raspberry_vinaigrette.jpg |
+| vitamina | Doc. RNDr. Josef Reischig , CSc. | CC BY 3.0 | https://commons.wikimedia.org/wiki/File:Crystals_of_vitamin_C.jpg |
+| voçoroca | Jose Reynaldo da Fonseca | CC BY 2.5 | https://commons.wikimedia.org/wiki/File:Vo%C3%A7oroca_(23_12_24S_-_48_47_59W)_-_REFON_3.JPG |
+| vórtice | NASA Langley Research Center (NASA-LaRC) | Public domain | https://commons.wikimedia.org/wiki/File:Airplane_vortex.jpg |
+| vulcanismo | ISS Crew Earth Observations experiment and the Image Science &amp; Analysis Group, Johnson Space Center. | Public domain | https://commons.wikimedia.org/wiki/File:MtCleveland_ISS013-E-24184.jpg |
+| xaxim | Walter Henrique Pedron Moschen | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Dicksonia_sellowiana_in_a_Brasilian_Forest.jpg |
+| zangão | Waugsberg | CC BY-SA 3.0 | https://commons.wikimedia.org/wiki/File:Drone_49a.jpg |
+| zebu | Scott Bauer, USDA ARS | Public domain | https://commons.wikimedia.org/wiki/File:Bos_taurus_indicus_(cropped).jpg |
+| zínia | Marcus Quigmire from Florida, USA | CC BY-SA 2.0 | https://commons.wikimedia.org/wiki/File:Ripples_(2442142504).jpg |
+| zooplâncton | Shane Anderson | Public domain | https://commons.wikimedia.org/wiki/File:Zooplankton2_300.jpg |
+
+O projeto é gratuito e não exibe anúncios.

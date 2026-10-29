@@ -24,6 +24,7 @@ import { readFileSync, writeFileSync, existsSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { tmpdir } from "node:os";
+import { gerarCreditos } from "./creditos.mjs";
 
 var root = join(dirname(fileURLToPath(import.meta.url)), "..");
 var ARQ_WORDS = join(root, "words.js");
@@ -31,8 +32,6 @@ var ARQ_EMOJIS = join(root, "images.js");
 var ARQ_FONTE = join(root, "scripts", "imagens-fonte.json");
 var ARQ_MANUAL = join(root, "scripts", "imagens-manual.json");
 var ARQ_SAIDA = join(root, "imagens.js");
-var ARQ_CREDITOS = join(root, "CREDITS.md");
-var ARQ_CREDITOS_HTML = join(root, "creditos.html");
 var CACHE = join(tmpdir(), "arasaac-br.json");
 
 var LIMIT = Infinity;
@@ -175,42 +174,6 @@ function metaPicto(p, word) {
   };
 }
 
-function creditosHTML(entradas) {
-  var linhas = entradas.map(function (e) {
-    return "<tr><td>" + e.palavra + "</td><td><a href=\"" + e.url +
-      "\">" + e.id + "</a></td></tr>";
-  }).join("\n");
-  return "<!doctype html>\n<html lang=\"pt-BR\">\n<head>\n" +
-    "<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
-    "<title>Créditos das imagens — Palavras Aleatórias</title>\n" +
-    "<style>body{font-family:system-ui,sans-serif;max-width:52rem;margin:2rem auto;padding:0 1rem;line-height:1.5}" +
-    "table{border-collapse:collapse;width:100%;font-size:.9rem}td,th{border-bottom:1px solid #ddd;padding:.2rem .4rem;text-align:left}</style>\n" +
-    "</head>\n<body>\n<h1>Créditos das imagens</h1>\n" +
-    "<p>Os pictogramas são do <a href=\"https://arasaac.org\">ARASAAC</a>, " +
-    "autor <strong>Sergio Palao</strong>, licenciados sob " +
-    "<a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0/\">CC BY-NC-SA 4.0</a> " +
-    "(Governo de Aragão). O projeto é gratuito e não exibe anúncios.</p>\n" +
-    "<p>As imagens são carregadas diretamente dos servidores do ARASAAC; " +
-    "este repositório guarda apenas os identificadores.</p>\n" +
-    "<p><a href=\"./\">← Voltar ao jogo</a></p>\n" +
-    "<table><thead><tr><th>Palavra</th><th>Pictograma</th></tr></thead><tbody>\n" +
-    linhas + "\n</tbody></table>\n</body>\n</html>\n";
-}
-
-function creditosMD(entradas) {
-  return "# Créditos das imagens\n\n" +
-    "Os pictogramas são do **ARASAAC** (https://arasaac.org), autor " +
-    "**Sergio Palao**, licenciados sob **CC BY-NC-SA 4.0** " +
-    "(https://creativecommons.org/licenses/by-nc-sa/4.0/), Governo de Aragão.\n\n" +
-    "O projeto é gratuito e não exibe anúncios. As imagens são carregadas " +
-    "diretamente dos servidores do ARASAAC; este repositório guarda apenas os " +
-    "identificadores. A atribuição também aparece em `creditos.html`, link " +
-    "\"Créditos\" no rodapé da tela inicial.\n\n" +
-    "| Palavra | Pictograma |\n| --- | --- |\n" +
-    entradas.map(function (e) { return "| " + e.palavra + " | " + e.url + " |"; }).join("\n") +
-    "\n";
-}
-
 async function main() {
   var idx = await indice();
 
@@ -297,8 +260,18 @@ async function main() {
   var entradas = chaves.map(function (k) {
     return { palavra: k, id: antigos[k].id, url: antigos[k].url };
   });
-  writeFileSync(ARQ_CREDITOS, creditosMD(entradas), "utf8");
-  writeFileSync(ARQ_CREDITOS_HTML, creditosHTML(entradas), "utf8");
+  var fotoEntradas = [];
+  var ARQ_FOTOS = join(root, "scripts", "fotos-fonte.json");
+  if (existsSync(ARQ_FOTOS)) {
+    var fotos = JSON.parse(readFileSync(ARQ_FOTOS, "utf8"));
+    fotoEntradas = Object.keys(fotos).sort(function (a, b) {
+      return a.localeCompare(b, "pt-BR");
+    }).map(function (k) {
+      var f = fotos[k];
+      return { palavra: k, autor: f.autor, licenca: f.licenca, url: f.url };
+    });
+  }
+  gerarCreditos(entradas, fotoEntradas);
 
   console.log("Selecionadas: " + novos.length + "; sem pictograma: " + sem.length +
     "; total em imagens.js: " + chaves.length);

@@ -37,7 +37,9 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `scripts/gerar-imagens.mjs` | Gera `imagens.js` (palavra → ID ARASAAC), sem baixar imagens |
 | `scripts/imagens-fonte.json` | IDs escolhidos por palavra (fonte reproduzível) |
 | `imagens.js`            | ⚠️ Gerado: pictogramas ARASAAC por hotlink               |
+| `fotos.js`              | ⚠️ Gerado: fotos Wikimedia Commons por hotlink           |
 | `figuras-geradas.js`   | Cores (swatches/padrões) e numerais (cartões) locais       |
+| `scripts/gerar-fotos.mjs` | Gera `fotos.js` (fauna/flora) a partir da Wikipédia/Commons |
 | `scripts/validar-palavras.mjs` | Valida a base e os arquivos derivados            |
 | `scripts/curar-palavras.mjs` | Curadoria escolar: filtra `words.js` por evidência |
 | `scripts/podar-images.mjs`   | Remove do `images.js` chaves órfãs do corpus     |
@@ -255,6 +257,13 @@ edite à mão).
   ordinais e potências de dez). Essas figuras são geradas localmente, não têm
   licença de terceiros e têm prioridade sobre emoji/ARASAAC em `midia.js`.
   Elas entram nas mesmas atividades (Palavra e Imagem, Caça-Rimas etc.).
+- **Fotos (fauna/flora)**: `fotos.js` mapeia palavra → foto do Wikimedia
+  Commons, carregada por hotlink de `Special:FilePath` e limitada a 500 px.
+  A geração (`node scripts/gerar-fotos.mjs`) usa a imagem principal do artigo
+  da Wikipédia em português e só aceita licenças CC0/domínio público/CC BY/
+  CC BY-SA (inclusive NC; o projeto não tem anúncios). Autor e licença de cada
+  foto ficam em `CREDITS.md`/`creditos.html`. `scripts/fotos-manual.json`
+  permite ignorar palavras (`"gavião": "skip"`).
 - **Imagens (SVG)**: os arquivos em `img/emoji/` são do **Twemoji**
   (github.com/jdecked/twemoji), licença **CC BY 4.0** — crédito em
   `img/emoji/CREDITS.md`. São ~783 SVGs, 1,3 MB, baixados uma vez e

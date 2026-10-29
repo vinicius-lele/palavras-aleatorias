@@ -256,6 +256,36 @@ if (!FIGURAS || typeof FIGURAS !== "object") {
   });
 }
 
+/* ---------- fotos do Wikimedia Commons (fauna/flora) ---------- */
+
+var { FOTOS } = await import(new URL("../fotos.js", import.meta.url).href);
+var totalFotos = 0;
+if (!FOTOS || typeof FOTOS !== "object") {
+  erros.push("fotos.js: FOTOS não é um mapa");
+} else {
+  Object.keys(FOTOS).forEach(function (w) {
+    if (!visto[norm(w)]) {
+      avisos.push("fotos.js: " + w + " fora do words.js");
+    }
+    var f = FOTOS[w];
+    if (!f || typeof f !== "object") {
+      erros.push("fotos.js: entrada inválida para " + JSON.stringify(w));
+      return;
+    }
+    if (typeof f.arquivo !== "string" ||
+        f.arquivo.indexOf("https://commons.wikimedia.org/wiki/Special:FilePath/") !== 0) {
+      erros.push("fotos.js: arquivo inválido em " + JSON.stringify(w));
+    }
+    if (f.fonte !== "Wikimedia Commons" || !f.autor || !f.licenca || !f.url) {
+      erros.push("fotos.js: metadados de licença incompletos em " + JSON.stringify(w));
+    }
+    totalFotos++;
+  });
+  if (totalFotos && !existsSync(join(root, "CREDITS.md"))) {
+    erros.push("CREDITS.md ausente (atribuição das fotos obrigatória)");
+  }
+}
+
 /* ---------- vocabulario.js (Palavras Desconhecidas) ---------- */
 
 var { VOCABULARIO } = await import(new URL("../vocabulario.js", import.meta.url).href);
@@ -405,6 +435,8 @@ console.log("Total: " + total + " palavras em " + niveis.length + " níveis; " +
   " pictogramas ARASAAC; " +
   (typeof totalGeradas === "number" ? totalGeradas : 0) +
   " figuras geradas (cores/numerais); " +
+  (typeof totalFotos === "number" ? totalFotos : 0) +
+  " fotos do Wikimedia Commons; " +
   (Array.isArray(VOCABULARIO) ? VOCABULARIO.length : 0) +
   " entradas de vocabulário (Palavras Desconhecidas); " +
   "níveis 3–5 no pool de Encontros Vocálicos: " +
@@ -422,7 +454,7 @@ niveis.forEach(function (nivel) {
   var sylTotal = ws.reduce(function (s, w) { return s + syllables(w).length; }, 0);
   var comEmoji = ws.filter(function (w) { return !!IMAGES[w]; });
   var comFigura = ws.filter(function (w) {
-    return !!IMAGES[w] || !!IMAGENS[w] || !!FIGURAS[w.toLowerCase()];
+    return !!IMAGES[w] || !!IMAGENS[w] || !!FIGURAS[w.toLowerCase()] || !!FOTOS[w];
   });
   var chaves = {};
   ws.forEach(function (w) {
