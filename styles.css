@@ -720,6 +720,42 @@ html.fs-fallback .palavra-area {
   border-radius: 0.12em;
 }
 
+/* Amostra de cor gerada localmente (figuras-geradas.js). */
+.figura-cor {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  vertical-align: -0.125em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.12em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+/* Cartão de numeral/ordinal gerado localmente. */
+.figura-numero {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1em;
+  height: 1em;
+  padding: 0 0.1em;
+  box-sizing: border-box;
+  vertical-align: -0.125em;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 0.12em;
+  background: #fff;
+  color: #111;
+  font-weight: 700;
+  font-size: 0.82em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.figura-numero sup {
+  font-size: 0.55em;
+  vertical-align: 0.35em;
+}
+
 /* Caça-Rimas: alvo = emoji menor + palavra */
 
 .rimas-alvo {

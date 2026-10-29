@@ -228,6 +228,34 @@ if (!IMAGENS || typeof IMAGENS !== "object") {
   }
 }
 
+/* ---------- figuras geradas localmente (cores e numerais) ---------- */
+
+var { FIGURAS } = await import(new URL("../figuras-geradas.js", import.meta.url).href);
+var totalGeradas = 0;
+if (!FIGURAS || typeof FIGURAS !== "object") {
+  erros.push("figuras-geradas.js: FIGURAS não é um mapa");
+} else {
+  Object.keys(FIGURAS).forEach(function (w) {
+    if (!visto[norm(w)]) {
+      avisos.push("figuras-geradas.js: " + w + " fora do words.js");
+    }
+    var g = FIGURAS[w];
+    if (!g || (g.tipo !== "cor" && g.tipo !== "numero")) {
+      erros.push("figuras-geradas.js: tipo inválido em " + JSON.stringify(w));
+      return;
+    }
+    if (g.tipo === "cor" &&
+        (typeof g.estilo !== "string" || g.estilo.indexOf("background:") !== 0)) {
+      erros.push("figuras-geradas.js: estilo de cor inválido em " + JSON.stringify(w));
+    }
+    if (g.tipo === "numero" &&
+        (typeof g.texto !== "string" || !g.texto.trim() || !g.chave)) {
+      erros.push("figuras-geradas.js: numeral inválido em " + JSON.stringify(w));
+    }
+    totalGeradas++;
+  });
+}
+
 /* ---------- vocabulario.js (Palavras Desconhecidas) ---------- */
 
 var { VOCABULARIO } = await import(new URL("../vocabulario.js", import.meta.url).href);
@@ -375,6 +403,8 @@ console.log("Total: " + total + " palavras em " + niveis.length + " níveis; " +
   Object.keys(IMAGES).length + " emojis mapeados; " +
   (typeof totalImagens === "number" ? totalImagens : 0) +
   " pictogramas ARASAAC; " +
+  (typeof totalGeradas === "number" ? totalGeradas : 0) +
+  " figuras geradas (cores/numerais); " +
   (Array.isArray(VOCABULARIO) ? VOCABULARIO.length : 0) +
   " entradas de vocabulário (Palavras Desconhecidas); " +
   "níveis 3–5 no pool de Encontros Vocálicos: " +
@@ -391,7 +421,9 @@ niveis.forEach(function (nivel) {
   });
   var sylTotal = ws.reduce(function (s, w) { return s + syllables(w).length; }, 0);
   var comEmoji = ws.filter(function (w) { return !!IMAGES[w]; });
-  var comFigura = ws.filter(function (w) { return !!IMAGES[w] || !!IMAGENS[w]; });
+  var comFigura = ws.filter(function (w) {
+    return !!IMAGES[w] || !!IMAGENS[w] || !!FIGURAS[w.toLowerCase()];
+  });
   var chaves = {};
   ws.forEach(function (w) {
     var k = rhymeKey(w);

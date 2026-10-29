@@ -37,6 +37,7 @@ aplicada sempre. Curadoria reexecutável: `node scripts/curar-palavras.mjs`.
 | `scripts/gerar-imagens.mjs` | Gera `imagens.js` (palavra → ID ARASAAC), sem baixar imagens |
 | `scripts/imagens-fonte.json` | IDs escolhidos por palavra (fonte reproduzível) |
 | `imagens.js`            | ⚠️ Gerado: pictogramas ARASAAC por hotlink               |
+| `figuras-geradas.js`   | Cores (swatches/padrões) e numerais (cartões) locais       |
 | `scripts/validar-palavras.mjs` | Valida a base e os arquivos derivados            |
 | `scripts/curar-palavras.mjs` | Curadoria escolar: filtra `words.js` por evidência |
 | `scripts/podar-images.mjs`   | Remove do `images.js` chaves órfãs do corpus     |
@@ -249,6 +250,11 @@ edite à mão).
   atribuição fica em `CREDITS.md` e `creditos.html` (link "Créditos" no
   rodapé). A camada `midia.js` escolhe imagem ARASAAC, senão emoji, e tem
   fallback neutro se a imagem remota falhar.
+- **Cores e numerais**: `figuras-geradas.js` cobre as palavras de cor com
+  amostras/padrões CSS e as de número com cartões tipográficos (inclusive
+  ordinais e potências de dez). Essas figuras são geradas localmente, não têm
+  licença de terceiros e têm prioridade sobre emoji/ARASAAC em `midia.js`.
+  Elas entram nas mesmas atividades (Palavra e Imagem, Caça-Rimas etc.).
 - **Imagens (SVG)**: os arquivos em `img/emoji/` são do **Twemoji**
   (github.com/jdecked/twemoji), licença **CC BY 4.0** — crédito em
   `img/emoji/CREDITS.md`. São ~783 SVGs, 1,3 MB, baixados uma vez e

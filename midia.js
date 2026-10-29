@@ -7,6 +7,7 @@
 
 import { IMAGES } from "./images.js";
 import { IMAGENS } from "./imagens.js";
+import { FIGURAS } from "./figuras-geradas.js";
 import { emojiHTML } from "./emoji.js";
 
 var ARASAAC = "https://api.arasaac.org/api/pictograms/";
@@ -32,9 +33,11 @@ function chavePalavra(word) {
   return String(word).toLowerCase();
 }
 
-// Devolve { tipo: "imagem"|"emoji", ... } ou null.
+// Devolve { tipo: "gerada"|"imagem"|"emoji", ... } ou null.
 export function figuraDe(word) {
   var k = chavePalavra(word);
+  var gerada = FIGURAS[k];
+  if (gerada) return { tipo: "gerada", figura: gerada };
   var img = IMAGENS[k];
   if (img) return { tipo: "imagem", id: img.id, src: ARASAAC + img.id };
   var em = IMAGES[word];
@@ -50,6 +53,9 @@ export function temFigura(word) {
 export function figuraChave(word) {
   var f = figuraDe(word);
   if (!f) return "";
+  if (f.tipo === "gerada") {
+    return "gerada:" + f.figura.tipo + ":" + (f.figura.chave || f.figura.texto || f.figura.estilo);
+  }
   return f.tipo === "imagem" ? "img:" + f.id : "emoji:" + f.emoji;
 }
 
@@ -57,6 +63,13 @@ export function figuraChave(word) {
 export function figuraHTML(word) {
   var f = figuraDe(word);
   if (!f) return "";
+  if (f.tipo === "gerada") {
+    var g = f.figura;
+    if (g.tipo === "numero") {
+      return '<span class="figura-numero" aria-hidden="true">' + g.texto + "</span>";
+    }
+    return '<span class="figura-cor" style="' + g.estilo + '" aria-hidden="true"></span>';
+  }
   if (f.tipo === "emoji") return emojiHTML(f.emoji);
   return '<img class="figura-img" src="' + f.src + '" alt="" ' +
     'loading="lazy" decoding="async" referrerpolicy="no-referrer" ' +
